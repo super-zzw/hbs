@@ -1,0 +1,30 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_6fcf777b"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_e0f15b80"
+  },
+  {
+    "name": "lang",
+    "path": "/:lang",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\index.vue",
+    "chunkName": "pages/_lang/index",
+    "_name": "_0c625d67"
+  },
+  {
+    "name": "lang-about",
+    "path": "/:lang/about",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\about.vue",
+    "chunkName": "pages/_lang/about",
+    "_name": "_26aafabc"
+  }
+]
