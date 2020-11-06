@@ -12,16 +12,7 @@
 <script>
 export default {
   created(){
-    console.log(1,process)
+    
   },
-  // mounted() {
-  //   console.log(process)
-  //   if (process.browser) {
-  //     new this.$wow({
-  //       live: true,
-  //       offset: 0
-  //     }).init();
-  //   }
-  // },
 }
 </script>
