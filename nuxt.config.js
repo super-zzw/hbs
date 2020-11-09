@@ -19,7 +19,7 @@ export default {
     '~/assets/style/animate.min.css'
   ],
   router: {
-    middleware: 'i18n',
+    middleware: ['i18n',],
     scrollBehavior (to, from, savedPosition) {
       return { x: 0, y: 0 }
     }
@@ -27,12 +27,14 @@ export default {
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/filters',
+    '@/plugins/methods',
     {
       src: "~plugins/axios.js",
       ssr: true
     },
     '~/plugins/i18n.js',
-    {src: '@/plugins/animate.js',ssr: false}
+    {src: '@/plugins/animate.js',ssr: false},
+    // {src: '@/plugins/methods.js',ssr: false}
   ],
   modules: [
     // Doc: https://axios.nuxtjs.org/usage

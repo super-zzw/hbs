@@ -1,10 +1,38 @@
 [
   {
-    "name": "about",
-    "path": "/about",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\about.vue",
-    "chunkName": "pages/about",
-    "_name": "_6fcf777b"
+    "name": "product",
+    "path": "/product",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\product\\\\index.vue",
+    "chunkName": "pages/product/index",
+    "_name": "_33f540f6"
+  },
+  {
+    "name": "service",
+    "path": "/service",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\service\\\\index.vue",
+    "chunkName": "pages/service/index",
+    "_name": "_076fadff"
+  },
+  {
+    "name": "strength",
+    "path": "/strength",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\strength\\\\index.vue",
+    "chunkName": "pages/strength/index",
+    "_name": "_7f7e905f"
+  },
+  {
+    "name": "technology",
+    "path": "/technology",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\technology\\\\index.vue",
+    "chunkName": "pages/technology/index",
+    "_name": "_2c677d98"
+  },
+  {
+    "name": "walkin",
+    "path": "/walkin",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\walkin\\\\index.vue",
+    "chunkName": "pages/walkin/index",
+    "_name": "_6d441752"
   },
   {
     "name": "index",
@@ -21,10 +49,38 @@
     "_name": "_0c625d67"
   },
   {
-    "name": "lang-about",
-    "path": "/:lang/about",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\about.vue",
-    "chunkName": "pages/_lang/about",
-    "_name": "_26aafabc"
+    "name": "lang-product",
+    "path": "/:lang/product",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\product\\\\index.vue",
+    "chunkName": "pages/_lang/product/index",
+    "_name": "_0e96f03e"
+  },
+  {
+    "name": "lang-service",
+    "path": "/:lang/service",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\service\\\\index.vue",
+    "chunkName": "pages/_lang/service/index",
+    "_name": "_30013eb8"
+  },
+  {
+    "name": "lang-strength",
+    "path": "/:lang/strength",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\strength\\\\index.vue",
+    "chunkName": "pages/_lang/strength/index",
+    "_name": "_691f16c6"
+  },
+  {
+    "name": "lang-technology",
+    "path": "/:lang/technology",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\technology\\\\index.vue",
+    "chunkName": "pages/_lang/technology/index",
+    "_name": "_25366c4a"
+  },
+  {
+    "name": "lang-walkin",
+    "path": "/:lang/walkin",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\walkin\\\\index.vue",
+    "chunkName": "pages/_lang/walkin/index",
+    "_name": "_66510b79"
   }
 ]

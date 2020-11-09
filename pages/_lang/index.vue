@@ -4,15 +4,15 @@
       <h1 class="Content__Title wow fadeInUp">
         {{ $t('home') }}
       </h1>
-      <p>{{ $t('home') }}</p>
     </div>
   </div>
 </template>
 
 <script>
+import utils from '@/utils/methods.js'
 export default {
-  created(){
-    
-  },
+  mounted(){
+    utils.initWow(this)
+  }
 }
 </script>
