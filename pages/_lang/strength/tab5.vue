@@ -13,19 +13,19 @@
       </div>
 
       <div class="sec2">
-        <div class="section ">
+        <div class="section">
           <h2 class="title">研发实力 信心保证</h2>
           <p class="line"></p>
           <p class="desc">部分认证与资质</p>
           <div class="honorList">
-            <img src="~assets/image/img3.5-1.png" alt="" />
-            <img src="~assets/image/img3.5-2.png" alt="" />
-            <img src="~assets/image/img3.5-3.png" alt="" />
-            <img src="~assets/image/img3.5-4.png" alt="" />
-            <img src="~assets/image/img3.5-5.png" alt="" />
-            <img src="~assets/image/img3.5-6.png" alt="" />
-            <img src="~assets/image/img3.5-7.png" alt="" />
-            <img src="~assets/image/img3.5-8.png" alt="" />
+            <img src="~assets/image/img3.5-1.png" alt />
+            <img src="~assets/image/img3.5-2.png" alt />
+            <img src="~assets/image/img3.5-3.png" alt />
+            <img src="~assets/image/img3.5-4.png" alt />
+            <img src="~assets/image/img3.5-5.png" alt />
+            <img src="~assets/image/img3.5-6.png" alt />
+            <img src="~assets/image/img3.5-7.png" alt />
+            <img src="~assets/image/img3.5-8.png" alt />
           </div>
         </div>
         <div class="section">
@@ -33,7 +33,7 @@
           <p class="line"></p>
           <!-- <div class="tabsBox">
                    <div></div>
-               </div> -->
+          </div>-->
           <el-tabs v-model="activeName">
             <el-tab-pane label="企业资质" name="1"></el-tab-pane>
             <el-tab-pane label="研发实力" name="2"></el-tab-pane>
@@ -41,60 +41,61 @@
             <el-tab-pane label="产品专利" name="4"></el-tab-pane>
             <el-tab-pane label="社会荣誉" name="5"></el-tab-pane>
           </el-tabs>
-         
-     <div style="width:1000px;height:377px">
-          <swiper :options="swiperOption"  ref="mySwiper">
-        <!-- 添加的图片 -->
-        <swiper-slide >
-          <img src="~assets/image/img3.5-9.png" alt="" >
-          
-        </swiper-slide>
-        <swiper-slide>
-          <img src="~assets/image/img3.5-9.png" alt="" >
-          
-        </swiper-slide>
-        <swiper-slide>
-          <img src="~assets/image/img3.5-9.png" alt="" >
-        </swiper-slide>
-        <swiper-slide>
-          <img src="~assets/image/img3.5-9.png" alt="" >
-          
-        </swiper-slide>
-        <swiper-slide>
-          <img src="~assets/image/img3.5-9.png" alt="" >
-          
-        </swiper-slide>
-        
-        <div class="swiper-button-prev" slot="button-prev"></div>
-        <div class="swiper-button-next" slot="button-next"></div>
-    </swiper>
-     </div>
-       
+
+          <div class="swiper-father">
+            <swiper
+              :options="swiperOption"
+              ref="mySwiper"
+              style="width:1050px;height:500px;padding-top:100px"
+            >
+              <!-- 添加的图片 -->
+              <swiper-slide>
+                <img src="~assets/image/img3.5-9.png" alt />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="~assets/image/img3.5-9.png" alt />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="~assets/image/img3.5-9.png" alt />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="~assets/image/img3.5-9.png" alt />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="~assets/image/img3.5-9.png" alt />
+              </swiper-slide>
+
+              <!-- <div class="swiper-button-prev" slot="button-prev"></div>
+              <div class="swiper-button-next" slot="button-next"></div>-->
+            </swiper>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 </template>
 <script>
 export default {
   mounted() {
     this.initWow(this);
-    
-  
   },
   data() {
     return {
       activeName: "1",
+
       swiperOption: {
-      //可见图片张数
+        //可见图片张数
+        // spaceBetween: 100,
         slidesPerView: 5,
-       // 默认选中中间一张
+        // 默认选中中间一张
         centeredSlides: true,
         //无限循环
         loop: true,
         //小圆点（我此处没使用，列出供参考）
         pagination: {
-          el: '.swiper-pagination',
+          el: ".swiper-pagination",
           clickable: true
         },
         //自动轮播
@@ -103,13 +104,12 @@ export default {
         },
         //上下按钮点击轮播效果
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
         }
       }
-
     };
-  },
+  }
 };
 </script>
 <style lang="less" scoped>
@@ -138,7 +138,7 @@ export default {
       .line1 {
         width: 33px;
         height: 8px;
-        background: #FFFFFF;
+        background: #ffffff;
         margin-top: 60px;
         opacity: 1;
       }
@@ -147,7 +147,7 @@ export default {
         font-size: 44px;
         font-family: Noto Sans S Chinese;
         font-weight: 900;
-        color: #FFFFFF;
+        color: #ffffff;
         line-height: 97px;
         opacity: 1;
       }
@@ -155,7 +155,7 @@ export default {
         font-size: 28px;
         font-family: Noto Sans S Chinese;
         font-weight: 500;
-        color: #FFFFFF;
+        color: #ffffff;
         line-height: 36px;
       }
     }
@@ -163,14 +163,14 @@ export default {
       font-size: 20px;
       font-family: Noto Sans S Chinese;
       font-weight: 400;
-      color: #CCCCCC;
+      color: #cccccc;
       line-height: 36px;
     }
   }
 }
 
 .sec2 {
-  background: #EDEDED;
+  background: #ededed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,19 +216,26 @@ export default {
     }
   }
 }
-.swiper-slide{
-      transition:1s;
-      transform: scale(0.8);
-      img{
-          width: 230px;
-          height: 320px;
-      }
-    }
-    //swriper自带的类名（选中时的样式）
-    .swiper-slide-active,.swiper-slide-duplicate-active {
-        transform: scale(1.2);
-        z-index: 99;
-    }
+.swiper-father {
+  position: relative;
+  padding: 0 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.swiper-slide {
+  transition: 1s;
+  transform: scale(1);
+  img {
+    width: 210px;
+    height: 320px;
+  }
+}
+//swriper自带的类名（选中时的样式）
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+  transform: scale(1.4);
+  z-index: 99;
+}
 
 // .swiper-slide-active,.swiper-slide-duplicate-active{
 //     transform: scale(1.4);
@@ -237,15 +244,14 @@ export default {
 //       transition:1s;
 //       transform: scale(1);
 //     }
-    .swiper-slide-prev{
-         transform: scale(1);
-    }
-    .swiper-slide-next{
-         transform: scale(1);
-    }
-    
-    //swriper自带的类名（选中时的样式）
-    // .swiper-slide-active,.swiper-slide-duplicate-active {
-    //     transform: scale(1.1);
-    // }
+.swiper-slide-prev {
+  transform: scale(1.2);
+  z-index: 98;
+}
+.swiper-slide-next {
+  transform: scale(1.2);
+  z-index: 98;
+}
+
+
 </style>

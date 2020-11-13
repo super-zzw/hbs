@@ -2,197 +2,197 @@
   {
     "name": "product",
     "path": "/product",
-    "component": "E:\\\\pc\\\\pages\\\\product\\\\index.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\product\\\\index.vue",
     "chunkName": "pages/product/index",
-    "_name": "_84650abe"
+    "_name": "_5567706b"
   },
   {
     "name": "service",
     "path": "/service",
-    "component": "E:\\\\pc\\\\pages\\\\service\\\\index.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\service\\\\index.vue",
     "chunkName": "pages/service/index",
-    "_name": "_41906dca"
+    "_name": "_76d1bee5"
   },
   {
     "name": "strength",
     "path": "/strength",
-    "component": "E:\\\\pc\\\\pages\\\\strength\\\\index.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\strength\\\\index.vue",
     "chunkName": "pages/strength/index",
-    "_name": "_be8c4e7a"
+    "_name": "_0742c78e"
   },
   {
     "name": "technology",
     "path": "/technology",
-    "component": "E:\\\\pc\\\\pages\\\\technology\\\\index.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\technology\\\\index.vue",
     "chunkName": "pages/technology/index",
-    "_name": "_ad51fed0"
+    "_name": "_a24e82e4"
   },
   {
     "name": "walkin",
     "path": "/walkin",
-    "component": "E:\\\\pc\\\\pages\\\\walkin\\\\index.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\walkin\\\\index.vue",
     "chunkName": "pages/walkin/index",
-    "_name": "_f683ae94"
+    "_name": "_268951ac"
   },
   {
     "name": "strength-tab1",
     "path": "/strength/tab1",
-    "component": "E:\\\\pc\\\\pages\\\\strength\\\\tab1.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\strength\\\\tab1.vue",
     "chunkName": "pages/strength/tab1",
-    "_name": "_732f825b"
+    "_name": "_0ac97825"
   },
   {
     "name": "strength-tab2",
     "path": "/strength/tab2",
-    "component": "E:\\\\pc\\\\pages\\\\strength\\\\tab2.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\strength\\\\tab2.vue",
     "chunkName": "pages/strength/tab2",
-    "_name": "_733d99dc"
+    "_name": "_0ad78fa6"
   },
   {
     "name": "strength-tab3",
     "path": "/strength/tab3",
-    "component": "E:\\\\pc\\\\pages\\\\strength\\\\tab3.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\strength\\\\tab3.vue",
     "chunkName": "pages/strength/tab3",
-    "_name": "_734bb15d"
+    "_name": "_0ae5a727"
   },
   {
     "name": "strength-tab4",
     "path": "/strength/tab4",
-    "component": "E:\\\\pc\\\\pages\\\\strength\\\\tab4.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\strength\\\\tab4.vue",
     "chunkName": "pages/strength/tab4",
-    "_name": "_7359c8de"
+    "_name": "_0af3bea8"
   },
   {
     "name": "strength-tab5",
     "path": "/strength/tab5",
-    "component": "E:\\\\pc\\\\pages\\\\strength\\\\tab5.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\strength\\\\tab5.vue",
     "chunkName": "pages/strength/tab5",
-    "_name": "_7367e05f"
+    "_name": "_0b01d629"
   },
   {
     "name": "walkin-tab1",
     "path": "/walkin/tab1",
-    "component": "E:\\\\pc\\\\pages\\\\walkin\\\\tab1.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\walkin\\\\tab1.vue",
     "chunkName": "pages/walkin/tab1",
-    "_name": "_3037e808"
+    "_name": "_ceee6f5c"
   },
   {
     "name": "walkin-tab2",
     "path": "/walkin/tab2",
-    "component": "E:\\\\pc\\\\pages\\\\walkin\\\\tab2.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\walkin\\\\tab2.vue",
     "chunkName": "pages/walkin/tab2",
-    "_name": "_3045ff89"
+    "_name": "_ced2405a"
   },
   {
     "name": "walkin-tab3",
     "path": "/walkin/tab3",
-    "component": "E:\\\\pc\\\\pages\\\\walkin\\\\tab3.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\walkin\\\\tab3.vue",
     "chunkName": "pages/walkin/tab3",
-    "_name": "_3054170a"
+    "_name": "_ceb61158"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "E:\\\\pc\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_4ccb07a4"
+    "_name": "_e79cf2cc"
   },
   {
     "name": "lang",
     "path": "/:lang",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\index.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\index.vue",
     "chunkName": "pages/_lang/index",
-    "_name": "_366e8f83"
+    "_name": "_c2812066"
   },
   {
     "name": "lang-product",
     "path": "/:lang/product",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\product\\\\index.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\product\\\\index.vue",
     "chunkName": "pages/_lang/product/index",
-    "_name": "_fba944bc"
+    "_name": "_54113098"
   },
   {
     "name": "lang-service",
     "path": "/:lang/service",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\service\\\\index.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\service\\\\index.vue",
     "chunkName": "pages/_lang/service/index",
-    "_name": "_b8d4a7c8"
+    "_name": "_757b7f12"
   },
   {
     "name": "lang-strength",
     "path": "/:lang/strength",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\strength\\\\index.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\strength\\\\index.vue",
     "chunkName": "pages/_lang/strength/index",
-    "_name": "_681855e2"
+    "_name": "_5a263ca8"
   },
   {
     "name": "lang-technology",
     "path": "/:lang/technology",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\technology\\\\index.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\technology\\\\index.vue",
     "chunkName": "pages/_lang/technology/index",
-    "_name": "_130ab1f7"
+    "_name": "_1aeb7341"
   },
   {
     "name": "lang-walkin",
     "path": "/:lang/walkin",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\index.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\index.vue",
     "chunkName": "pages/_lang/walkin/index",
-    "_name": "_59876195"
+    "_name": "_2ec057df"
   },
   {
     "name": "lang-strength-tab1",
     "path": "/:lang/strength/tab1",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab1.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab1.vue",
     "chunkName": "pages/_lang/strength/tab1",
-    "_name": "_378d655c"
+    "_name": "_09733852"
   },
   {
     "name": "lang-strength-tab2",
     "path": "/:lang/strength/tab2",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab2.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab2.vue",
     "chunkName": "pages/_lang/strength/tab2",
-    "_name": "_379b7cdd"
+    "_name": "_09814fd3"
   },
   {
     "name": "lang-strength-tab3",
     "path": "/:lang/strength/tab3",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab3.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab3.vue",
     "chunkName": "pages/_lang/strength/tab3",
-    "_name": "_37a9945e"
+    "_name": "_098f6754"
   },
   {
     "name": "lang-strength-tab4",
     "path": "/:lang/strength/tab4",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab4.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab4.vue",
     "chunkName": "pages/_lang/strength/tab4",
-    "_name": "_37b7abdf"
+    "_name": "_099d7ed5"
   },
   {
     "name": "lang-strength-tab5",
     "path": "/:lang/strength/tab5",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab5.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab5.vue",
     "chunkName": "pages/_lang/strength/tab5",
-    "_name": "_37c5c360"
+    "_name": "_09ab9656"
   },
   {
     "name": "lang-walkin-tab1",
     "path": "/:lang/walkin/tab1",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\tab1.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\tab1.vue",
     "chunkName": "pages/_lang/walkin/tab1",
-    "_name": "_15f6d16e"
+    "_name": "_bde2a082"
   },
   {
     "name": "lang-walkin-tab2",
     "path": "/:lang/walkin/tab2",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\tab2.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\tab2.vue",
     "chunkName": "pages/_lang/walkin/tab2",
-    "_name": "_15daa26c"
+    "_name": "_bdc67180"
   },
   {
     "name": "lang-walkin-tab3",
     "path": "/:lang/walkin/tab3",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\tab3.vue",
+    "component": "C:\\\\Users\\\\zzw\\\\Desktop\\\\公司项目\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\tab3.vue",
     "chunkName": "pages/_lang/walkin/tab3",
-    "_name": "_15be736a"
+    "_name": "_bdaa427e"
   }
 ]
