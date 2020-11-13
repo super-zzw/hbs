@@ -13,7 +13,7 @@
       </div>
 
       <div class="sec2">
-        <div class="section">
+        <div class="section ">
           <h2 class="title">研发实力 信心保证</h2>
           <p class="line"></p>
           <p class="desc">部分认证与资质</p>
@@ -41,24 +41,73 @@
             <el-tab-pane label="产品专利" name="4"></el-tab-pane>
             <el-tab-pane label="社会荣誉" name="5"></el-tab-pane>
           </el-tabs>
-           <el-carousel :interval="4000" type="card" height="370px" :autoplay="false">
-    <el-carousel-item v-for="item in 6" :key="item">
-      <img src="~assets/image/img3.5-9.png" alt="" height="370" width="275">
-    </el-carousel-item>
-  </el-carousel>
-        </div>
+         
+     <div style="width:1000px;height:377px">
+          <swiper :options="swiperOption"  ref="mySwiper">
+        <!-- 添加的图片 -->
+        <swiper-slide >
+          <img src="~assets/image/img3.5-9.png" alt="" >
+          
+        </swiper-slide>
+        <swiper-slide>
+          <img src="~assets/image/img3.5-9.png" alt="" >
+          
+        </swiper-slide>
+        <swiper-slide>
+          <img src="~assets/image/img3.5-9.png" alt="" >
+        </swiper-slide>
+        <swiper-slide>
+          <img src="~assets/image/img3.5-9.png" alt="" >
+          
+        </swiper-slide>
+        <swiper-slide>
+          <img src="~assets/image/img3.5-9.png" alt="" >
+          
+        </swiper-slide>
+        
+        <div class="swiper-button-prev" slot="button-prev"></div>
+        <div class="swiper-button-next" slot="button-next"></div>
+    </swiper>
+     </div>
+       
       </div>
     </div>
+  </div>
   </div>
 </template>
 <script>
 export default {
   mounted() {
     this.initWow(this);
+    
+  
   },
   data() {
     return {
       activeName: "1",
+      swiperOption: {
+      //可见图片张数
+        slidesPerView: 5,
+       // 默认选中中间一张
+        centeredSlides: true,
+        //无限循环
+        loop: true,
+        //小圆点（我此处没使用，列出供参考）
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        //自动轮播
+        autoplay: {
+          stopOnLastSlide: false
+        },
+        //上下按钮点击轮播效果
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      }
+
     };
   },
 };
@@ -167,4 +216,36 @@ export default {
     }
   }
 }
+.swiper-slide{
+      transition:1s;
+      transform: scale(0.8);
+      img{
+          width: 230px;
+          height: 320px;
+      }
+    }
+    //swriper自带的类名（选中时的样式）
+    .swiper-slide-active,.swiper-slide-duplicate-active {
+        transform: scale(1.2);
+        z-index: 99;
+    }
+
+// .swiper-slide-active,.swiper-slide-duplicate-active{
+//     transform: scale(1.4);
+// }
+// .swiper-slide{
+//       transition:1s;
+//       transform: scale(1);
+//     }
+    .swiper-slide-prev{
+         transform: scale(1);
+    }
+    .swiper-slide-next{
+         transform: scale(1);
+    }
+    
+    //swriper自带的类名（选中时的样式）
+    // .swiper-slide-active,.swiper-slide-duplicate-active {
+    //     transform: scale(1.1);
+    // }
 </style>

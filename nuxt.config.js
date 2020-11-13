@@ -16,7 +16,8 @@ export default {
   css: [
     '~/assets/style/common.less',
     'element-ui/lib/theme-chalk/index.css',
-    '~/assets/style/animate.min.css'
+    '~/assets/style/animate.min.css',
+    'swiper/dist/css/swiper.css'
   ],
   router: {
     middleware: ['i18n',],
@@ -28,6 +29,8 @@ export default {
     '@/plugins/element-ui',
     '@/plugins/filters',
     '@/plugins/methods',
+    { src: '~/plugins/swiper.js', ssr: false },
+  // { src: "~/plugins/swiper.js", ssr: false },
     {
       src: "~plugins/axios.js",
       ssr: true

@@ -11,6 +11,8 @@ import '..\\node_modules\\element-ui\\lib\\theme-chalk\\index.css'
 
 import '..\\assets\\style\\animate.min.css'
 
+import '..\\node_modules\\swiper\\dist\\css\\swiper.css'
+
 import _6f6c098b from '..\\layouts\\default.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b) }
