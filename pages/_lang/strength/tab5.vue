@@ -1,0 +1,170 @@
+<template>
+  <div class="page">
+    <div class="container">
+      <div class="sec1">
+        <div class="content1">
+          <div class="Box">
+            <p class="line1"></p>
+            <p class="t1">INTELLIGENCE</p>
+            <p class="t2">荣誉见证</p>
+          </div>
+          <p class="t3">全球奖项及专利（部分）</p>
+        </div>
+      </div>
+
+      <div class="sec2">
+        <div class="section">
+          <h2 class="title">研发实力 信心保证</h2>
+          <p class="line"></p>
+          <p class="desc">部分认证与资质</p>
+          <div class="honorList">
+            <img src="~assets/image/img3.5-1.png" alt="" />
+            <img src="~assets/image/img3.5-2.png" alt="" />
+            <img src="~assets/image/img3.5-3.png" alt="" />
+            <img src="~assets/image/img3.5-4.png" alt="" />
+            <img src="~assets/image/img3.5-5.png" alt="" />
+            <img src="~assets/image/img3.5-6.png" alt="" />
+            <img src="~assets/image/img3.5-7.png" alt="" />
+            <img src="~assets/image/img3.5-8.png" alt="" />
+          </div>
+        </div>
+        <div class="section">
+          <h2 class="title">笃行致远 臻于至善</h2>
+          <p class="line"></p>
+          <!-- <div class="tabsBox">
+                   <div></div>
+               </div> -->
+          <el-tabs v-model="activeName">
+            <el-tab-pane label="企业资质" name="1"></el-tab-pane>
+            <el-tab-pane label="研发实力" name="2"></el-tab-pane>
+            <el-tab-pane label="核心认证" name="3"></el-tab-pane>
+            <el-tab-pane label="产品专利" name="4"></el-tab-pane>
+            <el-tab-pane label="社会荣誉" name="5"></el-tab-pane>
+          </el-tabs>
+           <el-carousel :interval="4000" type="card" height="370px" :autoplay="false">
+    <el-carousel-item v-for="item in 6" :key="item">
+      <img src="~assets/image/img3.5-9.png" alt="" height="370" width="275">
+    </el-carousel-item>
+  </el-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  mounted() {
+    this.initWow(this);
+  },
+  data() {
+    return {
+      activeName: "1",
+    };
+  },
+};
+</script>
+<style lang="less" scoped>
+.sec1 {
+  background: url(~assets/image/banner3-4.png);
+  height: 760px;
+  width: 100%;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .Box {
+      width: 312px;
+      height: 277px;
+      border: 2px solid rgb(65, 65, 65);
+      //   opacity: 0.2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 27px;
+      .line1 {
+        width: 33px;
+        height: 8px;
+        background: #FFFFFF;
+        margin-top: 60px;
+        opacity: 1;
+      }
+      .t1 {
+        white-space: nowrap;
+        font-size: 44px;
+        font-family: Noto Sans S Chinese;
+        font-weight: 900;
+        color: #FFFFFF;
+        line-height: 97px;
+        opacity: 1;
+      }
+      .t2 {
+        font-size: 28px;
+        font-family: Noto Sans S Chinese;
+        font-weight: 500;
+        color: #FFFFFF;
+        line-height: 36px;
+      }
+    }
+    .t3 {
+      font-size: 20px;
+      font-family: Noto Sans S Chinese;
+      font-weight: 400;
+      color: #CCCCCC;
+      line-height: 36px;
+    }
+  }
+}
+
+.sec2 {
+  background: #EDEDED;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .section {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      font-size: 40px;
+      font-family: SourceHanSansCN;
+      font-weight: 500;
+      color: #505050;
+    }
+    .line {
+      width: 51px;
+      height: 2px;
+      border: 2px solid #808080;
+      background: #808080;
+      margin: 30px 0 20px;
+    }
+    .desc {
+      font-size: 18px;
+      font-family: SourceHanSansCN;
+      font-weight: 400;
+      color: #808080;
+      line-height: 34px;
+    }
+    .honorList {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 1190px;
+      img {
+        width: 290px;
+        height: 400px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+      }
+      img:nth-child(4n + 4) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+</style>

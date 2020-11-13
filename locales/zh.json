@@ -1,6 +1,10 @@
 {
   "home": "主页",
-  "about": "关于",
+  "walkin": "走进BRI",
+  "strength":"企业实力",
+  "product":"产品系列",
+  "technology":"创新技术",
+  "service":"服务支持",
   "en": "English",
   "zh": "中文"
 }

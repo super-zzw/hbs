@@ -1,6 +1,10 @@
 {
   "home": "home",
-  "about": "about",
+  "walkin": "bri",
+  "strength":"strength",
+  "product":"product",
+  "technology":"technology",
+  "service":"service",
   "en": "English",
   "zh": "中文"
 }

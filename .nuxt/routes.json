@@ -2,85 +2,197 @@
   {
     "name": "product",
     "path": "/product",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\product\\\\index.vue",
+    "component": "E:\\\\pc\\\\pages\\\\product\\\\index.vue",
     "chunkName": "pages/product/index",
-    "_name": "_33f540f6"
+    "_name": "_84650abe"
   },
   {
     "name": "service",
     "path": "/service",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\service\\\\index.vue",
+    "component": "E:\\\\pc\\\\pages\\\\service\\\\index.vue",
     "chunkName": "pages/service/index",
-    "_name": "_076fadff"
+    "_name": "_41906dca"
   },
   {
     "name": "strength",
     "path": "/strength",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\strength\\\\index.vue",
+    "component": "E:\\\\pc\\\\pages\\\\strength\\\\index.vue",
     "chunkName": "pages/strength/index",
-    "_name": "_7f7e905f"
+    "_name": "_be8c4e7a"
   },
   {
     "name": "technology",
     "path": "/technology",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\technology\\\\index.vue",
+    "component": "E:\\\\pc\\\\pages\\\\technology\\\\index.vue",
     "chunkName": "pages/technology/index",
-    "_name": "_2c677d98"
+    "_name": "_ad51fed0"
   },
   {
     "name": "walkin",
     "path": "/walkin",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\walkin\\\\index.vue",
+    "component": "E:\\\\pc\\\\pages\\\\walkin\\\\index.vue",
     "chunkName": "pages/walkin/index",
-    "_name": "_6d441752"
+    "_name": "_f683ae94"
+  },
+  {
+    "name": "strength-tab1",
+    "path": "/strength/tab1",
+    "component": "E:\\\\pc\\\\pages\\\\strength\\\\tab1.vue",
+    "chunkName": "pages/strength/tab1",
+    "_name": "_732f825b"
+  },
+  {
+    "name": "strength-tab2",
+    "path": "/strength/tab2",
+    "component": "E:\\\\pc\\\\pages\\\\strength\\\\tab2.vue",
+    "chunkName": "pages/strength/tab2",
+    "_name": "_733d99dc"
+  },
+  {
+    "name": "strength-tab3",
+    "path": "/strength/tab3",
+    "component": "E:\\\\pc\\\\pages\\\\strength\\\\tab3.vue",
+    "chunkName": "pages/strength/tab3",
+    "_name": "_734bb15d"
+  },
+  {
+    "name": "strength-tab4",
+    "path": "/strength/tab4",
+    "component": "E:\\\\pc\\\\pages\\\\strength\\\\tab4.vue",
+    "chunkName": "pages/strength/tab4",
+    "_name": "_7359c8de"
+  },
+  {
+    "name": "strength-tab5",
+    "path": "/strength/tab5",
+    "component": "E:\\\\pc\\\\pages\\\\strength\\\\tab5.vue",
+    "chunkName": "pages/strength/tab5",
+    "_name": "_7367e05f"
+  },
+  {
+    "name": "walkin-tab1",
+    "path": "/walkin/tab1",
+    "component": "E:\\\\pc\\\\pages\\\\walkin\\\\tab1.vue",
+    "chunkName": "pages/walkin/tab1",
+    "_name": "_3037e808"
+  },
+  {
+    "name": "walkin-tab2",
+    "path": "/walkin/tab2",
+    "component": "E:\\\\pc\\\\pages\\\\walkin\\\\tab2.vue",
+    "chunkName": "pages/walkin/tab2",
+    "_name": "_3045ff89"
+  },
+  {
+    "name": "walkin-tab3",
+    "path": "/walkin/tab3",
+    "component": "E:\\\\pc\\\\pages\\\\walkin\\\\tab3.vue",
+    "chunkName": "pages/walkin/tab3",
+    "_name": "_3054170a"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\index.vue",
+    "component": "E:\\\\pc\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_e0f15b80"
+    "_name": "_4ccb07a4"
   },
   {
     "name": "lang",
     "path": "/:lang",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\index.vue",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\index.vue",
     "chunkName": "pages/_lang/index",
-    "_name": "_0c625d67"
+    "_name": "_366e8f83"
   },
   {
     "name": "lang-product",
     "path": "/:lang/product",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\product\\\\index.vue",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\product\\\\index.vue",
     "chunkName": "pages/_lang/product/index",
-    "_name": "_0e96f03e"
+    "_name": "_fba944bc"
   },
   {
     "name": "lang-service",
     "path": "/:lang/service",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\service\\\\index.vue",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\service\\\\index.vue",
     "chunkName": "pages/_lang/service/index",
-    "_name": "_30013eb8"
+    "_name": "_b8d4a7c8"
   },
   {
     "name": "lang-strength",
     "path": "/:lang/strength",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\strength\\\\index.vue",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\strength\\\\index.vue",
     "chunkName": "pages/_lang/strength/index",
-    "_name": "_691f16c6"
+    "_name": "_681855e2"
   },
   {
     "name": "lang-technology",
     "path": "/:lang/technology",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\technology\\\\index.vue",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\technology\\\\index.vue",
     "chunkName": "pages/_lang/technology/index",
-    "_name": "_25366c4a"
+    "_name": "_130ab1f7"
   },
   {
     "name": "lang-walkin",
     "path": "/:lang/walkin",
-    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\walkin\\\\index.vue",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\index.vue",
     "chunkName": "pages/_lang/walkin/index",
-    "_name": "_66510b79"
+    "_name": "_59876195"
+  },
+  {
+    "name": "lang-strength-tab1",
+    "path": "/:lang/strength/tab1",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab1.vue",
+    "chunkName": "pages/_lang/strength/tab1",
+    "_name": "_378d655c"
+  },
+  {
+    "name": "lang-strength-tab2",
+    "path": "/:lang/strength/tab2",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab2.vue",
+    "chunkName": "pages/_lang/strength/tab2",
+    "_name": "_379b7cdd"
+  },
+  {
+    "name": "lang-strength-tab3",
+    "path": "/:lang/strength/tab3",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab3.vue",
+    "chunkName": "pages/_lang/strength/tab3",
+    "_name": "_37a9945e"
+  },
+  {
+    "name": "lang-strength-tab4",
+    "path": "/:lang/strength/tab4",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab4.vue",
+    "chunkName": "pages/_lang/strength/tab4",
+    "_name": "_37b7abdf"
+  },
+  {
+    "name": "lang-strength-tab5",
+    "path": "/:lang/strength/tab5",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\strength\\\\tab5.vue",
+    "chunkName": "pages/_lang/strength/tab5",
+    "_name": "_37c5c360"
+  },
+  {
+    "name": "lang-walkin-tab1",
+    "path": "/:lang/walkin/tab1",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\tab1.vue",
+    "chunkName": "pages/_lang/walkin/tab1",
+    "_name": "_15f6d16e"
+  },
+  {
+    "name": "lang-walkin-tab2",
+    "path": "/:lang/walkin/tab2",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\tab2.vue",
+    "chunkName": "pages/_lang/walkin/tab2",
+    "_name": "_15daa26c"
+  },
+  {
+    "name": "lang-walkin-tab3",
+    "path": "/:lang/walkin/tab3",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\tab3.vue",
+    "chunkName": "pages/_lang/walkin/tab3",
+    "_name": "_15be736a"
   }
 ]
