@@ -13,7 +13,8 @@
         </div>
       </div>
       <div class="sec2">
-         <img src="~assets/image/img2-8.png" alt="" class="pic">
+        <div class="container">
+               <img src="~assets/image/img2-8.png" alt="" class="pic">
          <div class="content1">
              <h2 class="title">蒙发利健康科技有限公司</h2>
              <p class="line"></p>
@@ -24,6 +25,8 @@
              <p class="con">多项国家及地方新风行业标准制定，出口全球60+国家，为越来</p>
              <p class="con">越多的家庭和企业提供健康和高品质生活。</p>
          </div>
+        </div>
+         
       </div>
       <div class="sec3">
           <div class="container">
@@ -144,22 +147,32 @@ export default {
 }
 .sec2{
     background: #2C2C2C;
-    padding: 0 360px;
-    width: 100%;
+  
     height: 530px;
     display: flex;
     justify-content: center;
-    .pic{
+    .container{
+       display: flex;
+    justify-content: center;
+       width: 1200px;
+        .pic{
         width: 630px;
         height: 480px;
         position: relative;
-        top: 108px;
+        top: 97px;
         margin-right: 67px;
     }
     .content1{
         margin-top: 170px;
         display: flex;
         flex-direction: column;
+    }
+    }
+    .pic{
+      width: 570px;
+      height: 500px;
+       position: relative;
+        top: 97px;
     }
 }
 .sec3{

@@ -13,7 +13,8 @@
         </div>
       </div>
        <div class="sec2">
-         <img src="~assets/image/img2-4.png" alt="" class="pic">
+         <div class="container">
+              <img src="~assets/image/img2-4.png" alt="" class="pic">
          <div class="content1">
              <h2 class="title">生产基地</h2>
              <p class="line"></p>
@@ -24,6 +25,8 @@
              <p class="con">500强等国外企业采购。</p>
        
          </div>
+         </div>
+        
       </div>
       <div class="sec3">
           <div class="container">
@@ -143,12 +146,16 @@ export default {
 }
 .sec2{
     background: #2C2C2C;
-    padding: 0 360px;
-    width: 100%;
+    
+   
     height: 530px;
     display: flex;
     justify-content: center;
-    .pic{
+    .container{
+       width: 1200px;
+        display: flex;
+    justify-content: center;
+        .pic{
         width: 630px;
         height: 460px;
         position: relative;
@@ -160,6 +167,8 @@ export default {
         display: flex;
         flex-direction: column;
     }
+    }
+    
 }
 .sec3{
     padding-bottom: 180px;

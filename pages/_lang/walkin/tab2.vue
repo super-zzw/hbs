@@ -280,7 +280,7 @@ margin-top: 60px;
       margin-top: 60px;
       display: flex;
       .left{
-          margin-right: 300px;
+          margin-right: 220px;
            display: flex;
            flex-direction: column;
            align-items: flex-end;

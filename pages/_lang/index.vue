@@ -9,7 +9,8 @@
     </el-carousel>
 
      <div class="section1">
-       <h2 class="title">品牌资讯</h2>
+       <div class="container">
+          <h2 class="title">品牌资讯</h2>
        <span class="desc">成为新风行业的标杆是我们一直的坚持</span>
        <div class="article">
           <img src="~assets/image/img1-1.png" alt="" class="pic">
@@ -40,6 +41,8 @@
           <img src="~assets/image/img1-2.png" alt="" class="pic">
          
        </div>
+       </div>
+       
      </div>
 
      <div class="section2">
@@ -101,11 +104,16 @@ export default {
 }
 .section1{
   background: #F2F2F2;
-  padding: 100px 360px 150px;
+  padding: 100px 0 150px;
+  
   display: flex;
+  justify-content: center;
+  .container{
+    display: flex;
   flex-direction: column;
   align-items: center;
-  .article{
+    width: 1200px;
+     .article{
   margin-top: 60px;
   display: flex;
   background: #fff;
@@ -160,6 +168,8 @@ align-items: center;
 
        }
   }
+  }
+  
   
 }
 
