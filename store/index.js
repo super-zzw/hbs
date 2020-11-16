@@ -1,6 +1,7 @@
 export const state = () => ({
   locales: ['en', 'zh'],
-  locale: 'en'
+  locale: 'en',
+  nav:1
 })
 
 export const mutations = {
@@ -8,5 +9,8 @@ export const mutations = {
     if (state.locales.includes(locale)) {
       state.locale = locale
     }
+  },
+  setNav(state,val){
+ state.nav=val
   }
 }

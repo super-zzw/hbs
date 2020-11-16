@@ -48,29 +48,16 @@
               ref="mySwiper"
               style="width:1050px;height:500px;padding-top:100px"
             >
-              <!-- 添加的图片 -->
-              <swiper-slide>
-                <img src="~assets/image/img3.5-9.png" alt />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="~assets/image/img3.5-9.png" alt />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="~assets/image/img3.5-9.png" alt />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="~assets/image/img3.5-9.png" alt />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="~assets/image/img3.5-9.png" alt />
-              </swiper-slide>
-
-              <!-- <div class="swiper-button-prev" slot="button-prev"></div>
-              <div class="swiper-button-next" slot="button-next"></div>-->
+            
+                <swiper-slide v-for="(item,i) in swiperImgs" :key="i">
+                <img :src="item" alt />
+                </swiper-slide>
+            
             </swiper>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
+          <p class="swiperTxt">企业生产管理符合国家质量管理体系标准</p>
         </div>
       </div>
     </div>
@@ -84,7 +71,13 @@ export default {
   data() {
     return {
       activeName: "1",
-
+      swiperImgs:[
+        require('~/assets/image/img3.5-9.png'),
+        require("~/assets/image/img3.5-9.png"),
+        require("~/assets/image/img3.5-9.png"),
+        require("~/assets/image/img3.5-9.png"),
+        require("~/assets/image/img3.5-9.png")
+      ],
       swiperOption: {
         //可见图片张数
         // spaceBetween: 100,
@@ -174,6 +167,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 100px;
   .section {
     margin-top: 70px;
     display: flex;
@@ -216,6 +210,14 @@ export default {
     }
   }
 }
+.swiperTxt{
+  
+font-size: 18px;
+font-family: SourceHanSansCN;
+font-weight: 400;
+color: #505050;
+line-height: 34px;
+}
 .swiper-father {
   position: relative;
   padding: 0 100px;
@@ -252,6 +254,8 @@ export default {
   transform: scale(1.2);
   z-index: 98;
 }
-
+/deep/ .el-tabs__item{
+  font-size: 18px;
+}
 
 </style>

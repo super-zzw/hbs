@@ -3,34 +3,36 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _5567706b = () => interopDefault(import('..\\pages\\product\\index.vue' /* webpackChunkName: "pages/product/index" */))
-const _76d1bee5 = () => interopDefault(import('..\\pages\\service\\index.vue' /* webpackChunkName: "pages/service/index" */))
-const _0742c78e = () => interopDefault(import('..\\pages\\strength\\index.vue' /* webpackChunkName: "pages/strength/index" */))
-const _a24e82e4 = () => interopDefault(import('..\\pages\\technology\\index.vue' /* webpackChunkName: "pages/technology/index" */))
-const _268951ac = () => interopDefault(import('..\\pages\\walkin\\index.vue' /* webpackChunkName: "pages/walkin/index" */))
-const _0ac97825 = () => interopDefault(import('..\\pages\\strength\\tab1.vue' /* webpackChunkName: "pages/strength/tab1" */))
-const _0ad78fa6 = () => interopDefault(import('..\\pages\\strength\\tab2.vue' /* webpackChunkName: "pages/strength/tab2" */))
-const _0ae5a727 = () => interopDefault(import('..\\pages\\strength\\tab3.vue' /* webpackChunkName: "pages/strength/tab3" */))
-const _0af3bea8 = () => interopDefault(import('..\\pages\\strength\\tab4.vue' /* webpackChunkName: "pages/strength/tab4" */))
-const _0b01d629 = () => interopDefault(import('..\\pages\\strength\\tab5.vue' /* webpackChunkName: "pages/strength/tab5" */))
-const _ceee6f5c = () => interopDefault(import('..\\pages\\walkin\\tab1.vue' /* webpackChunkName: "pages/walkin/tab1" */))
-const _ced2405a = () => interopDefault(import('..\\pages\\walkin\\tab2.vue' /* webpackChunkName: "pages/walkin/tab2" */))
-const _ceb61158 = () => interopDefault(import('..\\pages\\walkin\\tab3.vue' /* webpackChunkName: "pages/walkin/tab3" */))
-const _e79cf2cc = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
-const _c2812066 = () => interopDefault(import('..\\pages\\_lang\\index.vue' /* webpackChunkName: "pages/_lang/index" */))
-const _54113098 = () => interopDefault(import('..\\pages\\_lang\\product\\index.vue' /* webpackChunkName: "pages/_lang/product/index" */))
-const _757b7f12 = () => interopDefault(import('..\\pages\\_lang\\service\\index.vue' /* webpackChunkName: "pages/_lang/service/index" */))
-const _5a263ca8 = () => interopDefault(import('..\\pages\\_lang\\strength\\index.vue' /* webpackChunkName: "pages/_lang/strength/index" */))
-const _1aeb7341 = () => interopDefault(import('..\\pages\\_lang\\technology\\index.vue' /* webpackChunkName: "pages/_lang/technology/index" */))
-const _2ec057df = () => interopDefault(import('..\\pages\\_lang\\walkin\\index.vue' /* webpackChunkName: "pages/_lang/walkin/index" */))
-const _09733852 = () => interopDefault(import('..\\pages\\_lang\\strength\\tab1.vue' /* webpackChunkName: "pages/_lang/strength/tab1" */))
-const _09814fd3 = () => interopDefault(import('..\\pages\\_lang\\strength\\tab2.vue' /* webpackChunkName: "pages/_lang/strength/tab2" */))
-const _098f6754 = () => interopDefault(import('..\\pages\\_lang\\strength\\tab3.vue' /* webpackChunkName: "pages/_lang/strength/tab3" */))
-const _099d7ed5 = () => interopDefault(import('..\\pages\\_lang\\strength\\tab4.vue' /* webpackChunkName: "pages/_lang/strength/tab4" */))
-const _09ab9656 = () => interopDefault(import('..\\pages\\_lang\\strength\\tab5.vue' /* webpackChunkName: "pages/_lang/strength/tab5" */))
-const _bde2a082 = () => interopDefault(import('..\\pages\\_lang\\walkin\\tab1.vue' /* webpackChunkName: "pages/_lang/walkin/tab1" */))
-const _bdc67180 = () => interopDefault(import('..\\pages\\_lang\\walkin\\tab2.vue' /* webpackChunkName: "pages/_lang/walkin/tab2" */))
-const _bdaa427e = () => interopDefault(import('..\\pages\\_lang\\walkin\\tab3.vue' /* webpackChunkName: "pages/_lang/walkin/tab3" */))
+const _84650abe = () => interopDefault(import('..\\pages\\product\\index.vue' /* webpackChunkName: "pages/product/index" */))
+const _41906dca = () => interopDefault(import('..\\pages\\service\\index.vue' /* webpackChunkName: "pages/service/index" */))
+const _be8c4e7a = () => interopDefault(import('..\\pages\\strength\\index.vue' /* webpackChunkName: "pages/strength/index" */))
+const _ad51fed0 = () => interopDefault(import('..\\pages\\technology\\index.vue' /* webpackChunkName: "pages/technology/index" */))
+const _f683ae94 = () => interopDefault(import('..\\pages\\walkin\\index.vue' /* webpackChunkName: "pages/walkin/index" */))
+const _3a512cbd = () => interopDefault(import('..\\pages\\product\\tab1.vue' /* webpackChunkName: "pages/product/tab1" */))
+const _732f825b = () => interopDefault(import('..\\pages\\strength\\tab1.vue' /* webpackChunkName: "pages/strength/tab1" */))
+const _733d99dc = () => interopDefault(import('..\\pages\\strength\\tab2.vue' /* webpackChunkName: "pages/strength/tab2" */))
+const _734bb15d = () => interopDefault(import('..\\pages\\strength\\tab3.vue' /* webpackChunkName: "pages/strength/tab3" */))
+const _7359c8de = () => interopDefault(import('..\\pages\\strength\\tab4.vue' /* webpackChunkName: "pages/strength/tab4" */))
+const _7367e05f = () => interopDefault(import('..\\pages\\strength\\tab5.vue' /* webpackChunkName: "pages/strength/tab5" */))
+const _3037e808 = () => interopDefault(import('..\\pages\\walkin\\tab1.vue' /* webpackChunkName: "pages/walkin/tab1" */))
+const _3045ff89 = () => interopDefault(import('..\\pages\\walkin\\tab2.vue' /* webpackChunkName: "pages/walkin/tab2" */))
+const _3054170a = () => interopDefault(import('..\\pages\\walkin\\tab3.vue' /* webpackChunkName: "pages/walkin/tab3" */))
+const _4ccb07a4 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _366e8f83 = () => interopDefault(import('..\\pages\\_lang\\index.vue' /* webpackChunkName: "pages/_lang/index" */))
+const _fba944bc = () => interopDefault(import('..\\pages\\_lang\\product\\index.vue' /* webpackChunkName: "pages/_lang/product/index" */))
+const _b8d4a7c8 = () => interopDefault(import('..\\pages\\_lang\\service\\index.vue' /* webpackChunkName: "pages/_lang/service/index" */))
+const _681855e2 = () => interopDefault(import('..\\pages\\_lang\\strength\\index.vue' /* webpackChunkName: "pages/_lang/strength/index" */))
+const _130ab1f7 = () => interopDefault(import('..\\pages\\_lang\\technology\\index.vue' /* webpackChunkName: "pages/_lang/technology/index" */))
+const _59876195 = () => interopDefault(import('..\\pages\\_lang\\walkin\\index.vue' /* webpackChunkName: "pages/_lang/walkin/index" */))
+const _0f1a659c = () => interopDefault(import('..\\pages\\_lang\\product\\tab1.vue' /* webpackChunkName: "pages/_lang/product/tab1" */))
+const _378d655c = () => interopDefault(import('..\\pages\\_lang\\strength\\tab1.vue' /* webpackChunkName: "pages/_lang/strength/tab1" */))
+const _379b7cdd = () => interopDefault(import('..\\pages\\_lang\\strength\\tab2.vue' /* webpackChunkName: "pages/_lang/strength/tab2" */))
+const _37a9945e = () => interopDefault(import('..\\pages\\_lang\\strength\\tab3.vue' /* webpackChunkName: "pages/_lang/strength/tab3" */))
+const _37b7abdf = () => interopDefault(import('..\\pages\\_lang\\strength\\tab4.vue' /* webpackChunkName: "pages/_lang/strength/tab4" */))
+const _37c5c360 = () => interopDefault(import('..\\pages\\_lang\\strength\\tab5.vue' /* webpackChunkName: "pages/_lang/strength/tab5" */))
+const _15f6d16e = () => interopDefault(import('..\\pages\\_lang\\walkin\\tab1.vue' /* webpackChunkName: "pages/_lang/walkin/tab1" */))
+const _15daa26c = () => interopDefault(import('..\\pages\\_lang\\walkin\\tab2.vue' /* webpackChunkName: "pages/_lang/walkin/tab2" */))
+const _15be736a = () => interopDefault(import('..\\pages\\_lang\\walkin\\tab3.vue' /* webpackChunkName: "pages/_lang/walkin/tab3" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -50,115 +52,123 @@ export const routerOptions = {
 
   routes: [{
     path: "/product",
-    component: _5567706b,
+    component: _84650abe,
     name: "product"
   }, {
     path: "/service",
-    component: _76d1bee5,
+    component: _41906dca,
     name: "service"
   }, {
     path: "/strength",
-    component: _0742c78e,
+    component: _be8c4e7a,
     name: "strength"
   }, {
     path: "/technology",
-    component: _a24e82e4,
+    component: _ad51fed0,
     name: "technology"
   }, {
     path: "/walkin",
-    component: _268951ac,
+    component: _f683ae94,
     name: "walkin"
   }, {
+    path: "/product/tab1",
+    component: _3a512cbd,
+    name: "product-tab1"
+  }, {
     path: "/strength/tab1",
-    component: _0ac97825,
+    component: _732f825b,
     name: "strength-tab1"
   }, {
     path: "/strength/tab2",
-    component: _0ad78fa6,
+    component: _733d99dc,
     name: "strength-tab2"
   }, {
     path: "/strength/tab3",
-    component: _0ae5a727,
+    component: _734bb15d,
     name: "strength-tab3"
   }, {
     path: "/strength/tab4",
-    component: _0af3bea8,
+    component: _7359c8de,
     name: "strength-tab4"
   }, {
     path: "/strength/tab5",
-    component: _0b01d629,
+    component: _7367e05f,
     name: "strength-tab5"
   }, {
     path: "/walkin/tab1",
-    component: _ceee6f5c,
+    component: _3037e808,
     name: "walkin-tab1"
   }, {
     path: "/walkin/tab2",
-    component: _ced2405a,
+    component: _3045ff89,
     name: "walkin-tab2"
   }, {
     path: "/walkin/tab3",
-    component: _ceb61158,
+    component: _3054170a,
     name: "walkin-tab3"
   }, {
     path: "/",
-    component: _e79cf2cc,
+    component: _4ccb07a4,
     name: "index"
   }, {
     path: "/:lang",
-    component: _c2812066,
+    component: _366e8f83,
     name: "lang"
   }, {
     path: "/:lang/product",
-    component: _54113098,
+    component: _fba944bc,
     name: "lang-product"
   }, {
     path: "/:lang/service",
-    component: _757b7f12,
+    component: _b8d4a7c8,
     name: "lang-service"
   }, {
     path: "/:lang/strength",
-    component: _5a263ca8,
+    component: _681855e2,
     name: "lang-strength"
   }, {
     path: "/:lang/technology",
-    component: _1aeb7341,
+    component: _130ab1f7,
     name: "lang-technology"
   }, {
     path: "/:lang/walkin",
-    component: _2ec057df,
+    component: _59876195,
     name: "lang-walkin"
   }, {
+    path: "/:lang/product/tab1",
+    component: _0f1a659c,
+    name: "lang-product-tab1"
+  }, {
     path: "/:lang/strength/tab1",
-    component: _09733852,
+    component: _378d655c,
     name: "lang-strength-tab1"
   }, {
     path: "/:lang/strength/tab2",
-    component: _09814fd3,
+    component: _379b7cdd,
     name: "lang-strength-tab2"
   }, {
     path: "/:lang/strength/tab3",
-    component: _098f6754,
+    component: _37a9945e,
     name: "lang-strength-tab3"
   }, {
     path: "/:lang/strength/tab4",
-    component: _099d7ed5,
+    component: _37b7abdf,
     name: "lang-strength-tab4"
   }, {
     path: "/:lang/strength/tab5",
-    component: _09ab9656,
+    component: _37c5c360,
     name: "lang-strength-tab5"
   }, {
     path: "/:lang/walkin/tab1",
-    component: _bde2a082,
+    component: _15f6d16e,
     name: "lang-walkin-tab1"
   }, {
     path: "/:lang/walkin/tab2",
-    component: _bdc67180,
+    component: _15daa26c,
     name: "lang-walkin-tab2"
   }, {
     path: "/:lang/walkin/tab3",
-    component: _bdaa427e,
+    component: _15be736a,
     name: "lang-walkin-tab3"
   }],
 

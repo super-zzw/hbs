@@ -26,6 +26,7 @@ export default {
     }
   },
   plugins: [
+    '@/plugins/route',
     '@/plugins/element-ui',
     '@/plugins/filters',
     '@/plugins/methods',

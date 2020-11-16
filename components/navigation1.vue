@@ -1,8 +1,9 @@
 <template>
     <div class="header">
         <div class="container">
+          
                  <h1 class="Header__Logo">
-              <img src="~assets/image/logo.png" alt="">
+              <img src="~assets/image/logo1.png" alt="">
             </h1>
            <div class="nav">
                 <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" :router="true">
@@ -43,9 +44,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .header{
-      position: absolute;
-      left: 0;
-      top: 0;
+     
       width: 100%;
     z-index: 999;
 }
@@ -74,7 +73,7 @@ export default {
 font-size: 16px;
 font-family: Noto Sans S Chinese;
 font-weight: 400;
-color: #FFFFFF;
+color: #505050;
 
 text-decoration: none;
 position: relative;
@@ -103,7 +102,7 @@ top: 4px;
     border: none;
 }
 .el-menu--horizontal > .el-menu-item.is-active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #505050;
   font-weight: bold;
 }
 .el-menu-item{
@@ -115,12 +114,12 @@ top: 4px;
 font-size: 16px;
 font-family: Noto Sans S Chinese;
 font-weight: 400;
-color: #FFFFFF;
+color:#505050;
 line-height: 68px;
 
 }
 .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover {
-  color: #ffffff !important;
+  color:#505050 !important;
   
   background-color: transparent;
 }
