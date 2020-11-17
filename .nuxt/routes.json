@@ -1,24 +1,10 @@
 [
   {
-    "name": "product",
-    "path": "/product",
-    "component": "E:\\\\pc\\\\pages\\\\product\\\\index.vue",
-    "chunkName": "pages/product/index",
-    "_name": "_84650abe"
-  },
-  {
     "name": "service",
     "path": "/service",
     "component": "E:\\\\pc\\\\pages\\\\service\\\\index.vue",
     "chunkName": "pages/service/index",
     "_name": "_41906dca"
-  },
-  {
-    "name": "strength",
-    "path": "/strength",
-    "component": "E:\\\\pc\\\\pages\\\\strength\\\\index.vue",
-    "chunkName": "pages/strength/index",
-    "_name": "_be8c4e7a"
   },
   {
     "name": "technology",
@@ -28,18 +14,25 @@
     "_name": "_ad51fed0"
   },
   {
-    "name": "walkin",
-    "path": "/walkin",
-    "component": "E:\\\\pc\\\\pages\\\\walkin\\\\index.vue",
-    "chunkName": "pages/walkin/index",
-    "_name": "_f683ae94"
-  },
-  {
     "name": "product-tab1",
     "path": "/product/tab1",
     "component": "E:\\\\pc\\\\pages\\\\product\\\\tab1.vue",
     "chunkName": "pages/product/tab1",
     "_name": "_3a512cbd"
+  },
+  {
+    "name": "product-tab2",
+    "path": "/product/tab2",
+    "component": "E:\\\\pc\\\\pages\\\\product\\\\tab2.vue",
+    "chunkName": "pages/product/tab2",
+    "_name": "_3a5f443e"
+  },
+  {
+    "name": "product-tab3",
+    "path": "/product/tab3",
+    "component": "E:\\\\pc\\\\pages\\\\product\\\\tab3.vue",
+    "chunkName": "pages/product/tab3",
+    "_name": "_3a6d5bbf"
   },
   {
     "name": "strength-tab1",
@@ -98,6 +91,13 @@
     "_name": "_3054170a"
   },
   {
+    "name": "service-id",
+    "path": "/service/:id",
+    "component": "E:\\\\pc\\\\pages\\\\service\\\\_id.vue",
+    "chunkName": "pages/service/_id",
+    "_name": "_9669537a"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "E:\\\\pc\\\\pages\\\\index.vue",
@@ -112,25 +112,11 @@
     "_name": "_366e8f83"
   },
   {
-    "name": "lang-product",
-    "path": "/:lang/product",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\product\\\\index.vue",
-    "chunkName": "pages/_lang/product/index",
-    "_name": "_fba944bc"
-  },
-  {
     "name": "lang-service",
     "path": "/:lang/service",
     "component": "E:\\\\pc\\\\pages\\\\_lang\\\\service\\\\index.vue",
     "chunkName": "pages/_lang/service/index",
     "_name": "_b8d4a7c8"
-  },
-  {
-    "name": "lang-strength",
-    "path": "/:lang/strength",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\strength\\\\index.vue",
-    "chunkName": "pages/_lang/strength/index",
-    "_name": "_681855e2"
   },
   {
     "name": "lang-technology",
@@ -140,18 +126,25 @@
     "_name": "_130ab1f7"
   },
   {
-    "name": "lang-walkin",
-    "path": "/:lang/walkin",
-    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\index.vue",
-    "chunkName": "pages/_lang/walkin/index",
-    "_name": "_59876195"
-  },
-  {
     "name": "lang-product-tab1",
     "path": "/:lang/product/tab1",
     "component": "E:\\\\pc\\\\pages\\\\_lang\\\\product\\\\tab1.vue",
     "chunkName": "pages/_lang/product/tab1",
     "_name": "_0f1a659c"
+  },
+  {
+    "name": "lang-product-tab2",
+    "path": "/:lang/product/tab2",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\product\\\\tab2.vue",
+    "chunkName": "pages/_lang/product/tab2",
+    "_name": "_0f287d1d"
+  },
+  {
+    "name": "lang-product-tab3",
+    "path": "/:lang/product/tab3",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\product\\\\tab3.vue",
+    "chunkName": "pages/_lang/product/tab3",
+    "_name": "_0f36949e"
   },
   {
     "name": "lang-strength-tab1",
@@ -208,5 +201,12 @@
     "component": "E:\\\\pc\\\\pages\\\\_lang\\\\walkin\\\\tab3.vue",
     "chunkName": "pages/_lang/walkin/tab3",
     "_name": "_15be736a"
+  },
+  {
+    "name": "lang-service-id",
+    "path": "/:lang/service/:id",
+    "component": "E:\\\\pc\\\\pages\\\\_lang\\\\service\\\\_id.vue",
+    "chunkName": "pages/_lang/service/_id",
+    "_name": "_79980584"
   }
 ]

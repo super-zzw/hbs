@@ -1,21 +1,21 @@
 <template>
   <div class="page">
     <div class="container">
-    <div class="sec0">
+    <div class="sec0 wow fadeInUp">
           <h2 class="title">专注杀毒新风20年</h2>
          <p class="line"></p>
          <p class="con">呼博士杀毒新风机以务实工匠精神研发产品，以杀毒科技为品质根本，以创新为科技支撑，</p>
          <p class="con">呼博士专注杀毒新风20年，致力给用户提供每时每刻的健康呼吸体验。</p>
     </div>
      <!-- <img src="~assets/image/banner2-1.png" alt="" class="banner"> -->
-     <div class="sec1">
+     <div class="sec1 wow fadeInUp">
          <h2 class="title">以工匠态度坚守品牌初心</h2>
          <p class="line"></p>
          <p class="con">我们始终相信，只有用精益求精的工匠态度，</p>
          <p class="con">赋予产品人的信念与情怀，才能缔造出具有深厚底蕴和文化内涵的品牌。</p>
          <p class="con">尽社会责任，创中国名品，铸百年品牌，我们初心不变。</p>
      </div>
-     <div class="sec2">
+     <div class="sec2 wow fadeInUp">
           <h2 class="title">立足中国之根&emsp;面向海外市场</h2>
           <h2 class="title">品牌覆盖各行各业</h2>
            <p class="line"></p>
@@ -23,7 +23,7 @@
          <p class="con">我们设立4大研发中心，把握创新型杀毒技术，并把它运用到每一款产品的生产中。</p>
          <p class="con">在外国设立多个销售据点，品牌足迹遍布海内外，为全球家庭和企业提供服务。</p>
      </div>
-     <div class="sec3">
+     <div class="sec3 wow fadeInUp">
          <div class="content">
              <h2 class="title">我们终将</h2>
              <h2 class="title">定义新风行业的标准</h2>

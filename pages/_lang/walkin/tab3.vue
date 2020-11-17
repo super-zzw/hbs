@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="container">
-       <div class="sec1">
+       <div class="sec1 wow fadeInUp">
         <div class="content1">
           <div class="Box">
             <p class="line1"></p>
@@ -12,7 +12,7 @@
           <p class="t3">打造全方位健康呼吸空间</p>
         </div>
       </div>
-      <div class="sec2">
+      <div class="sec2 wow fadeInUp">
         <div class="container">
                <img src="~assets/image/img2-8.png" alt="" class="pic">
          <div class="content1">
@@ -28,7 +28,7 @@
         </div>
          
       </div>
-      <div class="sec3">
+      <div class="sec3 wow fadeInUp">
           <div class="container">
                 <h2 class="title">合作品牌</h2>
                 <p class="line"></p>
@@ -37,7 +37,7 @@
           </div>
          
       </div>
-        <div class="sec2">
+        <div class="sec2 wow fadeInUp">
         
          <div class="content1 content2">
              <h2 class="title">呼博士携手钟南山广州呼研所 </h2>
@@ -55,7 +55,7 @@
           <img src="~assets/image/img2-10.png" alt="" class="pic">
       </div>
     </div>
-      <div class="sec4">
+      <div class="sec4 wow fadeInUp">
           <div class="container">
               <div class="picBox">
                <img src="~assets/image/img2-11.png" alt="" class="pic">

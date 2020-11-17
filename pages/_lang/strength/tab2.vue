@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="container">
-       <div class="sec1">
+       <div class="sec1 wow fadeInUp">
         <div class="content1">
           <div class="Box">
             <p class="line1"></p>
@@ -12,7 +12,7 @@
           <p class="t3">制作标准化、高品质的新风产品。</p>
         </div>
       </div>
-       <div class="sec2">
+       <div class="sec2 wow fadeInUp">
          <div class="container">
               <img src="~assets/image/img2-4.png" alt="" class="pic">
          <div class="content1">
@@ -28,7 +28,7 @@
          </div>
         
       </div>
-      <div class="sec3">
+      <div class="sec3 wow fadeInUp">
           <div class="container">
               <div class="contentBox">
                   <div class="left">

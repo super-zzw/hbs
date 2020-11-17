@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="container">
-        <div class="sec1">
+        <div class="sec1 wow fadeInUp">
         <div class="content1">
           <div class="Box">
             <p class="line1"></p>
@@ -12,7 +12,7 @@
         
         </div>
       </div>
-      <div class="sec2">
+      <div class="sec2 wow fadeInUp">
           
          <div class="container">
            <div class="dateBox">

@@ -5,12 +5,36 @@
               <img src="~assets/image/logo.png" alt="">
             </h1>
            <div class="nav">
-                <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" :router="true">
+                <el-menu :default-active="path" class="el-menu-demo" mode="horizontal" @select="handleSelect" :router="true">
   <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item>
-  <el-menu-item index="/walkin" :route="$i18n.path('walkin')">{{$t('walkin')}}</el-menu-item>
-  <el-menu-item index="/strength" :route="$i18n.path('strength')">{{$t('strength')}}</el-menu-item>
-  <el-menu-item index="/product" :route="$i18n.path('product')">{{$t('product')}}</el-menu-item>
-  <el-menu-item index="/technology" :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item>
+  <el-submenu index="/walkin">
+    <template slot="title">{{$t('walkin')}}</template>
+    <el-menu-item index="/walkin/tab1">品牌文化</el-menu-item>
+    <el-menu-item index="/walkin/tab2">招商计划</el-menu-item>
+    <el-menu-item index="/walkin/tab3">公司介绍</el-menu-item>
+  
+  </el-submenu>
+  <el-submenu index="/strength">
+    <template slot="title">{{$t('strength')}}</template>
+    <el-menu-item index="/strength/tab1">软实力</el-menu-item>
+    <!-- <el-menu-item index="2-2">硬实力</el-menu-item> -->
+     <el-submenu index="2-2">
+      <template slot="title">硬实力</template>
+      <el-menu-item index="/strength/tab2">工厂实力</el-menu-item>
+      <el-menu-item index="/strength/tab3">实验室</el-menu-item>
+      <el-menu-item index="/strength/tab4">四大研发</el-menu-item>
+    </el-submenu>
+    <el-menu-item index="/strength/tab5">企业实力</el-menu-item>
+    
+  </el-submenu>
+   <el-submenu index="/product">
+    <template slot="title">{{$t('product')}}</template>
+    <el-menu-item index="/product/tab1">壁挂机</el-menu-item>
+    <el-menu-item index="/product/tab2">吊顶机</el-menu-item>
+    <el-menu-item index="/product/tab3">立柜机</el-menu-item>
+  
+  </el-submenu>
+   <el-menu-item index="/technology" >{{$t('technology')}}</el-menu-item>
   <el-menu-item index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
 </el-menu>
             
@@ -28,11 +52,23 @@
     </div>
 </template>
 <script>
+import {mapState} from 'vuex'
 export default {
     data(){
         return{
-            activeIndex: "/",
+            // activeIndex: "/",
         }
+    },
+    watch:{
+        activeIndex(val){
+            console.log(val)
+        }
+    },
+    computed:{
+        ...mapState(['path'])
+    },
+    created(){
+        // console.log(this.$route.path)
     },
     methods: {
          handleSelect(key, keyPath) {
@@ -68,6 +104,7 @@ export default {
   }
   .nav{
       display: flex;
+     
       align-items: center;
       .Header__Link{
           
@@ -78,21 +115,21 @@ color: #FFFFFF;
 
 text-decoration: none;
 position: relative;
-top: 3px;
+top: -2px;
 margin-right: 30px;
       }
       .line{
           width: 2px;
           height: 18px;
           position: relative;
-top: 4px;
+top: -2px;
 margin-right: 25px;
       }
       .search{
           width: 28px;
           height: 28px;
                    position: relative;
-top: 4px;
+top: -2px;
       }
   }
 }
@@ -102,6 +139,9 @@ top: 4px;
 .el-menu.el-menu--horizontal{
     border: none;
 }
+/deep/ .nav .el-submenu__title i{
+    color: #fff;
+}
 .el-menu--horizontal > .el-menu-item.is-active {
   border-bottom: 2px solid #fff;
   font-weight: bold;
@@ -109,6 +149,9 @@ top: 4px;
 .el-menu-item{
     padding:0;
     margin-right: 32px;
+    height: auto;
+    
+
 }
 .el-menu--horizontal>.el-menu-item{
   
@@ -124,4 +167,66 @@ line-height: 68px;
   
   background-color: transparent;
 }
+/deep/ .el-menu--horizontal>.el-submenu .el-submenu__title {
+   font-size: 16px;
+font-family: Noto Sans S Chinese;
+font-weight: 400;
+color: #FFFFFF;
+line-height: 68px;
+}
+/deep/ .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
+    background: transparent;
+}
+
+ .el-menu--horizontal .el-menu .el-menu-item{
+    
+font-size: 16px;
+font-family: NotoSansHans-Regular, NotoSansHans;
+font-weight: 400;
+color: #909090;
+line-height: 60px;
+height: auto;
+margin: 0 20px;
+ border-bottom: 1px solid #DEDEDE;
+}
+.el-menu--horizontal .el-menu .el-menu-item:last-child{
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+//  .el-menu--horizontal .el-menu .el-menu-item:last-child:hover{
+   
+//     border-bottom: none;
+//  }
+ .el-menu--horizontal .el-menu .el-menu-item:hover{
+     border-bottom: 1px solid #505050;
+     
+color: #505050;
+font-weight: 600;
+ }
+.el-menu--horizontal .el-menu .el-submenu {
+    font-size: 16px;
+font-family: NotoSansHans-Regular, NotoSansHans;
+font-weight: 400;
+color: #909090;
+// line-height: 60px;
+height: auto;
+margin: 0 20px;
+padding:10px 0;
+border-bottom: 1px solid #DEDEDE;
+}
+.el-menu--horizontal .el-menu .el-submenu:hover{
+     border-bottom: 1px solid #505050;
+     
+color: #505050;
+font-weight: 600;
+}
+/deep/ .el-menu--horizontal .el-menu .el-submenu__title{
+//   line-height: 60px;
+  height: auto;
+}
+
+/deep/ .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
+    border-bottom-color: #fff;
+}
+
 </style>

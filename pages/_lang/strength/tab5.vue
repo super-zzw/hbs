@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="container">
-      <div class="sec1">
+      <div class="sec1 wow fadeInUp">
         <div class="content1">
           <div class="Box">
             <p class="line1"></p>
@@ -12,7 +12,7 @@
         </div>
       </div>
 
-      <div class="sec2">
+      <div class="sec2 wow fadeInUp">
         <div class="section">
           <h2 class="title">研发实力 信心保证</h2>
           <p class="line"></p>
@@ -28,7 +28,7 @@
             <img src="~assets/image/img3.5-8.png" alt />
           </div>
         </div>
-        <div class="section">
+        <div class="section wow fadeInUp">
           <h2 class="title">笃行致远 臻于至善</h2>
           <p class="line"></p>
           <!-- <div class="tabsBox">
@@ -50,7 +50,7 @@
             >
             
                 <swiper-slide v-for="(item,i) in swiperImgs" :key="i">
-                <img :src="item" alt />
+                     <img :src="item" alt />
                 </swiper-slide>
             
             </swiper>

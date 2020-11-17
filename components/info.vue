@@ -1,31 +1,42 @@
 <template>
     <div class="header">
         <div class="container">
-            <nav class="Header__Menu">
-                <NuxtLink :to="$i18n.path('walkin')" class="Header__Link" exact>
-                    {{ $t('walkin') }}
-                </NuxtLink>
-                <NuxtLink :to="$i18n.path('strength')" class="Header__Link" exact>
-                    {{ $t('strength') }}
-                </NuxtLink>
-                 <NuxtLink :to="$i18n.path('product')" class="Header__Link" exact>
-                    {{ $t('product') }}
-                </NuxtLink>
-
-                 <NuxtLink :to="$i18n.path('technology')" class="Header__Link" exact>
-                    {{ $t('technology') }}
-                </NuxtLink>
-                 <NuxtLink :to="$i18n.path('service')" class="Header__Link" exact>
-                    {{ $t('service') }}
-                </NuxtLink>
-                
-                <NuxtLink v-if="$i18n.locale === 'zh'" :to="`/en` + $route.fullPath" class="Header__Link" active-class="none" exact>
-                    {{ $t('en') }}
-                </NuxtLink>
-                <NuxtLink v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" class="Header__Link" active-class="none" exact>
-                    {{ $t('zh') }}
-                </NuxtLink>
-            </nav>
+           
+               <div class="nav">
+                <el-menu :default-active="path" class="el-menu-demo" mode="horizontal"  :router="true">
+  <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item>
+  <el-submenu index="/walkin">
+    <template slot="title">{{$t('walkin')}}</template>
+    <el-menu-item index="/walkin/tab1">品牌文化</el-menu-item>
+    <el-menu-item index="/walkin/tab2">招商计划</el-menu-item>
+    <el-menu-item index="/walkin/tab3">公司介绍</el-menu-item>
+  
+  </el-submenu>
+  <el-submenu index="/strength">
+    <template slot="title">{{$t('strength')}}</template>
+    <el-menu-item index="/strength/tab1">软实力</el-menu-item>
+    <!-- <el-menu-item index="2-2">硬实力</el-menu-item> -->
+     <el-submenu index="2-2">
+      <template slot="title">硬实力</template>
+      <el-menu-item index="/strength/tab2">工厂实力</el-menu-item>
+      <el-menu-item index="/strength/tab3">实验室</el-menu-item>
+      <el-menu-item index="/strength/tab4">四大研发</el-menu-item>
+    </el-submenu>
+    <el-menu-item index="/strength/tab5">企业实力</el-menu-item>
+    
+  </el-submenu>
+   <el-submenu index="/product">
+    <template slot="title">{{$t('product')}}</template>
+    <el-menu-item index="/product/tab1">壁挂机</el-menu-item>
+    <el-menu-item index="/product/tab2">吊顶机</el-menu-item>
+    <el-menu-item index="/product/tab3">立柜机</el-menu-item>
+  
+  </el-submenu>
+   <el-menu-item index="/technology" >{{$t('technology')}}</el-menu-item>
+  <el-menu-item index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
+</el-menu>
+            
+           </div>
             <div class="imgBox">
                 <div class="input_box">
                     <el-input v-model="input" placeholder="请输入搜索内容"></el-input>
@@ -37,12 +48,16 @@
     </div>
 </template>
 <script>
+import {mapState} from 'vuex'
 export default {
     data(){
         return{
             input:''
         }
-    }
+    },
+    computed:{
+        ...mapState(['path'])
+    },
 }
 </script>
 <style lang="less" scoped>
@@ -61,9 +76,7 @@ width: 100%;
  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  .Header__Menu{
-     padding: 35px 0;
-  }
+ 
 }
 .Header__Link{
     margin-right: 72px;
@@ -127,5 +140,133 @@ width: 485px;
 /deep/ .el-input__inner{
     height: 48px;
     
+}
+.nav{
+      display: flex;
+     
+      align-items: center;
+      .Header__Link{
+          
+font-size: 16px;
+font-family: Noto Sans S Chinese;
+font-weight: 400;
+color: #FFFFFF;
+
+text-decoration: none;
+position: relative;
+top: -2px;
+margin-right: 30px;
+      }
+      .line{
+          width: 2px;
+          height: 18px;
+          position: relative;
+top: -2px;
+margin-right: 25px;
+      }
+      .search{
+          width: 28px;
+          height: 28px;
+                   position: relative;
+top: -2px;
+      }
+  }
+
+.el-menu{
+    background: transparent;
+}
+.el-menu.el-menu--horizontal{
+    border: none;
+}
+/deep/ .nav .el-submenu__title i{
+    color: #505050;
+}
+.el-menu--horizontal > .el-menu-item.is-active {
+  border-bottom: none;
+  font-weight: bold;
+}
+.el-menu-item{
+    padding:0;
+    margin-right: 50px;
+    height: auto;
+    
+
+}
+.el-menu--horizontal>.el-menu-item{
+  
+font-size: 16px;
+font-family: Noto Sans S Chinese;
+font-weight: 400;
+color:#505050;
+line-height: 68px;
+
+}
+.el-menu--horizontal>.el-submenu{
+    margin: 0 20px;
+}
+.el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover {
+//   color: #ffffff !important;
+  
+  background-color: transparent;
+}
+/deep/ .el-menu--horizontal>.el-submenu .el-submenu__title {
+   font-size: 16px;
+font-family: Noto Sans S Chinese;
+font-weight: 400;
+color: #505050;
+line-height: 68px;
+}
+/deep/ .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
+    background: transparent;
+}
+
+ .el-menu--horizontal .el-menu .el-menu-item{
+    
+font-size: 16px;
+font-family: NotoSansHans-Regular, NotoSansHans;
+font-weight: 400;
+color: #909090;
+line-height: 60px;
+height: auto;
+margin: 0 20px;
+ border-bottom: 1px solid #DEDEDE;
+ 
+}
+.el-menu--horizontal .el-menu .el-menu-item:last-child{
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+
+ .el-menu--horizontal .el-menu .el-menu-item:hover{
+     border-bottom: 1px solid #505050;
+     
+color: #505050;
+font-weight: 600;
+ }
+.el-menu--horizontal .el-menu .el-submenu {
+    font-size: 16px;
+font-family: NotoSansHans-Regular, NotoSansHans;
+font-weight: 400;
+color: #909090;
+// line-height: 60px;
+height: auto;
+margin: 0 20px;
+padding:10px 0;
+border-bottom: 1px solid #DEDEDE;
+}
+.el-menu--horizontal .el-menu .el-submenu:hover{
+     border-bottom: 1px solid #505050;
+     
+color: #505050;
+font-weight: 600;
+}
+/deep/ .el-menu--horizontal .el-menu .el-submenu__title{
+//   line-height: 60px;
+  height: auto;
+}
+
+/deep/ .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
+    border-bottom: none;
+     font-weight: bold;
 }
 </style>

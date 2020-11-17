@@ -26,31 +26,7 @@ export default {
   computed:{
     ...mapState(['nav'])
   },
-  watch:{
-      'route'(to,form){
-        console.log(1)
-        if(to.path.includes('product')){
-          this.nav=false
-        }else{
-           this.nav=true
-        }
-      }
-  },
-  created() {
-    //  if(this.$route.path.includes('product')){
-    //       this.nav=false
-    //     }else{
-    //        this.nav=true
-    //     }
-  },
-  // mounted() {
-  //   if (process.browser) {
-  //     new this.$wow({
-  //       live: false,
-  //       offset: 0
-  //     }).init();
-  //   }
-  // },
+  
 }
 </script>
 

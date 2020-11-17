@@ -1,14 +1,14 @@
 <template>
   <div class="Content">
     <div class="container">
-       <el-carousel height="770px" class="swiper" :autoplay="false">
+       <el-carousel height="770px" class="swiper wow fadeInUp" :autoplay="false" cla>
       <el-carousel-item v-for="(item,i) in swiperImg" :key="i" >
         <img :src="item" alt="" class="swiperImg">
        
       </el-carousel-item>
     </el-carousel>
 
-     <div class="section1">
+     <div class="section1 wow fadeInUp">
        <div class="container">
           <h2 class="title">品牌资讯</h2>
        <span class="desc">成为新风行业的标杆是我们一直的坚持</span>
@@ -45,7 +45,7 @@
        
      </div>
 
-     <div class="section2">
+     <div class="section2 wow fadeInUp">
           <h2 class="title">案例展示</h2>
           <span class="desc">一对一服务</span>
           <div class="imgList">

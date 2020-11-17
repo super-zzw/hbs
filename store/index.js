@@ -1,7 +1,8 @@
 export const state = () => ({
   locales: ['en', 'zh'],
   locale: 'en',
-  nav:1
+  nav:1,
+  path:'/'
 })
 
 export const mutations = {
@@ -12,5 +13,9 @@ export const mutations = {
   },
   setNav(state,val){
  state.nav=val
-  }
+  },
+  setPath(state,val){
+    state.path=val
+     },
+  
 }

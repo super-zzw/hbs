@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="container">
-      <div class="sec1">
+      <div class="sec1 wow fadeInUp">
         <div class="content1">
           <div class="Box">
             <p class="line1"></p>
@@ -12,7 +12,7 @@
           <p class="t3">也是企业的底气和发展。</p>
         </div>
       </div>
-      <div class="sec2">
+      <div class="sec2 wow fadeInUp">
           <h2 class="title">科技实力的最强后盾</h2>
           <p class="line"></p>
           <p class="con">呼博士每年的科研投入不设上限，不断增加顶尖核心科研人员，形成了矩阵式四大技术研发中心：</p>
@@ -21,7 +21,7 @@
           <p class="con">运用在呼博士杀毒新风产品中，该技术获得超过100项权威检测及认证，</p>
           <p class="con">有效保证呼博士杀毒新风在开发初期得到充分的验证和优化。</p>
       </div>
-      <div class="section sec3">
+      <div class="section sec3 wow fadeInUp">
            <img src="~assets/image/img3-24.png" alt="" class="pic">
          <div class="content1">
              <h2 class="title">广州</h2>
@@ -36,7 +36,7 @@
              <p class="con">呼博士杀毒新风对室内空气中的冠状病毒消杀率高达99.99%。</p>
          </div>
       </div>
-       <div class="section sec4">
+       <div class="section sec4 wow fadeInUp">
           
          <div class="content1">
              <h2 class="title">深圳</h2>
@@ -53,7 +53,7 @@
          </div>
           <img src="~assets/image/img3-24.png" alt="" class="pic">
       </div>
-      <div class="section sec4 sec5">
+      <div class="section sec4 sec5 wow fadeInUp">
            <img src="~assets/image/img3-26.png" alt="" class="pic">
          <div class="content1">
              <h2 class="title">佛山</h2>
@@ -68,7 +68,7 @@
              <p class="con">每一步的“技术革命”都在为广大消费者创造美好生活默默地做贡献。</p>
          </div>
       </div>
-      <div class="section sec4 sec6">
+      <div class="section sec4 sec6 wow fadeInUp">
          <div class="content1">
              <h2 class="title">厦门</h2>
              <p class="desc">世界级大型研发基地</p>

@@ -31,14 +31,13 @@ export default {
     '@/plugins/filters',
     '@/plugins/methods',
     { src: '~/plugins/swiper.js', ssr: false },
-  // { src: "~/plugins/swiper.js", ssr: false },
     {
       src: "~plugins/axios.js",
       ssr: true
     },
     '~/plugins/i18n.js',
     {src: '@/plugins/animate.js',ssr: false},
-    // {src: '@/plugins/methods.js',ssr: false}
+    
   ],
   modules: [
     // Doc: https://axios.nuxtjs.org/usage

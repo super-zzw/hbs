@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="container">
-      <div class="sec1">
+      <div class="sec1 wow fadeInUp">
         <div class="content1">
           <div class="Box">
             <p class="line1"></p>
@@ -12,7 +12,7 @@
           <p class="t3">部分空白区域限定额度招商</p>
         </div>
       </div>
-      <div class="sec2">
+      <div class="sec2 wow fadeInUp">
         <div class="container">
           <img src="~assets/image/img2-4.png" alt="" />
           <div class="content">
@@ -34,7 +34,7 @@
           </div>
         </div>
       </div>
-      <div class="sec3">
+      <div class="sec3 wow fadeInUp">
           <h2 class="title">室内污染普遍</h2>
           <div class="content">
               <div class="left">
@@ -65,7 +65,7 @@
               </div>
           </div>
       </div>
-      <div class="sec4">
+      <div class="sec4 wow fadeInUp">
           <h2 class="title">市场潜力巨大</h2>
           <p class="line2"></p>
           <p class="desc">消费升级时代，这是一片亟待开发，尚未形成品牌格局，利润率高的新蓝海</p>
@@ -89,7 +89,7 @@
               </div>
           </div>
       </div>
-      <div class="sec5">
+      <div class="sec5 wow fadeInUp">
           <div class="container">
               <h2 class="title">千亿朝阳产业</h2>
               <p class="line2"></p>
@@ -99,7 +99,7 @@
               <p class="con">新风系统将成为继彩电、冰箱、空调、洗衣机、油烟机之后的第六大家电，新风系统在国内精装配套率未来可达70%</p>
           </div>
       </div>
-      <div class="sec6">
+      <div class="sec6 wow fadeInUp">
           <h2 class="title">呼博士创富计划</h2>
             <p class="line2"></p>
              <p class="desc">呼博士邀您共享千亿新风口</p>
@@ -107,7 +107,7 @@
               <p class="con">该计划将为您呈现呼博士品牌与产品的组合优势以及专业性和竞争力，我们预见未来五年新风产业将有近千亿市场机遇，</p>
               <p class="con">加盟呼博士将引领您在新风行业赢得全新的机遇与成长。</p>
       </div>
-      <div class="sec7">
+      <div class="sec7 wow fadeInUp">
          <div class="container">
              <div class="services">
                  <div class="service">
