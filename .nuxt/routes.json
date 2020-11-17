@@ -70,6 +70,34 @@
     "_name": "_c8c0757a"
   },
   {
+    "name": "technology-aicontrl",
+    "path": "/technology/aicontrl",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\technology\\\\aicontrl.vue",
+    "chunkName": "pages/technology/aicontrl",
+    "_name": "_617504a2"
+  },
+  {
+    "name": "technology-bianpinhengfeng",
+    "path": "/technology/bianpinhengfeng",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\technology\\\\bianpinhengfeng.vue",
+    "chunkName": "pages/technology/bianpinhengfeng",
+    "_name": "_0af68c1e"
+  },
+  {
+    "name": "technology-liedujiaonang",
+    "path": "/technology/liedujiaonang",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\technology\\\\liedujiaonang.vue",
+    "chunkName": "pages/technology/liedujiaonang",
+    "_name": "_74e4c454"
+  },
+  {
+    "name": "technology-shimoxi",
+    "path": "/technology/shimoxi",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\technology\\\\shimoxi.vue",
+    "chunkName": "pages/technology/shimoxi",
+    "_name": "_f6a3ebae"
+  },
+  {
     "name": "walkin-tab1",
     "path": "/walkin/tab1",
     "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\walkin\\\\tab1.vue",
@@ -173,6 +201,34 @@
     "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\strength\\\\tab5.vue",
     "chunkName": "pages/_lang/strength/tab5",
     "_name": "_779d5408"
+  },
+  {
+    "name": "lang-technology-aicontrl",
+    "path": "/:lang/technology/aicontrl",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\technology\\\\aicontrl.vue",
+    "chunkName": "pages/_lang/technology/aicontrl",
+    "_name": "_560932ca"
+  },
+  {
+    "name": "lang-technology-bianpinhengfeng",
+    "path": "/:lang/technology/bianpinhengfeng",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\technology\\\\bianpinhengfeng.vue",
+    "chunkName": "pages/_lang/technology/bianpinhengfeng",
+    "_name": "_0043ddd8"
+  },
+  {
+    "name": "lang-technology-liedujiaonang",
+    "path": "/:lang/technology/liedujiaonang",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\technology\\\\liedujiaonang.vue",
+    "chunkName": "pages/_lang/technology/liedujiaonang",
+    "_name": "_7419b5fb"
+  },
+  {
+    "name": "lang-technology-shimoxi",
+    "path": "/:lang/technology/shimoxi",
+    "component": "E:\\\\WWW\\\\gzcyou\\\\呼博士\\\\hbspc\\\\pages\\\\_lang\\\\technology\\\\shimoxi.vue",
+    "chunkName": "pages/_lang/technology/shimoxi",
+    "_name": "_04470510"
   },
   {
     "name": "lang-walkin-tab1",

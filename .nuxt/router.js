@@ -13,6 +13,10 @@ const _c9150280 = () => interopDefault(import('..\\pages\\strength\\tab2.vue' /*
 const _c8f8d37e = () => interopDefault(import('..\\pages\\strength\\tab3.vue' /* webpackChunkName: "pages/strength/tab3" */))
 const _c8dca47c = () => interopDefault(import('..\\pages\\strength\\tab4.vue' /* webpackChunkName: "pages/strength/tab4" */))
 const _c8c0757a = () => interopDefault(import('..\\pages\\strength\\tab5.vue' /* webpackChunkName: "pages/strength/tab5" */))
+const _617504a2 = () => interopDefault(import('..\\pages\\technology\\aicontrl.vue' /* webpackChunkName: "pages/technology/aicontrl" */))
+const _0af68c1e = () => interopDefault(import('..\\pages\\technology\\bianpinhengfeng.vue' /* webpackChunkName: "pages/technology/bianpinhengfeng" */))
+const _74e4c454 = () => interopDefault(import('..\\pages\\technology\\liedujiaonang.vue' /* webpackChunkName: "pages/technology/liedujiaonang" */))
+const _f6a3ebae = () => interopDefault(import('..\\pages\\technology\\shimoxi.vue' /* webpackChunkName: "pages/technology/shimoxi" */))
 const _062bb5ec = () => interopDefault(import('..\\pages\\walkin\\tab1.vue' /* webpackChunkName: "pages/walkin/tab1" */))
 const _0639cd6d = () => interopDefault(import('..\\pages\\walkin\\tab2.vue' /* webpackChunkName: "pages/walkin/tab2" */))
 const _0647e4ee = () => interopDefault(import('..\\pages\\walkin\\tab3.vue' /* webpackChunkName: "pages/walkin/tab3" */))
@@ -28,6 +32,10 @@ const _77f1e10e = () => interopDefault(import('..\\pages\\_lang\\strength\\tab2.
 const _77d5b20c = () => interopDefault(import('..\\pages\\_lang\\strength\\tab3.vue' /* webpackChunkName: "pages/_lang/strength/tab3" */))
 const _77b9830a = () => interopDefault(import('..\\pages\\_lang\\strength\\tab4.vue' /* webpackChunkName: "pages/_lang/strength/tab4" */))
 const _779d5408 = () => interopDefault(import('..\\pages\\_lang\\strength\\tab5.vue' /* webpackChunkName: "pages/_lang/strength/tab5" */))
+const _560932ca = () => interopDefault(import('..\\pages\\_lang\\technology\\aicontrl.vue' /* webpackChunkName: "pages/_lang/technology/aicontrl" */))
+const _0043ddd8 = () => interopDefault(import('..\\pages\\_lang\\technology\\bianpinhengfeng.vue' /* webpackChunkName: "pages/_lang/technology/bianpinhengfeng" */))
+const _7419b5fb = () => interopDefault(import('..\\pages\\_lang\\technology\\liedujiaonang.vue' /* webpackChunkName: "pages/_lang/technology/liedujiaonang" */))
+const _04470510 = () => interopDefault(import('..\\pages\\_lang\\technology\\shimoxi.vue' /* webpackChunkName: "pages/_lang/technology/shimoxi" */))
 const _25a7be36 = () => interopDefault(import('..\\pages\\_lang\\walkin\\tab1.vue' /* webpackChunkName: "pages/_lang/walkin/tab1" */))
 const _258b8f34 = () => interopDefault(import('..\\pages\\_lang\\walkin\\tab2.vue' /* webpackChunkName: "pages/_lang/walkin/tab2" */))
 const _256f6032 = () => interopDefault(import('..\\pages\\_lang\\walkin\\tab3.vue' /* webpackChunkName: "pages/_lang/walkin/tab3" */))
@@ -89,6 +97,22 @@ export const routerOptions = {
     component: _c8c0757a,
     name: "strength-tab5"
   }, {
+    path: "/technology/aicontrl",
+    component: _617504a2,
+    name: "technology-aicontrl"
+  }, {
+    path: "/technology/bianpinhengfeng",
+    component: _0af68c1e,
+    name: "technology-bianpinhengfeng"
+  }, {
+    path: "/technology/liedujiaonang",
+    component: _74e4c454,
+    name: "technology-liedujiaonang"
+  }, {
+    path: "/technology/shimoxi",
+    component: _f6a3ebae,
+    name: "technology-shimoxi"
+  }, {
     path: "/walkin/tab1",
     component: _062bb5ec,
     name: "walkin-tab1"
@@ -148,6 +172,22 @@ export const routerOptions = {
     path: "/:lang/strength/tab5",
     component: _779d5408,
     name: "lang-strength-tab5"
+  }, {
+    path: "/:lang/technology/aicontrl",
+    component: _560932ca,
+    name: "lang-technology-aicontrl"
+  }, {
+    path: "/:lang/technology/bianpinhengfeng",
+    component: _0043ddd8,
+    name: "lang-technology-bianpinhengfeng"
+  }, {
+    path: "/:lang/technology/liedujiaonang",
+    component: _7419b5fb,
+    name: "lang-technology-liedujiaonang"
+  }, {
+    path: "/:lang/technology/shimoxi",
+    component: _04470510,
+    name: "lang-technology-shimoxi"
   }, {
     path: "/:lang/walkin/tab1",
     component: _25a7be36,
