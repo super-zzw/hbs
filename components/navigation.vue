@@ -136,11 +136,17 @@ top: -2px;
 .el-menu{
     background: transparent;
 }
+.el-submenu{
+    margin: 0 20px;
+}
 .el-menu.el-menu--horizontal{
     border: none;
 }
 /deep/ .nav .el-submenu__title i{
     color: #fff;
+}
+/deep/ .el-submenu__title{
+    padding: 0;
 }
 .el-menu--horizontal > .el-menu-item.is-active {
   border-bottom: 2px solid #fff;
@@ -148,7 +154,7 @@ top: -2px;
 }
 .el-menu-item{
     padding:0;
-    margin-right: 32px;
+    margin:0 25px;
     height: auto;
     
 
@@ -173,6 +179,7 @@ font-family: Noto Sans S Chinese;
 font-weight: 400;
 color: #FFFFFF;
 line-height: 68px;
+
 }
 /deep/ .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
     background: transparent;
@@ -188,6 +195,7 @@ line-height: 60px;
 height: auto;
 margin: 0 20px;
  border-bottom: 1px solid #DEDEDE;
+ 
 }
 .el-menu--horizontal .el-menu .el-menu-item:last-child{
     border-bottom: none;

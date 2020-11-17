@@ -142,6 +142,9 @@ top: 1px;
 .el-menu{
     background: transparent;
 }
+.el-submenu{
+    margin: 0 20px;
+}
 .el-menu.el-menu--horizontal{
     border: none;
 }
@@ -152,7 +155,10 @@ top: 1px;
 }
 .el-menu-item{
     padding:0;
-    margin-right: 32px;
+    margin:0 25px;
+}
+/deep/ .el-submenu__title{
+    padding: 0;
 }
 .el-menu--horizontal>.el-menu-item{
   

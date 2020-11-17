@@ -160,6 +160,13 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+      mounted(){
+   this.initWow(this)
+  },
+}
+</script>
 <style lang="less" scoped>
 .t2{
     .t2Item{

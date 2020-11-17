@@ -235,7 +235,7 @@ export default {
 }
 .sec2{
     background: #2C2C2C;
-    width: 1200px;
+    // width: 1200px;
   
     height: 500px;
     display: flex;

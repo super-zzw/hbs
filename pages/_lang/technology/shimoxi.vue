@@ -96,6 +96,13 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+      mounted(){
+    this.initWow(this)
+  },
+}
+</script>
 <style lang="less" scoped>
 .t4 {
     padding-bottom: 0;
@@ -142,7 +149,7 @@
   }
 }
 .t4i1{
-    margin-top: 70px;
+    // margin-top: 70px;
     .t4m1{
         display: flex;
         justify-content: flex-end;

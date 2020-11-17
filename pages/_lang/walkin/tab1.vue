@@ -2,39 +2,39 @@
   <div class="page">
     <div class="container">
     <div class="sec0 wow fadeInUp">
-          <h2 class="title">专注杀毒新风20年</h2>
+          <h2 class="title">{{$t("walkin1-1")}}</h2>
          <p class="line"></p>
-         <p class="con">呼博士杀毒新风机以务实工匠精神研发产品，以杀毒科技为品质根本，以创新为科技支撑，</p>
-         <p class="con">呼博士专注杀毒新风20年，致力给用户提供每时每刻的健康呼吸体验。</p>
+         <p class="con">{{$t("walkin1-2")}}</p>
+         <p class="con">{{$t("walkin1-3")}}</p>
     </div>
      <!-- <img src="~assets/image/banner2-1.png" alt="" class="banner"> -->
      <div class="sec1 wow fadeInUp">
-         <h2 class="title">以工匠态度坚守品牌初心</h2>
+         <h2 class="title">{{$t("walkin1-4")}}</h2>
          <p class="line"></p>
-         <p class="con">我们始终相信，只有用精益求精的工匠态度，</p>
-         <p class="con">赋予产品人的信念与情怀，才能缔造出具有深厚底蕴和文化内涵的品牌。</p>
-         <p class="con">尽社会责任，创中国名品，铸百年品牌，我们初心不变。</p>
+         <p class="con">{{$t("walkin1-5")}}</p>
+         <p class="con">{{$t("walkin1-6")}}</p>
+         <p class="con">{{$t("walkin1-7")}}</p>
      </div>
      <div class="sec2 wow fadeInUp">
-          <h2 class="title">立足中国之根&emsp;面向海外市场</h2>
-          <h2 class="title">品牌覆盖各行各业</h2>
+          <h2 class="title">{{$t("walkin1-8")}}</h2>
+          <h2 class="title">{{$t("walkin1-9")}}</h2>
            <p class="line"></p>
-             <p class="con">众多国内外和世界500强企业多年一直采用我们核心杀毒技术，以及直接由我们OEM生产产品。</p>
-         <p class="con">我们设立4大研发中心，把握创新型杀毒技术，并把它运用到每一款产品的生产中。</p>
-         <p class="con">在外国设立多个销售据点，品牌足迹遍布海内外，为全球家庭和企业提供服务。</p>
+             <p class="con">{{$t("walkin1-10")}}</p>
+         <p class="con">{{$t("walkin1-11")}}</p>
+         <p class="con">{{$t("walkin1-12")}}</p>
      </div>
      <div class="sec3 wow fadeInUp">
          <div class="content">
-             <h2 class="title">我们终将</h2>
-             <h2 class="title">定义新风行业的标准</h2>
+             <h2 class="title">{{$t("walkin1-13")}}</h2>
+             <h2 class="title">{{$t("walkin1-14")}}</h2>
               <p class="line"></p>
-             <p class="con">无论是超大建筑面积的生产基地，</p>
-         <p class="con">还是拥有1000级国家标准无尘GMP车间，</p>
-         <p class="con">还是世界级大型实验研发基地，</p>
-         <p class="con">我们对人类健康未来充满热枕，我们的信念超越新风产品本身。</p>
-         <p class="con">使命召唤我们，给新风行业树立一个更好的标杆，</p>
-         <p class="con">我们终将定义新风行业的标准，</p>
-         <p class="con">定能为世界的积极改变贡献自己的一份力量。</p>
+             <p class="con">{{$t("walkin1-15")}}</p>
+         <p class="con">{{$t("walkin1-16")}}</p>
+         <p class="con">{{$t("walkin1-17")}}</p>
+         <p class="con">{{$t("walkin1-18")}}</p>
+         <p class="con">{{$t("walkin1-19")}}</p>
+         <p class="con">{{$t("walkin1-20")}}</p>
+         <p class="con">{{$t("walkin1-21")}}</p>
          </div>
      </div>
     </div>

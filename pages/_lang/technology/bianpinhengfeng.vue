@@ -75,6 +75,13 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+      mounted(){
+    this.initWow(this)
+  },
+}
+</script>
 <style lang="less" scoped>
 .t3 {
     padding-bottom: 0;

@@ -28,10 +28,10 @@
           </div>
           <div class="i2d">{{ $t("technology4") }}</div>
           <div class="i2e">{{ $t("technology5") }}</div>
-          <div class="i2f">
+          <nuxt-link class="i2f" to="/technology/liedujiaonang">
             {{ $t("technology6") }}
             <img class="i2fIcon" src="@/assets/image/right.png" alt="" />
-          </div>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -50,10 +50,10 @@
             <div class="i2e">{{ $t("technology9") }}</div>
             <div class="i2e">{{ $t("technology10") }}</div>
             <div class="i2e">{{ $t("technology11") }}</div>
-            <div class="i2f">
+            <nuxt-link class="i2f" to="/technology/shimoxi">
               {{ $t("technology6") }}
               <img class="i2fIcon" src="@/assets/image/right2.png" alt="" />
-            </div>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -71,10 +71,10 @@
           <div class="i2d">{{ $t("technology13") }}</div>
           <div class="i2e">{{ $t("technology14") }}</div>
           <div class="i2e">{{ $t("technology15") }}</div>
-          <div class="i2f">
+          <nuxt-link class="i2f" to="/technology/bianpinhengfeng">
             {{ $t("technology6") }}
             <img class="i2fIcon" src="@/assets/image/right.png" alt="" />
-          </div>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -94,10 +94,10 @@
             <div class="i2h">{{ $t("technology19") }}</div>
             <div class="i2g">{{ $t("technology20") }}</div>
             <div class="i2h">{{ $t("technology21") }}</div>
-            <div class="i2f">
+            <nuxt-link class="i2f" to="/technology/aicontrl">
               {{ $t("technology6") }}
               <img class="i2fIcon" src="@/assets/image/right2.png" alt="" />
-            </div>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -227,10 +227,10 @@
   </div>
 </template>
 <script>
-import utils from "@/utils/methods"
+
 export default {
   mounted(){
-    utils.initWow(this)
+    this.initWow(this)
   },
 }
 </script>
@@ -353,10 +353,13 @@ export default {
       align-items: flex-end;
       padding: 8px 9px;
       border: 1px solid #fff;
+      text-decoration: none;
+      color: #fff;
       .i2fIcon {
         width: 16px;
         height: auto;
         margin-left: 6px;
+       
       }
     }
   }
@@ -398,6 +401,7 @@ export default {
             padding: 8px 9px;
             color: #000;
       border: 1px solid #B3B3B3;
+      text-decoration: none;
             .i2fIcon{
                  width: 16px;
                 height: auto;

@@ -6,24 +6,25 @@
           <div class="Box">
             <p class="line1"></p>
             <p class="t1">ABOUT US</p>
-            <p class="t2">关于我们</p>
+            <p class="t2">{{$t("walkin3-1")}}</p>
           </div>
-          <p class="t3">专注杀毒新风20年</p>
-          <p class="t3">打造全方位健康呼吸空间</p>
+          <p class="t3">{{$t("walkin3-2")}}</p>
+          <p class="t3">{{$t("walkin3-3")}}</p>
         </div>
       </div>
       <div class="sec2 wow fadeInUp">
         <div class="container">
                <img src="~assets/image/img2-8.png" alt="" class="pic">
          <div class="content1">
-             <h2 class="title">蒙发利健康科技有限公司</h2>
+             <h2 class="title">{{$t("walkin3-4")}}</h2>
              <p class="line"></p>
-             <p class="con">BRI呼博士是蒙发利集团大健康产业品牌多元化战略品牌之一，</p>
+             <!-- <p class="con">BRI呼博士是蒙发利集团大健康产业品牌多元化战略品牌之一，</p>
              <p class="con">2011年奥佳华集团在深圳挂牌上市(股票代码:002614.SZ)。呼博</p>
              <p class="con">士专注杀毒新风20年，秉承“健康呼吸、健康生活”的企业使</p>
              <p class="con">命，现已拥有近百项杀毒检测认证和30项新风专利技术，参编</p>
              <p class="con">多项国家及地方新风行业标准制定，出口全球60+国家，为越来</p>
-             <p class="con">越多的家庭和企业提供健康和高品质生活。</p>
+             <p class="con">越多的家庭和企业提供健康和高品质生活。</p> -->
+             <p class="con">{{$t("walkin3-5")}}</p>
          </div>
         </div>
          
@@ -38,21 +39,24 @@
          
       </div>
         <div class="sec2 wow fadeInUp">
-        
-         <div class="content1 content2">
+          <div class="container">
+             <div class="content1 content2">
              <h2 class="title">呼博士携手钟南山广州呼研所 </h2>
              <h2 class="title">联合研发新风系统杀毒技术</h2>
              <p class="line"></p>
-             <p class="con">广州呼研所是全国领先、世界一流的呼吸研究中心，具有呼吸疾病国</p>
+             <p class="con">{{$t("walkin3-10")}}</p>
+             <!-- <p class="con">广州呼研所是全国领先、世界一流的呼吸研究中心，具有呼吸疾病国</p>
              <p class="con">家重点实验室和国家呼吸疾病临床医学研究中心等权威科研机构。20</p>
              <p class="con">年来，呼博士与呼研所在室内空气与呼吸疾病的病理机制，尤其是室</p>
              <p class="con">内空气病毒、细菌和有害化学物质的致病机理与防治领域进行长期深</p>
              <p class="con">度合作，创造性地将独有猎毒胶囊技术与医用HEPA滤网结合，形成</p>
              <p class="con">2+1+1层高效复合过滤杀毒，对PM2.5、冠状病毒和甲醛等几十种室</p>
              <p class="con">内空气病毒细菌和颗粒物的灭杀率高达99.9%，全方位护佑室内呼吸</p>
-             <p class="con">健康。</p>
+             <p class="con">健康。</p> -->
          </div>
           <img src="~assets/image/img2-10.png" alt="" class="pic">
+          </div>
+         
       </div>
     </div>
       <div class="sec4 wow fadeInUp">
@@ -160,10 +164,10 @@ export default {
         height: 480px;
         position: relative;
         top: 97px;
-        margin-right: 67px;
+        
     }
     .content1{
-        margin-top: 170px;
+        margin-top: 70px;
         display: flex;
         flex-direction: column;
     }
@@ -236,7 +240,7 @@ margin-bottom: 30px;
  .content1.content2{
      margin-top: 80px;
      
-         margin-right: 100px;
+         margin-right: 60px;
      
  }
  .sec4{

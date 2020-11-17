@@ -7,21 +7,58 @@
        
       </el-carousel-item>
     </el-carousel>
-
      <div class="section1 wow fadeInUp">
-       <div class="container">
-          <h2 class="title">品牌资讯</h2>
-       <span class="desc">成为新风行业的标杆是我们一直的坚持</span>
+       <div class="container1 ">
+            <h2 class="title">{{$t('index1')}}</h2>
+             <div class="box">
+                <div class="con">
+                  <img src="~assets/image/img1-7.png" alt="" class="bg">
+                 
+                      <p class="name">{{$t('index2')}}</p>
+                      <p class="line"></p>
+                      <p class="desc">{{$t('index4')}}</p>
+                      <div class="more">{{$t('liaojie')}}
+                        <img src="~assets/image/right.png" alt="">
+                      </div>
+                
+                </div>
+                 <div class="con">
+                  <img src="~assets/image/img1-8.png" alt="" class="bg">
+                  <!-- <div class="cont"> -->
+                      <p class="name">{{$t('index3')}}</p>
+                      <p class="line"></p>
+                      <p class="desc">{{$t('index5')}}</p>
+                      <div class="more">{{$t('liaojie')}}
+                        <img src="~assets/image/right.png" alt="">
+                      </div>
+                  <!-- </div> -->
+                </div>
+                 <div class="con">
+                  <img src="~assets/image/img1-9.png" alt="" class="bg">
+                  <!-- <div class="cont"> -->
+                      <p class="name">{{$t('index3')}}</p>
+                      <p class="line"></p>
+                      <p class="desc">{{$t('index6')}}</p>
+                      <div class="more">{{$t('liaojie')}}
+                        <img src="~assets/image/right.png" alt="">
+                      </div>
+                  <!-- </div> -->
+                </div>
+             </div>
+       </div>
+       <div class="container mt">
+        <h2 class="title">{{$t('index8')}}</h2>
+       <span class="desc">{{$t('index9')}}</span>
        <div class="article">
           <img src="~assets/image/img1-1.png" alt="" class="pic">
           <div class="content">
-              <h3 class="c_title">杀毒新风获得【消字号】认证</h3>
+              <h3 class="c_title">{{$t('index10')}}</h3>
               <div class="tt">
-                   <p >钟南山领导的广州呼研所与呼博士联合研发杀毒新风机</p>
-                   <p class="mt">新风行业首家获得消字号的生产企业</p>
+                   <p >{{$t('index11')}}</p>
+                   <p class="mt">{{$t('index12')}}</p>
               </div>
               <div class="about">
-                了解更多
+                {{$t('liaojie')}}
                 <img src="~assets/image/more.png" alt="">
               </div>
           </div>
@@ -34,7 +71,7 @@
                    <p class="mt">关于奥佳华(002614.S2)子公司蒙发利健康引入保利基金为战略投资公告</p>
               </div>
               <div class="about">
-                了解更多
+                {{$t('liaojie')}}
                 <img src="~assets/image/more.png" alt="">
               </div>
           </div>
@@ -46,26 +83,26 @@
      </div>
 
      <div class="section2 wow fadeInUp">
-          <h2 class="title">案例展示</h2>
-          <span class="desc">一对一服务</span>
+          <h2 class="title">{{$t('index16')}}</h2>
+          <span class="desc">{{$t('index17')}}</span>
           <div class="imgList">
             <div class="row">
                 <div class="imgItem">
-                <p>别墅</p>
+                <p>{{$t('index18')}}</p>
                 <img src="~assets/image/img1-3.png" alt="">
               </div>
               <div class="imgItem">
-                <p>医院病房</p>
+                <p>{{$t('index19')}}</p>
                 <img src="~assets/image/img1-4.png" alt="">
               </div>
             </div>
              <div class="row">
                 <div class="imgItem">
-                <p>教室</p>
+                <p>{{$t('index20')}}</p>
                 <img src="~assets/image/img1-5.png" alt="">
               </div>
               <div class="imgItem">
-                <p>办公室</p>
+                <p>{{$t('index21')}}</p>
                 <img src="~assets/image/img1-6.png" alt="">
               </div>
              </div>
@@ -102,17 +139,101 @@ export default {
   width: 100%;
   height: 770px;
 }
+
 .section1{
   background: #F2F2F2;
   padding: 100px 0 150px;
   
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .mt{
+    margin-top: 100px;
+  }
+  .container1{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+    .box{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 80px;
+      z-index: 10;
+      .con{
+      width: 630px;
+        height: 520px;
+background: #000000;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+margin-right: 15px;
+.bg{
+ 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+}
+.name{
+
+font-size: 40px;
+font-family: SourceHanSansCN;
+font-weight: 400;
+color: #FFFFFF;
+line-height: 68px;
+z-index: 10;
+margin-bottom: 10px;
+}
+.line{
+  width: 40px;
+height: 2px;
+background: #DCDCDC;
+z-index: 10;
+}
+.desc{
+  
+background: #000;
+opacity: 0.7;
+z-index: 10;
+font-size: 20px;
+font-family: SourceHanSansCN;
+font-weight: 400;
+color: #FFFFFF;
+// line-height: 68px;
+padding: 5px;
+
+}
+.more{
+  z-index: 10;
+  margin-top: 40px;
+  
+font-size: 16px;
+font-family: Adobe Heiti Std;
+font-weight: normal;
+color: #FFFFFF;
+line-height: 68px;
+display: flex;
+align-items: center;
+img{
+  width: 20px;
+  height: 20px;
+}
+}
+      }
+    }
+  }
   .container{
     display: flex;
   flex-direction: column;
   align-items: center;
     width: 1200px;
+  
      .article{
   margin-top: 60px;
   display: flex;

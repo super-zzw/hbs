@@ -6,136 +6,136 @@
           <div class="Box">
             <p class="line1"></p>
             <p class="t1">BUSINESS</p>
-            <p class="t2">创富计划</p>
+            <p class="t2">{{$t("walkin2-1")}}</p>
           </div>
-          <p class="t3">快速占领杀毒新风创富先机</p>
-          <p class="t3">部分空白区域限定额度招商</p>
+          <p class="t3">{{$t("walkin2-2")}}</p>
+          <p class="t3">{{$t("walkin2-3")}}</p>
         </div>
       </div>
       <div class="sec2 wow fadeInUp">
         <div class="container">
           <img src="~assets/image/img2-4.png" alt="" />
           <div class="content">
-            <h2 class="title">实力雄厚</h2>
-            <p class="desc">新风行业品牌引领者</p>
+            <h2 class="title">{{$t("walkin2-4")}}</h2>
+            <p class="desc">{{$t("walkin2-5")}}</p>
             <p class="line2"></p>
-            <p class="con">全球15个全资及控股子公司</p>
-            <p class="con">连续14年行业龙头企业</p>
-            <p class="con">行业首家上市企业</p>
-            <p class="con">10大自有品牌，业务跨越5大洲，出口60+国家</p>
-            <p class="con">中国对外贸易民营500强</p>
-            <p class="con">业内首个国家企业技术研发中心</p>
-            <p class="con">业内首个国家博士后科研工作站</p>
-            <p class="con">资产超200亿</p>
+            <p class="con">{{$t("walkin2-6")}}</p>
+            <p class="con">{{$t("walkin2-7")}}</p>
+            <p class="con">{{$t("walkin2-8")}}</p>
+            <p class="con">{{$t("walkin2-9")}}</p>
+            <p class="con">{{$t("walkin2-10")}}</p>
+            <p class="con">{{$t("walkin2-11")}}</p>
+            <p class="con">{{$t("walkin2-12")}}</p>
+            <p class="con">{{$t("walkin2-13")}}</p>
             <nuxt-link to="/" class="link"
-              >了解更多
+              >{{$t("liaojie")}}
               <img src="~assets/image/more.png" alt="" />
             </nuxt-link>
           </div>
         </div>
       </div>
       <div class="sec3 wow fadeInUp">
-          <h2 class="title">室内污染普遍</h2>
+          <h2 class="title">{{$t("walkin2-14")}}</h2>
           <div class="content">
               <div class="left">
                   <div class="box">
-                     高达<span>96</span><span class="font2">%</span>的国内家庭存在室内空气污染问题
+                     {{$t("walkin2-15")}}<span>96</span><span class="font2">%</span>{{$t("walkin2-16")}}
                   </div>
                    <div class="box box1">
-                     世界卫生组织(WHO)估计，2012年有<span>430</span><span class="font2">万人</span>死于室内空气污染
+                     {{$t("walkin2-19")}}<span>430</span><span class="font2"> {{$t("walkin2-20")}}</span> {{$t("walkin2-21")}}
                   </div>
                    <div class="box box2">
-                     超过<span>75</span><span class="font2">%</span>的家庭室内甲醛超标
+                     {{$t("walkin2-29")}}<span>75</span><span class="font2">%</span>{{$t("walkin2-30")}}
                   </div>
                    <div class="box">
-                    <span>90</span><span class="font2">%</span>以上的幼儿白血病患者在进住新装修住房一年内患病
+                    <span>90</span><span class="font2">%</span>{{$t("walkin2-24")}}
                   </div>
               </div>
               <div class="right">
                   <div class="box box3">
-                     室内空气污染的程度是室外的<span>5-10</span>倍
+                     {{$t("walkin2-17")}}<span>5-10</span>{{$t("walkin2-18")}}
                   </div>
                    <div class="box box4">
-                     中国每年超过<span>12</span><span class="font2">万人</span>死于因室内污染引发的疾病
+                     {{$t("walkin2-22")}}<span>12</span><span class="font2">{{$t("walkin2-20")}}</span>{{$t("walkin2-23")}}
                   </div>
                    <div class="box box5">
-                     室内空气中可检出<span>500</span><span class="font2">多种</span>挥发性有机物，<span>20</span><span class="font2">多种</span>是致癌物
+                     {{$t("walkin2-25")}}<span>500</span><span class="font2">{{$t("walkin2-26")}}</span>{{$t("walkin2-27")}}<span>20</span><span class="font2">{{$t("walkin2-26")}}</span>{{$t("walkin2-28")}}
                   </div>
                    
               </div>
           </div>
       </div>
       <div class="sec4 wow fadeInUp">
-          <h2 class="title">市场潜力巨大</h2>
+          <h2 class="title">{{$t("walkin2-31")}}</h2>
           <p class="line2"></p>
-          <p class="desc">消费升级时代，这是一片亟待开发，尚未形成品牌格局，利润率高的新蓝海</p>
+          <p class="desc">{{$t("walkin2-32")}}</p>
           <div class="box">
               <div class="item">
                   <p class="t1">><span>96</span>%</p>
-                  <p class="t2">欧美新风普及率</p>
+                  <p class="t2">{{$t("walkin2-33")}}</p>
               </div>
               <div class="item">
                   <p class="t1">＜
                         <span>2</span>%</p>
-                  <p class="t2">我国新风普及率</p>
+                  <p class="t2">{{$t("walkin2-34")}}</p>
               </div>
               <div class="item">
                   <p class="t1">＜<span>5</span>%</p>
-                  <p class="t2">我国配置新风系统的住宅</p>
+                  <p class="t2">{{$t("walkin2-35")}}</p>
               </div>
               <div class="item">
                   <p class="t1">≈<span>1</span>%</p>
-                  <p class="t2">新建住宅配置新风系统</p>
+                  <p class="t2">{{$t("walkin2-36")}}</p>
               </div>
           </div>
       </div>
       <div class="sec5 wow fadeInUp">
           <div class="container">
-              <h2 class="title">千亿朝阳产业</h2>
+              <h2 class="title">{{$t("walkin2-37")}}</h2>
               <p class="line2"></p>
-              <p class="desc">新风系统是新消费热点和增长引擎</p>
-              <p class="con">新冠疫情让空气净化成为最具爆发性的行业 ,市场增长率每年保持在30%以上</p>
-              <p class="con">奥维云网大数据显示，新风产业在五到十年内年产值将达到千亿规模</p>
-              <p class="con">新风系统将成为继彩电、冰箱、空调、洗衣机、油烟机之后的第六大家电，新风系统在国内精装配套率未来可达70%</p>
+              <p class="desc">{{$t("walkin2-38")}}</p>
+              <p class="con">{{$t("walkin2-39")}}</p>
+              <p class="con">{{$t("walkin2-40")}}</p>
+              <p class="con">{{$t("walkin2-41")}}</p>
           </div>
       </div>
       <div class="sec6 wow fadeInUp">
-          <h2 class="title">呼博士创富计划</h2>
+          <h2 class="title">{{$t("walkin2-42")}}</h2>
             <p class="line2"></p>
-             <p class="desc">呼博士邀您共享千亿新风口</p>
-              <p class="con">《呼博士创富计划》是呼博士杀毒新风为综合实力强劲，愿为新风事业做出贡献的合作伙伴推出的深度合作计划。</p>
-              <p class="con">该计划将为您呈现呼博士品牌与产品的组合优势以及专业性和竞争力，我们预见未来五年新风产业将有近千亿市场机遇，</p>
-              <p class="con">加盟呼博士将引领您在新风行业赢得全新的机遇与成长。</p>
+             <p class="desc">{{$t("walkin2-43")}}</p>
+              <p class="con">{{$t("walkin2-44")}}</p>
+              <p class="con">{{$t("walkin2-45")}}</p>
+              <p class="con">{{$t("walkin2-46")}}</p>
       </div>
       <div class="sec7 wow fadeInUp">
          <div class="container">
              <div class="services">
                  <div class="service">
                     <img src="~assets/image/icon2-1.png" alt="">
-                    <p class="desc">区域独家保护</p>
-                    <p class="con">所开展业务区域内您将享受独家</p>
-                    <p class="con">开展业务及经销商管理的支持</p>
+                    <p class="desc">{{$t("walkin2-47")}}</p>
+                    <p class="con">{{$t("walkin2-48")}}</p>
+                    <p class="con">{{$t("walkin2-49")}}</p>
                  </div>
                   <div class="service">
                     <img src="~assets/image/icon2-2.png" alt="">
-                    <p class="desc">针对性宣传支持</p>
-                    <p class="con">我们将同您共同针对本区域 </p>
-                    <p class="con">进行阶段针对性宣传</p>
+                    <p class="desc">{{$t("walkin2-58")}}</p>
+                    <p class="con">{{$t("walkin2-50")}} </p>
+                    <p class="con">{{$t("walkin2-51")}}</p>
                  </div>
                   <div class="service">
                     <img src="~assets/image/icon2-3.png" alt="">
-                    <p class="desc">深度市场与技术培训</p>
-                    <p class="con">包括模式、市场、销售、服务、</p>
-                    <p class="con">IT的深度共享</p>
+                    <p class="desc">{{$t("walkin2-59")}}</p>
+                    <p class="con">{{$t("walkin2-52")}}</p>
+                    <p class="con">{{$t("walkin2-53")}}</p>
                  </div>
                   <div class="service">
                     <img src="~assets/image/icon2-4.png" alt="">
-                    <p class="desc">享受新产品先发</p>
-                    <p class="con">呼博士具备业内领先的高品质研发能力</p>
-                    <p class="con">一直引领产品的发展</p>
+                    <p class="desc">{{$t("walkin2-54")}}</p>
+                    <p class="con">{{$t("walkin2-55")}}</p>
+                    <p class="con">{{$t("walkin2-56")}}</p>
                  </div>
              </div>
-             <p class="contact">联系我们：400-100-5582</p>
+             <p class="contact">{{$t("walkin2-57")}}</p>
          </div>
       </div>
     </div>
