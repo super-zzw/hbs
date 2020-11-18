@@ -2,7 +2,9 @@
   <div class="page">
     <div class="container">
       <div class="sec1 wow fadeInUp">
-        <div class="content1">
+        <img src="~assets/image/banner3-4.png" alt="" class="banner">
+        <div class="cont">
+                 <div class="content1">
           <div class="Box">
             <p class="line1"></p>
             <p class="t1">TECHNOLOGY CENTER</p>
@@ -11,6 +13,8 @@
           <p class="t3">科技创新是产品能否惠及用户最核心的关键</p>
           <p class="t3">也是企业的底气和发展。</p>
         </div>
+        </div>
+       
       </div>
       <div class="sec2 wow fadeInUp">
           <h2 class="title">科技实力的最强后盾</h2>
@@ -95,11 +99,21 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.cont{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
       .sec1 {
-  background: url(~assets/image/banner3-4.png);
-  height: 760px;
+  
   width: 100%;
-  background-size: 100% 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,13 +201,14 @@ line-height: 34px;
     justify-content: center;
     .pic{
         width: 600px;
-        height: 480px;
+        height: 500px;
         position: relative;
-        top: 96px;
-        margin-right: 67px;
+        top: 50px;
+        // margin-right: 67px;
     }
     .content1{
-        margin-top: 150px;
+        // margin-top: 150px;
+        justify-content: center;
         display: flex;
         flex-direction: column;
         .desc{
@@ -208,12 +223,15 @@ color: #FFFFFF;
 }
 .sec3{
     background: #2C2C2C;
+    .pic{
+      margin-right: 80px;
+    }
 }
 .sec4{
     background: #F2F2F2;
-    height: 600px;
+    height: 530px;
     .content1{
-        margin-top: 180px;
+        // margin-top: 180px;
  .title{
         color: #505050;
         // margin-top: 210px;
@@ -228,14 +246,18 @@ color: #505050;
     }
     .pic{
         margin-left:80px;
-        top: 180px;
+        top: 50px;
     }
    
 }
 .sec4.sec5{
     background: #2C2C2C;
+    .pic{
+      margin-left: 0;
+      margin-right: 80px;
+    }
     .content1{
-         margin-top: 200px;
+        //  margin-top: 200px;
    .title{
         color: #fff;
         // margin-top: 210px;
@@ -251,7 +273,10 @@ color: #fff;
   
 }
 .sec4.sec6{
-    margin-bottom: 200px;
+    margin-bottom: 150px;
+    .pic{
+      margin-right: 0;
+    }
 }
 .title{
        

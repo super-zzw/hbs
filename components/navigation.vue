@@ -162,7 +162,7 @@ top: -2px;
 .el-menu--horizontal>.el-menu-item{
   
 font-size: 16px;
-font-family: Noto Sans S Chinese;
+font-family: NotoSansHans-Regular;
 font-weight: 400;
 color: #FFFFFF;
 line-height: 68px;
@@ -175,7 +175,7 @@ line-height: 68px;
 }
 /deep/ .el-menu--horizontal>.el-submenu .el-submenu__title {
    font-size: 16px;
-font-family: Noto Sans S Chinese;
+font-family: NotoSansHans-Regular;
 font-weight: 400;
 color: #FFFFFF;
 line-height: 68px;

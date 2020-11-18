@@ -1,7 +1,7 @@
 <template>
   <div class="Content">
     <div class="container">
-       <el-carousel height="770px" class="swiper wow fadeInUp" :autoplay="false" cla>
+       <el-carousel :height="height" class="swiper wow fadeInUp" :autoplay="false" cla>
       <el-carousel-item v-for="(item,i) in swiperImg" :key="i" >
         <img :src="item" alt="" class="swiperImg">
        
@@ -122,9 +122,19 @@ export default {
   mounted(){
     utils.initWow(this)
   },
+  mounted(){
+      this.getAutoHeight()
+},
+methods:{
+ getAutoHeight(){
+     let _w = document.documentElement.clientWidth || document.body.clientWidth; ; 
+     this.height = _w * 770 / 1920 + 'px';
+  }
+},
   data(){
     return{
-      swiperImg:[banner1,banner2,banner3]
+      swiperImg:[banner1,banner2,banner3],
+      height:'',
     }
   }
 }
@@ -137,7 +147,8 @@ export default {
 }
 .swiperImg{
   width: 100%;
-  height: 770px;
+  // height: 770px;
+  height: 100%;
 }
 
 .section1{
@@ -241,7 +252,7 @@ img{
     width: 100%;
        .pic{
          width: 487px;
-         height: 300px;
+        //  height: 300px;
        }
        .content{
          padding: 50px 40px 0;
@@ -309,11 +320,11 @@ align-items: center;
       margin-bottom: 20px;
       .imgItem{
         width: 49.7%;
-        height: 587px;
+        // height: 587px;
         position: relative;
         img{
           width: 100%;
-          height: 100%;
+          height: auto;
         }
         p{
           position: absolute;

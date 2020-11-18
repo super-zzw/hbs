@@ -2,7 +2,9 @@
   <div class="page">
     <div class="container">
       <div class="sec1 wow fadeInUp">
-        <div class="content1">
+        <img src="~assets/image/banner3-4.png" alt="" class="banner">
+        <div class="cont">
+             <div class="content1">
           <div class="Box">
             <p class="line1"></p>
             <p class="t1">INTELLIGENCE</p>
@@ -10,6 +12,8 @@
           </div>
           <p class="t3">全球奖项及专利（部分）</p>
         </div>
+        </div>
+       
       </div>
 
       <div class="sec2 wow fadeInUp">
@@ -106,11 +110,21 @@ export default {
 };
 </script>
 <style lang="less" scoped>
+.cont{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
 .sec1 {
-  background: url(~assets/image/banner3-4.png);
-  height: 760px;
+  position: relative;
   width: 100%;
-  background-size: 100% 100%;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,7 +214,7 @@ export default {
       width: 1190px;
       img {
         width: 290px;
-        height: 400px;
+        height: auto;
         margin-right: 8px;
         margin-bottom: 8px;
       }
@@ -229,7 +243,7 @@ line-height: 34px;
   transform: scale(1);
   img {
     width: 210px;
-    height: 320px;
+    // height: 320px;
   }
 }
 //swriper自带的类名（选中时的样式）

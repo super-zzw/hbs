@@ -2,7 +2,9 @@
   <div class="page">
     <div class="container">
        <div class="sec1 wow fadeInUp">
-        <div class="content1">
+         <img src="~assets/image/banner2-3.png" alt="" class="banner">
+         <div class="cont">
+            <div class="content1">
           <div class="Box">
             <p class="line1"></p>
             <p class="t1">ABOUT US</p>
@@ -11,6 +13,8 @@
           <p class="t3">{{$t("walkin3-2")}}</p>
           <p class="t3">{{$t("walkin3-3")}}</p>
         </div>
+         </div>
+        
       </div>
       <div class="sec2 wow fadeInUp">
         <div class="container">
@@ -95,11 +99,21 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.cont{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
     .sec1 {
-  background: url(~assets/image/banner2-3.png);
-  height: 760px;
+
   width: 100%;
-  background-size: 100% 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,13 +175,13 @@ export default {
        width: 1200px;
         .pic{
         width: 630px;
-        height: 480px;
+        height: auto;
         position: relative;
-        top: 97px;
-        
+        top: 50px;
+       margin-right: 60px; 
     }
     .content1{
-        margin-top: 70px;
+        justify-content: center;
         display: flex;
         flex-direction: column;
     }
@@ -207,7 +221,7 @@ color: #808080;
     }
     img{
         width: 848px;
-        height: 210px;
+        height:auto;
         margin: 30px 0 80px;
     }
     }
@@ -238,7 +252,7 @@ margin-top: 30px;
 margin-bottom: 30px;
  }
  .content1.content2{
-     margin-top: 80px;
+    //  margin-top: 80px;
      
          margin-right: 60px;
      
@@ -256,7 +270,7 @@ margin-bottom: 30px;
             margin-right: 30px;
           .pic{
             width: 630px;
-            height: 390px;
+            height:auto;
             
         }
         .picInfo{

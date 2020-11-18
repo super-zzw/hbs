@@ -2,7 +2,9 @@
   <div class="page">
     <div class="container">
         <div class="sec1 wow fadeInUp">
-        <div class="content1">
+          <img src="~assets/image/banner3-1.png" alt="" class="banner">
+          <div class="cont">
+                  <div class="content1">
           <div class="Box">
             <p class="line1"></p>
             <p class="t1">NEWS</p>
@@ -11,6 +13,8 @@
           <p class="t3">最新的公司资讯</p>
         
         </div>
+          </div>
+       
       </div>
       <div class="sec2 wow fadeInUp">
           
@@ -56,11 +60,21 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.cont{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
     .sec1 {
-  background: url(~assets/image/banner3-1.png);
-  height: 760px;
+ 
   width: 100%;
-  background-size: 100% 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +157,7 @@ background: #909090;
         background: #fff;
         .pic{
             width: 100%;
-            height: 680px;
+            height: auto;
         }
         .content1{
             padding: 40px;
@@ -179,7 +193,7 @@ text-indent:2em;
                 justify-content: space-between;
                 img{
                     width: 49%;
-                    height: 320px;
+                    height: auto;
                 }
             }
         }
