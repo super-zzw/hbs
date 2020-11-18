@@ -91,8 +91,8 @@ export default {
         .title{
             
 font-size: 40px;
-font-family: Noto Sans S Chinese;
-font-weight: 500;
+font-family:NotoSansCJK-Bold !important;
+// font-weight: 500;
 color: #FFFFFF;
 
 
@@ -108,8 +108,8 @@ color: #FFFFFF;
         .title{
             
 font-size: 40px;
-font-family: Noto Sans S Chinese;
-font-weight: 500;
+font-family:NotoSansCJK-Bold !important;
+
 color: #FFFFFF;
 line-height: 60px;
 // margin-top: 160px;
@@ -127,8 +127,8 @@ line-height: 60px;
         .title{
       
 font-size: 40px;
-font-family: Noto Sans S Chinese;
-font-weight: 500;
+font-family:NotoSansCJK-Bold !important;
+// font-weight: 500;
 color: #202020;
 line-height: 58px;
         }
@@ -151,8 +151,7 @@ color: #707070;;
             .title{
                 
 font-size: 40px;
-font-family: Noto Sans S Chinese;
-font-weight: 500;
+font-family:NotoSansCJK-Bold !important;
 color: #202020;
 line-height: 60px;
             }

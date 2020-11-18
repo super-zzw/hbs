@@ -196,7 +196,6 @@ margin-right: 15px;
 .name{
 
 font-size: 40px;
-font-family: SourceHanSansCN;
 font-weight: 400;
 color: #FFFFFF;
 line-height: 68px;
@@ -215,7 +214,7 @@ background: #000;
 opacity: 0.7;
 z-index: 10;
 font-size: 20px;
-font-family: SourceHanSansCN;
+
 font-weight: 400;
 color: #FFFFFF;
 // line-height: 68px;
@@ -227,7 +226,7 @@ padding: 5px;
   margin-top: 40px;
   
 font-size: 16px;
-font-family: Adobe Heiti Std;
+
 font-weight: normal;
 color: #FFFFFF;
 line-height: 68px;
@@ -261,7 +260,7 @@ img{
            .c_title{
   
 font-size: 30px;
-font-family: SourceHanSansCN;
+
 font-weight: 400;
 color: #505050;
 line-height: 40px;
@@ -270,7 +269,7 @@ line-height: 40px;
   margin-top: 30px;
 p{
 font-size: 20px;
-font-family: Noto Sans S Chinese;
+
 font-weight: 400;
 color: #707070;
 line-height: 28px;
@@ -288,7 +287,7 @@ white-space:nowrap;
  
   
 font-size: 18px;
-font-family: SourceHanSansCN;
+
 font-weight: 400;
 color: #808080;
 display: flex;
@@ -339,7 +338,7 @@ opacity: 0.5;
 border-radius: 10px;
 
 font-size: 32px;
-font-family: SourceHanSansCN;
+
 font-weight: 400;
 color: #FFFFFF;
 line-height: 57px;
@@ -351,8 +350,8 @@ line-height: 57px;
 }
 .title{
 font-size: 40px;
-font-family: Noto Sans S Chinese;
-font-weight: 500;
+
+
 color: #505050;
 position: relative;
 

@@ -46,7 +46,7 @@ padding: 50px;
 .tt{
         
 font-size: 18px;
-font-family: SourceHanSansCN;
+
 font-weight: 400;
 color: #505050;
 line-height: 36px;

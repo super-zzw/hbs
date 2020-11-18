@@ -50,8 +50,7 @@ padding: 60px;
 .desc{
     
 font-size: 18px;
-font-family: SourceHanSansCN;
-font-weight: 400;
+
 color: #505050;
 line-height: 32px;
 }
@@ -71,8 +70,6 @@ margin-bottom: 23px;
 .label{
     
 font-size: 18px;
-font-family: SourceHanSansCN;
-font-weight: 500;
 color: #505050;
 
 padding-right: 10px;

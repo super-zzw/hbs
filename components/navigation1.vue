@@ -136,7 +136,7 @@ top: 1px;
 // .el-menu--horizontal > .el-menu-item.is-active
 /deep/ .el-menu--horizontal > .el-menu-item.is-active {
   border-bottom: 2px solid #505050 !important;
-  font-weight: bold;
+  font-family: NotoSansCJK-Bold !important;
 }
 .el-menu-item{
     padding:0;

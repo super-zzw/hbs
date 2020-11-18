@@ -150,7 +150,7 @@ top: -2px;
 }
 .el-menu--horizontal > .el-menu-item.is-active {
   border-bottom: 2px solid #fff;
-  font-weight: bold;
+  font-family: NotoSansCJK-Bold !important;
 }
 .el-menu-item{
     padding:0;
@@ -179,7 +179,7 @@ font-family: NotoSansHans-Regular;
 font-weight: 400;
 color: #FFFFFF;
 line-height: 68px;
-
+height: 68px;
 }
 /deep/ .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
     background: transparent;

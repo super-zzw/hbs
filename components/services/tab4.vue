@@ -81,14 +81,12 @@ width:100%
         align-items: center;
         .cont1{
            width: 310px;
-        //    margin-left: 20%;
             position: absolute;  
             left: 20%;
             .title{
              
 font-size: 40px;
-font-family: Noto Sans S Chinese;
-font-weight: 500;
+font-family:NotoSansCJK-Bold !important;
 color: #505050;
 line-height: 60px;
             }
@@ -108,8 +106,7 @@ height: 34px;
                   .tt{
 
 font-size: 11px;
-font-family: SourceHanSansCN;
-font-weight: 400;
+
 color:#707070;
 line-height: 38px;
                   }
@@ -126,8 +123,7 @@ line-height: 38px;
         .title{
             
 font-size: 40px;
-font-family: Noto Sans S Chinese;
-font-weight: 500;
+font-family:NotoSansCJK-Bold !important;
 color: #505050;
 line-height: 75px;
         }
