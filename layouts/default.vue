@@ -47,4 +47,8 @@ html, body ,.wrap{
 .content{
   flex: 1;
 }
+.banner{
+        width: 100%;
+        height: auto;
+      }
 </style>

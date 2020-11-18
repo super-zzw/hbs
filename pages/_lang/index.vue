@@ -1,7 +1,7 @@
 <template>
   <div class="Content">
     <div class="container">
-       <el-carousel height="770px" class="swiper wow fadeInUp" :autoplay="false" cla>
+       <el-carousel  class="swiper wow fadeInUp" :autoplay="false" cla>
       <el-carousel-item v-for="(item,i) in swiperImg" :key="i" >
         <img :src="item" alt="" class="swiperImg">
        
@@ -137,7 +137,8 @@ export default {
 }
 .swiperImg{
   width: 100%;
-  height: 770px;
+  // height: 770px;
+  height: auto;
 }
 
 .section1{
@@ -241,7 +242,7 @@ img{
     width: 100%;
        .pic{
          width: 487px;
-         height: 300px;
+        //  height: 300px;
        }
        .content{
          padding: 50px 40px 0;
@@ -309,11 +310,11 @@ align-items: center;
       margin-bottom: 20px;
       .imgItem{
         width: 49.7%;
-        height: 587px;
+        // height: 587px;
         position: relative;
         img{
           width: 100%;
-          height: 100%;
+          height: auto;
         }
         p{
           position: absolute;

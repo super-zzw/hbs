@@ -24,39 +24,39 @@ img{
     display: block;
     width: 100%;
 }
-    .sec1{
+    // .sec1{
        
-        height: 878px;
+    //     height: 878px;
       
-    }
-    .sec2{
-        height: 1013px;
-    }
-    .sec3{
-        height: 869px;
-    }
-     .sec4{
-        height: 822px;
-    }
+    // }
+    // .sec2{
+    //     height: 1013px;
+    // }
+    // .sec3{
+    //     height: 869px;
+    // }
+    //  .sec4{
+    //     height: 822px;
+    // }
 
-     .sec5{
-        height: 810px;
-    }
-     .sec6{
-        height: 996px;
-    }
-     .sec7{
-        height: 890px;
-    }
-     .sec8{
-        height: 998px;
-    }
-     .sec9{
-        height: 1042px;
+    //  .sec5{
+    //     height: 810px;
+    // }
+    //  .sec6{
+    //     height: 996px;
+    // }
+    //  .sec7{
+    //     height: 890px;
+    // }
+    //  .sec8{
+    //     height: 998px;
+    // }
+    //  .sec9{
+    //     height: 1042px;
          
-    }
+    // }
       .sec10{
-        height: 864px;
+        // height: 864px;
          margin-bottom: 50px;
     }
 </style>

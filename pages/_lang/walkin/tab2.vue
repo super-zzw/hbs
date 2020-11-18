@@ -2,7 +2,8 @@
   <div class="page">
     <div class="container">
       <div class="sec1 wow fadeInUp">
-        <div class="content1">
+        <img src="~assets/image/banner2-2.png" alt="" class="banner">
+        <div class="cont">
           <div class="Box">
             <p class="line1"></p>
             <p class="t1">BUSINESS</p>
@@ -35,8 +36,10 @@
         </div>
       </div>
       <div class="sec3 wow fadeInUp">
-          <h2 class="title">{{$t("walkin2-14")}}</h2>
-          <div class="content">
+         <img src="~assets/image/img2-5.png" alt="" class="banner">
+         <div class="cont">
+                <h2 class="title">{{$t("walkin2-14")}}</h2>
+          <div class="content1">
               <div class="left">
                   <div class="box">
                      {{$t("walkin2-15")}}<span>96</span><span class="font2">%</span>{{$t("walkin2-16")}}
@@ -64,9 +67,13 @@
                    
               </div>
           </div>
+         </div>
+          
       </div>
       <div class="sec4 wow fadeInUp">
-          <h2 class="title">{{$t("walkin2-31")}}</h2>
+         <img src="~assets/image/img2-6.png" alt="" class="banner">
+         <div class="cont">
+               <h2 class="title">{{$t("walkin2-31")}}</h2>
           <p class="line2"></p>
           <p class="desc">{{$t("walkin2-32")}}</p>
           <div class="box">
@@ -88,6 +95,8 @@
                   <p class="t2">{{$t("walkin2-36")}}</p>
               </div>
           </div>
+         </div>
+          
       </div>
       <div class="sec5 wow fadeInUp">
           <div class="container">
@@ -100,12 +109,16 @@
           </div>
       </div>
       <div class="sec6 wow fadeInUp">
-          <h2 class="title">{{$t("walkin2-42")}}</h2>
+         <img src="~assets/image/img2-7.png" alt="" class="banner">
+         <div class="cont">
+            <h2 class="title">{{$t("walkin2-42")}}</h2>
             <p class="line2"></p>
              <p class="desc">{{$t("walkin2-43")}}</p>
               <p class="con">{{$t("walkin2-44")}}</p>
               <p class="con">{{$t("walkin2-45")}}</p>
               <p class="con">{{$t("walkin2-46")}}</p>
+         </div>
+         
       </div>
       <div class="sec7 wow fadeInUp">
          <div class="container">
@@ -149,19 +162,26 @@ export default {
 };
 </script>
 <style lang="less" scoped>
+.cont{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+       
 .sec1 {
-  background: url(~assets/image/banner2-2.png);
-  height: 760px;
+  position: relative;
   width: 100%;
-  background-size: 100% 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  .content1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  
     .Box {
       width: 312px;
       height: 277px;
@@ -201,7 +221,7 @@ export default {
       color: #CCCCCC;
       line-height: 36px;
     }
-  }
+  
 }
 .sec2 {
   background: #fff;
@@ -212,7 +232,8 @@ export default {
     margin-top: 100px;
     img {
       width: 714px;
-      height: 514px;
+      // height: 514px;
+      height: auto;
       margin-right: 77px;
     }
     .content {
@@ -259,10 +280,9 @@ export default {
   }
 }
 .sec3{
-    background: url(~assets/image/img2-5.png);
-  height: 600px;
+   position: relative;
   width: 100%;
-  background-size: 100% 100%;
+  
   display: flex;
  
   align-items: center;
@@ -274,9 +294,9 @@ font-family: SourceHanSansCN;
 font-weight: 400;
 color: #505050;
 line-height: 36px;
-margin-top: 60px;
+// margin-top: 60px;
   }
-  .content{
+  .content1{
       margin-top: 60px;
       display: flex;
       .left{
@@ -332,10 +352,9 @@ span{
   }
 }
 .sec4{
-     background: url(~assets/image/img2-6.png);
-  height: 616px;
+  position: relative;
   width: 100%;
-  background-size: 100% 100%;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,10 +450,9 @@ line-height: 34px;
 }
 }
 .sec6{
- background: url(~assets/image/img2-7.png);
-  height: 577px;
+ 
   width: 100%;
-  background-size: 100% 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -523,8 +541,8 @@ margin-top: 70px;
 }
 .line2 {
   width: 45px;
-  height: 2px;
-  border: 2px solid #808080;
+  height: 3px;
+  
   background: #808080;
   margin: 30px 0;
 }

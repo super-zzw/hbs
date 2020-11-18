@@ -2,7 +2,9 @@
   <div class="page">
     <div class="container">
        <div class="sec1 wow fadeInUp">
-        <div class="content1">
+         <img src="~assets/image/banner3-2.png" alt="" class="banner">
+         <div class="cont">
+               <div class="content1">
           <div class="Box">
             <p class="line1"></p>
             <p class="t1">FACTORY</p>
@@ -11,6 +13,8 @@
           <p class="t3">呼博士拥有自动化生产线及产品检测系统，</p>
           <p class="t3">制作标准化、高品质的新风产品。</p>
         </div>
+         </div>
+        
       </div>
        <div class="sec2 wow fadeInUp">
          <div class="container">
@@ -90,11 +94,21 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.cont{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
     .sec1 {
-  background: url(~assets/image/banner2-2.png);
-  height: 760px;
+  position: relative;
   width: 100%;
-  background-size: 100% 100%;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,13 +171,14 @@ export default {
     justify-content: center;
         .pic{
         width: 630px;
-        height: 460px;
+        // height: 460px;
         position: relative;
-        top: 108px;
+        top: 50px;
         margin-right: 67px;
     }
     .content1{
-        margin-top: 170px;
+        // margin-top: 170px;
+        justify-content: center;
         display: flex;
         flex-direction: column;
     }
@@ -212,7 +227,7 @@ img{
             display: flex;
             .img3-4{
                 width: 590px;
-                height: 416px;
+                // height: 416px;
             }
             .col{
                 margin-left: 15px;
@@ -221,7 +236,7 @@ img{
                 justify-content: space-between;
                 img{
                     width: 290px;
-                    height: 202px;
+                    // height: 202px;
                 }
             }
         }

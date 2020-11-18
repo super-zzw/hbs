@@ -1,7 +1,8 @@
 <template>
     <div class="container">
         <div class="sec1">
-            <div class="cont">
+            <img src="~assets/image/img6.5-1.png" alt="" class="banner">
+            <div class="cont1">
                 <h2 class="title">家里空气质量 <br> 一目了然</h2>
                 <p class="line"></p>
                 <p class="desc">检测数据实时显示，随时随地掌控设备</p>
@@ -75,16 +76,16 @@ width:100%
 }
     .sec1{
         width: 100%;
-        height: 725px;
-        background: url(~assets/image/img6.5-1.png);
-        background-size: 100% 100%;
+       position: relative;
         display: flex;
         align-items: center;
-        .cont{
+        .cont1{
            width: 310px;
-           margin-left: 20%;
+        //    margin-left: 20%;
+            position: absolute;  
+            left: 20%;
             .title{
-                
+             
 font-size: 40px;
 font-family: Noto Sans S Chinese;
 font-weight: 500;

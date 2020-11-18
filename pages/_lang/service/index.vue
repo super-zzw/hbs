@@ -1,7 +1,9 @@
 <template>
     <div class="page">
        <div class="sec1 wow fadeInUp">
-        <div class="content1">
+           <img src="~assets/image/banner6-1.png" alt="" class="banner">
+           <div class="cont">
+                  <div class="content1">
           <div class="Box">
             <p class="line1"></p>
             <p class="t1">Support</p>
@@ -10,6 +12,8 @@
           <p class="t3">呼博士为您提供售前、售中、售后360°一站式无忧服务支持，</p>
           <p class="t3">保障您随时享受健康空气，无后顾之忧。</p>
         </div>
+           </div>
+       
       </div>
       <div class="sec2 ">
           <div class="container">
@@ -57,7 +61,7 @@
                   </div>
                   <div class="content1">
                       <div class="quesItem">
-                          <div class="cont">
+                          <div class="cont2">
                                <img src="~assets/image/icon6.1-6.png" alt="">
                               <div class="right">
                                   <p class="title">新风常识</p>
@@ -67,7 +71,7 @@
                           </div>
                       </div>
                       <div class="quesItem">
-                          <div class="cont">
+                          <div class="cont2">
                              <img src="~assets/image/icon6.1-7.png" alt="">
                              
                               <div class="right">
@@ -78,7 +82,7 @@
                           </div>
                       </div>
                       <div class="quesItem">
-                          <div class="cont">
+                          <div class="cont2">
                             <img src="~assets/image/icon6.1-8.png" alt="">
                               <div class="right">
                                   <p class="title">安装使用</p>
@@ -88,7 +92,7 @@
                           </div>
                       </div>
                          <div class="quesItem">
-                          <div class="cont">
+                          <div class="cont2">
                               <img src="~assets/image/icon6.1-9.png" alt="">
                               <div class="right">
                                   <p class="title">售后维护</p>
@@ -130,11 +134,21 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.cont{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
     .sec1 {
-  background: url(~assets/image/banner6-1.png);
-  height: 760px;
+  
   width: 100%;
-  background-size: 100% 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,7 +271,7 @@ line-height: 34px;
                     display: flex;
                     
                     padding: 50px 0 50px 50px;
-                    .cont{
+                    .cont2{
                         display: flex;
                         align-items: center;
                        

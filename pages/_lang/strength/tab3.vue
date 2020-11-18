@@ -2,7 +2,9 @@
   <div class="page">
     <div class="container">
       <div class="sec1 wow fadeInUp">
-        <div class="content1">
+        <img src="~assets/image/banner3-3.png" alt="" class="banner">
+        <div class="cont">
+              <div class="content1">
           <div class="Box">
             <p class="line1"></p>
             <p class="t1">LABORATORIES</p>
@@ -11,6 +13,8 @@
           <p class="t3">科技研发投入不设限 </p>
           <p class="t3">要做体验极致的新风系统</p>
         </div>
+        </div>
+       
       </div>
       <div class="sec2 wow fadeInUp">
          <img src="~assets/image/img3-9.png" alt="" class="pic">
@@ -179,11 +183,21 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.cont{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
     .sec1 {
-  background: url(~assets/image/banner3-3.png);
-  height: 760px;
+  
   width: 100%;
-  background-size: 100% 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,13 +256,14 @@ export default {
     justify-content: center;
     .pic{
         width: 630px;
-        height: 456px;
+        height:auto;
         position: relative;
-        top: 108px;
+        top: 50px;
         margin-right: 67px;
     }
     .content1{
-        margin-top: 170px;
+        // margin-top: 170px;
+        justify-content: center;
         display: flex;
         flex-direction: column;
         .trans{
@@ -288,7 +303,7 @@ color: #505050;
               
               img{
                   width: 244px;
-                  height: 180px;
+                  height: auto;
                   margin-top: 20px;
               }
        
@@ -302,7 +317,7 @@ color: #505050;
                 // margin-right: 100px;
                 img{
                     width: 600px;
-                    height: 290px;
+                    height: auto;
                 }
             }
             .right{
@@ -367,7 +382,7 @@ color: #505050;
               align-items: flex-start;
              img{
                  width: 320px;
-                 height: 240px;
+                 height: auto;
              }
              .name{
                

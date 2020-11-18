@@ -23,35 +23,35 @@ img{
     display: block;
     width: 100%;
 }
-    .sec1{
+    // .sec1{
        
-        height: 750px;
+    //     height: 750px;
       
-    }
-    .sec2{
-        height: 876px;
-    }
-    .sec3{
-        height: 1034px;
-    }
-     .sec4{
-        height: 1008px;
-    }
+    // }
+    // .sec2{
+    //     height: 876px;
+    // }
+    // .sec3{
+    //     height: 1034px;
+    // }
+    //  .sec4{
+    //     height: 1008px;
+    // }
 
-     .sec5{
-        height: 1003px;
-    }
-     .sec6{
-        height: 1016px;
-    }
-     .sec7{
-        height: 1000px;
-    }
-     .sec8{
-        height: 863px;
-    }
+    //  .sec5{
+    //     height: 1003px;
+    // }
+    //  .sec6{
+    //     height: 1016px;
+    // }
+    //  .sec7{
+    //     height: 1000px;
+    // }
+    //  .sec8{
+    //     height: 863px;
+    // }
      .sec9{
-        height: 733px;
+        // height: 733px;
          margin-bottom: 50px;
     }
      
