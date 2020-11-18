@@ -102,7 +102,7 @@ export default {
     .t3Title{
         font-size: 56px;
         color: #fff;
-        font-weight: bold;
+        font-family: 'NotoSansCJK-Bold'!important;
         margin-bottom: 25px;
     }
     .t3Title2{

@@ -209,8 +209,7 @@ z-index: 10;
 }
 .desc{
   
-background: #000;
-opacity: 0.7;
+background: rgba(255, 2555, 2555, 0.3);
 z-index: 10;
 font-size: 20px;
 font-family: SourceHanSansCN;
@@ -236,6 +235,9 @@ img{
   height: 20px;
 }
 }
+      }
+      .con:last-of-type{
+        margin-right: 0;
       }
     }
   }
@@ -330,17 +332,16 @@ align-items: center;
           position: absolute;
           left: 36px;
           top: 30px;
-          padding: 10px 20px;
+          padding: 4px 24px;
           
-background: #000000;
-opacity: 0.5;
+background: rgba(0, 0, 0, 0.5);
 border-radius: 10px;
 
 font-size: 32px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #FFFFFF;
-line-height: 57px;
+// line-height: 57px;
         }
       }
     }

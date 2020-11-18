@@ -255,12 +255,12 @@ export default {
       position: relative;
       .nm {
         font-size: 200px;
-        font-weight: bold;
+        font-family: 'NotoSansCJK-Bold'!important;
         line-height: 180px;
       }
       .nmTitle {
         font-size: 48px;
-        font-weight: bold;
+        font-family: 'NotoSansCJK-Bold'!important;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -309,11 +309,11 @@ export default {
         }
         .t1i1d {
           font-size: 44px;
-          font-weight: 900;
+          font-family: 'NotoSansCJK-Bold'!important;
         }
         .t1i1e {
           font-size: 28px;
-          font-weight: 500;
+          font-family: 'NotoSansCJK-Bold'!important;
         }
       }
     }

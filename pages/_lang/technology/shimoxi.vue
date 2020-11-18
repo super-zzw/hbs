@@ -123,7 +123,7 @@ export default {
     .t3Title{
         font-size: 44px;
         color: #000;
-        font-weight: bold;
+        font-family: 'NotoSansCJK-Bold'!important;
         margin-bottom: 25px;
     }
     .t3Title2{
@@ -158,7 +158,7 @@ export default {
             color: #000;
             .i4a{
                 font-size: 44px;
-                font-weight: bold;
+                font-family: 'NotoSansCJK-Bold'!important;
                 margin-bottom: 20px;
             }
             .i4b{
@@ -201,7 +201,7 @@ export default {
             .i4e{
                 margin-right: 30px;
                 .i4f{
-                    font-weight: bold;
+                    font-family: 'NotoSansCJK-Bold'!important;
                     .i4f1{
                         font-size: 70px;
                         background: linear-gradient(#000, #fff, #000);

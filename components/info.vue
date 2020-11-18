@@ -4,15 +4,15 @@
            
                <div class="nav">
                 <el-menu :default-active="path" class="el-menu-demo" mode="horizontal"  :router="true">
-  <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item>
-  <el-submenu index="/walkin">
+  <!-- <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item> -->
+  <el-submenu index="/walkin" class="i1Item">
     <template slot="title">{{$t('walkin')}}</template>
     <el-menu-item index="/walkin/tab1">品牌文化</el-menu-item>
     <el-menu-item index="/walkin/tab2">招商计划</el-menu-item>
     <el-menu-item index="/walkin/tab3">公司介绍</el-menu-item>
   
   </el-submenu>
-  <el-submenu index="/strength">
+  <el-submenu index="/strength" class="i1Item">
     <template slot="title">{{$t('strength')}}</template>
     <el-menu-item index="/strength/tab1">软实力</el-menu-item>
     <!-- <el-menu-item index="2-2">硬实力</el-menu-item> -->
@@ -25,15 +25,15 @@
     <el-menu-item index="/strength/tab5">企业实力</el-menu-item>
     
   </el-submenu>
-   <el-submenu index="/product">
+   <el-submenu index="/product" class="i1Item">
     <template slot="title">{{$t('product')}}</template>
     <el-menu-item index="/product/tab1">壁挂机</el-menu-item>
     <el-menu-item index="/product/tab2">吊顶机</el-menu-item>
     <el-menu-item index="/product/tab3">立柜机</el-menu-item>
   
   </el-submenu>
-   <el-menu-item index="/technology" >{{$t('technology')}}</el-menu-item>
-  <el-menu-item index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
+   <el-menu-item class="i1Item" index="/technology" >{{$t('technology')}}</el-menu-item>
+  <el-menu-item class="i1Item" index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
 </el-menu>
             
            </div>
@@ -139,7 +139,9 @@ width: 485px;
 }
 /deep/ .el-input__inner{
     height: 48px;
-    
+    border-radius: 0;
+    outline: none;
+    border: none;
 }
 .nav{
       display: flex;
@@ -268,5 +270,18 @@ font-weight: 600;
 /deep/ .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
     border-bottom: none;
      font-weight: bold;
+}
+.nav {
+    /deep/ .el-menu--horizontal{
+        width:  800px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .i1Item{
+        margin: 0;
+        /deep/ .el-submenu__title{
+            padding: 0;
+        }
+    }
 }
 </style>

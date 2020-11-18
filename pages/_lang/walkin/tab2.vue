@@ -37,7 +37,7 @@
       </div>
       <div class="sec3 wow fadeInUp">
          <img src="~assets/image/img2-5.png" alt="" class="banner">
-         <div class="cont">
+         <div class="cont t3cont">
                 <h2 class="title">{{$t("walkin2-14")}}</h2>
           <div class="content1">
               <div class="left">
@@ -173,7 +173,6 @@ export default {
         justify-content: center;
         flex-direction: column;
       }
-       
 .sec1 {
   position: relative;
   width: 100%;
@@ -243,7 +242,7 @@ export default {
         font-size: 45px;
         font-family: SourceHanSansCN;
         font-weight: 400;
-        color: #202020;
+        color: #505050;
         line-height: 45px;
       }
       .desc {
@@ -312,14 +311,14 @@ line-height: 36px;
       }
       .box{
           
-font-size: 19px;
+font-size: 18px;
 font-family: SourceHanSansCN;
 font-weight: 500;
 color: #808080;
 line-height: 34px;
 padding: 14px 20px;
 margin-bottom: 25px;
-background: #FFFFFF;
+background: rgba(225, 225, 225, 0.51);
 box-shadow: 0px 2px 5px 0px rgba(225, 225, 225, 0.66);
 // opacity: 0.51;
 border-radius: 10px;
@@ -541,9 +540,26 @@ margin-top: 70px;
 }
 .line2 {
   width: 45px;
-  height: 3px;
+  height: 1px;
   
   background: #808080;
   margin: 30px 0;
+}
+.t3cont{
+  padding-top: 65px;
+  // padding-bottom: 100px;
+  .content1{
+    .box{
+      white-space: nowrap;
+      height: 65px;
+    }
+    .box4{
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .box5{
+      margin-top: 40px;
+    }
+  }
 }
 </style>

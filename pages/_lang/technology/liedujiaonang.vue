@@ -196,7 +196,7 @@ export default {
         text-align: center;
         .i1b{
             font-size: 56px;
-            font-weight: bold;
+            font-family: 'NotoSansCJK-Bold'!important;
             color: #FFFFFF;
         }
         .i1c{
@@ -216,7 +216,7 @@ export default {
             width: 30%;
         }
         .i1f{
-            font-weight: bold;
+            font-family: 'NotoSansCJK-Bold'!important;
             .i1f1{
                 font-size: 60px;
                 background: linear-gradient(#000, #fff, #000);
@@ -247,7 +247,7 @@ export default {
      color: #fff;
      .t2b{
          font-size: 44px;
-         font-weight: bold;
+         font-family: 'NotoSansCJK-Bold'!important;
      }
      .t2c{
          color: #C2C2C2;
@@ -270,7 +270,7 @@ export default {
     .t2a{
         font-size: 44px;
         color: #000;
-        font-weight: bold;
+        font-family: 'NotoSansCJK-Bold'!important;
     }
     .t2b{
         margin-top: 90px;
@@ -319,7 +319,7 @@ export default {
         .t5a{
             color: #515151;
             font-size: 44px;
-            font-weight: bold;
+            font-family: 'NotoSansCJK-Bold'!important;
             text-align: center;
         }
         .t5aImg{
@@ -338,7 +338,7 @@ export default {
 .t2m6{
     color: #515151;
     font-size: 44px;
-    font-weight: bold;
+    font-family: 'NotoSansCJK-Bold'!important;
     text-align: center;
     margin-top: 100px;
 }
@@ -350,7 +350,7 @@ export default {
         padding-bottom: 170px;
         color: #fff;
         .i7a{
-            font-weight: bold;
+            font-family: 'NotoSansCJK-Bold'!important;
             font-size: 44px;
             text-align: center;
         }
@@ -374,7 +374,7 @@ export default {
                     padding-right: 30px;
                 }
                 .i7f{
-                    font-weight: bold;
+                    font-family: 'NotoSansCJK-Bold'!important;
                     justify-content: center;
                 }
             }
@@ -386,7 +386,7 @@ export default {
 }
 .i7a{
     font-size: 44px;
-    font-weight: bold;
+    font-family: 'NotoSansCJK-Bold'!important;
     color: #000;
     width: 533px;
     margin-top: 120px;
@@ -398,7 +398,7 @@ export default {
 }
 .i8f{
     font-size: 44px;
-    font-weight: bold;
+    font-family: 'NotoSansCJK-Bold'!important;
     color: #fff;
     margin-top: 120px;
     text-align: center;
