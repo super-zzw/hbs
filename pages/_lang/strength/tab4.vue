@@ -141,16 +141,14 @@ export default {
       .t1 {
           white-space:nowrap;
         font-size: 44px;
-        font-family: Noto Sans S Chinese;
-        font-weight: 900;
+       font-family:NotoSansCJK-Bold !important;
         color: #FFFFFF;
         line-height: 97px;
         opacity: 1;
       }
       .t2 {
         font-size: 28px;
-        font-family: Noto Sans S Chinese;
-        font-weight: 500;
+      font-family:NotoSansCJK-Bold !important;
         color: #FFFFFF;
         line-height: 36px;
       }
@@ -174,8 +172,7 @@ export default {
     .title{
         
 font-size: 40px;
-font-family: Noto Sans S Chinese;
-font-weight: 500;
+font-family:NotoSansCJK-Bold !important;
 color: #505050;
 line-height: 68px;
     }
@@ -214,8 +211,7 @@ line-height: 34px;
         .desc{
 margin: 5px 0;         
 font-size: 22px;
-font-family: Noto Sans S Chinese;
-font-weight: 400;
+
 color: #FFFFFF;
         }
     }
@@ -281,22 +277,20 @@ color: #fff;
 .title{
        
 font-size: 32px;
-font-family: Noto Sans S Chinese;
-font-weight: 400;
+font-family:NotoSansCJK-Bold !important;
 color: #FFFFFF;
 line-height: 45px;     
  }
  .con{  
 font-size: 16px;
-font-family: Noto Sans S Chinese;
-font-weight: 400;
+
 color: #FFFFFF;
 line-height: 30px;
  }
 .line{
     width: 45px;
 height: 2px;
-border: 2px solid #808080;
+
 background: #808080;
 margin: 20px 0;
 }

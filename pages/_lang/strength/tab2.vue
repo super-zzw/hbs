@@ -135,16 +135,14 @@ export default {
       }
       .t1 {
         font-size: 44px;
-        font-family: Noto Sans S Chinese;
-        font-weight: 900;
+       font-family:NotoSansCJK-Bold !important;
         color: #FFFFFF;
         line-height: 97px;
         opacity: 1;
       }
       .t2 {
         font-size: 28px;
-        font-family: Noto Sans S Chinese;
-        font-weight: 500;
+       font-family:NotoSansCJK-Bold !important;
         color: #FFFFFF;
         line-height: 36px;
       }
@@ -245,8 +243,7 @@ img{
  .title{
        
 font-size: 32px;
-font-family: Noto Sans S Chinese;
-font-weight: 400;
+font-family:NotoSansCJK-Bold !important;
 color: #FFFFFF;
 line-height: 45px;     
  }
@@ -261,7 +258,7 @@ line-height: 34px;
  .line{
      width: 50px;
 height: 2px;
-border: 2px solid #808080;
+
 background: #808080;
 margin-top: 30px;
 margin-bottom: 30px;

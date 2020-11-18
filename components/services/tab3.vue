@@ -44,14 +44,13 @@ export default {
         width: 900px;
 
 background: #F2F2F2;
-border: 1px solid #CCCCCC;
+border: 1px solid #F2F2F2;
 padding: 60px;
 
 .desc{
     
 font-size: 18px;
-font-family: SourceHanSansCN;
-font-weight: 400;
+
 color: #505050;
 line-height: 32px;
 }
@@ -63,7 +62,7 @@ flex-wrap: wrap;
     .box{
         
 
-border: 1px solid #505050;
+border: 1px solid #CCCCCC;
 display: flex;
 padding: 10px;
 width: 100%;
@@ -71,8 +70,6 @@ margin-bottom: 23px;
 .label{
     
 font-size: 18px;
-font-family: SourceHanSansCN;
-font-weight: 500;
 color: #505050;
 
 padding-right: 10px;

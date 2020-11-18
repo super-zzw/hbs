@@ -3,7 +3,7 @@
        <div class="sec1 wow fadeInUp">
            <img src="~assets/image/banner6-1.png" alt="" class="bg" v-if="index!=3">
            <img src="~assets/image/banner6-5.png" alt="" class="bg" v-else>
-        <div class="content1">
+        <div class="content1" v-if="index!=3">
           <div class="Box">
             <p class="line1"></p>
             <p class="t1">Support</p>
@@ -11,6 +11,15 @@
           </div>
           <p class="t3">呼博士为您提供售前、售中、售后360°一站式无忧服务支持，</p>
           <p class="t3">保障您随时享受健康空气，无后顾之忧。</p>
+        </div>
+         <div class="content1" v-else>
+          <div class="Box">
+            <p class="line1"></p>
+            <p class="t1">INTELLIGENCE</p>
+            <p class="t2">手机智能控制</p>
+          </div>
+          <p class="t3">匹配WIFI模块，可通过手机APP智能远程操控，</p>
+          <p class="t3">回家路上，洁净之家早已准备静候您的归来。</p>
         </div>
       </div>
       <div class="sec2 wow fadeInUp">
@@ -115,24 +124,21 @@ export default {
       }
       .t1 {
         font-size: 44px;
-        font-family: Noto Sans S Chinese;
-        font-weight: 900;
+       font-family:NotoSansCJK-Bold !important;
         color: #FFFFFF;
         line-height: 97px;
         opacity: 1;
       }
       .t2 {
         font-size: 28px;
-        font-family: Noto Sans S Chinese;
-        font-weight: 500;
+       font-family:NotoSansCJK-Bold !important;
         color: #FFFFFF;
         line-height: 36px;
       }
     }
     .t3 {
       font-size: 20px;
-      font-family: Noto Sans S Chinese;
-      font-weight: 400;
+     
       color: #CCCCCC;
       line-height: 36px;
     }
@@ -162,9 +168,8 @@ export default {
         z-index: 10;
         .title{
             
-font-size: 40px;
-font-family: Noto Sans S Chinese;
-font-weight: 500;
+
+font-family:NotoSansCJK-Bold !important;
 color: #505050;
 
 
@@ -182,8 +187,7 @@ color: #505050;
                 margin-right: 40px;
                 
 font-size: 18px;
-font-family: Noto Sans S Chinese;
-font-weight: 400;
+
 color: #808080;
 line-height: 34px;
 cursor: pointer;
@@ -194,7 +198,7 @@ cursor: pointer;
             .navItem.active{
                 border-bottom:2px solid #808080;
                 color: #505050;
-                font-weight: 550;
+               font-family:NotoSansCJK-Bold !important;
             }
             .navItem:last-child{
                 margin-right: 0;

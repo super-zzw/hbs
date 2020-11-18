@@ -44,8 +44,7 @@ export default {
        .desc{
            
 font-size: 18px;
-font-family: Noto Sans S Chinese;
-font-weight: 400;
+
 color: #505050;
 line-height: 36px;
        }
@@ -66,8 +65,7 @@ flex-wrap: wrap;
     border-bottom: 1px solid #C3C3C3;
     text-align: center;
 font-size: 16px;
-font-family: SourceHanSansCN;
-font-weight: 400;
+
 color: #808080;
     
 }
@@ -79,8 +77,7 @@ color: #808080;
      justify-content: center;
      
 font-size: 16px;
-font-family: SourceHanSansCN;
-font-weight: 400;
+
 color: #808080;
      align-items: center;
 }
@@ -91,8 +88,7 @@ border-right: 1px solid #C3C3C3;
 .header{
     
 font-size: 22px;
-font-family: SourceHanSansCN;
-font-weight: bold;
+font-family:NotoSansCJK-Bold !important;
 color: #FFFFFF;
 background: #808080;
 }

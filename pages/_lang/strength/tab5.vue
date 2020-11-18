@@ -50,7 +50,7 @@
             <swiper
               :options="swiperOption"
               ref="mySwiper"
-              style="width:1050px;height:500px;padding-top:100px"
+              style="width:1050px;height:450px;padding-top:100px"
             >
             
                 <swiper-slide v-for="(item,i) in swiperImgs" :key="i">
@@ -152,24 +152,21 @@ export default {
       .t1 {
         white-space: nowrap;
         font-size: 44px;
-        font-family: Noto Sans S Chinese;
-        font-weight: 900;
+      font-family:NotoSansCJK-Bold !important;
         color: #ffffff;
         line-height: 97px;
         opacity: 1;
       }
       .t2 {
         font-size: 28px;
-        font-family: Noto Sans S Chinese;
-        font-weight: 500;
+        font-family:NotoSansCJK-Bold !important;
         color: #ffffff;
         line-height: 36px;
       }
     }
     .t3 {
       font-size: 20px;
-      font-family: Noto Sans S Chinese;
-      font-weight: 400;
+    
       color: #cccccc;
       line-height: 36px;
     }
@@ -189,8 +186,7 @@ export default {
     align-items: center;
     .title {
       font-size: 40px;
-      font-family: SourceHanSansCN;
-      font-weight: 500;
+    font-family:NotoSansCJK-Bold !important;
       color: #505050;
     }
     .line {
@@ -202,8 +198,7 @@ export default {
     }
     .desc {
       font-size: 18px;
-      font-family: SourceHanSansCN;
-      font-weight: 400;
+      
       color: #808080;
       line-height: 34px;
     }

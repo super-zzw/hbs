@@ -11,48 +11,33 @@
   <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item>
   <el-submenu index="/walkin">
     <template slot="title">{{$t('walkin')}}</template>
-    <el-menu-item index="/walkin/tab1">品牌文化</el-menu-item>
-    <el-menu-item index="/walkin/tab2">招商计划</el-menu-item>
-    <el-menu-item index="/walkin/tab3">公司介绍</el-menu-item>
+    <el-menu-item index="/walkin/tab1" :route="$i18n.path('walkin/tab1')">品牌文化</el-menu-item>
+    <el-menu-item index="/walkin/tab2" :route="$i18n.path('walkin/tab2')">招商计划</el-menu-item>
+    <el-menu-item index="/walkin/tab3" :route="$i18n.path('walkin/tab3')">公司介绍</el-menu-item>
   
   </el-submenu>
   <el-submenu index="/strength">
     <template slot="title">{{$t('strength')}}</template>
-    <el-menu-item index="/strength/tab1">软实力</el-menu-item>
+    <el-menu-item index="/strength/tab1" :route="$i18n.path('strength/tab1')">软实力</el-menu-item>
     <!-- <el-menu-item index="2-2">硬实力</el-menu-item> -->
      <el-submenu index="2-2">
       <template slot="title">硬实力</template>
-      <el-menu-item index="/strength/tab2">工厂实力</el-menu-item>
-      <el-menu-item index="/strength/tab3">实验室</el-menu-item>
-      <el-menu-item index="/strength/tab4">四大研发</el-menu-item>
+      <el-menu-item index="/strength/tab2" :route="$i18n.path('strength/tab2')">工厂实力</el-menu-item>
+      <el-menu-item index="/strength/tab3" :route="$i18n.path('strength/tab3')">实验室</el-menu-item>
+      <el-menu-item index="/strength/tab4" :route="$i18n.path('strength/tab4')">四大研发</el-menu-item>
     </el-submenu>
-    <el-menu-item index="/strength/tab5">企业实力</el-menu-item>
+    <el-menu-item index="/strength/tab5" :route="$i18n.path('strength/tab5')">企业实力</el-menu-item>
     
   </el-submenu>
    <el-submenu index="/product">
     <template slot="title">{{$t('product')}}</template>
-    <el-menu-item index="/product/tab1">壁挂机</el-menu-item>
-    <el-menu-item index="/product/tab2">吊顶机</el-menu-item>
-    <el-menu-item index="/product/tab3">立柜机</el-menu-item>
+    <el-menu-item index="/product/tab1" :route="$i18n.path('product/tab1')">壁挂机</el-menu-item>
+    <el-menu-item index="/product/tab2" :route="$i18n.path('product/tab2')">吊顶机</el-menu-item>
+    <el-menu-item index="/product/tab3" :route="$i18n.path('product/tab3')">立柜机</el-menu-item>
   
   </el-submenu>
-  <!-- <el-menu-item index="/walkin" :route="$i18n.path('walkin')">{{$t('walkin')}}</el-menu-item> -->
-  <!-- <el-menu-item index="/strength" :route="$i18n.path('strength')">{{$t('strength')}}</el-menu-item> -->
-  <!-- <el-menu-item index="/product" :route="$i18n.path('product')">{{$t('product')}}</el-menu-item> -->
-  <el-menu-item index="/technology" :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item>
-  <!-- <el-submenu index="/service">
-    <template slot="title">{{$t('service')}}</template>
-    <el-menu-item index="/service/tab1">服务支持</el-menu-item>
-    <el-menu-item index="/service/tab2">安装服务</el-menu-item>
-    <el-menu-item index="/service/tab3">售后政策</el-menu-item>
-    <el-menu-item index="/service/tab4">售后服务</el-menu-item>
-    <el-menu-item index="/service/tab5">APP下载</el-menu-item>
-    <el-menu-item index="/service/tab6">说明书下载</el-menu-item>
-    <el-menu-item index="/service/tab7">常见问题-附答案</el-menu-item>
-    <el-menu-item index="/service/tab8">联系我们</el-menu-item>
-  
-  </el-submenu> -->
-   <el-menu-item index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
+   <el-menu-item index="/technology"  :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item>
+  <el-menu-item index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
 </el-menu>
             
             <NuxtLink v-if="$i18n.locale === 'zh'" :to="`/en` + $route.fullPath" class="Header__Link" active-class="none" exact>
@@ -151,7 +136,7 @@ top: 1px;
 // .el-menu--horizontal > .el-menu-item.is-active
 /deep/ .el-menu--horizontal > .el-menu-item.is-active {
   border-bottom: 2px solid #505050 !important;
-  font-weight: bold;
+  font-family: NotoSansCJK-Bold !important;
 }
 .el-menu-item{
     padding:0;

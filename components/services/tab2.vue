@@ -35,9 +35,9 @@ export default {
 
 background: #F2F2F2;
 border: 1px solid #C6C6C6;
-padding: 60px;
+padding: 50px;
 .t1{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     
 }
 .tt2{
@@ -46,7 +46,7 @@ padding: 60px;
 .tt{
         
 font-size: 18px;
-font-family: SourceHanSansCN;
+
 font-weight: 400;
 color: #505050;
 line-height: 36px;

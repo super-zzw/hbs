@@ -82,8 +82,7 @@
                   <p class="t2">{{$t("walkin2-33")}}</p>
               </div>
               <div class="item">
-                  <p class="t1">＜
-                        <span>2</span>%</p>
+                  <p class="t1">＜<span>2</span>%</p>
                   <p class="t2">{{$t("walkin2-34")}}</p>
               </div>
               <div class="item">
@@ -199,16 +198,14 @@ export default {
       }
       .t1 {
         font-size: 44px;
-        font-family: Noto Sans S Chinese;
-        font-weight: 900;
+       font-family:NotoSansCJK-Bold !important;
         color: #FFFFFF;
         line-height: 97px;
         opacity: 1;
       }
       .t2 {
         font-size: 28px;
-        font-family: Noto Sans S Chinese;
-        font-weight: 500;
+       font-family:NotoSansCJK-Bold !important;
         color: #FFFFFF;
         line-height: 36px;
       }
@@ -292,8 +289,6 @@ font-size: 49px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #505050;
-line-height: 36px;
-// margin-top: 60px;
   }
   .content1{
       margin-top: 60px;
@@ -364,7 +359,7 @@ font-size: 49px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #FFFFFF;
-line-height: 36px;
+
   }
   .desc{
 
@@ -426,8 +421,8 @@ font-size: 49px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #505050;
-line-height: 36px;
-margin-bottom: 20px;
+// line-height: 36px;
+// margin-bottom: 20px;
    }
    .desc{
        
@@ -435,7 +430,7 @@ font-size: 20px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #808080;
-line-height: 16px;
+// line-height: 16px;
 margin-bottom: 30px;
    }
    .con{
@@ -462,7 +457,7 @@ font-size: 49px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #FFFFFF;
-line-height: 68px;
+// line-height: 68px;
   }
   .desc{
       
@@ -470,7 +465,7 @@ font-size: 20px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #FFFFFF;
-line-height: 16px;
+// line-height: 16px;
 margin-bottom: 35px;
   }
   .con{
