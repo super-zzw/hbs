@@ -167,7 +167,7 @@ font-weight: 400;
 text-decoration: none;
 position: relative;
 top: -2px;
-margin-right: 30px;
+margin-right: 60px;
       }
       .line{
           width: 2px;

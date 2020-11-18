@@ -119,10 +119,10 @@
           <div class="i5b">{{ $t("technology27") }}</div>
           <div class="i5b">{{ $t("technology28") }}</div>
           <div class="i5b">{{ $t("technology29") }}</div>
-          <div class="i2f">
+          <!-- <div class="i2f">
             {{ $t("technology6") }}
             <img class="i2fIcon" src="@/assets/image/right.png" alt="" />
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -139,10 +139,10 @@
             </div>
             <div class="i2e">{{ $t("technology31") }}</div>
             <div class="i2e">{{ $t("technology32") }}</div>
-            <div class="i2f">
+            <!-- <div class="i2f">
               {{ $t("technology6") }}
               <img class="i2fIcon" src="@/assets/image/right2.png" alt="" />
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

@@ -260,6 +260,8 @@ line-height: 34px;
                 display: flex;
                 flex-wrap: wrap;
                 box-sizing: border-box;
+                
+border-right: 0;
                 .quesItem{
                     width: 50%;
                     border-right:1px solid #CCCCCC ;

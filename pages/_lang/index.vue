@@ -254,7 +254,7 @@ img{
   background: #fff;
     width: 100%;
        .pic{
-         width: 487px;
+         width: 470px;
         //  height: 300px;
        }
        .content{

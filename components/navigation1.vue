@@ -108,6 +108,7 @@ text-decoration: none;
 position: relative;
 top: 1px;
 margin-right: 30px;
+margin-left: 20px;
       }
       .line{
           width: 2px;

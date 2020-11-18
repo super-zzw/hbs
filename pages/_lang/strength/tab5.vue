@@ -38,7 +38,7 @@
           <!-- <div class="tabsBox">
                    <div></div>
           </div>-->
-          <el-tabs v-model="activeName">
+          <el-tabs v-model="activeName" @tab-click="slideto">
             <el-tab-pane label="企业资质" name="1"></el-tab-pane>
             <el-tab-pane label="研发实力" name="2"></el-tab-pane>
             <el-tab-pane label="核心认证" name="3"></el-tab-pane>
@@ -106,6 +106,16 @@ export default {
         }
       }
     };
+  },
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.$swiper
+    }
+  },
+  methods:{
+    slideto(tab){
+      this.swiper.slideTo(tab.index, 1000, false)
+    }
   }
 };
 </script>

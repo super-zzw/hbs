@@ -61,23 +61,28 @@
                        <p class="desc">呼博士实验室获得威凯检测数据认可</p>
                         <div class="tt">
                              <img src="~assets/image/icon3-6.png" alt="" class="pic">
-                             符合国家消杀产品生产标准
+                             <span class="ttBlod">12</span>
+                             <span>个实验架构</span>
                         </div>
                         <div class="tt">
                              <img src="~assets/image/icon3-7.png" alt="" class="pic">
-                             6栋国标厂房
+                             <span class="ttBlod">68</span>
+                             <span>套试验设备</span>
                         </div>
                         <div class="tt">
                              <img src="~assets/image/icon3-8.png" alt="" class="pic">
-                             建筑面积7.6万m²
+                             <span class="ttBlod">1350㎡</span>
+                             <span>占地面积</span>
                         </div>
                         <div class="tt">
                              <img src="~assets/image/icon3-9.png" alt="" class="pic">
-                             年产能可达2365.2万台
+                             <span class="ttBlod">17</span>
+                             <span>个全球检测标准</span>
                         </div>
                         <div class="tt">
                              <img src="~assets/image/icon3-10.png" alt="" class="pic">
-                             国家标准1000级的无尘车间
+                             <span class="ttBlod">219</span>
+                             <span>项可测试内容</span>
                         </div>
                   </div>
               </div>
@@ -341,7 +346,6 @@ color: #505050;
                        .tt{
                   
 font-size: 20px;
-font-family:NotoSansCJK-Bold !important;
 color: #707070;
 display: flex;
 align-items: center;
@@ -468,4 +472,7 @@ margin-bottom: 30px;
      margin-left: 90px;
    }
  }
+.ttBlod{
+  font-family:NotoSansCJK-Bold !important;
+}
 </style>
