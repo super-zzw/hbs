@@ -17,17 +17,20 @@
        
       </div>
       <div class="sec2 wow fadeInUp">
-         <img src="~assets/image/img3-9.png" alt="" class="pic">
-         <div class="content1">
-             <h2 class="title">科技创新 因为用心</h2>
-             <p class="trans">Technology Innovation</p>
-             <p class="line"></p>
-             <p class="con">呼博士按照ISO/IEC17025:2015标准建立并进行管理，拥有</p>
-             <p class="con">多名博士工程师，对新风系统、空气净化器、加湿器、暖风</p>
-             <p class="con">机和风扇等家电产品进行产品技术升级，以及安全、性能等</p>
-             <p class="con">检测。</p>
+        <div class="mCont tab3Item1">
+            <img src="~assets/image/img3-9.png" alt="" class="pic">
+          <div class="content1">
+              <h2 class="title">科技创新 因为用心</h2>
+              <p class="trans">Technology Innovation</p>
+              <p class="line"></p>
+              <p class="con">呼博士按照ISO/IEC17025:2015标准建立并进行管理，拥有</p>
+              <p class="con">多名博士工程师，对新风系统、空气净化器、加湿器、暖风</p>
+              <p class="con">机和风扇等家电产品进行产品技术升级，以及安全、性能等</p>
+              <p class="con">检测。</p>
 
-         </div>
+          </div>
+        </div>
+         
       </div>
       <div class="sec3 wow fadeInUp">
           <div class="container">
@@ -62,19 +65,19 @@
                         </div>
                         <div class="tt">
                              <img src="~assets/image/icon3-7.png" alt="" class="pic">
-                             符合国家消杀产品生产标准
+                             6栋国标厂房
                         </div>
                         <div class="tt">
                              <img src="~assets/image/icon3-8.png" alt="" class="pic">
-                             符合国家消杀产品生产标准
+                             建筑面积7.6万m²
                         </div>
                         <div class="tt">
                              <img src="~assets/image/icon3-9.png" alt="" class="pic">
-                             符合国家消杀产品生产标准
+                             年产能可达2365.2万台
                         </div>
                         <div class="tt">
                              <img src="~assets/image/icon3-10.png" alt="" class="pic">
-                             符合国家消杀产品生产标准
+                             国家标准1000级的无尘车间
                         </div>
                   </div>
               </div>
@@ -284,17 +287,21 @@ margin-top: 10px;
     justify-content: center;
     .container{
         margin-top: 100px;
+        width: 1200px;
         .contentBox1{
             display: flex;
             align-items: center;
+            // justify-content: space-between;
             .left{
-                margin-right: 100px;
+                margin-right: 0;
                 width: 600px;
               .con{
                   color: #707070;
+                  text-align: justify;
               }
             }
             .right{
+              margin-left: 120px;
               .title{
                   
 font-size: 28px;
@@ -315,13 +322,14 @@ color: #505050;
             // justify-content: space-between;
             margin-top: 50px;
             .left{
-                margin-right: 100px;
+                margin-right: 0;
                 img{
                     width: 600px;
                     height: auto;
                 }
             }
             .right{
+              margin-left: 120px;
                 .title{
                     font-size: 28px;
 font-family:NotoSansCJK-Bold !important;
@@ -340,7 +348,7 @@ align-items: center;
 margin-bottom: 15px;
 img{
     width: 30px;
-    height: 35px;
+    height: auto;
     margin-right: 15px;
 }
               }
@@ -450,5 +458,14 @@ height: 2px;
 background: #808080;
 margin-top: 30px;
 margin-bottom: 30px;
+ }
+ .tab3Item1{
+   display: flex;
+   .pic{
+     margin-right: 0;
+   }
+   .content1{
+     margin-left: 90px;
+   }
  }
 </style>

@@ -46,7 +46,7 @@
                 <NuxtLink v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" class="Header__Link" active-class="none" exact>
                     {{ $t('zh') }}
                 </NuxtLink>
-                <img src="~assets/image/line.png" alt="" class="line">
+                <div class="wLine"></div>
                 <img src="~assets/image/search2.png" alt="" class="search">
            </div>
         </div>
@@ -222,5 +222,11 @@ font-weight: 600;
 /deep/ .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
     border-bottom-color: #505050;
     
+}
+.wLine{
+    width: 0;
+    height: 14px;
+    border-left: 2px dotted #505050;
+    margin-right: 20px;
 }
 </style>

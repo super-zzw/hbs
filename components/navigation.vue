@@ -236,5 +236,4 @@ font-weight: 600;
 /deep/ .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
     border-bottom-color: #fff;
 }
-
 </style>

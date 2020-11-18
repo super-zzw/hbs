@@ -1,14 +1,15 @@
 <template>
   <div class="container">
     <div class="quesItem">
-      <div class="top">
+      <div class="top" @click="changeTab(0)">
         <div class="left">
-          <img src="~assets/image/icon6.7-1.png" alt="" />
+          <img src="~assets/image/icon6.7-1.png"  alt="" />
           <p class="ques">什么是新风系统？</p>
         </div>
-        <img src="~assets/image/icon6.7-2.png" alt="" class="right" />
+        <img src="~assets/image/icon6.7-2.png" v-if="active[0]" alt="" class="right" />
+        <img src="~assets/image/icon6.7-3.png" v-else alt="" class="right" />
       </div>
-      <div class="answer">
+      <div class="answer" v-if="active[0]">
         <p class="tag">A：</p>
         <p class="con">
           新风系统是持续高效的对室内外空气进行24小时不间断循环，并能使进入室内的空气通过
@@ -17,14 +18,15 @@
       </div>
     </div>
     <div class="quesItem">
-      <div class="top">
+      <div class="top" @click="changeTab(1)">
         <div class="left">
           <img src="~assets/image/icon6.7-1.png" alt="" />
           <p class="ques">为什么需要新风系统？</p>
         </div>
-        <img src="~assets/image/icon6.7-2.png" alt="" class="right" />
+        <img src="~assets/image/icon6.7-2.png" v-if="active[1]" alt="" class="right" />
+        <img src="~assets/image/icon6.7-3.png" v-else alt="" class="right" />
       </div>
-      <div class="answer">
+      <div class="answer" v-if="active[1]">
         <p class="tag">A：</p>
         <p class="con">
           1、不用开窗也能享受大自然的新鲜空气；<br>
@@ -34,11 +36,22 @@
         </p>
       </div>
     </div>
-    <img src="~assets/image/icon6.7-3.png" alt="" class="add" />
+    <!-- <img src="~assets/image/icon6.7-3.png" alt="" class="add" /> -->
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data(){
+    return {
+      active:[true,true]
+    }
+  },
+  methods:{
+    changeTab(index){
+      this.$set(this.active,index,!this.active[index])
+    }
+  }
+};
 </script>
 <style lang="less" scoped>
 .container {

@@ -2,7 +2,7 @@
   <div class="page">
     <div class="container">
       <div class="sec1 wow fadeInUp">
-        <img src="~assets/image/banner3-4.png" alt="" class="banner">
+        <img src="~assets/image/banner3-5.png" alt="" class="banner">
         <div class="cont">
              <div class="content1">
           <div class="Box">
@@ -265,6 +265,25 @@ line-height: 34px;
 }
 /deep/ .el-tabs__item{
   font-size: 18px;
+  color: #808080;
 }
-
+/deep/ .el-tabs__item.is-active{
+  color: #505050;
+}
+/deep/ .el-tabs__active-bar{
+  background-color: #808080;
+}
+/deep/ .el-tabs__nav-wrap::after{
+  background-color: transparent;
+}
+.swiper-button-next{
+  background-image: url('../../../assets/image/next.png');
+  background-size: 36px auto;
+  width: 44px;
+}
+.swiper-button-prev{
+  background-image: url('../../../assets/image/prev.png');
+  background-size: 36px auto;
+  width: 44px;
+}
 </style>

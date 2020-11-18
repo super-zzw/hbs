@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 *, *:before, *:after {
   padding: 0;
   margin: 0;
@@ -51,4 +51,5 @@ html, body ,.wrap{
         width: 100%;
         height: auto;
       }
+      
 </style>

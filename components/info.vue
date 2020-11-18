@@ -48,7 +48,7 @@
                     <div class="search"><img src="~assets/image/search2.png" alt=""></div>
                 </div>
             </div>
-            <div class="tip">BRI呼博士品牌隶属于厦门蒙发利科技（集团）股份有限公司 Copyright 2020 Together-link Inc. 闽ICP备20003087号-2</div>
+            <div class="tip">BRI呼博士品牌隶属于厦门蒙发利科技（集团）股份有限公司 Copyright 2020 MRI.ALL Rights Reserved. 闽ICP备20003087号-2</div>
         </div>
     </div>
 </template>
@@ -102,6 +102,11 @@ text-decoration: none;
     justify-content: center;
     .input_box{
         display: flex;
+        /deep/ .el-input__inner{
+            
+color: #505050;
+font-size: 16px;
+        }
         input{
             width: 485px;
 height: 48px;

@@ -387,4 +387,5 @@ border-radius: 50%;
 /deep/ .el-carousel__indicator.is-active button{
   background: #fff;
 }
+
 </style>

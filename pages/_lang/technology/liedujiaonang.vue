@@ -139,6 +139,7 @@
             <div class="box">
                 <div class="mCont t2m7 wow fadeInUp">
                     <div class="i7a">{{$t("t2d32")}}</div>
+                    <img class="i7bImg" src="@/assets/image/t2banner711.png" alt="">
                 </div>
             </div>
         </div>
@@ -332,6 +333,13 @@ export default {
             justify-content: space-between;
             margin-top: 20px;
             font-size: 22px;
+            .t5c{
+                width: 27.3%;
+                text-align: center;
+            }
+            .t5c:nth-of-type(2){
+                margin-left: -5%;
+            }
         }
     }
 }
@@ -366,7 +374,7 @@ export default {
                     text-align: center;
                     display: flex;
                     justify-content: space-between;
-                    font-size: 17px;
+                    font-size: 18px;
                 }
                 .i7e{
                     font-size: 18px;
@@ -388,9 +396,14 @@ export default {
     font-size: 44px;
     font-family: 'NotoSansCJK-Bold'!important;
     color: #000;
-    width: 533px;
-    margin-top: 120px;
-    margin-left: 40px;
+    width: 540px;
+    padding-top: 13%;
+    text-align: justify;
+}
+.i7bImg{
+    width: 540px;
+    height: auto;
+    margin-top: 5%;
 }
 .i8b{
     color: #fff;
@@ -411,5 +424,8 @@ export default {
 }
 .i8c{
     padding-left: 20px!important;
+}
+.i8b:nth-of-type(8){
+    color: #16B0FF;
 }
 </style>

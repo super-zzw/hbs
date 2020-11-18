@@ -350,7 +350,7 @@ export default {
       margin-top: 40px;
       font-size: 16px;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       padding: 8px 9px;
       border: 1px solid #fff;
       text-decoration: none;
@@ -369,7 +369,7 @@ export default {
     display: flex;
     flex-direction: row-reverse;
     .i3mContbox {
-      width: 45%;
+      width: 36%;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -396,7 +396,7 @@ export default {
         }
         .i2f{
             display: flex;
-            align-items: flex-end;
+            align-items: center;
             margin-top: 30px;
             padding: 8px 9px;
             color: #000;

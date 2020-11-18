@@ -175,7 +175,7 @@ export default {
     }
 }
 .i3mcont{
-    padding-top: 150px;
+    padding-top: 20%;
     justify-content: flex-start!important;
     .i3a{
         font-size: 24px;
