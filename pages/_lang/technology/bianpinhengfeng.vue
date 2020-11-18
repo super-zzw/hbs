@@ -102,7 +102,7 @@ export default {
     .t3Title{
         font-size: 56px;
         color: #fff;
-        font-weight: bold;
+        font-family: 'NotoSansCJK-Bold'!important;
         margin-bottom: 25px;
     }
     .t3Title2{
@@ -175,7 +175,7 @@ export default {
     }
 }
 .i3mcont{
-    padding-top: 150px;
+    padding-top: 20%;
     justify-content: flex-start!important;
     .i3a{
         font-size: 24px;

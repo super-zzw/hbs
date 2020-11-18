@@ -9,7 +9,7 @@ export default {
       { name: "keywords", content: "呼博士" },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   loading: { color: 'cyan' },

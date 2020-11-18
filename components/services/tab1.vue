@@ -88,7 +88,7 @@ border-right: 1px solid #C3C3C3;
 .header{
     
 font-size: 22px;
-font-family:NotoSansCJK-Bold !important;
+// font-family:NotoSansCJK-Bold !important;
 color: #FFFFFF;
 background: #808080;
 }

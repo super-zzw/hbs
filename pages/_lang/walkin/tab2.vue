@@ -37,32 +37,32 @@
       </div>
       <div class="sec3 wow fadeInUp">
          <img src="~assets/image/img2-5.png" alt="" class="banner">
-         <div class="cont">
+         <div class="cont t3cont">
                 <h2 class="title">{{$t("walkin2-14")}}</h2>
           <div class="content1">
               <div class="left">
                   <div class="box">
-                     {{$t("walkin2-15")}}<span>96</span><span class="font2">%</span>{{$t("walkin2-16")}}
+                     {{$t("walkin2-15")}}<span class="nBold">96</span><span class="font2">%</span>{{$t("walkin2-16")}}
                   </div>
                    <div class="box box1">
-                     {{$t("walkin2-19")}}<span>430</span><span class="font2"> {{$t("walkin2-20")}}</span> {{$t("walkin2-21")}}
+                     {{$t("walkin2-19")}}<span class="nBold">430</span><span class="font2"> {{$t("walkin2-20")}}</span> {{$t("walkin2-21")}}
                   </div>
                    <div class="box box2">
-                     {{$t("walkin2-29")}}<span>75</span><span class="font2">%</span>{{$t("walkin2-30")}}
+                     {{$t("walkin2-29")}}<span class="nBold">75</span><span class="font2">%</span>{{$t("walkin2-30")}}
                   </div>
                    <div class="box">
-                    <span>90</span><span class="font2">%</span>{{$t("walkin2-24")}}
+                    <span class="nBold">90</span><span class="font2">%</span>{{$t("walkin2-24")}}
                   </div>
               </div>
               <div class="right">
                   <div class="box box3">
-                     {{$t("walkin2-17")}}<span>5-10</span>{{$t("walkin2-18")}}
+                     {{$t("walkin2-17")}}<span class="nBold">5-10</span>{{$t("walkin2-18")}}
                   </div>
                    <div class="box box4">
-                     {{$t("walkin2-22")}}<span>12</span><span class="font2">{{$t("walkin2-20")}}</span>{{$t("walkin2-23")}}
+                     {{$t("walkin2-22")}}<span class="nBold">12</span><span class="font2">{{$t("walkin2-20")}}</span>{{$t("walkin2-23")}}
                   </div>
                    <div class="box box5">
-                     {{$t("walkin2-25")}}<span>500</span><span class="font2">{{$t("walkin2-26")}}</span>{{$t("walkin2-27")}}<span>20</span><span class="font2">{{$t("walkin2-26")}}</span>{{$t("walkin2-28")}}
+                     {{$t("walkin2-25")}}<span class="nBold">500</span><span class="font2">{{$t("walkin2-26")}}</span>{{$t("walkin2-27")}}<span class="nBold">20</span><span class="font2">{{$t("walkin2-26")}}</span>{{$t("walkin2-28")}}
                   </div>
                    
               </div>
@@ -172,7 +172,6 @@ export default {
         justify-content: center;
         flex-direction: column;
       }
-       
 .sec1 {
   position: relative;
   width: 100%;
@@ -292,13 +291,14 @@ font-weight: 400;
 color: #505050;
   }
   .content1{
-      margin-top: 60px;
+      margin-top: 80px;
       display: flex;
       .left{
-          margin-right: 220px;
+          margin-right: 15%;
            display: flex;
            flex-direction: column;
            align-items: flex-end;
+           margin-left: -10%;
       }
       .right{
             display: flex;
@@ -307,14 +307,14 @@ color: #505050;
       }
       .box{
           
-font-size: 19px;
+font-size: 18px;
 font-family: SourceHanSansCN;
 font-weight: 500;
 color: #808080;
 line-height: 34px;
 padding: 14px 20px;
 margin-bottom: 25px;
-background: #FFFFFF;
+background: rgba(225, 225, 225, 0.51);
 box-shadow: 0px 2px 5px 0px rgba(225, 225, 225, 0.66);
 // opacity: 0.51;
 border-radius: 10px;
@@ -325,6 +325,7 @@ span{
 }
 .font2{
     font-size: 30px;
+    font-family: "NotoSansCJK-Bold"!important;
 }
       }
       .box1{
@@ -536,9 +537,29 @@ margin-top: 70px;
 }
 .line2 {
   width: 45px;
-  height: 3px;
+  height: 1px;
   
   background: #808080;
   margin: 30px 0;
+}
+.t3cont{
+  // padding-top: 65px;
+  // padding-bottom: 100px;
+  .content1{
+    .box{
+      white-space: nowrap;
+      height: 65px;
+    }
+    .box4{
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .box5{
+      margin-top: 40px;
+    }
+  }
+}
+.nBold{
+  font-family: "NotoSansCJK-Bold"!important;
 }
 </style>

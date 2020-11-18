@@ -293,13 +293,13 @@ color: #FFFFFF;
             display: flex;
             align-items: center;
             margin-right: 10px;
+            height: 36px;
             p{
                 
 font-size: 15px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #808080;
-line-height: 36px;
 
             }
             p.no{
@@ -312,7 +312,6 @@ border: 1px solid #808080;
 background: #808080;
 margin: 0 15px;
 position: relative;
-top: 2px;
 }
         }
     }

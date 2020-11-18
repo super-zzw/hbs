@@ -139,6 +139,7 @@
             <div class="box">
                 <div class="mCont t2m7 wow fadeInUp">
                     <div class="i7a">{{$t("t2d32")}}</div>
+                    <img class="i7bImg" src="@/assets/image/t2banner711.png" alt="">
                 </div>
             </div>
         </div>
@@ -196,7 +197,7 @@ export default {
         text-align: center;
         .i1b{
             font-size: 56px;
-            font-weight: bold;
+            font-family: 'NotoSansCJK-Bold'!important;
             color: #FFFFFF;
         }
         .i1c{
@@ -216,7 +217,7 @@ export default {
             width: 30%;
         }
         .i1f{
-            font-weight: bold;
+            font-family: 'NotoSansCJK-Bold'!important;
             .i1f1{
                 font-size: 60px;
                 background: linear-gradient(#000, #fff, #000);
@@ -233,6 +234,7 @@ export default {
         .i1g{
             color: #DCDCDC;
             font-size: 23px;
+            line-height: 25px;
         }
     }
 }
@@ -247,7 +249,7 @@ export default {
      color: #fff;
      .t2b{
          font-size: 44px;
-         font-weight: bold;
+         font-family: 'NotoSansCJK-Bold'!important;
      }
      .t2c{
          color: #C2C2C2;
@@ -270,7 +272,7 @@ export default {
     .t2a{
         font-size: 44px;
         color: #000;
-        font-weight: bold;
+        font-family: 'NotoSansCJK-Bold'!important;
     }
     .t2b{
         margin-top: 90px;
@@ -319,7 +321,7 @@ export default {
         .t5a{
             color: #515151;
             font-size: 44px;
-            font-weight: bold;
+            font-family: 'NotoSansCJK-Bold'!important;
             text-align: center;
         }
         .t5aImg{
@@ -332,13 +334,20 @@ export default {
             justify-content: space-between;
             margin-top: 20px;
             font-size: 22px;
+            .t5c{
+                width: 27.3%;
+                text-align: center;
+            }
+            .t5c:nth-of-type(2){
+                margin-left: -5%;
+            }
         }
     }
 }
 .t2m6{
     color: #515151;
     font-size: 44px;
-    font-weight: bold;
+    font-family: 'NotoSansCJK-Bold'!important;
     text-align: center;
     margin-top: 100px;
 }
@@ -350,7 +359,7 @@ export default {
         padding-bottom: 170px;
         color: #fff;
         .i7a{
-            font-weight: bold;
+            font-family: 'NotoSansCJK-Bold'!important;
             font-size: 44px;
             text-align: center;
         }
@@ -366,7 +375,7 @@ export default {
                     text-align: center;
                     display: flex;
                     justify-content: space-between;
-                    font-size: 17px;
+                    font-size: 18px;
                 }
                 .i7e{
                     font-size: 18px;
@@ -374,7 +383,7 @@ export default {
                     padding-right: 30px;
                 }
                 .i7f{
-                    font-weight: bold;
+                    font-family: 'NotoSansCJK-Bold'!important;
                     justify-content: center;
                 }
             }
@@ -386,11 +395,16 @@ export default {
 }
 .i7a{
     font-size: 44px;
-    font-weight: bold;
+    font-family: 'NotoSansCJK-Bold'!important;
     color: #000;
-    width: 533px;
-    margin-top: 120px;
-    margin-left: 40px;
+    width: 540px;
+    padding-top: 13%;
+    text-align: justify;
+}
+.i7bImg{
+    width: 540px;
+    height: auto;
+    margin-top: 5%;
 }
 .i8b{
     color: #fff;
@@ -398,7 +412,7 @@ export default {
 }
 .i8f{
     font-size: 44px;
-    font-weight: bold;
+    font-family: 'NotoSansCJK-Bold'!important;
     color: #fff;
     margin-top: 120px;
     text-align: center;
@@ -411,5 +425,8 @@ export default {
 }
 .i8c{
     padding-left: 20px!important;
+}
+.i8b:nth-of-type(8){
+    color: #16B0FF;
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="page">
     <div class="container">
       <div class="sec1 wow fadeInUp">
-        <img src="~assets/image/banner3-4.png" alt="" class="banner">
+        <img src="~assets/image/banner3-5.png" alt="" class="banner">
         <div class="cont">
              <div class="content1">
           <div class="Box">
@@ -38,7 +38,7 @@
           <!-- <div class="tabsBox">
                    <div></div>
           </div>-->
-          <el-tabs v-model="activeName">
+          <el-tabs v-model="activeName" @tab-click="slideto">
             <el-tab-pane label="企业资质" name="1"></el-tab-pane>
             <el-tab-pane label="研发实力" name="2"></el-tab-pane>
             <el-tab-pane label="核心认证" name="3"></el-tab-pane>
@@ -106,6 +106,16 @@ export default {
         }
       }
     };
+  },
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.$swiper
+    }
+  },
+  methods:{
+    slideto(tab){
+      this.swiper.slideTo(tab.index, 1000, false)
+    }
   }
 };
 </script>
@@ -265,6 +275,25 @@ line-height: 34px;
 }
 /deep/ .el-tabs__item{
   font-size: 18px;
+  color: #808080;
 }
-
+/deep/ .el-tabs__item.is-active{
+  color: #505050;
+}
+/deep/ .el-tabs__active-bar{
+  background-color: #808080;
+}
+/deep/ .el-tabs__nav-wrap::after{
+  background-color: transparent;
+}
+.swiper-button-next{
+  background-image: url('../../../assets/image/next.png');
+  background-size: 36px auto;
+  width: 44px;
+}
+.swiper-button-prev{
+  background-image: url('../../../assets/image/prev.png');
+  background-size: 36px auto;
+  width: 44px;
+}
 </style>

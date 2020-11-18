@@ -26,8 +26,9 @@
           <p class="con">有效保证呼博士杀毒新风在开发初期得到充分的验证和优化。</p>
       </div>
       <div class="section sec3 wow fadeInUp">
-           <img src="~assets/image/img3-24.png" alt="" class="pic">
-         <div class="content1">
+        <div class="mCont tab4Item">
+          <img src="~assets/image/img3-24.png" alt="" class="pic">
+         <div class="content1 oddText">
              <h2 class="title">广州</h2>
              <p class="desc">对接广州呼研所•杀毒技术研发中心</p>
              <p class="line"></p>
@@ -38,11 +39,14 @@
              <p class="con">经由我司112人超强研发团队进行杀毒科研成果精确转化，</p>
              <p class="con">历经上千次科学实验对照，经国家权威检测报告验证，</p>
              <p class="con">呼博士杀毒新风对室内空气中的冠状病毒消杀率高达99.99%。</p>
+             <div class="nm">01</div>
          </div>
+        </div>
+           
       </div>
        <div class="section sec4 wow fadeInUp">
-          
-         <div class="content1">
+          <div class="mCont tab4Item">
+            <div class="content1">
              <h2 class="title">深圳</h2>
              <p class="desc">国际行业资讯收集及国际科技研发</p>
              <p class="line"></p>
@@ -54,11 +58,15 @@
              <p class="con">只有不断革新升级，才能引领行业发展，</p>
              <p class="con">设计出更适合国人需求的新风系统，</p>
              <p class="con">为消费者提供更好的健康呼吸体验。</p>
+             <div class="nm nm2">02</div>
          </div>
-          <img src="~assets/image/img3-24.png" alt="" class="pic">
+          <img src="~assets/image/sz.png" alt="" class="pic">
+          </div>
+         
       </div>
       <div class="section sec4 sec5 wow fadeInUp">
-           <img src="~assets/image/img3-26.png" alt="" class="pic">
+        <div class="mCont tab4Item">
+          <img src="~assets/image/img3-26.png" alt="" class="pic">
          <div class="content1">
              <h2 class="title">佛山</h2>
              <p class="desc">全国家电技术之都，家电技术整合</p>
@@ -70,10 +78,14 @@
              <p class="con">使产品整机净化率加快15%，</p>
              <p class="con">内循环模式下PM2.5从30mg/m³降至0仅需14分钟！</p>
              <p class="con">每一步的“技术革命”都在为广大消费者创造美好生活默默地做贡献。</p>
+             <div class="nm">03</div>
          </div>
+        </div>
+           
       </div>
       <div class="section sec4 sec6 wow fadeInUp">
-         <div class="content1">
+        <div class="mCont tab4Item">
+          <div class="content1">
              <h2 class="title">厦门</h2>
              <p class="desc">世界级大型研发基地</p>
              <p class="line"></p>
@@ -85,8 +97,11 @@
              <p class="con">为大规模、高标准的生产基地提供所需的技术支持和工艺管理，</p>
              <p class="con">转化成满足消费者需求的新风产品和服务，</p>
              <p class="con">不断提升核心竞争力，保证呼博士的持续稳定发展。</p>
+             <div class="nm nm2">04</div>
          </div>
           <img src="~assets/image/img3-27.png" alt="" class="pic">
+        </div>
+         
       </div>
     </div>
   </div>
@@ -193,7 +208,7 @@ line-height: 34px;
 }
 .section{
     width: 100%;
-    height: 530px;
+    padding-top: 150px;
     display: flex;
     justify-content: center;
     .pic{
@@ -225,7 +240,7 @@ color: #FFFFFF;
 }
 .sec4{
     background: #F2F2F2;
-    height: 530px;
+    // height: 530px;
     .content1{
         // margin-top: 180px;
  .title{
@@ -293,5 +308,40 @@ height: 2px;
 
 background: #808080;
 margin: 20px 0;
+}
+.tab4Item{
+  display: flex;
+  justify-content: space-between;
+  .pic{
+    width: 600px;
+    margin-right: 0;
+    top: 0;
+    align-self: flex-end;
+    margin-bottom: -60px;
+  }
+  .content1{
+    width: 600px;
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 90px;
+    z-index: 1;
+    .nm{
+      position: absolute;
+      color: #494949;
+      font-size: 250px;
+      opacity: 0.2;
+      font-family: 'NotoSansCJK-Bold';
+      right: 0;
+      bottom: 0;
+      line-height: 220px;
+      font-weight: bold;
+    }
+    .nm2{
+      color: #E5E5E5;
+      opacity: 0.6;
+      left: 0;
+      z-index: -1;
+    }
+  }
 }
 </style>

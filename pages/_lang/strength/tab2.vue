@@ -54,19 +54,19 @@
                         </div>
                         <div class="tt">
                              <img src="~assets/image/icon3-2.png" alt="" class="pic">
-                             符合国家消杀产品生产标准
+                             6栋国标厂房
                         </div>
                         <div class="tt">
                              <img src="~assets/image/icon3-3.png" alt="" class="pic">
-                             符合国家消杀产品生产标准
+                             建筑面积7.6万m²
                         </div>
                         <div class="tt">
                              <img src="~assets/image/icon3-4.png" alt="" class="pic">
-                             符合国家消杀产品生产标准
+                             年产能可达2365.2万台
                         </div>
                         <div class="tt">
                              <img src="~assets/image/icon3-5.png" alt="" class="pic">
-                             符合国家消杀产品生产标准
+                             国家标准1000级的无尘车间
                         </div>
                   </div>
               </div>
@@ -213,8 +213,8 @@ display: flex;
 align-items: center;
 margin-bottom: 15px;
 img{
-    width: 22px;
-    height: 27px;
+     width: 30px;
+    height: auto;
     margin-right: 15px;
 }
               }

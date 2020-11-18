@@ -4,15 +4,15 @@
            
                <div class="nav">
                 <el-menu :default-active="path" class="el-menu-demo" mode="horizontal"  :router="true">
-  <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item>
-  <el-submenu index="/walkin">
+  <!-- <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item> -->
+  <el-submenu index="/walkin" class="i1Item l1Nav">
     <template slot="title">{{$t('walkin')}}</template>
     <el-menu-item index="/walkin/tab1" :route="$i18n.path('walkin/tab1')">品牌文化</el-menu-item>
     <el-menu-item index="/walkin/tab2" :route="$i18n.path('walkin/tab2')">招商计划</el-menu-item>
     <el-menu-item index="/walkin/tab3" :route="$i18n.path('walkin/tab3')">公司介绍</el-menu-item>
   
   </el-submenu>
-  <el-submenu index="/strength">
+  <el-submenu index="/strength" class="i1Item l1Nav">
     <template slot="title">{{$t('strength')}}</template>
     <el-menu-item index="/strength/tab1" :route="$i18n.path('strength/tab1')">软实力</el-menu-item>
     <!-- <el-menu-item index="2-2">硬实力</el-menu-item> -->
@@ -25,15 +25,15 @@
     <el-menu-item index="/strength/tab5" :route="$i18n.path('strength/tab5')">企业实力</el-menu-item>
     
   </el-submenu>
-   <el-submenu index="/product">
+   <el-submenu index="/product" class="i1Item l1Nav">
     <template slot="title">{{$t('product')}}</template>
     <el-menu-item index="/product/tab1" :route="$i18n.path('product/tab1')">壁挂机</el-menu-item>
     <el-menu-item index="/product/tab2" :route="$i18n.path('product/tab2')">吊顶机</el-menu-item>
     <el-menu-item index="/product/tab3" :route="$i18n.path('product/tab3')">立柜机</el-menu-item>
   
   </el-submenu>
-   <el-menu-item index="/technology"  :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item>
-  <el-menu-item index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
+   <el-menu-item  class="i1Item" index="/technology"  :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item>
+  <el-menu-item  class="i1Item" index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
 </el-menu>
             <NuxtLink v-if="$i18n.locale === 'zh'" :to="`/en` + $route.fullPath" class="Header__Link" active-class="none" exact>
                     {{ $t('en') }}
@@ -48,7 +48,7 @@
                     <div class="search"><img src="~assets/image/search2.png" alt=""></div>
                 </div>
             </div>
-            <div class="tip">BRI呼博士品牌隶属于厦门蒙发利科技（集团）股份有限公司 Copyright 2020 Together-link Inc. 闽ICP备20003087号-2</div>
+            <div class="tip">BRI呼博士品牌隶属于厦门蒙发利科技（集团）股份有限公司 Copyright 2020 MRI.ALL Rights Reserved. 闽ICP备20003087号-2</div>
         </div>
     </div>
 </template>
@@ -102,6 +102,11 @@ text-decoration: none;
     justify-content: center;
     .input_box{
         display: flex;
+        /deep/ .el-input__inner{
+            
+color: #505050;
+font-size: 16px;
+        }
         input{
             width: 485px;
 height: 48px;
@@ -144,7 +149,9 @@ width: 485px;
 }
 /deep/ .el-input__inner{
     height: 48px;
-    
+    border-radius: 0;
+    outline: none;
+    border: none;
 }
 .nav{
       display: flex;
@@ -160,7 +167,7 @@ font-weight: 400;
 text-decoration: none;
 position: relative;
 top: -2px;
-margin-right: 30px;
+margin-right: 60px;
       }
       .line{
           width: 2px;
@@ -272,6 +279,19 @@ font-weight: 600;
 
 /deep/ .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
     border-bottom: none;
-     font-weight: bold;
+    //  font-weight: bold;
+}
+.nav {
+    /deep/ .el-menu--horizontal{
+        width:  800px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .i1Item{
+        margin: 0;
+        /deep/ .el-submenu__title{
+            padding: 0;
+        }
+    }
 }
 </style>

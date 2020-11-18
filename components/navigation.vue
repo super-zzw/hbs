@@ -7,14 +7,14 @@
            <div class="nav">
                 <el-menu :default-active="path" class="el-menu-demo" mode="horizontal" @select="handleSelect" :router="true">
   <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item>
-  <el-submenu index="/walkin">
+  <el-submenu class="l1Nav" index="/walkin">
     <template slot="title">{{$t('walkin')}}</template>
     <el-menu-item index="/walkin/tab1" :route="$i18n.path('walkin/tab1')">品牌文化</el-menu-item>
     <el-menu-item index="/walkin/tab2" :route="$i18n.path('walkin/tab2')">招商计划</el-menu-item>
     <el-menu-item index="/walkin/tab3" :route="$i18n.path('walkin/tab3')">公司介绍</el-menu-item>
   
   </el-submenu>
-  <el-submenu index="/strength">
+  <el-submenu index="/strength" class="l1Nav">
     <template slot="title">{{$t('strength')}}</template>
     <el-menu-item index="/strength/tab1" :route="$i18n.path('strength/tab1')">软实力</el-menu-item>
     <!-- <el-menu-item index="2-2">硬实力</el-menu-item> -->
@@ -27,7 +27,7 @@
     <el-menu-item index="/strength/tab5" :route="$i18n.path('strength/tab5')">企业实力</el-menu-item>
     
   </el-submenu>
-   <el-submenu index="/product">
+   <el-submenu index="/product" class="l1Nav">
     <template slot="title">{{$t('product')}}</template>
     <el-menu-item  :index="'/product?id='+item.id" :route="$i18n.path('product?id='+item.id)" v-for="(item,i) in productList" :key="i">{{item.categoryTitle}}</el-menu-item>
     <!-- <el-menu-item index="/product/tab2" :route="$i18n.path('product/tab2')">吊顶机</el-menu-item>
@@ -122,6 +122,7 @@ text-decoration: none;
 position: relative;
 top: -2px;
 margin-right: 30px;
+margin-left: 20px;
       }
       .line{
           width: 2px;
@@ -241,5 +242,4 @@ font-weight: 600;
 /deep/ .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
     border-bottom-color: #fff;
 }
-
 </style>

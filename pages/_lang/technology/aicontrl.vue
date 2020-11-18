@@ -86,7 +86,7 @@ export default {
     .t3Title{
         font-size: 44px;
         color: #000;
-        font-weight: bold;
+        font-family: 'NotoSansCJK-Bold'!important;
         margin-bottom: 25px;
     }
     .t3Title2{
@@ -120,7 +120,7 @@ export default {
             color: #fff;
             .i4a{
                 font-size: 56px;
-                font-weight: bold;
+                font-family: 'NotoSansCJK-Bold'!important;
                 margin-bottom: 20px;
             }
             .i4b{
@@ -146,7 +146,7 @@ export default {
 .i4mc{
     display: flex;
     justify-content: flex-end;
-    width: 80%;
+    width: 70%;
     .i4mcont{
         .i4b{
             width: 500px;
@@ -181,7 +181,7 @@ export default {
             .i3d{
                 color: #131313;
                 font-size: 17px;
-                font-weight: bold;
+                font-family: 'NotoSansCJK-Bold'!important;
             }
             .i3e{
                 font-size: 14px;

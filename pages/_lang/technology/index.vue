@@ -119,10 +119,10 @@
           <div class="i5b">{{ $t("technology27") }}</div>
           <div class="i5b">{{ $t("technology28") }}</div>
           <div class="i5b">{{ $t("technology29") }}</div>
-          <div class="i2f">
+          <!-- <div class="i2f">
             {{ $t("technology6") }}
             <img class="i2fIcon" src="@/assets/image/right.png" alt="" />
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -139,10 +139,10 @@
             </div>
             <div class="i2e">{{ $t("technology31") }}</div>
             <div class="i2e">{{ $t("technology32") }}</div>
-            <div class="i2f">
+            <!-- <div class="i2f">
               {{ $t("technology6") }}
               <img class="i2fIcon" src="@/assets/image/right2.png" alt="" />
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -255,12 +255,12 @@ export default {
       position: relative;
       .nm {
         font-size: 200px;
-        font-weight: bold;
+        font-family: 'NotoSansCJK-Bold'!important;
         line-height: 180px;
       }
       .nmTitle {
         font-size: 48px;
-        font-weight: bold;
+        font-family: 'NotoSansCJK-Bold'!important;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -309,11 +309,11 @@ export default {
         }
         .t1i1d {
           font-size: 44px;
-          font-weight: 900;
+          font-family: 'NotoSansCJK-Bold'!important;
         }
         .t1i1e {
           font-size: 28px;
-          font-weight: 500;
+          font-family: 'NotoSansCJK-Bold'!important;
         }
       }
     }
@@ -350,7 +350,7 @@ export default {
       margin-top: 40px;
       font-size: 16px;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       padding: 8px 9px;
       border: 1px solid #fff;
       text-decoration: none;
@@ -369,7 +369,7 @@ export default {
     display: flex;
     flex-direction: row-reverse;
     .i3mContbox {
-      width: 45%;
+      width: 36%;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -396,7 +396,7 @@ export default {
         }
         .i2f{
             display: flex;
-            align-items: flex-end;
+            align-items: center;
             margin-top: 30px;
             padding: 8px 9px;
             color: #000;

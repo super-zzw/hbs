@@ -75,6 +75,7 @@
                                 <div class="i4f">
                                     <span class="i4f1">{{item[0]}}</span>
                                     <span class="i4f2" v-if="index == 0">%</span>
+                                    <span class="i4f2" v-if="index == 1">级</span>
                                 </div>
                                 <div class="i4g">{{item[1]}}</div>
                             </div>
@@ -123,7 +124,7 @@ export default {
     .t3Title{
         font-size: 44px;
         color: #000;
-        font-weight: bold;
+        font-family: 'NotoSansCJK-Bold'!important;
         margin-bottom: 25px;
     }
     .t3Title2{
@@ -158,7 +159,7 @@ export default {
             color: #000;
             .i4a{
                 font-size: 44px;
-                font-weight: bold;
+                font-family: 'NotoSansCJK-Bold'!important;
                 margin-bottom: 20px;
             }
             .i4b{
@@ -201,6 +202,7 @@ export default {
             .i4e{
                 margin-right: 30px;
                 .i4f{
+                    font-family: 'NotoSansCJK-Bold'!important;
                     font-weight: bold;
                     .i4f1{
                         font-size: 70px;

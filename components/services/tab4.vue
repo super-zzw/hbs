@@ -82,7 +82,7 @@ width:100%
         .cont1{
            width: 310px;
             position: absolute;  
-            left: 20%;
+            left: 15%;
             .title{
              
 font-size: 40px;
