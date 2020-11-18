@@ -20,20 +20,20 @@
           
          <div class="container">
            <div class="dateBox">
-              <p class="date">24.09.2020</p>
+              <p class="date" v-if="article.createTime">{{article.createTime|formatTime}} </p>
               <p class="line"></p>
           </div>
-          <div class="contentBox">
-           <img src="~assets/image/img3-1.png" alt="" class="pic">
-            <div class="content1">
+          <div class="contentBox" v-html="article.description">
+           <!-- <img src="~assets/image/img3-1.png" alt="" class="pic">
+            <div class="content1" >
                 <h2 class="title">呼博士新风迎来最大发展利好</h2>
                 <p class="desc">关于奥佳华(002614.SZ)子公司蒙发利健康引入保碧基金为战略投资公告</p>
                 <div class="con">奥佳华智能健康科技集团股份有限公司（以下简称“公司”）控股子公司厦门蒙发利健康科技有限公司（以下简称“蒙发利健康”）以增资扩股的方式引入战略投资者。2020 年 9 月 24 日，公司、蒙发利健康、厦门智宏仁企业管理合伙企业（有限合伙）（以下简称“智宏仁”）、厦门智呼企业管理合伙企业（有限合伙）（以下简称“智呼”）、公司控股股东邹剑寒先生、李五令先生与南昌市慧星股权投资合伙企业（有限合伙）（以下简称“保碧基金”）共同签署《关于蒙发利健康的增资协议》，本次投资将按照蒙发利健康的投前估值人民币 66,566.5000万元，保碧基金拟向蒙发利健康增资人民币 7,651.3218 万元，其中人民币3,365.4126 万元计入蒙发利健康新增注册资本，人民币 4,285.9092 万元计入蒙发利健康资本公积，本次交易完成后保碧基金将取得蒙发利健康 10.3093%股权。在本次增资扩股完成后，蒙发利健康注册资本由人民币 29,279.0896 万元增加至人民币 32,644.5022 万元。</div>
                 <div class="showImg">
                     <img src="~assets/image/img3-2.png" alt="">
                     <img src="~assets/image/img3-3.png" alt="">
-                </div>
-            </div>
+                </div> -->
+            <!-- </div> -->
 
           </div>
           <div class="optBox">
@@ -42,9 +42,10 @@
                   回到列表
               </div>
               <div class="go">
-                  <p>上一条</p>
+                   <!-- <p @click="changeArticle(-1)">上一条</p> -->
+                   <p @click="changeArticle(-1)" :class="article.topNextModel.top?'':'no'">上一条</p>
                   <span></span>
-                  <p>下一条</p>
+                  <p @click="changeArticle(1)" :class="article.topNextModel.next?'':'no'">下一条</p> 
               </div>
           </div>
          </div>
@@ -54,12 +55,114 @@
 </template>
 <script>
 export default {
+  created(){
+      // if(this.$route.query.id){
+      //  this.articleId=this.$route.query.id
+      // }
+  },
   mounted(){
     this.initWow(this)
-  }
+  },
+  data(){
+     return{
+       articleId:''
+     }
+  },
+  filters:{
+    formatTime(data){
+      return data.split(' ')[0].split('-').reverse().join('.')
+    }
+  },
+  async asyncData({ app,store,params}) {
+   let articleList=[]
+   let article=null
+   let articleId=''
+   try {
+     
+     let res=await await Promise.all([
+        app.$axios.get(store.state.api.getConfig, {
+            params: {
+              pageName: store.state.pageNames.index
+            }
+          }),
+        app.$axios.get(store.state.api.getArticleList)
+     ])
+   
+           if (res[0]!= null){
+           if (res[0].seoTitle) {
+            app.head.title = res[0].seoTitle;
+          }
+           if (res[0].seoKeys && res[0].seoDesc) {
+            app.head.meta = [{
+                hid: "homekeywords",
+                name: "keywords",
+                content: res[0].seoKeys
+              },
+              {
+                hid: "homedescription",
+                name: "description",
+                content: res[0].seoDesc
+              }
+            ];
+          }
+         }
+    // if(!this.articleId){
+    //  let res1 = await app.$axios.get(store.state.api.getArticleList)
+      if(res[1].length){
+           articleList=res[1]
+          if(!params.id){
+             articleId=res[1][0].id
+          }
+          //  this.articleId=res[1][0].id
+          //  this.getArticle()
+      }
+      if(params.id){
+        articleId=params.id
+      }
+           let res2=await app.$axios.get(store.state.api.getArticleDetail,{
+         params:{id:articleId}
+       })
+       if(res2){
+        res2.description.replace(/<img/g, "<img style='max-width:100%;height:auto;'");
+        article=res2
+       
+       }
+      
+    
+     
+        
+        
+    
+   }catch(e){
+    
+   }
+    return {
+        articleList,
+        article
+      };
+ },
+ methods:{
+   async getArticle(){
+     let article= await this.$axios.get(this.$store.state.api.getArticleDetail,{
+         params:{id:this.articleId}
+       })
+      this.article=article
+   },
+   changeArticle(i){
+     if(i==-1){
+       this.articleId=this.article.topNextModel.topId
+        this.getArticle()
+        
+     }else{
+    this.articleId=this.article.topNextModel.nextId
+        this.getArticle()
+     
+     }
+   }
+ }
 }
 </script>
-<style lang="less" scoped>
+<style lang="less" >
 .cont{
         position: absolute;
         left: 0;
@@ -153,48 +256,18 @@ background: #909090;
     .contentBox{
         margin-top: 20px;
         background: #fff;
-        .pic{
-            width: 100%;
-            height: auto;
+        // .pic{
+        //     width: 100%;
+        //     height: auto;
+        // }
+        p:first-child>img{
+           width: 100% !important;
         }
-        .content1{
-            padding: 40px;
-            .title{
-                
-font-size: 32px;
-font-family:NotoSansCJK-Bold !important;
-color: #505050;
-line-height: 36px;
-            }
-            .desc{
-                
-font-size: 20px;
-font-family: Noto Sans S Chinese;
-font-weight: 400;
-color: #808080;
-line-height: 36px;
-margin-top: 10px;
-            }
-            .con{
-         margin-top: 20px;       
-font-size: 16px;
-font-family: Noto Sans S Chinese;
-font-weight: 400;
-color: #505050;
-line-height: 30px;
-text-indent:2em;
-            }
-            .showImg{
-                margin-top: 30px;
-                display: flex;
-                justify-content: space-between;
-                img{
-                    width: 49%;
-                    height: auto;
-                }
-            }
-        }
+      
+       
+
     }
+   
     .optBox{
         display: flex;
         justify-content: space-between;
@@ -228,6 +301,9 @@ font-weight: 400;
 color: #808080;
 line-height: 36px;
 
+            }
+            p.no{
+color: #ccc;
             }
             span{
     width: 1px;

@@ -2,6 +2,8 @@ import { Message } from 'element-ui'
 import qs from "qs";
 
 export default function ({ $axios,store }) {
+  
+  let language=store.state.locale=='zh'?'zh-CN':'en-US'
   $axios.defaults.timeout = 6000;
   $axios.onRequest(config => {
     // config.data["type"] == 2
@@ -11,7 +13,7 @@ export default function ({ $axios,store }) {
         config.data = {
             ...config.data,
             systype:1,  //1PC,2h5
-            language: store.state.locale
+            language: language
         }
         if (process.server || !(config.data instanceof FormData)) {
           config.data = qs.stringify(config.data, {
@@ -22,7 +24,7 @@ export default function ({ $axios,store }) {
         config.params = {
             ...config.params,
             systype:1,
-            language: store.state.locale
+            language: language
         }
     }
     return config;
