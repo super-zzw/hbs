@@ -1,10 +1,10 @@
 <template>
     <div class="t3">
-        <div class="t3Item wow fadeInDown">
+        <div class="t3Item">
             <img class="bgk" src="@/assets/image/t3banner1.png" alt="">
             <div class="box">
                 <div class="mCont">
-                    <div class="t3Cont i1mcont">
+                    <div class="t3Cont i1mcont wow fadeInUp">
                         <div class="t3Title">{{$t("t3d1")}}</div>
                         <div class="i1a">{{$t("t3d2")}}</div>
                         <div class="i1a">{{$t("t3d3")}}</div>
@@ -15,11 +15,11 @@
                 </div>
             </div>
         </div>
-        <div class="t3Item wow fadeInDown">
+        <div class="t3Item">
             <img class="bgk" src="@/assets/image/t3banner2.png" alt="">
             <div class="box">
                 <div class="mCont t3m2">
-                    <div class="t3Cont i2mcont">
+                    <div class="t3Cont i2mcont wow fadeInUp">
                         <div class="t3Title t3Title2">{{$t("t3d7")}}</div>
                         <div class="i2c">
                             <div class="i2a">{{$t("t3d8")}}</div>
@@ -42,12 +42,12 @@
                 </div>
             </div>
         </div>
-        <div class="t3Item wow fadeInDown">
+        <div class="t3Item">
             <img class="bgk" src="@/assets/image/t3banner3.png" alt="">
             <div class="box">
                 <div class="mCont">
                     <div class="t3Cont i3mcont">
-                        <div class="t3Title t3Title2">{{$t("t3d26")}}</div>
+                        <div class="t3Title t3Title2 wow fadeInUp">{{$t("t3d26")}}</div>
                         <div class="i3a">{{$t("t3d27")}}</div>
                         <div class="i3b">{{$t("t3d28")}}</div>
                         <div class="i3b">{{$t("t3d29")}}</div>
@@ -57,12 +57,12 @@
                 </div>
             </div>
         </div>
-        <div class="t3Item wow fadeInDown">
+        <div class="t3Item">
             <img class="bgk" src="@/assets/image/t3banner4.png" alt="">
             <div class="box">
                 <div class="mCont i4mc">
                     <div class="t3Cont i4mcont">
-                        <div class="t3Title t3Title2">{{$t("t3d32")}}</div>
+                        <div class="t3Title t3Title2 wow fadeInUp">{{$t("t3d32")}}</div>
                         <div class="i4a">{{$t("t3d33")}}</div>
                         <div class="i4b">{{$t("t3d34")}}</div>
                         <div class="i4c">{{$t("t3d35")}}</div>
