@@ -90,7 +90,7 @@ input{
       }
       .btn{
       width: 100%;    
-height: 50px;
+height: 40px;
 background: #808080;
 
 font-size: 18px;

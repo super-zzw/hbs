@@ -146,7 +146,7 @@ export default {
 .i4mc{
     display: flex;
     justify-content: flex-end;
-    width: 80%;
+    width: 70%;
     .i4mcont{
         .i4b{
             width: 500px;

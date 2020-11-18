@@ -234,6 +234,7 @@ export default {
         .i1g{
             color: #DCDCDC;
             font-size: 23px;
+            line-height: 25px;
         }
     }
 }

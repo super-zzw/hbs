@@ -42,27 +42,27 @@
           <div class="content1">
               <div class="left">
                   <div class="box">
-                     {{$t("walkin2-15")}}<span>96</span><span class="font2">%</span>{{$t("walkin2-16")}}
+                     {{$t("walkin2-15")}}<span class="nBold">96</span><span class="font2">%</span>{{$t("walkin2-16")}}
                   </div>
                    <div class="box box1">
-                     {{$t("walkin2-19")}}<span>430</span><span class="font2"> {{$t("walkin2-20")}}</span> {{$t("walkin2-21")}}
+                     {{$t("walkin2-19")}}<span class="nBold">430</span><span class="font2"> {{$t("walkin2-20")}}</span> {{$t("walkin2-21")}}
                   </div>
                    <div class="box box2">
-                     {{$t("walkin2-29")}}<span>75</span><span class="font2">%</span>{{$t("walkin2-30")}}
+                     {{$t("walkin2-29")}}<span class="nBold">75</span><span class="font2">%</span>{{$t("walkin2-30")}}
                   </div>
                    <div class="box">
-                    <span>90</span><span class="font2">%</span>{{$t("walkin2-24")}}
+                    <span class="nBold">90</span><span class="font2">%</span>{{$t("walkin2-24")}}
                   </div>
               </div>
               <div class="right">
                   <div class="box box3">
-                     {{$t("walkin2-17")}}<span>5-10</span>{{$t("walkin2-18")}}
+                     {{$t("walkin2-17")}}<span class="nBold">5-10</span>{{$t("walkin2-18")}}
                   </div>
                    <div class="box box4">
-                     {{$t("walkin2-22")}}<span>12</span><span class="font2">{{$t("walkin2-20")}}</span>{{$t("walkin2-23")}}
+                     {{$t("walkin2-22")}}<span class="nBold">12</span><span class="font2">{{$t("walkin2-20")}}</span>{{$t("walkin2-23")}}
                   </div>
                    <div class="box box5">
-                     {{$t("walkin2-25")}}<span>500</span><span class="font2">{{$t("walkin2-26")}}</span>{{$t("walkin2-27")}}<span>20</span><span class="font2">{{$t("walkin2-26")}}</span>{{$t("walkin2-28")}}
+                     {{$t("walkin2-25")}}<span class="nBold">500</span><span class="font2">{{$t("walkin2-26")}}</span>{{$t("walkin2-27")}}<span class="nBold">20</span><span class="font2">{{$t("walkin2-26")}}</span>{{$t("walkin2-28")}}
                   </div>
                    
               </div>
@@ -291,13 +291,14 @@ font-weight: 400;
 color: #505050;
   }
   .content1{
-      margin-top: 60px;
+      margin-top: 80px;
       display: flex;
       .left{
-          margin-right: 220px;
+          margin-right: 15%;
            display: flex;
            flex-direction: column;
            align-items: flex-end;
+           margin-left: -10%;
       }
       .right{
             display: flex;
@@ -324,6 +325,7 @@ span{
 }
 .font2{
     font-size: 30px;
+    font-family: "NotoSansCJK-Bold"!important;
 }
       }
       .box1{
@@ -541,7 +543,7 @@ margin-top: 70px;
   margin: 30px 0;
 }
 .t3cont{
-  padding-top: 65px;
+  // padding-top: 65px;
   // padding-bottom: 100px;
   .content1{
     .box{
@@ -556,5 +558,8 @@ margin-top: 70px;
       margin-top: 40px;
     }
   }
+}
+.nBold{
+  font-family: "NotoSansCJK-Bold"!important;
 }
 </style>

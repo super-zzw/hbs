@@ -56,11 +56,12 @@ margin-bottom: 5px;
 .download{
  width: 88px;
 height: 28px;   
-border: 1px solid #505050;
+border: 1px solid #ccc;
 border-radius: 10px;
 display: flex;
 align-items: center;
 justify-content: center;
+color: #808080;
 }
      }
      .cont:last-child{

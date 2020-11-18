@@ -37,7 +37,7 @@ background: #F2F2F2;
 border: 1px solid #C6C6C6;
 padding: 50px;
 .t1{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     
 }
 .tt2{
