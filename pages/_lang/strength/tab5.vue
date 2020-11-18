@@ -39,11 +39,11 @@
                    <div></div>
           </div>-->
           <el-tabs v-model="activeName" @tab-click="slideto">
-            <el-tab-pane label="企业资质" name="1"></el-tab-pane>
-            <el-tab-pane label="研发实力" name="2"></el-tab-pane>
-            <el-tab-pane label="核心认证" name="3"></el-tab-pane>
-            <el-tab-pane label="产品专利" name="4"></el-tab-pane>
-            <el-tab-pane label="社会荣誉" name="5"></el-tab-pane>
+            <el-tab-pane label="企业资质" name="0"></el-tab-pane>
+            <el-tab-pane label="研发实力" name="1"></el-tab-pane>
+            <el-tab-pane label="核心认证" name="2"></el-tab-pane>
+            <el-tab-pane label="产品专利" name="3"></el-tab-pane>
+            <el-tab-pane label="社会荣誉" name="4"></el-tab-pane>
           </el-tabs>
 
           <div class="swiper-father">
@@ -61,7 +61,9 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
-          <p class="swiperTxt">企业生产管理符合国家质量管理体系标准</p>
+          <p class="swiperTxt">
+            <span>{{desc[activeSwiper]}}</span>
+          </p>
         </div>
       </div>
     </div>
@@ -74,13 +76,25 @@ export default {
   },
   data() {
     return {
-      activeName: "1",
+      activeName: "0",
+      activeSwiper:3,
       swiperImgs:[
-        require('~/assets/image/img3.5-9.png'),
-        require("~/assets/image/img3.5-9.png"),
-        require("~/assets/image/img3.5-9.png"),
-        require("~/assets/image/img3.5-9.png"),
-        require("~/assets/image/img3.5-9.png")
+        require('~/assets/image/z1.png'),
+        require("~/assets/image/z2.png"),
+        require("~/assets/image/z3.png"),
+        require("~/assets/image/z4.png"),
+        require("~/assets/image/z5.png"),
+        require("~/assets/image/z6.png"),
+        require("~/assets/image/z7.png")
+      ],
+      desc:[
+        "新风行业唯一通过国消宇号认证,真正具备生产消毒产品资质的企业",
+        "新风行业唯一具有生产医疗器械资质的企业（新证重新申请中）",
+        "企业生产管理符合国家质量认证中心的环境管理体系标准",
+        "企业生产管理符合国家医疗器械的质量管理体系标准",
+        "企业生产管理符合国家质量管理体系标准",
+        "产品获得国际质量认证机构Intertek(天祥)的认证报告",
+        "获得IECEE国际电工委员会安全质量认证"
       ],
       swiperOption: {
         //可见图片张数
@@ -114,7 +128,8 @@ export default {
   },
   methods:{
     slideto(tab){
-      this.swiper.slideTo(tab.index, 1000, false)
+      this.swiper.slideTo(tab.index, 1000, false);
+      this.activeSwiper = tab.index;
     }
   }
 };
@@ -230,7 +245,7 @@ export default {
   }
 }
 .swiperTxt{
-  
+  margin-top: 50px;
 font-size: 18px;
 font-family: SourceHanSansCN;
 font-weight: 400;
@@ -246,6 +261,9 @@ line-height: 34px;
 .swiper-slide {
   transition: 1s;
   transform: scale(1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   img {
     width: 210px;
     // height: 320px;
@@ -286,14 +304,19 @@ line-height: 34px;
 /deep/ .el-tabs__nav-wrap::after{
   background-color: transparent;
 }
-.swiper-button-next{
-  background-image: url('../../../assets/image/next.png');
+.swiper-button-next,
+.swiper-button-prev{
+  margin-top: 20px;
   background-size: 36px auto;
   width: 44px;
 }
+.swiper-button-next{
+  background-image: url('../../../assets/image/next.png');
+}
 .swiper-button-prev{
   background-image: url('../../../assets/image/prev.png');
-  background-size: 36px auto;
-  width: 44px;
+}
+/deep/ .swiper-container{
+  height: 500px!important;
 }
 </style>
