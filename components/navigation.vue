@@ -9,32 +9,32 @@
   <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item>
   <el-submenu index="/walkin">
     <template slot="title">{{$t('walkin')}}</template>
-    <el-menu-item index="/walkin/tab1">品牌文化</el-menu-item>
-    <el-menu-item index="/walkin/tab2">招商计划</el-menu-item>
-    <el-menu-item index="/walkin/tab3">公司介绍</el-menu-item>
+    <el-menu-item index="/walkin/tab1" :route="$i18n.path('walkin/tab1')">品牌文化</el-menu-item>
+    <el-menu-item index="/walkin/tab2" :route="$i18n.path('walkin/tab2')">招商计划</el-menu-item>
+    <el-menu-item index="/walkin/tab3" :route="$i18n.path('walkin/tab3')">公司介绍</el-menu-item>
   
   </el-submenu>
   <el-submenu index="/strength">
     <template slot="title">{{$t('strength')}}</template>
-    <el-menu-item index="/strength/tab1">软实力</el-menu-item>
+    <el-menu-item index="/strength/tab1" :route="$i18n.path('strength/tab1')">软实力</el-menu-item>
     <!-- <el-menu-item index="2-2">硬实力</el-menu-item> -->
      <el-submenu index="2-2">
       <template slot="title">硬实力</template>
-      <el-menu-item index="/strength/tab2">工厂实力</el-menu-item>
-      <el-menu-item index="/strength/tab3">实验室</el-menu-item>
-      <el-menu-item index="/strength/tab4">四大研发</el-menu-item>
+      <el-menu-item index="/strength/tab2" :route="$i18n.path('strength/tab2')">工厂实力</el-menu-item>
+      <el-menu-item index="/strength/tab3" :route="$i18n.path('strength/tab3')">实验室</el-menu-item>
+      <el-menu-item index="/strength/tab4" :route="$i18n.path('strength/tab4')">四大研发</el-menu-item>
     </el-submenu>
-    <el-menu-item index="/strength/tab5">企业实力</el-menu-item>
+    <el-menu-item index="/strength/tab5" :route="$i18n.path('strength/tab5')">企业实力</el-menu-item>
     
   </el-submenu>
    <el-submenu index="/product">
     <template slot="title">{{$t('product')}}</template>
-    <el-menu-item index="/product/tab1">壁挂机</el-menu-item>
-    <el-menu-item index="/product/tab2">吊顶机</el-menu-item>
-    <el-menu-item index="/product/tab3">立柜机</el-menu-item>
+    <el-menu-item index="/product/tab1" :route="$i18n.path('product/tab1')">壁挂机</el-menu-item>
+    <el-menu-item index="/product/tab2" :route="$i18n.path('product/tab2')">吊顶机</el-menu-item>
+    <el-menu-item index="/product/tab3" :route="$i18n.path('product/tab3')">立柜机</el-menu-item>
   
   </el-submenu>
-   <el-menu-item index="/technology" >{{$t('technology')}}</el-menu-item>
+   <el-menu-item index="/technology"  :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item>
   <el-menu-item index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
 </el-menu>
             

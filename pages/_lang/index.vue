@@ -121,10 +121,12 @@ import banner3 from "@/assets/image/banner3.png";
 export default {
   mounted(){
     utils.initWow(this)
+     this.getAutoHeight()
+      window.onresize=()=>{
+         this.getAutoHeight()
+      }
   },
-  mounted(){
-      this.getAutoHeight()
-},
+
 methods:{
  getAutoHeight(){
      let _w = document.documentElement.clientWidth || document.body.clientWidth; ; 

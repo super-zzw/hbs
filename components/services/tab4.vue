@@ -155,6 +155,7 @@ line-height:70px;
             }
         }
         .img6{
+            margin-top: 50px;
            width: 100%;
         }
         .callBtn{

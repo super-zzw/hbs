@@ -44,7 +44,7 @@ export default {
         width: 900px;
 
 background: #F2F2F2;
-border: 1px solid #CCCCCC;
+border: 1px solid #F2F2F2;
 padding: 60px;
 
 .desc{
@@ -63,7 +63,7 @@ flex-wrap: wrap;
     .box{
         
 
-border: 1px solid #505050;
+border: 1px solid #CCCCCC;
 display: flex;
 padding: 10px;
 width: 100%;

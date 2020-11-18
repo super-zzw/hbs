@@ -33,12 +33,15 @@
           <div class="container">
               <div class="contentBox1">
                   <div class="left">
-                      <p class="con">实验室还参与讨论了空气净化器国标GB/T18801-2015修订，与清华大学合作</p>
-             <p class="con">按照国标要求建立空气净化器测试舱，使用日本进口岛津气相色谱仪和分光光</p>
-             <p class="con">度计分析检测空气净化器对甲醛、甲苯等化学气体去除能力检测。我们拥有目</p>
-             <p class="con">前先进的激光粒子检测仪TSI3340和TSI8530测试空气净化器CADR。实验室和</p>
-             <p class="con">广州威凯合作按国标要求建立了半消声和全自动风量测试系统，可以对产品进</p>
-             <p class="con">声功率噪声测试及风量测试。</p>
+                    <p class="con">
+                         实验室还参与讨论了空气净化器国标GB/T18801-2015修订，与清华大学合作
+             按照国标要求建立空气净化器测试舱，使用日本进口岛津气相色谱仪和分光光
+            度计分析检测空气净化器对甲醛、甲苯等化学气体去除能力检测。我们拥有目
+            前先进的激光粒子检测仪TSI3340和TSI8530测试空气净化器CADR。实验室和
+             广州威凯合作按国标要求建立了半消声和全自动风量测试系统，可以对产品进
+             声功率噪声测试及风量测试。
+                    </p>
+                     
                   </div>
                   <div class="right">
                        <h2 class="title">3大顶级机构建造</h2>
@@ -288,6 +291,7 @@ margin-top: 10px;
             align-items: center;
             .left{
                 margin-right: 100px;
+                width: 600px;
               .con{
                   color: #707070;
               }
@@ -311,10 +315,10 @@ color: #505050;
         }
         .contentBox2{
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             margin-top: 50px;
             .left{
-                // margin-right: 100px;
+                margin-right: 100px;
                 img{
                     width: 600px;
                     height: auto;
