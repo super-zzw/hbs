@@ -1,9 +1,9 @@
 <template>
   <div class="t1">
-    <div class="t1Item wow fadeInDown">
+    <div class="t1Item ">
       <img class="bgk" src="@/assets/image/t1banner.png" alt="" />
       <div class="box i1Box">
-        <div class="mCont i1mCont">
+        <div class="mCont i1mCont wow fadeInUp">
           <div class="t1a">
             <div class="t1i1a"></div>
             <div class="t1i1b">
@@ -16,10 +16,10 @@
         </div>
       </div>
     </div>
-    <div class="t1Item wow fadeInDown">
+    <div class="t1Item">
       <img class="bgk" src="@/assets/image/t1banner2.png" alt="" />
       <div class="box i2Box">
-        <div class="mCont i2mCont">
+        <div class="mCont i2mCont wow fadeInUp">
           <div class="sort i2a">
             <div class="nm i2b">01</div>
             <div class="nmTitle i2c">
@@ -35,12 +35,12 @@
         </div>
       </div>
     </div>
-    <div class="t1Item wow fadeInDown">
+    <div class="t1Item">
       <img class="bgk" src="@/assets/image/t1banner3.png" alt="" />
       <div class="box i3Box">
         <div class="mCont i3mCont">
           <div class="i3mContbox">
-            <div class="sort i2a">
+            <div class="sort i2a wow fadeInUp">
               <div class="nm i2b">02</div>
               <div class="nmTitle i2c">
                 {{ $t("technology7") }}
@@ -58,11 +58,11 @@
         </div>
       </div>
     </div>
-    <div class="t1Item wow fadeInDown">
+    <div class="t1Item">
       <img class="bgk" src="@/assets/image/t1banner4.png" alt="" />
       <div class="box i2Box">
         <div class="mCont i2mCont">
-          <div class="sort i2a">
+          <div class="sort i2a wow fadeInUp">
             <div class="nm i2b">03</div>
             <div class="nmTitle i2c">
               {{ $t("technology12") }}
@@ -78,12 +78,12 @@
         </div>
       </div>
     </div>
-    <div class="t1Item wow fadeInDown">
+    <div class="t1Item">
       <img class="bgk" src="@/assets/image/t1banner5.png" alt="" />
       <div class="box i3Box">
         <div class="mCont i3mCont">
           <div class="i3mContbox">
-            <div class="sort i2a">
+            <div class="sort i2a wow fadeInUp">
               <div class="nm i2b">04</div>
               <div class="nmTitle i2c">
                 {{ $t("technology16") }}
@@ -102,11 +102,11 @@
         </div>
       </div>
     </div>
-    <div class="t1Item wow fadeInDown">
+    <div class="t1Item">
       <img class="bgk" src="@/assets/image/t1banner7.png" alt="" />
       <div class="box i2Box">
         <div class="mCont i2mCont">
-          <div class="sort i2a">
+          <div class="sort i2a wow fadeInUp">
             <div class="nm i2b">05</div>
             <div class="nmTitle i2c">
               {{ $t("technology22") }}
@@ -126,12 +126,12 @@
         </div>
       </div>
     </div>
-    <div class="t1Item wow fadeInDown">
+    <div class="t1Item">
       <img class="bgk" src="@/assets/image/t1banner8.png" alt="" />
       <div class="box i3Box">
         <div class="mCont i3mCont">
           <div class="i3mContbox">
-            <div class="sort i2a">
+            <div class="sort i2a wow fadeInUp">
               <div class="nm i2b">06</div>
               <div class="nmTitle i2c">
                 {{ $t("technology30") }}
@@ -147,11 +147,11 @@
         </div>
       </div>
     </div>
-    <div class="t1Item wow fadeInDown">
+    <div class="t1Item">
       <img class="bgk" src="@/assets/image/t1banner13.png" alt="" />
       <div class="box i2Box">
         <div class="mCont i2mCont i7c">
-          <div class="sort i2a">
+          <div class="sort i2a wow fadeInUp">
             <div class="nm i2b">07</div>
             <div class="nmTitle i2c">
               {{ $t("technology33") }}
@@ -161,12 +161,12 @@
         </div>
       </div>
     </div>
-    <div class="t1Item wow fadeInDown">
+    <div class="t1Item">
       <img class="bgk" src="@/assets/image/t1banner9.png" alt="" />
       <div class="box i3Box">
         <div class="mCont i3mCont">
           <div class="i3mContbox i8c">
-            <div class="sort i2a">
+            <div class="sort i2a wow fadeInUp">
               <div class="nm i2b">08</div>
               <div class="nmTitle i2c">
                 {{ $t("technology35") }}
@@ -178,11 +178,11 @@
         </div>
       </div>
     </div>
-    <div class="t1Item wow fadeInDown">
+    <div class="t1Item">
       <img class="bgk" src="@/assets/image/t1banner10.png" alt="" />
       <div class="box i2Box">
         <div class="mCont i2mCont">
-          <div class="sort i2a">
+          <div class="sort i2a wow fadeInUp">
             <div class="nm i2b">09</div>
             <div class="nmTitle i2c i9c">
               {{ $t("technology38") }}
@@ -193,12 +193,12 @@
         </div>
       </div>
     </div>
-    <div class="t1Item wow fadeInDown">
+    <div class="t1Item">
       <img class="bgk" src="@/assets/image/t1banner11.png" alt="" />
       <div class="box i3Box">
         <div class="mCont i3mCont">
           <div class="i3mContbox">
-            <div class="sort i2a">
+            <div class="sort i2a wow fadeInUp">
               <div class="nm i2b">10</div>
               <div class="nmTitle i2c">
                 {{ $t("technology40") }}
@@ -210,11 +210,11 @@
         </div>
       </div>
     </div>
-    <div class="t1Item wow fadeInDown">
+    <div class="t1Item">
       <img class="bgk" src="@/assets/image/t1banner12.png" alt="" />
       <div class="box i2Box">
         <div class="mCont i2mCont">
-          <div class="sort i2a">
+          <div class="sort i2a wow fadeInUp">
             <div class="nm i2b">11</div>
             <div class="nmTitle i2c i9c">
               {{ $t("technology44") }}
