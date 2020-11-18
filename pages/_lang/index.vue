@@ -11,45 +11,38 @@
        <div class="container1 ">
             <h2 class="title">{{$t('index1')}}</h2>
              <div class="box">
-                <div class="con">
-                  <img src="~assets/image/img1-7.png" alt="" class="bg">
+                <div class="con" v-for="product in productList" :key="product.id" @click="toProduct(product.id)">
+                  <img :src="product.coverImgUrl" alt="" class="bg">
                  
-                      <p class="name">{{$t('index2')}}</p>
+                      <p class="name">{{product.title}}</p>
                       <p class="line"></p>
-                      <p class="desc">{{$t('index4')}}</p>
+                      <p class="desc">{{product.label}}</p>
                       <div class="more">{{$t('liaojie')}}
                         <img src="~assets/image/right.png" alt="">
                       </div>
                 
                 </div>
-                 <div class="con">
-                  <img src="~assets/image/img1-8.png" alt="" class="bg">
-                  <!-- <div class="cont"> -->
-                      <p class="name">{{$t('index3')}}</p>
-                      <p class="line"></p>
-                      <p class="desc">{{$t('index5')}}</p>
-                      <div class="more">{{$t('liaojie')}}
-                        <img src="~assets/image/right.png" alt="">
-                      </div>
-                  <!-- </div> -->
-                </div>
-                 <div class="con">
-                  <img src="~assets/image/img1-9.png" alt="" class="bg">
-                  <!-- <div class="cont"> -->
-                      <p class="name">{{$t('index3')}}</p>
-                      <p class="line"></p>
-                      <p class="desc">{{$t('index6')}}</p>
-                      <div class="more">{{$t('liaojie')}}
-                        <img src="~assets/image/right.png" alt="">
-                      </div>
-                  <!-- </div> -->
-                </div>
+                 
              </div>
        </div>
        <div class="container mt">
         <h2 class="title">{{$t('index8')}}</h2>
        <span class="desc">{{$t('index9')}}</span>
-       <div class="article">
+       <div class="article" v-for="article in articleList" :key="article.id" @click="toDetail(article.id)">
+          <img :src="article.coverImgUrl" alt="" class="pic">
+          <div class="content">
+              <h3 class="c_title">{{article.title}}</h3>
+              <div class="tt">
+                   <p >{{article.summary}}</p>
+                   <!-- <p class="mt">{{$t('index12')}}</p> -->
+              </div>
+              <div class="about">
+                {{$t('liaojie')}}
+                <img src="~assets/image/more.png" alt="">
+              </div>
+          </div>
+       </div>
+       <!-- <div class="article">
           <img src="~assets/image/img1-1.png" alt="" class="pic">
           <div class="content">
               <h3 class="c_title">{{$t('index10')}}</h3>
@@ -77,7 +70,7 @@
           </div>
           <img src="~assets/image/img1-2.png" alt="" class="pic">
          
-       </div>
+       </div> -->
        </div>
        
      </div>
@@ -126,11 +119,63 @@ export default {
          this.getAutoHeight()
       }
   },
-
+ async asyncData({ app,store}) {
+   let productList=[]
+   let articleList=[]
+   try {
+   
+     let res = await Promise.all([
+          app.$axios.get(store.state.api.getConfig, {
+            params: {
+              pageName: store.state.pageNames.index
+            }
+          }),
+          app.$axios.get(store.state.api.getProductList),
+          app.$axios.get(store.state.api.getArticleList)
+        ]);
+         if (res[0] != null){
+           if (res[0].seoTitle) {
+            app.head.title = res[0].seoTitle;
+          }
+           if (res[0].seoKeys && res[0].seoDesc) {
+            app.head.meta = [{
+                hid: "homekeywords",
+                name: "keywords",
+                content: res[0].seoKeys
+              },
+              {
+                hid: "homedescription",
+                name: "description",
+                content: res[0].seoDesc
+              }
+            ];
+          }
+         }
+         if(res[1].length){
+          
+           productList=res[1]
+         }
+         if(res[2].length){
+           articleList=res[2]
+         }
+   }catch(e){
+    
+   }
+    return {
+        productList,
+        articleList
+      };
+ },
 methods:{
  getAutoHeight(){
      let _w = document.documentElement.clientWidth || document.body.clientWidth; ; 
      this.height = _w * 770 / 1920 + 'px';
+  },
+  toDetail(id){
+    this.$router.push('/strength/tab1?id='+id)
+  },
+  toProduct(id){
+    this.$router.push('/product?id='+id)
   }
 },
   data(){
@@ -184,6 +229,9 @@ align-items: center;
 justify-content: center;
 position: relative;
 margin-right: 15px;
+.desc{
+  margin-top: 0;
+}
 .bg{
  
   width: 100%;
@@ -198,15 +246,16 @@ margin-right: 15px;
 font-size: 40px;
 font-weight: 400;
 color: #FFFFFF;
-line-height: 68px;
+
 z-index: 10;
-margin-bottom: 10px;
+
 }
 .line{
   width: 40px;
 height: 2px;
 background: #DCDCDC;
 z-index: 10;
+margin: 10px 0 5px;
 }
 .desc{
   
@@ -222,13 +271,13 @@ padding: 5px;
 }
 .more{
   z-index: 10;
-  margin-top: 40px;
-  
+  margin-top: 20px;
+  padding: 3px 20px;
 font-size: 16px;
 
 font-weight: normal;
 color: #FFFFFF;
-line-height: 68px;
+// line-height: 68px;
 display: flex;
 align-items: center;
 img{
@@ -251,6 +300,7 @@ img{
      .article{
   margin-top: 60px;
   display: flex;
+  align-items: center;
   background: #fff;
     width: 100%;
        .pic{
@@ -258,7 +308,8 @@ img{
         //  height: 300px;
        }
        .content{
-         padding: 50px 40px 0;
+        //  padding: 50px 40px 0;
+        margin-left: 40px;
            .c_title{
   
 font-size: 30px;
@@ -276,9 +327,7 @@ font-weight: 400;
 color: #707070;
 line-height: 28px;
 width: 650px;
-overflow:hidden; //超出的文本隐藏
-text-overflow:ellipsis; //溢出用省略号显示
-white-space:nowrap; 
+white-space: pre-line;
 }
 .mt{
   margin-top: 18px;
@@ -371,7 +420,7 @@ line-height: 36px;
   position: absolute;
   width: 51px;
 height: 2px;
-border: 2px solid #808080;
+
 content: '';
 left: 50%;
 top: 80px;

@@ -29,9 +29,9 @@
   </el-submenu>
    <el-submenu index="/product" class="l1Nav">
     <template slot="title">{{$t('product')}}</template>
-    <el-menu-item index="/product/tab1" :route="$i18n.path('product/tab1')">壁挂机</el-menu-item>
-    <el-menu-item index="/product/tab2" :route="$i18n.path('product/tab2')">吊顶机</el-menu-item>
-    <el-menu-item index="/product/tab3" :route="$i18n.path('product/tab3')">立柜机</el-menu-item>
+    <el-menu-item  :index="'/product?id='+item.id" :route="$i18n.path('product?id='+item.id)" v-for="(item,i) in productList" :key="i">{{item.categoryTitle}}</el-menu-item>
+    <!-- <el-menu-item index="/product/tab2" :route="$i18n.path('product/tab2')">吊顶机</el-menu-item>
+    <el-menu-item index="/product/tab3" :route="$i18n.path('product/tab3')">立柜机</el-menu-item> -->
   
   </el-submenu>
    <el-menu-item index="/technology"  :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item>
@@ -54,6 +54,7 @@
 <script>
 import {mapState} from 'vuex'
 export default {
+    
     data(){
         return{
             // activeIndex: "/",
@@ -65,12 +66,16 @@ export default {
         }
     },
     computed:{
-        ...mapState(['path'])
+        ...mapState(['path','productList'])
     },
     created(){
-        // console.log(this.$route.path)
+       this.getProductTitleList()
     },
     methods: {
+        async getProductTitleList(){
+            let res=await this.$axios.get(this.$store.state.api.getProductTitleList)
+             this.$store.commit('setProductList',res)
+        },
          handleSelect(key, keyPath) {
         console.log(key, keyPath);
       }

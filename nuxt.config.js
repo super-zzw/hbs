@@ -54,7 +54,8 @@ export default {
   proxy: {
     //开启代理
     "/api/": {
-      target: process.env.NODE_ENV == "production" ? "http://xxxxxx.com/api" : "http://yyyyy.com/api",
+      target: process.env._ENV == "production" ? "http://sageran-mng.dev.gzcyou.com/api" : "http://bir-mng.dev.gzcyou.com/api/bir",
+      // target: process.env.NODE_ENV == "production" ? "http://xxxxxx.com/api" : "http://yyyyy.com/api",
       // target: "http://xxxxxx.com/api",
       pathRewrite: {
         "^/api/": "",
