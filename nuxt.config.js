@@ -1,12 +1,12 @@
 export default {
   //默认元信息
   head: {
-    title: 'xxx',
+    title: '呼博士',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content:  'cccc ' },
-      { name: "keywords", content: "eeee" },
+      { hid: 'description', name: 'description', content:  '呼博士 ' },
+      { name: "keywords", content: "呼博士" },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -17,7 +17,8 @@ export default {
     '~/assets/style/common.less',
     'element-ui/lib/theme-chalk/index.css',
     '~/assets/style/animate.min.css',
-    'swiper/dist/css/swiper.css'
+    'swiper/dist/css/swiper.css',
+    '~/assets/font/font.css',
   ],
   router: {
     middleware: ['i18n',],
