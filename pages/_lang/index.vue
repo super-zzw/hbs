@@ -12,7 +12,7 @@
             <h2 class="title">{{$t('index1')}}</h2>
              <div class="box">
                 <div class="con" v-for="product in productList" :key="product.id" @click="toProduct(product.id)">
-                  <img :src="product.coverImgUrl" alt="" class="bg">
+                  <img :src="product.coverImg" alt="" class="bg">
                  
                       <p class="name">{{product.title}}</p>
                       <p class="line"></p>
@@ -42,35 +42,7 @@
               </div>
           </div>
        </div>
-       <!-- <div class="article">
-          <img src="~assets/image/img1-1.png" alt="" class="pic">
-          <div class="content">
-              <h3 class="c_title">{{$t('index10')}}</h3>
-              <div class="tt">
-                   <p >{{$t('index11')}}</p>
-                   <p class="mt">{{$t('index12')}}</p>
-              </div>
-              <div class="about">
-                {{$t('liaojie')}}
-                <img src="~assets/image/more.png" alt="">
-              </div>
-          </div>
-       </div>
-        <div class="article ">
-           <div class="content">
-              <h3 class="c_title">不鸣则已,“疫”鸣“净”人</h3>
-              <div class="tt">
-                   <p >呼博士新风迎来最大发展利好</p>
-                   <p class="mt">关于奥佳华(002614.S2)子公司蒙发利健康引入保利基金为战略投资公告</p>
-              </div>
-              <div class="about">
-                {{$t('liaojie')}}
-                <img src="~assets/image/more.png" alt="">
-              </div>
-          </div>
-          <img src="~assets/image/img1-2.png" alt="" class="pic">
-         
-       </div> -->
+      
        </div>
        
      </div>
@@ -217,18 +189,20 @@ methods:{
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-top: 80px;
+      margin-top: 60px;
       z-index: 10;
       .con{
       width: 630px;
         height: 520px;
-background: #000000;
+
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 position: relative;
 margin-right: 15px;
+cursor: pointer;
+ background: #000000;
 .desc{
   margin-top: 0;
 }
@@ -239,7 +213,8 @@ margin-right: 15px;
   position: absolute;
   left: 0;
   top: 0;
-  
+ 
+  opacity: 0.4;
 }
 .name{
 
@@ -255,7 +230,7 @@ z-index: 10;
 height: 2px;
 background: #DCDCDC;
 z-index: 10;
-margin: 10px 0 5px;
+margin: 10px 0 15px;
 }
 .desc{
   
@@ -303,6 +278,8 @@ img{
   align-items: center;
   background: #fff;
     width: 100%;
+    cursor: pointer;
+    justify-content: flex-end;
        .pic{
          width: 470px;
         //  height: 300px;
@@ -364,7 +341,7 @@ align-items: center;
   flex-direction: column;
   align-items: center;
   .imgList{
-    margin-top: 78px;
+    margin-top: 60px;
     .row{
       width: 100%;
       display: flex;
@@ -408,7 +385,7 @@ position: relative;
 }
 
 .desc{
-  margin-top: 60px;
+  margin-top: 45px;
   
 font-size: 20px;
 font-family: SourceHanSansCN;

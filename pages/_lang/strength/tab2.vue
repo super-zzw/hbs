@@ -202,6 +202,7 @@ export default {
             .right{
               .title{
                   color: #505050;
+                  line-height: 32px;
               }
               .tt{
                   
@@ -245,7 +246,7 @@ img{
 font-size: 32px;
 font-family:NotoSansCJK-Bold !important;
 color: #FFFFFF;
-line-height: 45px;     
+line-height: 46px;     
  }
  .con{
      

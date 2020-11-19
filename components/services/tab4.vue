@@ -57,7 +57,7 @@
              <img src="~assets/image/img6.5-2.png" alt="" class="img6">
              <div class="callBtn">
                  <img src="~assets/image/icon6.5-9.png" alt="">
-                 <div class="cont">
+                 <div class="cont1">
                      <p class="t1">BRI呼博士</p>
                      <p class="t2">Android/IOS</p>
                  </div>
@@ -167,7 +167,7 @@ padding: 10px 30px;
 height: 39px;
 margin-right: 20px;
             }
-            .cont{
+            .cont1{
                 display: flex;
                 flex-direction: column;
                 .t1{

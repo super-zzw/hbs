@@ -244,7 +244,7 @@ line-height: 34px;
  .line{
      width: 50px;
 height: 2px;
-border: 2px solid #808080;
+// border: 2px solid #808080;
 background: #808080;
 margin-top: 30px;
 margin-bottom: 30px;

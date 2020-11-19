@@ -236,18 +236,18 @@ export default {
       .title {
         margin-top: 27px;
 
-        font-size: 45px;
+        font-size: 49px;
         font-family: SourceHanSansCN;
         font-weight: 400;
         color: #505050;
-        line-height: 45px;
+        // line-height: 45px;
       }
       .desc {
         font-size: 20px;
         font-family: Noto Sans S Chinese;
         font-weight: 400;
         color: #909090;
-        margin-top: 15px;
+        // margin-top: 15px;
       }
       .con {
         font-size: 18px;
@@ -361,7 +361,7 @@ font-size: 49px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #FFFFFF;
-
+line-height: 65px;
   }
   .desc{
 
@@ -423,7 +423,7 @@ font-size: 49px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #505050;
-// line-height: 36px;
+line-height: 49px;
 // margin-bottom: 20px;
    }
    .desc{
@@ -432,7 +432,7 @@ font-size: 20px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #808080;
-// line-height: 16px;
+line-height: 20px;
 margin-bottom: 30px;
    }
    .con{
@@ -459,7 +459,7 @@ font-size: 49px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #FFFFFF;
-// line-height: 68px;
+line-height: 49px;
   }
   .desc{
       
@@ -467,7 +467,7 @@ font-size: 20px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #FFFFFF;
-// line-height: 16px;
+line-height: 20px;
 margin-bottom: 35px;
   }
   .con{

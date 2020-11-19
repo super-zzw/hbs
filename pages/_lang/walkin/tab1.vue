@@ -94,6 +94,7 @@ font-size: 40px;
 font-family:NotoSansCJK-Bold !important;
 // font-weight: 500;
 color: #FFFFFF;
+line-height: 58px;
 
 
         }
@@ -111,7 +112,7 @@ font-size: 40px;
 font-family:NotoSansCJK-Bold !important;
 
 color: #FFFFFF;
-line-height: 60px;
+line-height: 58px;
 // margin-top: 160px;
         }
        
@@ -165,10 +166,10 @@ color: #707070;;
     .line{
             width: 51px;
 height: 2px;
-border: 2px solid #808080;
-margin-top: 40px;
+
+// margin-top: 40px;
 background: #808080;
-margin-bottom: 30px;
+margin: 30px 0;
         }
          .con{
             

@@ -13,7 +13,7 @@
         </div>
         <div class="t3">
             <div class="desc">以下情形提供有偿保修服务，本公司将不提供免费保修服务：</div>
-            <div class="cont">
+            <div class="cont1">
                 <div class="tt1"><p class="tag">(1)</p>因不可抗力因素（如水灾、火灾、雷击、地震等自然灾害）导致的故障；</div>
                 <div class="tt1"><p class="tag">(2)</p>一切人为因素的损坏，包括不按说明书使用和保管、错误操作和自行不良运输等导致的故障，用户因电源电压不稳，不符合国家安全用电标准（AC220V+10%，50Hz）而造成的损坏；</div>
                 <div class="tt1"><p class="tag">(3)</p>产品用做工业用途；</div>
@@ -71,7 +71,7 @@ color: #FFFFFF;
 padding-left: 20px;
 background: #505050;
 }
-.cont{
+.cont1{
     padding: 22px;
     .tt1{
         

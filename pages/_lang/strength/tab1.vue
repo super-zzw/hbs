@@ -42,10 +42,13 @@
                   回到列表
               </div>
               <div class="go">
-                   <!-- <p @click="changeArticle(-1)">上一条</p> -->
-                   <p @click="changeArticle(-1)" :class="article.topNextModel.top?'':'no'">上一条</p>
+                
+                   <!-- <p @click="changeArticle(-1)" :class="article.topNextModel.top?'':'no'">上一条</p>
                   <span></span>
-                  <p @click="changeArticle(1)" :class="article.topNextModel.next?'':'no'">下一条</p> 
+                  <p @click="changeArticle(1)" :class="article.topNextModel.next?'':'no'">下一条</p>  -->
+                   <p >上一条</p>
+                  <span></span>
+                  <p >下一条</p> 
               </div>
           </div>
          </div>
@@ -149,15 +152,15 @@ export default {
       this.article=article
    },
    changeArticle(i){
-     if(i==-1){
-       this.articleId=this.article.topNextModel.topId
-        this.getArticle()
+    //  if(i==-1){
+    //    this.articleId=this.article.topNextModel.topId
+    //     this.getArticle()
         
-     }else{
-    this.articleId=this.article.topNextModel.nextId
-        this.getArticle()
+    //  }else{
+    // this.articleId=this.article.topNextModel.nextId
+    //     this.getArticle()
      
-     }
+    //  }
    }
  }
 }

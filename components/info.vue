@@ -124,7 +124,7 @@ justify-content: center;
 cursor: pointer;
 img{
     width: 32px;
-    height: 32px;
+    // height: 32px;
 }
         }
     }
