@@ -51,7 +51,7 @@
                      <p class="name">静音模式</p>
                  </div>
              </div>
-             <h2 class="title">多台设备轻松管理</h2>
+             <h2 class="title">WiFi连接,多台设备轻松管理</h2>
              <p class="line"></p>
              <p class="desc">同一注册账号可以添加多台新风设备，同时进行管理</p>
              <img src="~assets/image/img6.5-2.png" alt="" class="img6">

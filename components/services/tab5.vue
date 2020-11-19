@@ -3,7 +3,7 @@
       <div class="cont">
           <img src="~assets/image/img6.6-1.png" alt="">
            <p class="name">EH-Z-7B200F-说明书</p> 
-           <p class="download">立即下载</p>
+           <a class="download" href="http://shiju.dev.gzcyou.com/static/test.pdf" download> 立即下载</a>
       </div>
       <div class="cont">
           <img src="~assets/image/img6.6-2.png" alt="">
@@ -24,7 +24,11 @@
 </template>
 <script>
 export default {
-    
+    methods:{
+        download(){
+       
+        }
+    }
 }
 </script>
 <style lang="less" scoped>
@@ -62,6 +66,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 color: #808080;
+text-decoration: none;
 }
      }
      .cont:last-child{

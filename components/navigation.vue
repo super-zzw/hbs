@@ -1,5 +1,5 @@
 <template>
-    <div class="header">
+    <div  class="header">
         <div class="container">
                  <h1 class="Header__Logo">
               <img src="~assets/image/logo.png" alt="">
@@ -34,18 +34,40 @@
     <el-menu-item index="/product/tab3" :route="$i18n.path('product/tab3')">立柜机</el-menu-item> -->
   
   </el-submenu>
-   <el-menu-item index="/technology"  :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item>
+  <el-submenu class="l1Nav" index="/technology">
+    <template slot="title">{{$t('technology')}}</template>
+    <el-menu-item index="/technology/liedujiaonang" :route="$i18n.path('technology/liedujiaonang')">猎毒胶囊技术</el-menu-item>
+    <el-menu-item index="/technology/shimoxi" :route="$i18n.path('technology/shimoxi')">石墨烯高效全热交换芯</el-menu-item>
+    <el-menu-item index="/technology/bianpinhengfeng" :route="$i18n.path('technology/bianpinhengfeng')">变频恒风技术</el-menu-item>
+    <el-menu-item index="/technology/aicontrl" :route="$i18n.path('technology/aicontrl')">智能控制技术</el-menu-item>
+  
+  </el-submenu>
+   <!-- <el-menu-item index="/technology"  :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item> -->
   <el-menu-item index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
 </el-menu>
             
-            <NuxtLink v-if="$i18n.locale === 'zh'" :to="`/en` + $route.fullPath" class="Header__Link" active-class="none" exact>
+            <!-- <NuxtLink v-if="$i18n.locale === 'zh'" :to="`/en` + $route.fullPath" class="Header__Link" active-class="none" exact>
                     {{ $t('en') }}
                 </NuxtLink>
                 <NuxtLink v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" class="Header__Link" active-class="none" exact>
                     {{ $t('zh') }}
-                </NuxtLink>
+                </NuxtLink> -->
                 <img src="~assets/image/line.png" alt="" class="line">
-                <img src="~assets/image/search.png" alt="" class="search">
+                
+           <!-- <el-popover
+  placement="bottom"
+  width="400"
+  trigger="click">
+   
+ 
+  <div class="input_box">
+                    <el-input v-model="input" placeholder="请输入搜索内容"></el-input>
+                    <div class="search"><img src="~assets/image/search2.png" alt=""></div>
+                </div> -->
+ <img src="~assets/image/search.png" alt="" class="search" slot="reference">
+<!-- </el-popover> -->
+   
+                
            </div>
            
         </div>
@@ -57,13 +79,18 @@ export default {
     
     data(){
         return{
+            input:''
             // activeIndex: "/",
+            // isFixed:false
         }
     },
     watch:{
         activeIndex(val){
             console.log(val)
         }
+    },
+    mounted(){
+
     },
     computed:{
         ...mapState(['path','productList'])
@@ -90,6 +117,34 @@ export default {
       width: 100%;
     z-index: 999;
 }
+ .input_box{
+        display: flex;
+        /deep/ .el-input__inner{
+            
+color: #505050;
+font-size: 16px;
+        }
+        input{
+            width: 485px;
+height: 48px;
+background: #FFFFFF;
+padding: 16px;
+        }
+        .search{
+            width: 48px;
+height: 40px;
+margin-left: 16px;
+border:1px solid  #C0C4CC;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+img{
+    width: 32px;
+    // height: 32px;
+}
+        }
+    }
 .container {
   width: 75%;
   margin: 0 auto;

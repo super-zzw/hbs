@@ -249,7 +249,7 @@ padding: 5px;
   margin-top: 20px;
   padding: 3px 20px;
 font-size: 16px;
-
+opacity: 0.3;
 font-weight: normal;
 color: #FFFFFF;
 // line-height: 68px;

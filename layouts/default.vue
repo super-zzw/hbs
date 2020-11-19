@@ -1,56 +1,170 @@
 <template>
   <div class="wrap">
-    <navigation v-if="nav==1"></navigation>
-    <navigation1  v-if="nav==2"></navigation1>
+    <navigation v-if="nav == 1 && !isFixed"></navigation>
+    <navigation1
+      v-if="nav == 2 || isFixed"
+      :class="isFixed ? 'fixed' : ''"
+      :style="{ top: top ? '0px' : '-80px' }"
+      ref="nav"
+    ></navigation1>
     <div class="content">
       <Nuxt />
     </div>
+    <div class="btn-top" v-if="isTop" @click="toTop">
+      <img src="~assets/image/top.png" alt="" class="top" />
+    </div>
+
     <info></info>
   </div>
 </template>
 
 <script>
-import {mapState} from 'vuex'
-import navigation from '@/components/navigation.vue'
-import navigation1 from '@/components/navigation1.vue'
-import info from '@/components/info.vue'
+import { mapState } from "vuex";
+import navigation from "@/components/navigation.vue";
+import navigation1 from "@/components/navigation1.vue";
+import info from "@/components/info.vue";
 export default {
-  components:{
-    navigation,info,navigation1
+  components: {
+    navigation,
+    info,
+    navigation1,
   },
-  data(){
-    return{
-        
-    }
+  data() {
+    return {
+      isFixed: false,
+      isTop: false,
+      top: true,
+    };
   },
-  
-  computed:{
-    ...mapState(['nav'])
+  mounted() {
+    window.onscroll = (e) => {
+      var a = document.documentElement.scrollTop || document.body.scrollTop; //滚动条y轴上的距离
+      console.log(a)
+      if (a > 80) {
+        this.isFixed = true;
+        var scrollFunc=()=>{
+      
+             var e = e || window.event;
+            var b = document.documentElement.scrollTop || document.body.scrollTop; //滚动条y轴上的距离
+            if(b<a){
+                  // console.log("鼠标滚轮向上拖动");
+               this.top = true;
+            }else{
+              //  console.log("鼠标滚轮向下拖动");
+               this.top = false;
+            }
+        }
+        var wheelFunc = () => {
+          var e = e || window.event;
+          if (e.wheelDelta) {
+            if (e.wheelDelta > 0) {
+              //当鼠标滚轮向上滚动时
+              this.top = true;
+              // console.log("鼠标滚轮向上滚动");
+            }
+            if (e.wheelDelta < 0) {
+              //当鼠标滚轮向下滚动时
+              console.log(this.$refs.nav);
+              this.top = false;
+              // console.log("鼠标滚轮向下滚动");
+            }
+          } else if (e.detail) {
+            if (e.detail < 0) {
+              //当鼠标滚轮向上滚动时
+              // console.log("鼠标滚轮向上滚动");
+            }
+            if (e.detail > 0) {
+              //当鼠标滚轮向下滚动时
+              // console.log("鼠标滚轮向下滚动");
+            }
+          }
+        };
+        //    给页面绑定鼠标滚轮事件,针对火狐的非标准事件
+        // window.addEventListener("DOMMouseScroll", scrollFunc);
+        window.addEventListener("scroll", scrollFunc);
+        //    给页面绑定鼠标滚轮事件，针对Google，mousewheel非标准事件已被弃用，请使用 wheel事件代替
+        window.addEventListener("wheel", wheelFunc);
+        //    ie不支持wheel事件，若一定要兼容，可使用mousewheel
+        // window.addEventListener("mousewheel", scrollFunc);
+      } else {
+        this.isFixed = false;
+      }
+      if (a > 800) {
+        this.isTop = true;
+      } else {
+        this.isTop = false;
+      }
+    };
   },
-  
-}
+  computed: {
+    ...mapState(["nav"]),
+  },
+  methods: {
+    toTop() {
+      let top = document.documentElement.scrollTop || document.body.scrollTop;
+      // 实现滚动效果
+      const timeTop = setInterval(() => {
+        document.body.scrollTop = document.documentElement.scrollTop = top -= 50;
+        if (top <= 0) {
+          clearInterval(timeTop);
+        }
+      }, 10);
+    },
+  },
+};
 </script>
 
 <style lang="less">
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-html, body ,.wrap{
+html,
+body,
+.wrap {
   min-height: 100vh;
 }
-.wrap{
+.wrap {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.content{
+.content {
   flex: 1;
 }
-.banner{
-        width: 100%;
-        height: auto;
-      }
-      
+.banner {
+  width: 100%;
+  height: auto;
+}
+.fixed {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.2s;
+}
+
+.btn-top {
+  width: 44px;
+  height: 44px;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-top:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+.top {
+  width: 35px;
+  height: 23px;
+}
 </style>

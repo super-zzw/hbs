@@ -224,7 +224,7 @@ line-height: 34px;
         display: flex;
         flex-direction: column;
         .desc{
-margin: 5px 0;         
+// margin: 5px 0;         
 font-size: 22px;
 
 color: #FFFFFF;
@@ -307,7 +307,7 @@ line-height: 30px;
 height: 2px;
 
 background: #808080;
-margin: 20px 0;
+margin: 30px 0;
 }
 .tab4Item{
   display: flex;
@@ -320,10 +320,10 @@ margin: 20px 0;
     margin-bottom: -60px;
   }
   .content1{
-    width: 600px;
+    // width: 600px;
     box-sizing: border-box;
     position: relative;
-    padding-left: 90px;
+    // padding-left: 90px;
     z-index: 1;
     .nm{
       position: absolute;

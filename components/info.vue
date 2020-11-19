@@ -27,20 +27,28 @@
   </el-submenu>
    <el-submenu index="/product" class="i1Item l1Nav">
     <template slot="title">{{$t('product')}}</template>
-    <el-menu-item index="/product/tab1" :route="$i18n.path('product/tab1')">壁挂机</el-menu-item>
+    <!-- <el-menu-item index="/product/tab1" :route="$i18n.path('product/tab1')">壁挂机</el-menu-item>
     <el-menu-item index="/product/tab2" :route="$i18n.path('product/tab2')">吊顶机</el-menu-item>
-    <el-menu-item index="/product/tab3" :route="$i18n.path('product/tab3')">立柜机</el-menu-item>
+    <el-menu-item index="/product/tab3" :route="$i18n.path('product/tab3')">立柜机</el-menu-item> -->
+  <el-menu-item  :index="'/product?id='+item.id" :route="$i18n.path('product?id='+item.id)" v-for="(item,i) in productList" :key="i">{{item.categoryTitle}}</el-menu-item>
+  </el-submenu>
+   <!-- <el-menu-item  class="i1Item" index="/technology"  :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item> -->
+   <el-submenu class="l1Nav" index="/technology">
+    <template slot="title">{{$t('technology')}}</template>
+    <el-menu-item index="/technology/liedujiaonang" :route="$i18n.path('technology/liedujiaonang')">猎毒胶囊技术</el-menu-item>
+    <el-menu-item index="/technology/shimoxi" :route="$i18n.path('technology/shimoxi')">石墨烯高效全热交换芯</el-menu-item>
+    <el-menu-item index="/technology/bianpinhengfeng" :route="$i18n.path('technology/bianpinhengfeng')">变频恒风技术</el-menu-item>
+    <el-menu-item index="/technology/aicontrl" :route="$i18n.path('technology/aicontrl')">智能控制技术</el-menu-item>
   
   </el-submenu>
-   <el-menu-item  class="i1Item" index="/technology"  :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item>
   <el-menu-item  class="i1Item" index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
 </el-menu>
-            <NuxtLink v-if="$i18n.locale === 'zh'" :to="`/en` + $route.fullPath" class="Header__Link" active-class="none" exact>
+            <!-- <NuxtLink v-if="$i18n.locale === 'zh'" :to="`/en` + $route.fullPath" class="Header__Link" active-class="none" exact>
                     {{ $t('en') }}
                 </NuxtLink>
                 <NuxtLink v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" class="Header__Link" active-class="none" exact>
                     {{ $t('zh') }}
-                </NuxtLink>
+                </NuxtLink> -->
            </div>
             <div class="imgBox">
                 <div class="input_box">
@@ -61,7 +69,7 @@ export default {
         }
     },
     computed:{
-        ...mapState(['path'])
+        ...mapState(['path','productList'])
     },
 }
 </script>
@@ -279,7 +287,7 @@ font-weight: 600;
 
 /deep/ .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
     border-bottom: none;
-    //  font-weight: bold;
+     font-weight: bold;
 }
 .nav {
     /deep/ .el-menu--horizontal{

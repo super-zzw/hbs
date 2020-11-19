@@ -16,7 +16,7 @@
          </div>
         
       </div>
-       <div class="sec2 wow fadeInUp">
+       <div class="sec22 wow fadeInUp">
          <div class="container">
               <img src="~assets/image/img2-4.png" alt="" class="pic">
          <div class="content1">
@@ -156,11 +156,11 @@ export default {
     }
   }
 }
-.sec2{
+.sec22{
     background: #2C2C2C;
     
    
-    height: 530px;
+    // height: 530px;
     display: flex;
     justify-content: center;
     .container{
@@ -169,7 +169,7 @@ export default {
     justify-content: center;
         .pic{
         width: 630px;
-        // height: 460px;
+        height: auto;
         position: relative;
         top: 50px;
         margin-right: 67px;

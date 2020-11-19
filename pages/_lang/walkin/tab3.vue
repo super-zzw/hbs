@@ -172,7 +172,7 @@ export default {
     justify-content: center;
        width: 1200px;
         .pic{
-        width: 630px;
+        width: 568px;
         height: auto;
         position: relative;
         top: 50px;
@@ -206,7 +206,7 @@ font-size: 36px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #505050;
-line-height: 45px;
+line-height: 52px;
 
     }
     .desc{
@@ -215,6 +215,7 @@ font-size: 18px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #808080;
+line-height:34px ;
 
     }
     img{
@@ -227,11 +228,11 @@ color: #808080;
 }
  .title{
        
-font-size: 32px;
+font-size: 36px;
 font-family: Noto Sans S Chinese;
 font-weight: 400;
 color: #FFFFFF;
-line-height: 45px;     
+line-height: 52px;     
  }
  .con{
      

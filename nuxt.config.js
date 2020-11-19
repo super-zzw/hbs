@@ -56,8 +56,6 @@ export default {
     "/api/": {
       // target: process.env._ENV == "production" ? "http://sageran-mng.dev.gzcyou.com/api" : "http://bir-mng.dev.gzcyou.com/api/bir",
       target: "http://bir-mng.dev.gzcyou.com/api/bir",
-      // target: process.env.NODE_ENV == "production" ? "http://xxxxxx.com/api" : "http://yyyyy.com/api",
-      // target: "http://xxxxxx.com/api",
       pathRewrite: {
         "^/api/": "",
         changeOrigin: true

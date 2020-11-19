@@ -34,16 +34,23 @@
    <el-menu-item  :index="'/product?id='+item.id" :route="$i18n.path('product?id='+item.id)" v-for="(item,i) in productList" :key="i">{{item.categoryTitle}}</el-menu-item>
   
   </el-submenu>
-   <el-menu-item index="/technology"  :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item>
+  <el-submenu class="l1Nav" index="/technology">
+    <template slot="title">{{$t('technology')}}</template>
+    <el-menu-item index="/technology/liedujiaonang" :route="$i18n.path('technology/liedujiaonang')">猎毒胶囊技术</el-menu-item>
+    <el-menu-item index="/technology/shimoxi" :route="$i18n.path('technology/shimoxi')">石墨烯高效全热交换芯</el-menu-item>
+    <el-menu-item index="/technology/bianpinhengfeng" :route="$i18n.path('technology/bianpinhengfeng')">变频恒风技术</el-menu-item>
+    <el-menu-item index="/technology/aicontrl" :route="$i18n.path('technology/aicontrl')">智能控制技术</el-menu-item>
+  
+  </el-submenu>
   <el-menu-item index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
 </el-menu>
             
-            <NuxtLink v-if="$i18n.locale === 'zh'" :to="`/en` + $route.fullPath" class="Header__Link" active-class="none" exact>
+            <!-- <NuxtLink v-if="$i18n.locale === 'zh'" :to="`/en` + $route.fullPath" class="Header__Link" active-class="none" exact>
                     {{ $t('en') }}
                 </NuxtLink>
                 <NuxtLink v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" class="Header__Link" active-class="none" exact>
                     {{ $t('zh') }}
-                </NuxtLink>
+                </NuxtLink> -->
                 <div class="wLine"></div>
                 <img src="~assets/image/search2.png" alt="" class="search">
            </div>
@@ -55,7 +62,7 @@ import {mapState} from 'vuex'
 export default {
     data(){
         return{
-            activeIndex: "/product/tab1",
+          
         }
     },
     computed:{
@@ -77,9 +84,12 @@ export default {
 </script>
 <style lang="less" scoped>
 .header{
-     
+        position: absolute;
+        left: 0;
+        top: 0;
       width: 100%;
     z-index: 999;
+    background: #fff;
 }
 .container {
   width: 75%;
@@ -88,7 +98,7 @@ export default {
   z-index: 999;
   justify-content: space-between;
   align-items: center;
-  padding:10px 0 20px;
+  padding:10px 0 10px;
   box-sizing: border-box;
   .Header__Logo{
       width: 130px;

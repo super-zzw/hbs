@@ -434,7 +434,7 @@ padding: 3px;
    
 }
 .desc{
-  margin-top: 10px;                
+  // margin-top: 10px;                
 font-size: 18px;
 font-family: SourceHanSansCN;
 font-weight: 400;
