@@ -50,7 +50,7 @@
             <swiper
               :options="swiperOption"
               ref="mySwiper"
-              style="width:1050px;height:450px;padding-top:100px"
+              style="width:1050px;height:500px;padding-top:60px"
             >
             
                 <swiper-slide v-for="(item,i) in swiperImgs" :key="i">
@@ -128,9 +128,9 @@ export default {
   },
   methods:{
     slideto(tab){
-      this.swiper.slideTo(tab.index, 1000, false);
-      this.activeSwiper = tab.index;
-    }
+      // this.swiper.slideTo(tab.index, 1000, false);
+      // this.activeSwiper = tab.index;
+    },
   }
 };
 </script>
@@ -315,8 +315,5 @@ line-height: 34px;
 }
 .swiper-button-prev{
   background-image: url('../../../assets/image/prev.png');
-}
-/deep/ .swiper-container{
-  height: 500px!important;
 }
 </style>
