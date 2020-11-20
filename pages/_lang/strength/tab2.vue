@@ -229,7 +229,7 @@ img{
                 // height: 416px;
             }
             .col{
-                margin-left: 15px;
+                margin-left: 10px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;

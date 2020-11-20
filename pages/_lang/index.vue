@@ -346,14 +346,16 @@ align-items: center;
       width: 100%;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
       .imgItem{
-        width: 49.7%;
+        // width: 49.7%;
         // height: 587px;
         position: relative;
+        margin-right: 14px;
         img{
           width: 100%;
           height: auto;
+          display: block;
         }
         p{
           position: absolute;
@@ -370,6 +372,9 @@ font-weight: 400;
 color: #FFFFFF;
 // line-height: 57px;
         }
+      }
+      .imgItem:last-child{
+        margin-right: 0;
       }
     }
     

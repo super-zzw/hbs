@@ -36,14 +36,29 @@
   </el-submenu>
   <el-submenu class="l1Nav" index="/technology">
     <template slot="title">{{$t('technology')}}</template>
+    <el-menu-item index="/technology" :route="$i18n.path('technology')">总览</el-menu-item>
     <el-menu-item index="/technology/liedujiaonang" :route="$i18n.path('technology/liedujiaonang')">猎毒胶囊技术</el-menu-item>
     <el-menu-item index="/technology/shimoxi" :route="$i18n.path('technology/shimoxi')">石墨烯高效全热交换芯</el-menu-item>
     <el-menu-item index="/technology/bianpinhengfeng" :route="$i18n.path('technology/bianpinhengfeng')">变频恒风技术</el-menu-item>
     <el-menu-item index="/technology/aicontrl" :route="$i18n.path('technology/aicontrl')">智能控制技术</el-menu-item>
-  
   </el-submenu>
    <!-- <el-menu-item index="/technology"  :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item> -->
-  <el-menu-item index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
+  <!-- <el-menu-item index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item> -->
+  <el-submenu index="/service" class="l1Nav">
+    <template slot="title">{{$t('service')}}</template>
+    <!-- <el-menu-item index="/strength/tab1" :route="$i18n.path('strength/tab1')">软实力</el-menu-item> -->
+   <el-menu-item index="/service" :route="$i18n.path('service')">总览</el-menu-item>
+     <el-submenu index="6-1">
+      <template slot="title">服务项目</template>
+      <el-menu-item index="/service/0" :route="$i18n.path('service/0')">安装服务</el-menu-item>
+      <el-menu-item index="/service/1" :route="$i18n.path('service/1')">售后政策</el-menu-item>
+      <el-menu-item index="/service/2" :route="$i18n.path('service/2')">售后申请</el-menu-item>
+      <el-menu-item index="/service/3" :route="$i18n.path('service/3')">app下载</el-menu-item>
+      <el-menu-item index="/service/4" :route="$i18n.path('service/4')">说明书下载</el-menu-item>
+    </el-submenu>
+    <el-menu-item index="/service/5" :route="$i18n.path('service/5')">常见问题</el-menu-item>
+    
+  </el-submenu>
 </el-menu>
             
             <!-- <NuxtLink v-if="$i18n.locale === 'zh'" :to="`/en` + $route.fullPath" class="Header__Link" active-class="none" exact>
@@ -52,25 +67,19 @@
                 <NuxtLink v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" class="Header__Link" active-class="none" exact>
                     {{ $t('zh') }}
                 </NuxtLink> -->
-                <img src="~assets/image/line.png" alt="" class="line">
-                
-           <!-- <el-popover
-  placement="bottom"
-  width="400"
-  trigger="click">
-   
- 
-  <div class="input_box">
-                    <el-input v-model="input" placeholder="请输入搜索内容"></el-input>
-                    <div class="search"><img src="~assets/image/search2.png" alt=""></div>
-                </div> -->
- <img src="~assets/image/search.png" alt="" class="search" slot="reference">
-<!-- </el-popover> -->
-   
-                
+                <img src="~assets/image/line.png" alt="" class="line" >
+                <div class="sear" @mouseenter="showSearchBox=true" @mouseleave="outBtn">
+                     <img src="~assets/image/search.png" alt="" class="search" >
+                </div>
            </div>
            
         </div>
+       <div class="searchBox" :class="showSearchBox?'searchBox active':''" @mousemove="enter=true" @mouseleave="enter=false,showSearchBox=false">
+            <div class="input_box">
+                    <el-input v-model="input" placeholder="请输入搜索内容"></el-input>
+                    <div class="search"><img src="~assets/image/search2.png" alt=""></div>
+                </div>
+       </div>
     </div>
 </template>
 <script>
@@ -79,9 +88,9 @@ export default {
     
     data(){
         return{
-            input:''
-            // activeIndex: "/",
-            // isFixed:false
+            input:'',
+            showSearchBox:false,
+            enter:false
         }
     },
     watch:{
@@ -99,6 +108,16 @@ export default {
        this.getProductTitleList()
     },
     methods: {
+       outBtn(){
+           setTimeout(()=>{
+              if(this.enter){
+                  this.showSearchBox=true
+              }else{
+                  this.showSearchBox=false
+              }
+           },100)
+       },
+      
         async getProductTitleList(){
             let res=await this.$axios.get(this.$store.state.api.getProductTitleList)
              this.$store.commit('setProductList',res)
@@ -110,14 +129,18 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-.header{
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-    z-index: 999;
-}
- .input_box{
+
+.searchBox{
+  height: 0;
+  background: #225560;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   transition: all .3s;
+   overflow: hidden;
+   .input_box{
         display: flex;
         /deep/ .el-input__inner{
             
@@ -131,10 +154,11 @@ background: #FFFFFF;
 padding: 16px;
         }
         .search{
-            width: 48px;
+            width: 40px;
+            border-radius: 5px;
 height: 40px;
 margin-left: 16px;
-border:1px solid  #C0C4CC;
+background: #FFFFFF;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -145,6 +169,20 @@ img{
 }
         }
     }
+}
+.searchBox.active{
+  height:200px;
+  transition: all .3s;
+  
+}
+.header{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    z-index: 999;
+}
+
 .container {
   width: 75%;
   margin: 0 auto;
@@ -186,12 +224,20 @@ margin-left: 20px;
 top: -2px;
 margin-right: 25px;
       }
-      .search{
-          width: 28px;
-          height: 28px;
-                   position: relative;
-top: -2px;
+      .sear{
+          height: 70px;
+          width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+           .search{
+              width: 28px;
+             height: 28px;
+            //        position: relative;
+            //  top: -2px;
       }
+      }
+     
   }
 }
 .el-menu{

@@ -6,7 +6,7 @@
                   <div class="content1">
           <div class="Box">
             <p class="line1"></p>
-            <p class="t1">Support</p>
+            <p class="t1">SUPPORT</p>
             <p class="t2">360°无忧服务支持</p>
           </div>
           <p class="t3">呼博士为您提供售前、售中、售后360°一站式无忧服务支持，</p>

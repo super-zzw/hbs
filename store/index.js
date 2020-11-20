@@ -11,7 +11,7 @@ productList:[],
     getProductDetail: "/product/detail", // 获取产品详情 OK
     getProductList: "/productList", // 获取产品列表 OK
     getProductTitleList:'/productTitleList', //获取产品标题列
-   
+    submitAfterSale:'/submit/afterSale', //售后申请
   },
   pageNames: {
     index: '101',

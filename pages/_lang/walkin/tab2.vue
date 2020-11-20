@@ -28,7 +28,7 @@
             <p class="con">{{$t("walkin2-11")}}</p>
             <p class="con">{{$t("walkin2-12")}}</p>
             <p class="con">{{$t("walkin2-13")}}</p>
-            <nuxt-link to="/" class="link"
+            <nuxt-link to="/walkin/tab3" class="link"
               >{{$t("liaojie")}}
               <img src="~assets/image/more.png" alt="" />
             </nuxt-link>
@@ -403,7 +403,9 @@ line-height: 34px;
          }
       }
      
-      
+      .item:last-child{
+        margin-right: 0;
+      }
   }
 }
 .sec5{

@@ -150,6 +150,7 @@ export default {
     .i4mcont{
         .i4b{
             width: 500px;
+             font-family: 'NotoSansCJK-Bold'!important;
         }
         .i4a{
             font-size: 20px;

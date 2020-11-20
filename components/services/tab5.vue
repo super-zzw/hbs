@@ -1,24 +1,24 @@
 <template>
     <div class="container">
-      <div class="cont">
+      <div class="cont1">
           <img src="~assets/image/img6.6-1.png" alt="">
            <p class="name">EH-Z-7B200F-说明书</p> 
-           <a class="download" href="http://shiju.dev.gzcyou.com/static/test.pdf" download> 立即下载</a>
+           <a class="download" href="http://shiju.dev.gzcyou.com/static/EH-Z-7B200F-说明书.pdf" download> 立即下载</a>
       </div>
-      <div class="cont">
+      <div class="cont1">
           <img src="~assets/image/img6.6-2.png" alt="">
            <p class="name">XS-D350A-说明书</p> 
-           <p class="download">立即下载</p>
+           <a class="download" href="http://shiju.dev.gzcyou.com/static/XS-D350A 说明书.pdf" download>立即下载</a>
       </div>
-      <div class="cont">
+      <div class="cont1">
           <img src="~assets/image/img6.6-3.png" alt="">
            <p class="name">EH-Z-7G750-说明书</p> 
-           <p class="download">立即下载</p>
+           <a class="download" href="http://shiju.dev.gzcyou.com/static/EH-Z-7G750-说明书.pdf" download>立即下载</a>
       </div>
-      <div class="cont">
+      <div class="cont1">
           <img src="~assets/image/img6.6-4.png" alt="">
            <p class="name">EH-Z-7G400-说明书</p> 
-           <p class="download">立即下载</p>
+           <a class="download" href="http://shiju.dev.gzcyou.com/static/EH-Z-7G400说明书.pdf" download>立即下载</a>
       </div>
     </div>
 </template>
@@ -34,7 +34,8 @@ export default {
 <style lang="less" scoped>
  .container{
      display: flex;
-     .cont{
+     justify-content: center;
+     .cont1{
         width: 218px;
 height: 308px;
 background: #FFFFFF;

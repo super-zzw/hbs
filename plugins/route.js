@@ -5,13 +5,14 @@ export default ({ app,store }) => {
         //     store.commit('setPath','/technology')
         // }else{
 
-            store.commit('setPath',to.path)
+          
         // }
        if(to.path.includes('product')||to.path.includes('shimoxi')){
          store.commit('setNav',2)
        }else{
         store.commit('setNav',1)
        }
+       store.commit('setPath',to.path)
        next();
       
     });

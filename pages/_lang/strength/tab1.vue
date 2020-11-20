@@ -37,18 +37,18 @@
 
           </div>
           <div class="optBox">
-              <div class="back">
+              <div class="back" @click="back">
                   <img src="~assets/image/back.png" alt="">
                   回到列表
               </div>
               <div class="go">
                 
-                   <!-- <p @click="changeArticle(-1)" :class="article.topNextModel.top?'':'no'">上一条</p>
+                   <p @click="changeArticle(-1)" :class="article.topNextModel.top?'':'no'">上一条</p>
                   <span></span>
-                  <p @click="changeArticle(1)" :class="article.topNextModel.next?'':'no'">下一条</p>  -->
-                   <p >上一条</p>
+                  <p @click="changeArticle(1)" :class="article.topNextModel.next?'':'no'">下一条</p> 
+                   <!-- <p >上一条</p>
                   <span></span>
-                  <p >下一条</p> 
+                  <p >下一条</p>  -->
               </div>
           </div>
          </div>
@@ -76,7 +76,8 @@ export default {
       return data.split(' ')[0].split('-').reverse().join('.')
     }
   },
-  async asyncData({ app,store,params}) {
+  async asyncData({ app,store,query}) {
+    console.log(query)
    let articleList=[]
    let article=null
    let articleId=''
@@ -113,14 +114,16 @@ export default {
     //  let res1 = await app.$axios.get(store.state.api.getArticleList)
       if(res[1].length){
            articleList=res[1]
-          if(!params.id){
+          //  console.log(articleList)
+          if(!query.id){
              articleId=res[1][0].id
           }
           //  this.articleId=res[1][0].id
           //  this.getArticle()
       }
-      if(params.id){
-        articleId=params.id
+      if(query.id){
+        console.log(query.id)
+        articleId=query.id
       }
            let res2=await app.$axios.get(store.state.api.getArticleDetail,{
          params:{id:articleId}
@@ -145,6 +148,9 @@ export default {
       };
  },
  methods:{
+   back(){
+        this.$router.push('/')
+   },
    async getArticle(){
      let article= await this.$axios.get(this.$store.state.api.getArticleDetail,{
          params:{id:this.articleId}
@@ -152,15 +158,17 @@ export default {
       this.article=article
    },
    changeArticle(i){
-    //  if(i==-1){
-    //    this.articleId=this.article.topNextModel.topId
-    //     this.getArticle()
+     if(i==-1){
+     if(!this.article.topNextModel.top) return
+       this.articleId=this.article.topNextModel.topId
+        this.getArticle()
         
-    //  }else{
-    // this.articleId=this.article.topNextModel.nextId
-    //     this.getArticle()
+     }else{
+        if(!this.article.topNextModel.next) return
+    this.articleId=this.article.topNextModel.nextId
+        this.getArticle()
      
-    //  }
+     }
    }
  }
 }
@@ -251,8 +259,10 @@ margin-right: 30px;
    flex: 1;
    
 height: 2px;
-border: 2px solid #909090;
+// border: 2px solid #909090;
 opacity: 0.5;
+position: relative;
+top: 2px;
 background: #909090;
         }
     }
@@ -277,6 +287,7 @@ background: #909090;
         height: 40px;
         background: #F9F9F9;
         .back{
+          cursor: pointer;
             display: flex;
             align-items: center;
             padding: 8px;
@@ -298,7 +309,8 @@ color: #FFFFFF;
             margin-right: 10px;
             height: 36px;
             p{
-                
+                cursor: pointer;
+                user-select: none;
 font-size: 15px;
 font-family: SourceHanSansCN;
 font-weight: 400;

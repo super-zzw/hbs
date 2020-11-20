@@ -11,7 +11,7 @@
       <Nuxt />
     </div>
     <div class="btn-top" v-if="isTop" @click="toTop">
-      <img src="~assets/image/top.png" alt="" class="top" />
+      <img src="~assets/image/top.png" alt="" class="goTop" />
     </div>
 
     <info></info>
@@ -39,7 +39,7 @@ export default {
   mounted() {
     window.onscroll = (e) => {
       var a = document.documentElement.scrollTop || document.body.scrollTop; //滚动条y轴上的距离
-      console.log(a)
+      // console.log(a)
       if (a > 80) {
         this.isFixed = true;
         var scrollFunc=()=>{
@@ -64,7 +64,7 @@ export default {
             }
             if (e.wheelDelta < 0) {
               //当鼠标滚轮向下滚动时
-              console.log(this.$refs.nav);
+              // console.log(this.$refs.nav);
               this.top = false;
               // console.log("鼠标滚轮向下滚动");
             }
@@ -163,8 +163,12 @@ body,
 .btn-top:hover {
   background: rgba(0, 0, 0, 0.7);
 }
-.top {
+.goTop {
   width: 35px;
   height: 23px;
+}
+.el-input{
+width: 485px;
+ height: 48px;
 }
 </style>

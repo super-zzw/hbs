@@ -2,31 +2,42 @@
     <div class="container">
        <div class="desc">如果您在使用呼博士新风系列产品的过程中出现产品故障、耗材更换、移机等安装维护问题时，请拨打400-100-5582热线电话、或联系当地体验门店、或填写如下售后申请表格，我们将迅速为您提供最佳的解决方案。</div>
        <div class="content">
-          <div class="box box1">
-              <p class="label">您的姓名</p>
-               <input type="text" v-model="formData.name">
+           <div v-for="(item,i) in formData" :key="i" :class="item.flag?'box':'box box1'">
+                <p class="label">{{item.label}}*</p>
+               <input type="text" v-model="item.value" @focus="item.empty=true">
+               <p :class="item.empty?'warn':'warn active'" >必填字段</p> 
+           </div>
+          <!-- <div class="box box1">
+              <p class="label">您的姓名*</p>
+               <input type="text" v-model="formData[0].name">
+               <p class="warn" v-if="!formData[0].empty">必填字段</p> 
           </div>
            <div class="box box1">
-              <p class="label">联系方式</p>
-               <input type="text">
+              <p class="label">联系方式*</p>
+               <input type="text" v-model="formData[1].contactWay">
+               <p class="warn" v-if="!formData[1].empty">必填字段</p> 
           </div>
             <div class="box ">
-              <p class="label">家庭住址</p>
-               <input type="text">
+              <p class="label">家庭住址*</p>
+               <input type="text" v-model="formData[2].address">
+               <p class="warn" v-if="!formData[2].empty">必填字段</p> 
           </div>
            <div class="box box1">
-              <p class="label">产品型号</p>
-               <input type="text">
+              <p class="label">产品型号*</p>
+               <input type="text" v-model="formData[3].productModel">
+               <p class="warn" v-if="!formData[3].empty">必填字段</p> 
           </div>
           <div class="box box1">
-              <p class="label">购买时间</p>
-               <input type="text">
+              <p class="label">购买时间*</p>
+               <input type="text" v-model="formData[4].buyTime">
+               <p class="warn" v-if="!formData[4].empty">必填字段</p> 
           </div>
             <div class="box ">
-              <p class="label">服务内容</p>
-               <input type="text">
-          </div>
-          <div class="btn">提交申请</div>
+              <p class="label">服务内容*</p>
+               <input type="text" v-model="formData[5].content">
+               <p class="warn" v-if="!formData[5].empty">必填字段</p> 
+          </div> -->
+          <div class="btn" @click="submit">提交申请</div>
        </div>
     </div>
 </template>
@@ -34,7 +45,75 @@
 export default {
     data(){
         return{
-            formData:{}
+            formData:[
+                {
+                    label:'您的姓名',
+                    value:'',
+                    empty:true,
+                    flag:false
+                },
+                 {
+                     label:'联系方式',
+                    value:'',
+                    empty:true,
+                     flag:false
+                },
+                 {
+                    label:'家庭住址',
+                    value:'',
+                    empty:true,
+                    flag:true
+                },
+                 {
+                       label:'产品型号',
+                    value:'',
+                    empty:true,
+                     flag:false
+                },
+                 {
+                       label:'购买时间',
+                    value:'',
+                    empty:true,
+                     flag:false
+                },
+                 {
+                       label:'服务内容',
+                   value:'',
+                    empty:true,
+                     flag:true
+                },
+            ]
+        }
+    },
+    methods:{
+        async submit(){
+            let num=0
+            let formData=this.formData
+            formData.forEach(item=>{
+                if(!item.value){
+                    item.empty=false
+                    num++
+                }
+            })
+            if(num==0){
+            let res=await this.$axios.get(this.$store.state.api.submitAfterSale,{
+                  params:{
+                    name:formData[0].value,
+                    contactWay :formData[1].value,
+                    address :formData[2].value,
+                    productModel:formData[3].value,
+                    buyTime :formData[4].value,
+                    content :formData[5].value,
+                  }
+              })
+              console.log(res)
+              if(res==1){
+                   this.$message({
+          message: '提交成功',
+          type: 'success'
+        });
+              }
+            }
         }
     }
 }
@@ -61,12 +140,25 @@ justify-content: space-between;
 flex-wrap: wrap;
     .box{
         
-
+position: relative;
 border: 1px solid #CCCCCC;
 display: flex;
 padding: 10px;
 width: 100%;
 margin-bottom: 23px;
+.warn{
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    color: #c7000b;
+    padding-left: 10px;
+    transform:scale(0);
+    transition: all .2s;
+}
+.warn.active{
+  transform:scale(1);
+   transition: all .3s;
+}
 .label{
     
 font-size: 18px;
@@ -78,10 +170,10 @@ border-right: 1px dotted #505050;
 input{
      border: none;
     float: left;
-    zoom:1;
+    flex:1;
     outline: medium;
     background: transparent;
-    padding: 0 15px;
+    padding-left: 15px;
     font-size: 18px;
 }
     }

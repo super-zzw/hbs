@@ -35,13 +35,28 @@
    <!-- <el-menu-item  class="i1Item" index="/technology"  :route="$i18n.path('technology')">{{$t('technology')}}</el-menu-item> -->
    <el-submenu class="l1Nav" index="/technology">
     <template slot="title">{{$t('technology')}}</template>
+    <el-menu-item index="/technology" :route="$i18n.path('technology')">总览</el-menu-item>
     <el-menu-item index="/technology/liedujiaonang" :route="$i18n.path('technology/liedujiaonang')">猎毒胶囊技术</el-menu-item>
     <el-menu-item index="/technology/shimoxi" :route="$i18n.path('technology/shimoxi')">石墨烯高效全热交换芯</el-menu-item>
     <el-menu-item index="/technology/bianpinhengfeng" :route="$i18n.path('technology/bianpinhengfeng')">变频恒风技术</el-menu-item>
     <el-menu-item index="/technology/aicontrl" :route="$i18n.path('technology/aicontrl')">智能控制技术</el-menu-item>
   
   </el-submenu>
-  <el-menu-item  class="i1Item" index="/service" :route="$i18n.path('service')">{{$t('service')}}</el-menu-item>
+   <el-submenu index="/service" class="l1Nav">
+    <template slot="title">{{$t('service')}}</template>
+    <!-- <el-menu-item index="/strength/tab1" :route="$i18n.path('strength/tab1')">软实力</el-menu-item> -->
+    <el-menu-item index="/service" :route="$i18n.path('service')">总览</el-menu-item>
+     <el-submenu index="6-1">
+      <template slot="title">服务项目</template>
+      <el-menu-item index="/service/0" :route="$i18n.path('service/0')">安装服务</el-menu-item>
+      <el-menu-item index="/service/1" :route="$i18n.path('service/1')">售后政策</el-menu-item>
+      <el-menu-item index="/service/2" :route="$i18n.path('service/2')">售后申请</el-menu-item>
+      <el-menu-item index="/service/3" :route="$i18n.path('service/3')">app下载</el-menu-item>
+      <el-menu-item index="/service/4" :route="$i18n.path('service/4')">说明书下载</el-menu-item>
+    </el-submenu>
+    <el-menu-item index="/service/5" :route="$i18n.path('service/5')">常见问题</el-menu-item>
+    
+  </el-submenu>
 </el-menu>
             <!-- <NuxtLink v-if="$i18n.locale === 'zh'" :to="`/en` + $route.fullPath" class="Header__Link" active-class="none" exact>
                     {{ $t('en') }}
@@ -198,8 +213,12 @@ top: -2px;
 .el-menu.el-menu--horizontal{
     border: none;
 }
+/deep/ .nav .el-submenu__title{
+    padding: 0;
+}
 /deep/ .nav .el-submenu__title i{
     color: #505050;
+    
 }
 .el-menu--horizontal > .el-menu-item.is-active {
   border-bottom: none;
@@ -222,7 +241,7 @@ line-height: 68px;
 
 }
 .el-menu--horizontal>.el-submenu{
-    margin: 0 20px;
+    // margin: 0 20px;
 }
 .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover {
 //   color: #ffffff !important;

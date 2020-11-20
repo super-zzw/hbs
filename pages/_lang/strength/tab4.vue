@@ -187,7 +187,7 @@ export default {
     .title{
         
 font-size: 40px;
-font-family:NotoSansCJK-Bold !important;
+// font-family:NotoSansCJK-Bold !important;
 color: #505050;
 line-height: 68px;
     }
@@ -197,7 +197,7 @@ line-height: 68px;
     .con{
         
 font-size: 18px;
-font-family: Noto Sans S Chinese;
+// font-family: Noto Sans S Chinese;
 font-weight: 400;
 color: #606060;
 line-height: 34px;
@@ -292,7 +292,7 @@ color: #fff;
 .title{
        
 font-size: 32px;
-font-family:NotoSansCJK-Bold !important;
+// font-family:NotoSansCJK-Bold !important;
 color: #FFFFFF;
 line-height: 45px;     
  }

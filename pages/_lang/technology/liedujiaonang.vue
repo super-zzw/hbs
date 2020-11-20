@@ -362,6 +362,7 @@ export default {
             font-family: 'NotoSansCJK-Bold'!important;
             font-size: 44px;
             text-align: center;
+            padding-top: 0;
         }
         .i7b{
             margin-top: 100px;
@@ -414,7 +415,7 @@ export default {
     font-size: 44px;
     font-family: 'NotoSansCJK-Bold'!important;
     color: #fff;
-    margin-top: 120px;
+    // margin-top: 120px;
     text-align: center;
 }
 .i8a{
