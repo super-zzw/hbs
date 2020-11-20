@@ -2,7 +2,7 @@
     <div class="header">
         <div class="container">
           
-                 <h1 class="Header__Logo">
+                 <h1 class="Header__Logo" @click="toIndex">
               <img src="~assets/image/logo1.png" alt="">
             </h1>
           
@@ -29,9 +29,9 @@
     <el-menu-item index="/strength/tab5" :route="$i18n.path('strength/tab5')">企业实力</el-menu-item>
     
   </el-submenu>
-   <el-submenu index="/product" class="l1Nav">
+   <el-submenu index="4" class="l1Nav">
     <template slot="title">{{$t('product')}}</template>
-   <el-menu-item  :index="'/product?id='+item.id" :route="$i18n.path('product?id='+item.id)" v-for="(item,i) in productList" :key="i">{{item.categoryTitle}}</el-menu-item>
+   <el-menu-item  :index="'/product/'+item.id" :route="$i18n.path('product/'+item.id)" v-for="(item,i) in productList" :key="i">{{item.categoryTitle}}</el-menu-item>
   
   </el-submenu>
   <el-submenu class="l1Nav" index="/technology">
@@ -97,6 +97,9 @@ export default {
        this.getProductTitleList()
     },
     methods: {
+         toIndex(){
+             this.$router.push('/')
+        },
          outBtn(){
            setTimeout(()=>{
               if(this.enter){
@@ -111,7 +114,7 @@ export default {
              this.$store.commit('setProductList',res)
         },
          handleSelect(key, keyPath) {
-        console.log(key, keyPath);
+        // console.log(key, keyPath);
       }
     },
 }
@@ -179,6 +182,7 @@ img{
   padding:10px 0 10px;
   box-sizing: border-box;
   .Header__Logo{
+      cursor: pointer;
       width: 130px;
       height: 45px;
       img{

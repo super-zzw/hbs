@@ -539,7 +539,7 @@ margin-top: 70px;
 }
 .line2 {
   width: 45px;
-  height: 1px;
+  height: 2px;
   
   background: #808080;
   margin: 30px 0;

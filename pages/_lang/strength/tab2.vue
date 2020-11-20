@@ -16,7 +16,7 @@
          </div>
         
       </div>
-       <div class="sec22 wow fadeInUp">
+       <div class="sec2 wow fadeInUp">
          <div class="container">
               <img src="~assets/image/img2-4.png" alt="" class="pic">
          <div class="content1">
@@ -156,7 +156,7 @@ export default {
     }
   }
 }
-.sec22{
+.sec2{
     background: #2C2C2C;
     
    

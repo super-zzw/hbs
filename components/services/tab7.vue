@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <img src="~assets/image/map.png" alt="" class="map" />
-    <div class="cont">
+    <div class="cont1">
       <p class="name">厦门蒙发利健康科技有限公司</p>
       <p class="tt">
         售后热线：400-100-5582 <br>
@@ -25,7 +25,7 @@ export default {};
   .map {
     width: 100%;
   }
-  .cont{
+  .cont1{
       position: absolute;
       top: 50%;
       transform: translateY(-50%);

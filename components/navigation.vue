@@ -1,7 +1,7 @@
 <template>
     <div  class="header">
         <div class="container">
-                 <h1 class="Header__Logo">
+                 <h1 class="Header__Logo" @click="toIndex">
               <img src="~assets/image/logo.png" alt="">
             </h1>
            <div class="nav">
@@ -29,7 +29,7 @@
   </el-submenu>
    <el-submenu index="/product" class="l1Nav">
     <template slot="title">{{$t('product')}}</template>
-    <el-menu-item  :index="'/product?id='+item.id" :route="$i18n.path('product?id='+item.id)" v-for="(item,i) in productList" :key="i">{{item.categoryTitle}}</el-menu-item>
+    <el-menu-item  :index="item.id" :route="$i18n.path('product/'+item.id)" v-for="(item,i) in productList" :key="i">{{item.categoryTitle}}</el-menu-item>
     <!-- <el-menu-item index="/product/tab2" :route="$i18n.path('product/tab2')">吊顶机</el-menu-item>
     <el-menu-item index="/product/tab3" :route="$i18n.path('product/tab3')">立柜机</el-menu-item> -->
   
@@ -108,6 +108,9 @@ export default {
        this.getProductTitleList()
     },
     methods: {
+        toIndex(){
+             this.$router.push('/')
+        },
        outBtn(){
            setTimeout(()=>{
               if(this.enter){
@@ -192,6 +195,7 @@ img{
   align-items: center;
   padding-top: 10px;
   .Header__Logo{
+       cursor: pointer;
       width: 130px;
       height: 45px;
       img{
@@ -204,28 +208,28 @@ img{
       display: flex;
      
       align-items: center;
-      .Header__Link{
+//       .Header__Link{
           
-font-size: 16px;
-font-family: Noto Sans S Chinese;
-font-weight: 400;
-color: #FFFFFF;
+// font-size: 16px;
+// font-family: Noto Sans S Chinese;
+// font-weight: 400;
+// color: #FFFFFF;
 
-text-decoration: none;
-position: relative;
-top: -2px;
-margin-right: 30px;
-margin-left: 20px;
-      }
+// text-decoration: none;
+// position: relative;
+// top: -2px;
+// margin-right: 30px;
+// margin-left: 20px;
+//       }
       .line{
           width: 2px;
           height: 18px;
           position: relative;
 top: -2px;
-margin-right: 25px;
+margin-right: 20px;
       }
       .sear{
-          height: 70px;
+          height: 60px;
           width: 30px;
           display: flex;
           justify-content: center;

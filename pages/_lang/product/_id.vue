@@ -1,5 +1,6 @@
 <template>
     <div class="page">
+      
        <div v-html="detail.particulars" class="imgBox"></div>
        
     </div>
@@ -7,20 +8,21 @@
 <script>
 export default {
     
-    async asyncData({store,query,app}) {
+    async asyncData({store,params,app}) {
+        // console.log(query)
         let detail=null
         try{
-             let res = await Promise.all([
+            //  let res = await Promise.all([
         //   app.$axios.get(store.state.api.getConfig, {
         //     params: {
         //       pageName: store.state.pageNames.index
         //     }
         //   }),
-          app.$axios.get(store.state.api.getProductDetail,{
-              params:{id:query.id}
-          }),
+         let res=await app.$axios.get(store.state.api.getProductDetail,{
+              params:{id:params.id}
+          })
           
-        ]);
+        // ]);
         // if (res[0] != null){
         //    if (res[0].seoTitle) {
         //     app.head.title = res[0].seoTitle;
@@ -39,9 +41,9 @@ export default {
         //     ];
         //   }
         //  }
-         if(res[0]){
-            //  res[0].particulars.replace(/<img/g, "<img style='width:100%;height:auto;' class='wow fadeInUp'");
-            detail=res[0]
+         if(res){
+          
+            detail=res
          }
         }catch(e){
 

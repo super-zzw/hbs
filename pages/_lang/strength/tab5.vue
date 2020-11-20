@@ -111,9 +111,9 @@ export default {
           clickable: true
         },
         //自动轮播
-        // autoplay: {
-        //   stopOnLastSlide: false
-        // },
+        autoplay: {
+          stopOnLastSlide: false
+        },
         //上下按钮点击轮播效果
         navigation: {
           nextEl: ".swiper-button-next",

@@ -16,9 +16,9 @@
           </div>
        
       </div>
-      <div class="sec2 wow fadeInUp">
+      <div class="sec22 wow fadeInUp">
           
-         <div class="container">
+         <div class="container" ref="article">
            <div class="dateBox">
               <p class="date" v-if="article.createTime">{{article.createTime|formatTime}} </p>
               <p class="line"></p>
@@ -157,18 +157,27 @@ export default {
        })
       this.article=article
    },
-   changeArticle(i){
+   async changeArticle(i){
      if(i==-1){
      if(!this.article.topNextModel.top) return
        this.articleId=this.article.topNextModel.topId
-        this.getArticle()
+       await this.getArticle()
         
      }else{
         if(!this.article.topNextModel.next) return
     this.articleId=this.article.topNextModel.nextId
-        this.getArticle()
+       await this.getArticle()
      
      }
+     console.log(this.$refs.article.offsetTop)
+      let clock = setInterval(()=>{
+                if(document.documentElement.scrollTop>this.$refs.article.offsetTop-80){
+                    document.documentElement.scrollTop -= 40;
+                }else{
+                    clearInterval(clock);
+                }
+            },5)
+    //  window.scrollTo(0,this.$refs.article.offsetTop)
    }
  }
 }
@@ -236,7 +245,7 @@ export default {
     }
   }
 }
-.sec2{
+.sec22{
     background: #F2F2F2;
     padding: 100px 0;
     display: flex;
