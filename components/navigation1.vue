@@ -54,6 +54,7 @@
       <el-menu-item index="/service/2" :route="$i18n.path('service/2')">售后申请</el-menu-item>
       <el-menu-item index="/service/3" :route="$i18n.path('service/3')">app下载</el-menu-item>
       <el-menu-item index="/service/4" :route="$i18n.path('service/4')">说明书下载</el-menu-item>
+      <el-menu-item index="/service/6" :route="$i18n.path('service/6')">联系我们</el-menu-item>
     </el-submenu>
     <el-menu-item index="/service/5" :route="$i18n.path('service/5')">常见问题</el-menu-item>
     

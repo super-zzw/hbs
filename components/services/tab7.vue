@@ -45,8 +45,8 @@ font-size: 18px;
 font-family: SourceHanSansCN;
 font-weight: 400;
 color: #505050;
-line-height: 34px;
-margin: 25px 0;
+line-height: 30px;
+margin: 10px 0;
       }
       .code{
           width: 137px;

@@ -160,7 +160,7 @@ margin-bottom: 23px;
    transition: all .3s;
 }
 .label{
-    
+    white-space: nowrap;
 font-size: 18px;
 color: #505050;
 

@@ -10,6 +10,9 @@
     <div class="content">
       <Nuxt />
     </div>
+    <div class="contactUs" @click="toContact">
+     <img src="~assets/image/lianxi.png" alt="">
+    </div>
     <div class="btn-top" v-if="isTop" @click="toTop">
       <img src="~assets/image/top.png" alt="" class="goTop" />
     </div>
@@ -100,11 +103,14 @@ export default {
     ...mapState(["nav"]),
   },
   methods: {
+    toContact(){
+       this.$router.push('/service/6')
+    },
     toTop() {
       let top = document.documentElement.scrollTop || document.body.scrollTop;
       // 实现滚动效果
       const timeTop = setInterval(() => {
-        document.body.scrollTop = document.documentElement.scrollTop = top -= 80;
+        document.body.scrollTop = document.documentElement.scrollTop = top -= 100;
         if (top <= 0) {
           clearInterval(timeTop);
         }
@@ -152,20 +158,38 @@ body,
   width: 44px;
   height: 44px;
   position: fixed;
-  right: 50px;
-  bottom: 100px;
+  right: 0px;
+  bottom: 50px;
   background: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 999;
 }
 .btn-top:hover {
   background: rgba(0, 0, 0, 0.7);
 }
 .goTop {
-  width: 35px;
-  height: 23px;
+  width: 30px;
+  height: 20px;
+}
+.contactUs{
+  position: fixed;
+  right: 0px;
+  bottom: 100px;
+   width: 44px;
+  height: 44px;
+  background: #d75861;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  img{
+    width: 35px;
+  height: 30px;
+  }
 }
 .el-input{
 width: 485px;

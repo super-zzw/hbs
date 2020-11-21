@@ -23,14 +23,16 @@
               @click="toProduct(product.id)"
             >
               <img :src="product.coverImg" alt="" class="bg" />
-
-              <p class="name">{{ product.title }}</p>
+              <div class="cont1">
+                     <p class="name">{{ product.title }}</p>
               <p class="line"></p>
               <p class="desc">{{ product.label }}</p>
               <div class="more">
                 {{ $t("liaojie") }}
                 <img src="~assets/image/right.png" alt="" />
               </div>
+              </div>
+             
             </div>
           </div>
         </div>
@@ -202,8 +204,8 @@ export default {
       margin-top: 60px;
       z-index: 10;
       .con {
-        width: 630px;
-        height: 520px;
+        flex: 1;
+        // height: 520px;
 
         display: flex;
         flex-direction: column;
@@ -215,26 +217,15 @@ export default {
         background: #000000;
        
         overflow: hidden;
-        .desc {
-          margin-top: 0;
-        }
-        .bg {
-          width: 100%;
-          height: 100%;
+        .cont1{
           position: absolute;
-          left: 0;
-          top: 0;
-
-          opacity: 0.4;
-          transform: scale(1);
-        transition: all 0.6s;
-        }
-        .bg:hover{
-            opacity: 0.3;
-        transform: scale(1.1);
-    
-        }
-        .name {
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+                 .name {
           font-size: 40px;
           font-weight: 400;
           color: #ffffff;
@@ -252,7 +243,7 @@ export default {
           background: rgba(255, 2555, 2555, 0.3);
           z-index: 10;
           font-size: 20px;
-
+         white-space: nowrap;
           font-weight: 400;
           color: #ffffff;
           // line-height: 68px;
@@ -274,6 +265,27 @@ export default {
             height: 20px;
           }
         }
+        }
+        .desc {
+          margin-top: 0;
+        }
+        .bg {
+          width: 100%;
+          height: auto;
+          // position: absolute;
+          // left: 0;
+          // top: 0;
+
+          opacity: 0.4;
+          transform: scale(1);
+        transition: all 0.6s;
+        }
+        .bg:hover{
+            opacity: 0.3;
+        transform: scale(1.1);
+    
+        }
+       
       }
      
       .con:last-of-type {

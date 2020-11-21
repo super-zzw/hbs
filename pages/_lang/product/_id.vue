@@ -1,7 +1,7 @@
 <template>
     <div class="page">
       
-       <div v-html="detail.particulars" class="imgBox"></div>
+       <div v-html="detail.particulars" class="imgBox1"></div>
        
     </div>
 </template>
@@ -58,7 +58,7 @@ export default {
 }
 </script>
 <style lang="less" >
-.imgBox img{
+.imgBox1 img{
     // display: block;
     width: 100% !important;
 }
