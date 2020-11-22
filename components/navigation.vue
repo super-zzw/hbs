@@ -4,8 +4,9 @@
                  <h1 class="Header__Logo" @click="toIndex">
               <img src="~assets/image/logo.png" alt="">
             </h1>
-           <div class="nav">
-                <el-menu :default-active="path" class="el-menu-demo" mode="horizontal" @select="handleSelect" :router="true">
+            <!-- <img src="~assets/image/menu.png" alt="" class="menu" v-if="showMenu"> -->
+           <div class="nav" >
+                <el-menu :default-active="path" class="el-menu-demo" :mode="mode" @select="handleSelect" :router="true" >
   <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item>
   <el-submenu class="l1Nav" index="/walkin">
     <template slot="title">{{$t('walkin')}}</template>
@@ -91,7 +92,9 @@ export default {
         return{
             input:'',
             showSearchBox:false,
-            enter:false
+            enter:false,
+            mode:'horizontal',
+            showMenu:false
         }
     },
     watch:{
@@ -100,7 +103,7 @@ export default {
         }
     },
     mounted(){
-
+        
     },
     computed:{
         ...mapState(['path','productList'])
@@ -133,7 +136,10 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-
+.menu{
+    width: 24px;
+    height: 20px;
+}
 .searchBox{
   height: 0;
   background: #225560;

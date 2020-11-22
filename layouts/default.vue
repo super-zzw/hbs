@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <navigation v-if="nav == 1 && !isFixed"></navigation>
+    <navigation v-if="nav == 1 && !isFixed"  class="fixed"></navigation>
     <navigation1
       v-if="nav == 2 || isFixed"
       :class="isFixed ? 'fixed' : ''"
@@ -17,7 +17,7 @@
       <img src="~assets/image/top.png" alt="" class="goTop" />
     </div>
 
-    <info></info>
+    <info ></info>
   </div>
 </template>
 
@@ -40,6 +40,17 @@ export default {
     };
   },
   mounted() {
+    //  window.onresize=()=>{
+    //           console.log(document.body.clientWidth)
+    //         //   if(document.body.clientWidth<1050){
+    //         //       console.log('11')
+    //         //       this.showMenu=true
+    //         //       this.mode='vertical'
+    //         //   }else{
+    //         //       this.showMenu=false
+    //         //       this.mode='horizontal'
+    //         //   }
+    //       }
     window.onscroll = (e) => {
       var a = document.documentElement.scrollTop || document.body.scrollTop; //滚动条y轴上的距离
       // console.log(a)
