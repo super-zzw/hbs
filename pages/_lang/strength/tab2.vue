@@ -192,8 +192,8 @@ export default {
         margin-top: 100px;
         .contentBox{
             display: flex;
-            align-items: center;
             .left{
+              padding-top: 54px;
                 margin-right: 100px;
               .con{
                   color: #707070;
@@ -203,6 +203,7 @@ export default {
               .title{
                   color: #505050;
                   line-height: 32px;
+                  height: 32px;
               }
               .tt{
                   
@@ -212,7 +213,7 @@ font-weight: 400;
 color: #707070;
 display: flex;
 align-items: center;
-margin-bottom: 15px;
+margin-bottom: 12px;
 img{
      width: 30px;
     height: auto;
