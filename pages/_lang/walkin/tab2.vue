@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="sec2 wow fadeInUp">
-        <div class="container">
+        <div class="container mCont">
           <img src="~assets/image/img2-4.png" alt="" />
           <div class="content">
             <h2 class="title">{{$t("walkin2-4")}}</h2>
@@ -226,13 +226,15 @@ export default {
   .container {
     display: flex;
     margin-top: 100px;
+    justify-content: space-between;
     img {
       width: 714px;
       // height: 514px;
       height: auto;
-      margin-right: 77px;
     }
     .content {
+      width: 366px;
+      flex: unset;
       .title {
         margin-top: 27px;
 
@@ -314,7 +316,8 @@ color: #808080;
 line-height: 34px;
 padding: 14px 20px;
 margin-bottom: 25px;
-background: rgba(225, 225, 225, 0.51);
+background: rgba(255, 255, 255, 0.51);
+// background-color: #fff;
 box-shadow: 0px 2px 5px 0px rgba(225, 225, 225, 0.66);
 // opacity: 0.51;
 border-radius: 10px;

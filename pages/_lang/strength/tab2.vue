@@ -33,7 +33,7 @@
         
       </div>
       <div class="sec3 wow fadeInUp">
-          <div class="container">
+          <div class="container mCont">
               <div class="contentBox">
                   <div class="left">
                       <p class="con">生产基地组建于2000年，拥有建筑面积达7.6万平方米的现代化制造厂房，汇</p>
@@ -71,7 +71,10 @@
                   </div>
               </div>
               <div class="imgBox">
+                <div class="img3-4Box">
                   <img src="~assets/image/img3-4.png" alt="" class="img3-4">
+                </div>
+                  
                   <div class="col">
                       <img src="~assets/image/img3-5.png" alt="">
                       <img src="~assets/image/img3-6.png" alt="">
@@ -208,7 +211,6 @@ export default {
               .tt{
                   
 font-size: 20px;
-font-family: Noto Sans S Chinese;
 font-weight: 400;
 color: #707070;
 display: flex;
@@ -225,18 +227,20 @@ img{
         .imgBox{
             margin-top: 50px;
             display: flex;
+            .img3-4Box{
+              width: 594px;
+            }
             .img3-4{
-                width: 590px;
-                // height: 416px;
+                width: 100%;
+                height: auto;
             }
             .col{
                 margin-left: 10px;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
                 img{
-                    width: 290px;
-                    // height: 202px;
+                    width: 293px;
+                    margin-bottom: 10px;
                 }
             }
         }
@@ -245,14 +249,12 @@ img{
  .title{
        
 font-size: 32px;
-font-family:NotoSansCJK-Bold !important;
 color: #FFFFFF;
 line-height: 46px;     
  }
  .con{
      
 font-size: 18px;
-font-family: Noto Sans S Chinese;
 font-weight: 400;
 color: #FFFFFF;
 line-height: 34px;

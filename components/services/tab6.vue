@@ -115,6 +115,7 @@ export default {
       margin-top: 20px;
       display: flex;
       .tag {
+        width: 42px;
         font-size: 17px;
         font-family: SourceHanSansCN;
         font-weight: 400;
@@ -122,6 +123,7 @@ export default {
         line-height: 28px;
       }
       .con {
+        flex: 1;
         font-size: 16px;
         font-family: SourceHanSansCN;
         font-weight: 400;

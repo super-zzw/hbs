@@ -22,14 +22,30 @@
           <p class="line"></p>
           <p class="desc">部分认证与资质</p>
           <div class="honorList">
-            <img src="~assets/image/img3.5-1.png" alt />
-            <img src="~assets/image/img3.5-2.png" alt />
-            <img src="~assets/image/img3.5-3.png" alt />
-            <img src="~assets/image/img3.5-4.png" alt />
-            <img src="~assets/image/img3.5-5.png" alt />
-            <img src="~assets/image/img3.5-6.png" alt />
-            <img src="~assets/image/img3.5-7.png" alt />
-            <img src="~assets/image/img3.5-8.png" alt />
+            <div class="honorListImg">
+              <img src="~assets/image/img3.5-1.png" alt />  
+            </div> 
+            <div class="honorListImg">
+              <img src="~assets/image/img3.5-2.png" alt />    
+            </div> 
+            <div class="honorListImg">
+              <img src="~assets/image/img3.5-3.png" alt />  
+            </div> 
+            <div class="honorListImg">
+              <img src="~assets/image/img3.5-4.png" alt />    
+            </div>
+            <div class="honorListImg">
+              <img src="~assets/image/img3.5-5.png" alt />  
+            </div> 
+            <div class="honorListImg">
+              <img src="~assets/image/img3.5-6.png" alt />    
+            </div> 
+            <div class="honorListImg">
+              <img src="~assets/image/img3.5-7.png" alt />  
+            </div> 
+            <div class="honorListImg">
+              <img src="~assets/image/img3.5-8.png" alt />    
+            </div> 
           </div>
         </div>
         <div class="section wow fadeInUp">
@@ -451,12 +467,16 @@ export default {
       margin-top: 20px;
       display: flex;
       flex-wrap: wrap;
-      width: 1190px;
-      img {
+      width: 1200px;
+      .honorListImg{
         width: 290px;
-        height: auto;
-        margin-right: 8px;
-        margin-bottom: 8px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 0;
+      }
+      img {
+        width: 100%;
+        height: 400px;
       }
       img:nth-child(4n + 4) {
         margin-right: 0;
