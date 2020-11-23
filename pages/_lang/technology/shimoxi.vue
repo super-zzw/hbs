@@ -201,9 +201,13 @@ export default {
             display: flex;
             .i4e{
                 margin-right: 30px;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
                 .i4f{
                     font-family: 'NotoSansCJK-Bold'!important;
                     font-weight: bold;
+                    height: 90px;
                     .i4f1{
                         font-size: 70px;
                         background: linear-gradient(#000, #fff, #000);

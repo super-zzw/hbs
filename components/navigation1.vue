@@ -5,8 +5,8 @@
                  <h1 class="Header__Logo" @click="toIndex">
               <img src="~assets/image/logo1.png" alt="">
             </h1>
-          
-           <div class="nav">
+          <div style="position:relative">
+           <div class="nav" :style="{transform:showSearchBox?'scale(1)':'scale(0)'}">
                 <el-menu :default-active="path" class="el-menu-demo" mode="horizontal" @select="handleSelect" :router="true">
   <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item>
   <el-submenu index="/walkin" class="l1Nav">
@@ -71,17 +71,25 @@
                     {{ $t('zh') }}
                 </NuxtLink> -->
                 <div class="wLine"></div>
-                  <div class="sear" @mouseenter="showSearchBox=true" @mouseleave="outBtn">
+                  <div class="sear" @click="showSearchBox=false">
                      <img src="~assets/image/search2.png" alt="" class="search" >
                 </div>
+                 
+           
            </div>
+            <div class="input_box" :style="{transform:showSearchBox?'scale(0)':'scale(1)'}">
+                    <el-input v-model="input" placeholder="请输入搜索内容" suffix-icon="el-icon-search"></el-input>
+                    <div class="search" @click="showSearchBox=true"><img src="~assets/image/close.png" alt=""></div>
+                </div>
+          </div>
+           
         </div>
-            <div class="searchBox" :class="showSearchBox?'searchBox active':''" @mousemove="enter=true" @mouseleave="enter=false,showSearchBox=false">
+            <!-- <div class="searchBox" :class="showSearchBox?'searchBox active':''" @mousemove="enter=true" @mouseleave="enter=false,showSearchBox=false">
             <div class="input_box">
                     <el-input v-model="input" placeholder="请输入搜索内容"></el-input>
                     <div class="search"><img src="~assets/image/search.png" alt=""></div>
                 </div>
-       </div>
+       </div> -->
     </div>
 </template>
 <script>
@@ -90,7 +98,7 @@ export default {
     data(){
         return{
             input:'',
-          showSearchBox:false,
+          showSearchBox:true,
             enter:false
         }
     },
@@ -135,13 +143,12 @@ export default {
    transition: all .3s;
    overflow: hidden;
 }
-.searchBox.active{
-  height:200px;
-  transition: all .3s;
-  
-}
  .input_box{
         display: flex;
+         position: absolute;
+        right: 0;
+        top: 10px;
+         transition: all .3s;
         /deep/ .el-input__inner{
             
 color: #505050;
@@ -154,7 +161,8 @@ background: #FFFFFF;
 padding: 16px;
         }
         .search{
-            width: 48px;
+            width: 40px;
+            border-radius: 5px;
 height: 40px;
 margin-left: 16px;
 border:1px solid  #C0C4CC;
@@ -177,11 +185,11 @@ img{
     background: #fff;
 }
 .container {
-  width: 75%;
-  margin: 0 auto;
+  min-width: 992px;
+  // margin: 0 auto;
   display: flex;
   z-index: 999;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding:10px 0 10px;
   box-sizing: border-box;
@@ -198,6 +206,7 @@ img{
   .nav{
       display: flex;
       align-items: center;
+        transition: all 0.3s;
       .Header__Link{
           
 font-size: 16px;

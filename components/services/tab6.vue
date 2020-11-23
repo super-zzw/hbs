@@ -36,6 +36,26 @@
         </p>
       </div>
     </div>
+     <div class="quesItem">
+      <div class="top" @click="changeTab(1)">
+        <div class="left">
+          <img src="~assets/image/icon6.7-1.png" alt="" />
+          <p class="ques">新风系统能为家人的健康做什么？</p>
+        </div>
+        <img src="~assets/image/icon6.7-2.png" v-if="active[1]" alt="" class="right" />
+        <img src="~assets/image/icon6.7-3.png" v-else alt="" class="right" />
+      </div>
+      <div class="answer" v-if="active[1]">
+        <p class="tag">A：</p>
+        <p class="con">
+          1、不用开窗也能享受大自然的新鲜空气；<br>
+          2、避免社会上广泛议论的“空调病”；<br>
+          3、防止室内家具衣物的发霉；<br>
+          4、随时排除室内装饰长期缓释的有害气体；<br>
+          5、带来保持身体健康所必需的、高质量的、充足的新鲜空气。<br>
+        </p>
+      </div>
+    </div>
     <!-- <img src="~assets/image/icon6.7-3.png" alt="" class="add" /> -->
   </div>
 </template>

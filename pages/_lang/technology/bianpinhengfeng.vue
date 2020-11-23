@@ -103,7 +103,7 @@ export default {
         font-size: 56px;
         color: #fff;
         font-family: 'NotoSansCJK-Bold'!important;
-        margin-bottom: 25px;
+        // margin-bottom: 25px;
     }
     .t3Title2{
         font-size: 44px;
@@ -202,10 +202,10 @@ export default {
         .i4a{
             font-size: 24px;
             color: #fff;
-            margin-top: 20px;
+            // margin-top: 20px;
         }
         .i4b{
-            margin-top: 35px;
+            margin-top: 45px;
             font-size: 23px;
             color: #fff;
         }
