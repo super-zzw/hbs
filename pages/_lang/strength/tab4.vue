@@ -330,11 +330,11 @@ margin: 30px 0;
       color: #494949;
       font-size: 250px;
       opacity: 0.2;
-      font-family: 'NotoSansCJK-Bold';
       right: 0;
       bottom: 0;
       line-height: 220px;
       font-weight: bold;
+      font-family: 'NotoSansCJK-Bold'!important;
     }
     .nm2{
       color: #E5E5E5;
