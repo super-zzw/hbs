@@ -11,10 +11,10 @@
   <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item>
   <el-submenu index="/walkin" class="l1Nav">
     <template slot="title">{{$t('walkin')}}</template>
+   <el-menu-item index="/walkin/tab3" :route="$i18n.path('walkin/tab3')">公司介绍</el-menu-item>
     <el-menu-item index="/walkin/tab1" :route="$i18n.path('walkin/tab1')">品牌文化</el-menu-item>
+    <el-menu-item index="/walkin/tab4" :route="$i18n.path('walkin/tab4')">品牌咨讯</el-menu-item>
     <el-menu-item index="/walkin/tab2" :route="$i18n.path('walkin/tab2')">招商计划</el-menu-item>
-    <el-menu-item index="/walkin/tab3" :route="$i18n.path('walkin/tab3')">公司介绍</el-menu-item>
-    <el-menu-item index="/walkin/tab4" :route="$i18n.path('walkin/tab4')">品牌咨询</el-menu-item>
   
   </el-submenu>
   <el-submenu index="/strength" class="l1Nav">
@@ -78,7 +78,14 @@
            
            </div>
             <div class="input_box" :style="{transform:showSearchBox?'scale(0)':'scale(1)'}">
-                    <el-input v-model="input" placeholder="请输入搜索内容" suffix-icon="el-icon-search"></el-input>
+                    <el-input v-model="input" placeholder="请输入搜索内容" >
+                      <i
+    class="el-icon-search el-input__icon"
+    style="cursor:pointer"
+    slot="suffix"
+    @click="handleIconClick">
+  </i>
+                    </el-input>
                     <div class="search" @click="showSearchBox=true"><img src="~assets/image/close.png" alt=""></div>
                 </div>
           </div>
@@ -109,6 +116,10 @@ export default {
        this.getProductTitleList()
     },
     methods: {
+       handleIconClick(){
+             this.$router.push('/service/search/'+this.input)
+             this.showSearchBox=true
+        },
          toIndex(){
              this.$router.push('/')
         },

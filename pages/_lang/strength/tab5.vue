@@ -113,7 +113,7 @@ export default {
         "获得IECEE国际电工委员会安全质量认证"
       ],
       swiperOption: {
-        
+        // direction:'vertical',
         //可见图片张数
         // spaceBetween: 100,
         slidesPerView: 5,

@@ -79,6 +79,7 @@
              <div class="input_box" :style="{transform:showSearchBox?'scale(0)':'scale(1)'}">
                     <el-input v-model="input" placeholder="请输入搜索内容" > <i
     class="el-icon-search el-input__icon"
+    style="cursor:pointer"
     slot="suffix"
     @click="handleIconClick">
   </i></el-input>
@@ -91,6 +92,7 @@
     </div>
 </template>
 <script>
+
 import {mapState} from 'vuex'
 export default {
     
@@ -122,7 +124,7 @@ export default {
              
         },
         handleIconClick(){
-             this.$router.push('/service/search')
+             this.$router.push('/service/search/'+this.input)
              this.showSearchBox=true
         },
        outBtn(){
@@ -160,6 +162,7 @@ export default {
   align-items: center;
    transition: all .3s;
    overflow: hidden;
+  
  
 }
   .input_box{
@@ -261,6 +264,7 @@ margin-right: 20px;
           display: flex;
           justify-content: center;
           align-items: center;
+           cursor: pointer;
            .search{
               width: 28px;
              height: 28px;

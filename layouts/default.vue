@@ -143,6 +143,7 @@ html,
 body,
 .wrap {
   min-height: 100vh;
+  min-width: 1280px;
 }
 .wrap {
   display: flex;

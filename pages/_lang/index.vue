@@ -158,10 +158,10 @@ export default {
       this.height = (_w * 770) / 1920 + "px";
     },
     toDetail(id) {
-      this.$router.push("/strength/tab1?id=" + id);
+      this.$router.push("/walkin/tab4?id=" + id);
     },
     toProduct(id) {
-      this.$router.push("/product?id=" + id);
+      this.$router.push("/product/"+id);
     },
   },
   data() {

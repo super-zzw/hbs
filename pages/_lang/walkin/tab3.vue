@@ -42,7 +42,38 @@
           </div>
          
       </div>
-        <div class="sec2 wow fadeInUp">
+      <div class="sec5 wow fadeInUp">
+         <div class="container"> 
+            <h2 class="title">发展历程</h2>
+            <p class="line"></p>
+            <div class="contentBox">
+              <div class="left">
+                <div class="t1">
+                   <p class="tt1">{{activeCon.year}}</p>
+                   <p class="tt2">{{activeCon.title}}</p>
+                </div>
+                <div class="t2" v-html="activeCon.con">
+                  <!-- 初步达成与钟南山关联单位股份置换战略合作。<br> 9月蒙发利实行独立经营，引进保利基金和碧桂园投资，与房地产巨头进行深度合作。<br> 5月携手钟南山医学基金会助力校园抗疫，定向捐赠价值400万元BRI呼博士杀毒新风机和空气净化器援助广州中小学校进行开学防疫。<br> 4月，以具有核心杀毒技术的新风产品为主打开始进军国内新风市场。<br> 2月携手钟南山医学基金会定向捐赠价值300万元BRI呼博士空气净化器援助武汉疫区医院，获得《抗击新冠肺炎疫情公益爱心单位》。<br>   企业生产管理符合国家质量管理体系标准，企业生产管理符合国家医疗器械的质量管理体系标准。 -->
+                </div>
+              </div>
+              <div class="right">
+                
+                <swiper
+              :options="swiperOption"
+              ref="mySwiper"
+              style="width:90px;height:350px"
+            >
+            
+                <swiper-slide v-for="(item,i) in list" :key="i" >
+                     <p>{{item.year}}</p>
+                </swiper-slide>
+            
+            </swiper>
+              </div>
+            </div>
+         </div>
+      </div>
+        <div class="sec2 sec6 wow fadeInUp">
           <div class="container">
              <div class="content1 content2">
              <h2 class="title">呼博士携手钟南山广州呼研所 </h2>
@@ -95,10 +126,198 @@
 export default {
   mounted(){
     this.initWow(this)
+  },
+  data(){
+    return{
+      years:[2020,2019,2018,2017,2016,2015,2014,2013,2012],
+      list:[
+        {
+          year:'2020',
+          title:'突破',
+          con:`初步达成与钟南山关联单位股份置换战略合作。<br>
+9月蒙发利实行独立经营，引进保利基金和碧桂园投资，与房地产巨头进行深度合作。<br>
+5月携手钟南山医学基金会助力校园抗疫，定向捐赠价值400万元BRI呼博士杀毒新风机和空气净化器援助广州中小学校进行开学防疫。<br>
+4月，以具有核心杀毒技术的新风产品为主打开始进军国内新风市场。<br>
+2月携手钟南山医学基金会定向捐赠价值300万元BRI呼博士空气净化器援助武汉疫区医院，获得《抗击新冠肺炎疫情公益爱心单位》<br>
+企业生产管理符合国家质量管理体系标准 <br>
+企业生产管理符合国家医疗器械的质量管理体系标准`
+        },
+        {
+          year:'2019',
+          title:'共享',
+          con:`11月 获厦门市科学技术局、财政局及国税总局厦门税务局颁发《高新技术企业证书》<br>
+与日本芝浦电机签署年度合作合同，成为日电产贸易为芝浦电机中国代理商<br>
+与美国安费洛传感器签署年度合同，成为美国安费洛中国代理商<br>
+焓差试验室（温湿能量交换）达到国家能量回收性能实验要求<br>
+新风产品获得国际CMF工艺设计大赛获奖证书<br>
+产品获得国际质量认证机构Intertek（天祥）的认证报告 `
+
+        },
+         {
+          year:'2018',
+          title:'技术',
+          con:`新风行业通过国家消字号认证，真正具备生产消毒产品资质的企业<br>
+杀毒技术获得2018年日内瓦国际发明展金奖<br>
+获得IECEE国际电工委员会安全质量认证<br>
+企业生产管理符合国家质量认证中心的环境管理体系标准<br>
+2018产品外观设计专利证书2个<br>
+ `
+
+        },
+         {
+          year:'2017',
+          title:'科研',
+          con:`蒙发利实验室获得威凯检测技术有限公司颁发《检测数据认可实验室》<br>
+CVC《新风最高等级认证（九星认证）》<br>
+产品技术发明专利证书9个<br>
+ `
+        },
+        {
+          year:'2016',
+          title:'标准',
+          con:`12月联合【中国质量检验协会】主导编制并发布《婴幼儿室内空气质量分级》标准。<br>
+11月获得厦门市科学技术局、厦门市经济和信息化局等颁发《厦门市创新性（试点）企业》<br>
+产品技术发明专利证书4个<br>
+ `
+        },
+        {
+          year:'2015',
+          title:'诚信',
+          con:`获得全国质量和服务诚信优秀企业称号<br>
+企业生产管理符合国家质量认证中心的环境管理体系标准<br>
+ `
+        },
+          {
+          year:'2014',
+          title:'强盛',
+          con:`由广州呼吸疾病研究所、广东省室内环境卫生行业协会、广州市控烟协会联合主办，厦门BRI<br>
+呼博士承办的“室内环境（家庭）空气质量调研及呼吸疾病科普中国行”大型公益活动。<br>
+8月《中国室内环境（家庭）呼吸健康中国行暨BRI呼博士品牌新品发布会》。<br>
+BRI呼博士杀毒新风机被评定为室内环境污染防治、消杀、净化推荐产品<br>
+企业生产管理符合国家质量管理体系标准
+ `
+        },
+        {
+          year:'2013',
+          title:'飞跃',
+          con:`10月与钟南山领导的广州呼研所签署《产学研战略合作协议》，并联合推出呼博士杀毒新风<br>
+系统，专业室内环境杀毒灭菌的BRI呼博士新风品牌顺势诞生。
+ `
+        },
+        {
+          year:'2012',
+          title:'规划',
+          con:`提出“融入生活，享受健康”大健康概念发展规划。`
+        },
+         {
+          year:'2011',
+          title:'上市',
+          con:`深圳证券交易所挂牌上市，成为国内健康产业的上市龙头企业。`
+        },
+        {
+          year:'2009',
+          title:'科技',
+          con:`蒙发利认定为国家级高新技术企业。`
+        },
+          {
+          year:'2007',
+          title:'变革',
+          con:`6月蒙发利入选厦门市百强企业榜单<br>12月厦门蒙发利科技（集团）有限公司改制为厦门蒙发利科技（集团）股份有限公司`
+        },
+         {
+          year:'2006',
+          title:'变更',
+          con:`变更为厦门蒙发利科技（集团）有限公司`
+        },
+         {
+          year:'2005',
+          title:'荣耀',
+          con:`蒙发利荣获“福建省著名商标”称号`
+        },
+         {
+          year:'2003',
+          title:'变更',
+          con:`4月更名为厦门蒙发利科技有限公司`
+        },
+         {
+          year:'1996',
+          title:'起源',
+          con:`1996年，厦门蒙发利垫制品有限公司成立，进军中国大健康产业。`
+        },
+      ],
+      activeCon:{
+  year:'2020',
+          title:'突破',
+          con:`初步达成与钟南山关联单位股份置换战略合作。<br>
+9月蒙发利实行独立经营，引进保利基金和碧桂园投资，与房地产巨头进行深度合作。<br>
+5月携手钟南山医学基金会助力校园抗疫，定向捐赠价值400万元BRI呼博士杀毒新风机和空气净化器援助广州中小学校进行开学防疫。<br>
+4月，以具有核心杀毒技术的新风产品为主打开始进军国内新风市场。<br>
+2月携手钟南山医学基金会定向捐赠价值300万元BRI呼博士空气净化器援助武汉疫区医院，获得《抗击新冠肺炎疫情公益爱心单位》<br>
+企业生产管理符合国家质量管理体系标准 <br>
+企业生产管理符合国家医疗器械的质量管理体系标准`
+      },
+       swiperOption:{
+      direction:'vertical',
+       slidesPerView: 7,
+        // 默认选中中间一张
+        // centeredSlides: true,
+        //无限循环
+        loop: true,
+        //小圆点（我此处没使用，列出供参考）
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        //自动轮播
+        
+        on:{
+            slidePrevTransitionEnd:()=>{
+               this.$nextTick(()=>{
+          this.activeCon=this.list[this.$refs.mySwiper.$swiper.realIndex]
+
+            
+            })
+        },
+           slideNextTransitionEnd:()=>{
+           
+          this.$nextTick(()=>{
+            this.activeCon=this.list[this.$refs.mySwiper.$swiper.realIndex]
+          //  this.activeSwiper=this.$refs.mySwiper.$swiper.realIndex
+  console.log(this.$refs.mySwiper.$swiper.realIndex)
+            
+            })
+        },
+        }
+        
+      }
+    }
+   
   }
 }
 </script>
 <style lang="less" scoped>
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p{
+    color: #fff;
+    
+font-size: 18px;
+font-family: SourceHanSansCN;
+font-weight: 400;
+
+  }
+}
+.swiper-slide-active{
+  border-right: 1px solid #ccc;
+  height: 32px !important;
+  
+
+p{
+font-size: 24px;
+}
+}
 .cont{
         position: absolute;
         left: 0;
@@ -159,6 +378,18 @@ export default {
       color: #CCCCCC;
       line-height: 36px;
     }
+  }
+}
+.sec2.sec6{
+  background: #F2F2F2;
+  .title{
+    color: #505050;
+  }
+  .con{
+    color: #808080;
+  }
+  .container .pic{
+    margin-right: 0;
   }
 }
 .sec2{
@@ -296,5 +527,57 @@ color: #505050;
           }
         }
     }
+ }
+ .sec5{
+   background: #2C2C2C;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 60px;
+   .container{
+     width: 1200px;
+     .title{
+       
+font-size: 36px;
+font-family: SourceHanSansCN;
+font-weight: 400;
+color: #fff;
+line-height: 36px;
+margin-top: 80px;
+     }
+     .line{
+       background: #fff;
+     }
+     .contentBox{
+       display: flex;
+       justify-content: space-between;
+
+       .left{
+         .t1{
+           display: flex;
+           align-items: flex-end;
+           .tt1{          
+font-size: 100px;
+font-family:NotoSansCJK-Bold !important;
+color: #fff;
+line-height: 100px;
+           }
+           .tt2{
+             
+font-size: 60px;
+font-family: SourceHanSansCN;
+font-weight: 300;
+color: #fff;
+line-height: 80px;
+           }
+         }
+         .t2{
+        margin-top: 30px;   
+font-size: 18px;
+color: #fff;
+line-height: 34px;
+         }
+       }
+     }
+   }
  }
 </style>

@@ -12,13 +12,14 @@ productList:[],
     getProductList: "/productList", // 获取产品列表 OK
     getProductTitleList:'/productTitleList', //获取产品标题列
     submitAfterSale:'/submit/afterSale', //售后申请
+    search:'/search', //搜索
   },
   pageNames: {
     index: '101',
     walkin1: '201',
     walkin2: '202',
     walkin3: '203',
-    strength1: '301',
+    strength1: '301',  //文章
     strength2: '302',
     strength3: '303',
     strength4: '304',

@@ -15,6 +15,7 @@
     "qs": "^6.9.4",
     "swiper": "^4.1.0",
     "vue-awesome-swiper": "^4.1.1",
+    "vue-baidu-map": "^0.21.22",
     "vue-i18n": "^7.3.2"
   },
   "devDependencies": {
