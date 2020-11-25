@@ -4,7 +4,16 @@
        <div class="content">
            <div v-for="(item,i) in formData" :key="i" :class="item.flag?'box':'box box1'">
                 <p class="label">{{item.label}}*</p>
-               <input type="text" v-model="item.value" @focus="item.empty=true">
+               <input type="text" v-model="item.value" @focus="item.empty=true" v-if="!item.select">
+               <select v-model="item.value" placeholder="" v-else @focus="item.empty=true">
+                   <option :value="item1.categoryTitle" v-for="item1 in productList"  :key="item1.id">{{item1.categoryTitle}}</option>
+    <!-- <el-option
+      v-for="item in productList"
+      :key="item.label"
+      :label="item.label"
+      :value="item.label">
+    </el-option> -->
+  </select>
                <p :class="item.empty?'warn':'warn active'" >必填字段</p> 
            </div>
           <!-- <div class="box box1">
@@ -42,6 +51,7 @@
     </div>
 </template>
 <script>
+import {mapState} from 'vuex'
 export default {
     data(){
         return{
@@ -50,40 +60,49 @@ export default {
                     label:'您的姓名',
                     value:'',
                     empty:true,
-                    flag:false
+                    flag:false,
+                    select:false
                 },
                  {
                      label:'联系方式',
                     value:'',
                     empty:true,
-                     flag:false
+                     flag:false,
+                     select:false
                 },
                  {
                     label:'家庭住址',
                     value:'',
                     empty:true,
-                    flag:true
+                    flag:true,
+                    select:false
                 },
                  {
                        label:'产品型号',
                     value:'',
                     empty:true,
-                     flag:false
+                     flag:false,
+                     select:true
                 },
                  {
                        label:'购买时间',
                     value:'',
                     empty:true,
-                     flag:false
+                     flag:false,
+                     select:false
                 },
                  {
                        label:'服务内容',
                    value:'',
                     empty:true,
-                     flag:true
+                     flag:true,
+                     select:false
                 },
             ]
         }
+    },
+    computed:{
+        ...mapState(['productList'])
     },
     methods:{
         async submit(){
@@ -110,8 +129,15 @@ export default {
               if(res==1){
                    this.$message({
           message: '提交成功',
-          type: 'success'
-        });
+          type: 'success',
+          onClose:()=>{
+formData.forEach(item=>{
+               
+                   item.value=''
+                
+            })
+          }
+        })
               }
             }
         }
@@ -176,6 +202,15 @@ input{
     padding-left: 15px;
     font-size: 18px;
 }
+select{
+    border: none;
+    float: left;
+    flex:1;
+    outline: medium;
+      background: transparent;
+       padding-left: 15px;
+    font-size: 18px;
+}
     }
       .box1{
           width: 49%;
@@ -197,5 +232,8 @@ justify-content: center;
       
 }
     }
-  
+//  /deep/ .el-input__inner{
+//    background: transparent;
+//    width: 200px;
+// }
 </style>

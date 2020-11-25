@@ -113,7 +113,7 @@ export default {
         ...mapState(['path','productList'])
     },
     created(){
-       this.getProductTitleList()
+      //  this.getProductTitleList()
     },
     methods: {
        handleIconClick(){
@@ -132,10 +132,10 @@ export default {
               }
            },100)
        },
-         async getProductTitleList(){
-            let res=await this.$axios.get(this.$store.state.api.getProductTitleList)
-             this.$store.commit('setProductList',res)
-        },
+        //  async getProductTitleList(){
+        //     let res=await this.$axios.get(this.$store.state.api.getProductTitleList)
+        //      this.$store.commit('setProductList',res)
+        // },
          handleSelect(key, keyPath) {
         // console.log(key, keyPath);
       }

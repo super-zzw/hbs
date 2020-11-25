@@ -21,7 +21,7 @@
             <div class="tt">呼博士为您找到以下相关结果：</div>
             <div class="searchCont">
                 <div class="searchItem" v-for="(item,i) in searchList.list" :key="i" @click="toDetail(item)">
-                    <img src="~assets/image/img2-8.png" alt="">
+                    <img :src="item.coverImg" alt="">
                     <div class="right">
                         <h2 class="title">{{item.bubble}}</h2>
                         <p class="desc" v-html="item.summary"></p>

@@ -47,20 +47,20 @@
       </div>
     </div>
     <div class="quesItem">
-      <div class="top" @click="changeTab(1)">
+      <div class="top" @click="changeTab(2)">
         <div class="left">
           <img src="~assets/image/icon6.7-1.png" alt="" />
           <p class="ques">新风系统能为家人的健康做什么？</p>
         </div>
         <img
           src="~assets/image/icon6.7-2.png"
-          v-if="active[1]"
+          v-if="active[2]"
           alt=""
           class="right"
         />
         <img src="~assets/image/icon6.7-3.png" v-else alt="" class="right" />
       </div>
-      <div class="answer" v-if="active[1]">
+      <div class="answer" v-if="active[2]">
         <p class="tag">A：</p>
         <p class="con">
           1、不用开窗也能享受大自然的新鲜空气；<br />
@@ -72,20 +72,20 @@
       </div>
     </div>
     <div class="quesItem">
-      <div class="top" @click="changeTab(1)">
+      <div class="top" @click="changeTab(3)">
         <div class="left">
           <img src="~assets/image/icon6.7-1.png" alt="" />
           <p class="ques">新风系统与空气净化器有什么区别？</p>
         </div>
         <img
           src="~assets/image/icon6.7-2.png"
-          v-if="active[1]"
+          v-if="active[3]"
           alt=""
           class="right"
         />
         <img src="~assets/image/icon6.7-3.png" v-else alt="" class="right" />
       </div>
-      <div class="answer" v-if="active[1]">
+      <div class="answer" v-if="active[3]">
         <p class="tag">A：</p>
         <p class="con">
           新风系统属于开放式的循环系统，每天24小时为室内提供新鲜的经过过滤的室外空气，让人们在室内也可以呼吸到新鲜、干净、高品质的空气;而空气净化器的使用效果受各种因素
@@ -94,20 +94,20 @@
       </div>
     </div>
     <div class="quesItem">
-      <div class="top" @click="changeTab(1)">
+      <div class="top" @click="changeTab(4)">
         <div class="left">
           <img src="~assets/image/icon6.7-1.png" alt="" />
           <p class="ques">中央空调自带“新风功能”，和新风系统有什么区别？</p>
         </div>
         <img
           src="~assets/image/icon6.7-2.png"
-          v-if="active[1]"
+          v-if="active[4]"
           alt=""
           class="right"
         />
         <img src="~assets/image/icon6.7-3.png" v-else alt="" class="right" />
       </div>
-      <div class="answer" v-if="active[1]">
+      <div class="answer" v-if="active[4]">
         <p class="tag">A：</p>
         <p class="con">
           中央空调的“新风功能”，注意只是功能，且不是主要功能，空调的主要功能都是调节温度。它的“新风功能”是通过进风口把室外的空气抽进来，经过一遍粗线条的过滤，将制冷或加热后的空气送到室内，回风口则将室内污浊的空气吸回去仍旧是室内循环。新风系统是通过新风机组、新风管道和风口，将室外的空气送入室内，再通过风口、排风管道和风机将室内的空气排出室外。简单的说，新风系统就是通过换气，将浑浊的室内空气排出去，将室外新鲜空气引进来，实现室内外空气的循环。
@@ -115,20 +115,20 @@
       </div>
     </div>
      <div class="quesItem">
-      <div class="top" @click="changeTab(1)">
+      <div class="top" @click="changeTab(5)">
         <div class="left">
           <img src="~assets/image/icon6.7-1.png" alt="" />
           <p class="ques">新风系统是否可以和空调一起配合使用？</p>
         </div>
         <img
           src="~assets/image/icon6.7-2.png"
-          v-if="active[1]"
+          v-if="active[5]"
           alt=""
           class="right"
         />
         <img src="~assets/image/icon6.7-3.png" v-else alt="" class="right" />
       </div>
-      <div class="answer" v-if="active[1]">
+      <div class="answer" v-if="active[5]">
         <p class="tag">A：</p>
         <p class="con">
           新风系统+空调搭配使用，在功能上，空调和新风系统一起使用是不重复的。空调是通过制冷制热来调节室内温度的，而新风系统是利用室内外空气的循环来保证室内空气质量的。在提升室内空间舒适度上，两者是互补的。空调利用制冷制热的功能使人体处在一个相对舒适的温度下，新风系统则可以保证室内空气的新鲜度。
@@ -136,20 +136,20 @@
       </div>
     </div>
      <div class="quesItem">
-      <div class="top" @click="changeTab(1)">
+      <div class="top" @click="changeTab(6)">
         <div class="left">
           <img src="~assets/image/icon6.7-1.png" alt="" />
           <p class="ques">如果有一房间离排气口较远，那么此房间换气是否受影响？</p>
         </div>
         <img
           src="~assets/image/icon6.7-2.png"
-          v-if="active[1]"
+          v-if="active[6]"
           alt=""
           class="right"
         />
         <img src="~assets/image/icon6.7-3.png" v-else alt="" class="right" />
       </div>
-      <div class="answer" v-if="active[1]">
+      <div class="answer" v-if="active[6]">
         <p class="tag">A：</p>
         <p class="con">
           不会受影响。因为，新鲜的空气是在压力场的作用下按照预定的路径流动的，只要有压力场的存在，气流就不会停滞，所以，离排气口远的房间的通风换气也不会受影响。
@@ -157,20 +157,20 @@
       </div>
     </div>
     <div class="quesItem">
-      <div class="top" @click="changeTab(1)">
+      <div class="top" @click="changeTab(7)">
         <div class="left">
           <img src="~assets/image/icon6.7-1.png" alt="" />
           <p class="ques">装上新风换气系统，卫生间里还须装排气扇吗？</p>
         </div>
         <img
           src="~assets/image/icon6.7-2.png"
-          v-if="active[1]"
+          v-if="active[7]"
           alt=""
           class="right"
         />
         <img src="~assets/image/icon6.7-3.png" v-else alt="" class="right" />
       </div>
-      <div class="answer" v-if="active[1]">
+      <div class="answer" v-if="active[7]">
         <p class="tag">A：</p>
         <p class="con">
           新风换气系统是用来解决高品质空气问题的，与排气扇概念毫无关联。通过对系统的整合，
@@ -178,20 +178,20 @@
       </div>
     </div>
     <div class="quesItem">
-      <div class="top" @click="changeTab(1)">
+      <div class="top" @click="changeTab(8)">
         <div class="left">
           <img src="~assets/image/icon6.7-1.png" alt="" />
           <p class="ques">请问新风系统的管道要不要做保温呢？</p>
         </div>
         <img
           src="~assets/image/icon6.7-2.png"
-          v-if="active[1]"
+          v-if="active[8]"
           alt=""
           class="right"
         />
         <img src="~assets/image/icon6.7-3.png" v-else alt="" class="right" />
       </div>
-      <div class="answer" v-if="active[1]">
+      <div class="answer" v-if="active[8]">
         <p class="tag">A：</p>
         <p class="con">
           室外新风引入管路，为防止在冬季外界气温低于0℃情况下，管道存在温差而产生管道外壁结露现象，应使用保温管道。
@@ -199,20 +199,20 @@
       </div>
     </div>
      <div class="quesItem">
-      <div class="top" @click="changeTab(1)">
+      <div class="top" @click="changeTab(9)">
         <div class="left">
           <img src="~assets/image/icon6.7-1.png" alt="" />
           <p class="ques">呼博士新风系统有哪些技术优势?</p>
         </div>
         <img
           src="~assets/image/icon6.7-2.png"
-          v-if="active[1]"
+          v-if="active[9]"
           alt=""
           class="right"
         />
         <img src="~assets/image/icon6.7-3.png" v-else alt="" class="right" />
       </div>
-      <div class="answer" v-if="active[1]">
+      <div class="answer" v-if="active[9]">
         <p class="tag">A：</p>
         <p class="con">
           呼博士杀毒新风系统由钟南山领导的广州呼研所（现广州呼吸健康研究院）和蒙发利健康科技有限公司联合研发。广州呼研所是全国顶级呼吸疾病研究机构，20年来一直为呼博士的新风产品提供最先进的技术优化，经由我司112人超强研发团队进行杀毒科研成果精确转化，历经上千次科学实验对照，经国家权威检测报告验证，呼博士杀毒新风对室内空气中的冠状病毒消杀率高达99.99%。
@@ -220,20 +220,20 @@
       </div>
     </div>
      <div class="quesItem">
-      <div class="top" @click="changeTab(1)">
+      <div class="top" @click="changeTab(10)">
         <div class="left">
           <img src="~assets/image/icon6.7-1.png" alt="" />
           <p class="ques">新风系统寿命是多少？</p>
         </div>
         <img
           src="~assets/image/icon6.7-2.png"
-          v-if="active[1]"
+          v-if="active[10]"
           alt=""
           class="right"
         />
         <img src="~assets/image/icon6.7-3.png" v-else alt="" class="right" />
       </div>
-      <div class="answer" v-if="active[1]">
+      <div class="answer" v-if="active[10]">
         <p class="tag">A：</p>
         <p class="con">
           新风系统产品核心部件就是风机，该产品采用德国技术的风机,风机可以连续运转500000小时，寿命10年以上。
@@ -241,20 +241,20 @@
       </div>
     </div>
      <div class="quesItem">
-      <div class="top" @click="changeTab(1)">
+      <div class="top" @click="changeTab(11)">
         <div class="left">
           <img src="~assets/image/icon6.7-1.png" alt="" />
           <p class="ques">家用新风系统该如何选择？</p>
         </div>
         <img
           src="~assets/image/icon6.7-2.png"
-          v-if="active[1]"
+          v-if="active[11]"
           alt=""
           class="right"
         />
         <img src="~assets/image/icon6.7-3.png" v-else alt="" class="right" />
       </div>
-      <div class="answer" v-if="active[1]">
+      <div class="answer" v-if="active[11]">
         <p class="tag">A：</p>
         <p class="con">
           住宅密闭性的不断增强，选择合适的通风换气设备已经成为一种必然趋势，在寻找换气产品的时候，新风系统走进了广大用户的眼中，但是家用新风系统该如何选择，一直被广大用户所困扰。 
@@ -277,7 +277,7 @@
 export default {
   data() {
     return {
-      active: [true, true],
+      active: [true, true,true,true, true,true,true, true,true,true, true,true],
     };
   },
   methods: {

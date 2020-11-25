@@ -56,8 +56,8 @@ export default {
     //开启代理
     "/api/": {
       // target: process.env._ENV == "production" ? "http://sageran-mng.dev.gzcyou.com/api" : "http://bir-mng.dev.gzcyou.com/api/bir",
-      target: "http://bir-mng.dev.gzcyou.com/api/bir",
-      // target: "http://192.168.1.17:9087/api/bir",
+      // target: "http://bir-mng.dev.gzcyou.com/api/bir",
+      target: "http://192.168.1.17:9087/api/bir",
       pathRewrite: {
         "^/api/": "",
         changeOrigin: true

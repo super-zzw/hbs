@@ -3,6 +3,7 @@ export const state = () => ({
   locale: 'zh',
   nav:1,
   path:'/',
+  // productTitleList:[],
 productList:[],
   api: {
     getArticleDetail: "/article/detail", // 获取文章详情
@@ -74,6 +75,9 @@ export const mutations = {
   },
   setPath(state,val){
     state.path=val
+     },
+     setProductTitleList(state,val){
+      state.productTitleList=val
      },
      setProductList(state,val){
       state.productList=val
