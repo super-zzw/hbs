@@ -24,22 +24,12 @@
               <p class="line"></p>
           </div>
           <div class="contentBox" v-html="article.description">
-           <!-- <img src="~assets/image/img3-1.png" alt="" class="pic">
-            <div class="content1" >
-                <h2 class="title">呼博士新风迎来最大发展利好</h2>
-                <p class="desc">关于奥佳华(002614.SZ)子公司蒙发利健康引入保碧基金为战略投资公告</p>
-                <div class="con">奥佳华智能健康科技集团股份有限公司（以下简称“公司”）控股子公司厦门蒙发利健康科技有限公司（以下简称“蒙发利健康”）以增资扩股的方式引入战略投资者。2020 年 9 月 24 日，公司、蒙发利健康、厦门智宏仁企业管理合伙企业（有限合伙）（以下简称“智宏仁”）、厦门智呼企业管理合伙企业（有限合伙）（以下简称“智呼”）、公司控股股东邹剑寒先生、李五令先生与南昌市慧星股权投资合伙企业（有限合伙）（以下简称“保碧基金”）共同签署《关于蒙发利健康的增资协议》，本次投资将按照蒙发利健康的投前估值人民币 66,566.5000万元，保碧基金拟向蒙发利健康增资人民币 7,651.3218 万元，其中人民币3,365.4126 万元计入蒙发利健康新增注册资本，人民币 4,285.9092 万元计入蒙发利健康资本公积，本次交易完成后保碧基金将取得蒙发利健康 10.3093%股权。在本次增资扩股完成后，蒙发利健康注册资本由人民币 29,279.0896 万元增加至人民币 32,644.5022 万元。</div>
-                <div class="showImg">
-                    <img src="~assets/image/img3-2.png" alt="">
-                    <img src="~assets/image/img3-3.png" alt="">
-                </div> -->
-            <!-- </div> -->
-
+        
           </div>
           <div class="optBox">
               <div class="back" @click="back">
                   <img src="~assets/image/back.png" alt="">
-                  回到列表
+                  回到首页
               </div>
               <div class="go">
                 
@@ -86,7 +76,7 @@ export default {
      let res=await await Promise.all([
         app.$axios.get(store.state.api.getConfig, {
             params: {
-              pageName: store.state.pageNames.index
+              pageName: store.state.pageNames.strength1
             }
           }),
         app.$axios.get(store.state.api.getArticleList)
@@ -129,7 +119,7 @@ export default {
          params:{id:articleId}
        })
        if(res2){
-        res2.description.replace(/<img/g, "<img style='max-width:100%;height:auto;'");
+        // res2.description.replace(/<img/g, "<img style='max-width:100%;height:auto;'");
         article=res2
        
        }
@@ -182,7 +172,7 @@ export default {
  }
 }
 </script>
-<style lang="less" >
+<style lang="less" scoped>
 .cont{
         position: absolute;
         left: 0;

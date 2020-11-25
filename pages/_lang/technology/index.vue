@@ -90,7 +90,9 @@
               </div>
             </div>
             <div class="i2g">{{ $t("technology17") }}</div>
-            <div class="i2h">{{ $t("technology18") }}</div>
+            <div class="i2h">
+              <span >{{$t("technology18_1")}}</span><sub>{{$t("technology18_2")}}</sub>{{$t("technology18_3")}}
+            </div>
             <div class="i2h">{{ $t("technology19") }}</div>
             <div class="i2g">{{ $t("technology20") }}</div>
             <div class="i2h">{{ $t("technology21") }}</div>

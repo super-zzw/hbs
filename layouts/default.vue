@@ -143,6 +143,7 @@ html,
 body,
 .wrap {
   min-height: 100vh;
+  min-width: 1280px;
 }
 .wrap {
   display: flex;
@@ -203,7 +204,11 @@ body,
   }
 }
 .el-input{
-width: 485px;
+width: 350px;
  height: 48px;
+}
+.el-input__suffix{
+  font-size: 28px;
+  right: 10px;
 }
 </style>

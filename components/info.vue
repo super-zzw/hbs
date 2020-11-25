@@ -7,10 +7,10 @@
   <!-- <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item> -->
   <el-submenu index="/walkin" class="i1Item l1Nav">
     <template slot="title">{{$t('walkin')}}</template>
+   <el-menu-item index="/walkin/tab3" :route="$i18n.path('walkin/tab3')">公司介绍</el-menu-item>
     <el-menu-item index="/walkin/tab1" :route="$i18n.path('walkin/tab1')">品牌文化</el-menu-item>
+    <el-menu-item index="/walkin/tab4" :route="$i18n.path('walkin/tab4')">品牌咨讯</el-menu-item>
     <el-menu-item index="/walkin/tab2" :route="$i18n.path('walkin/tab2')">招商计划</el-menu-item>
-    <el-menu-item index="/walkin/tab3" :route="$i18n.path('walkin/tab3')">公司介绍</el-menu-item>
-    <el-menu-item index="/walkin/tab4" :route="$i18n.path('walkin/tab4')">品牌咨询</el-menu-item>
   </el-submenu>
   <el-submenu index="/strength" class="i1Item l1Nav">
     <template slot="title">{{$t('strength')}}</template>

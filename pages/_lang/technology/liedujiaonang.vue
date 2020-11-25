@@ -218,6 +218,7 @@ export default {
         }
         .i1f{
             font-family: 'NotoSansCJK-Bold'!important;
+            height: 75px;
             .i1f1{
                 font-size: 60px;
                 background: linear-gradient(#000, #fff, #000);

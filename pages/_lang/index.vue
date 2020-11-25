@@ -105,7 +105,7 @@ export default {
     };
   },
   async asyncData({ app, store }) {
-    let productList = [];
+   
     let articleList = [];
     try {
       let res = await Promise.all([
@@ -114,7 +114,7 @@ export default {
             pageName: store.state.pageNames.index,
           },
         }),
-        app.$axios.get(store.state.api.getProductList),
+        // app.$axios.get(store.state.api.getProductList),
         app.$axios.get(store.state.api.getArticleList),
       ]);
       if (res[0] != null) {
@@ -136,20 +136,22 @@ export default {
           ];
         }
       }
+     
       if (res[1].length) {
-        if(res[1].length>3){
-          res[1]= res[1].slice(0,3)
-        }
-        productList = res[1];
-      }
-      if (res[2].length) {
-        articleList = res[2];
+        articleList = res[1];
       }
     } catch (e) {}
     return {
-      productList,
-      articleList,
+    
+      articleList
     };
+  },
+   computed:{
+    productList(){
+      var productList=this.$store.state.productList.slice(0,3)
+      return productList
+    }
+   
   },
   methods: {
     getAutoHeight() {
@@ -158,10 +160,10 @@ export default {
       this.height = (_w * 770) / 1920 + "px";
     },
     toDetail(id) {
-      this.$router.push("/strength/tab1?id=" + id);
+      this.$router.push("/walkin/tab4?id=" + id);
     },
     toProduct(id) {
-      this.$router.push("/product?id=" + id);
+      this.$router.push("/product/"+id);
     },
   },
   data() {

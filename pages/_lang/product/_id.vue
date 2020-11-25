@@ -59,7 +59,8 @@ export default {
 </script>
 <style lang="less" >
 .imgBox1 img{
-    // display: block;
+    display: block;
     width: 100% !important;
+
 }
 </style>

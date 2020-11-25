@@ -9,7 +9,7 @@ export default {
       { name: "keywords", content: "呼博士" },
     ],
     link: [
-      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   loading: { color: 'cyan' },
@@ -38,6 +38,7 @@ export default {
     },
     '~/plugins/i18n.js',
     {src: '@/plugins/animate.js',ssr: false},
+    {src: '@/plugins/map.js', ssr: false}
     
   ],
   modules: [
@@ -55,7 +56,8 @@ export default {
     //开启代理
     "/api/": {
       // target: process.env._ENV == "production" ? "http://sageran-mng.dev.gzcyou.com/api" : "http://bir-mng.dev.gzcyou.com/api/bir",
-      target: "http://bir-mng.dev.gzcyou.com/api/bir",
+      // target: "http://bir-mng.dev.gzcyou.com/api/bir",
+      target: "http://192.168.1.17:9087/api/bir",
       pathRewrite: {
         "^/api/": "",
         changeOrigin: true
@@ -64,6 +66,7 @@ export default {
   },
   build: {
     transpile: [/^element-ui/],
+    // extractCSS: { allChunks: true },
     /*
     ** You can extend webpack config here
     */

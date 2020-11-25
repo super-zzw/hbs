@@ -17,9 +17,13 @@
             <div class="box">
                 <div class="mCont">
                     <div class="t3Cont i3mcont">
-                        <div class="t3Title wow fadeInUp">{{$t("t5d4")}}</div>
+                        <div class="t3Title wow fadeInUp">
+                            {{$t("t5d4_1")}}<sub>{{$t("t5d4_2")}}</sub>{{$t("t5d4_3")}}
+                        </div>
                         <div class="i3a">{{$t("t5d5")}}</div>
-                        <div class="i3a">{{$t("t5d6")}}</div>
+                        <div class="i3a">
+                            {{$t("t5d6_1")}}<sub>{{$t("t5d4_2")}}</sub>{{$t("t5d6_2")}}
+                        </div>
                         <div class="i3a">{{$t("t5d7")}}</div>
                     </div>
                 </div>

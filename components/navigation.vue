@@ -4,16 +4,16 @@
                  <h1 class="Header__Logo" @click="toIndex">
               <img src="~assets/image/logo.png" alt="">
             </h1>
-            <!-- <img src="~assets/image/menu.png" alt="" class="menu" v-if="showMenu"> -->
-           <div class="nav" >
-                <el-menu :default-active="path" class="el-menu-demo" :mode="mode" @select="handleSelect" :router="true" >
+            <div style="position:relative">
+                 <div class="nav" :style="{transform:showSearchBox?'scale(1)':'scale(0)'}">
+                <el-menu :default-active="path" class="el-menu-demo" mode="horizontal" @select="handleSelect" :router="true" >
   <el-menu-item  index="/" :route="$i18n.path('')">{{$t('home')}}</el-menu-item>
   <el-submenu class="l1Nav" index="/walkin">
     <template slot="title">{{$t('walkin')}}</template>
-    <el-menu-item index="/walkin/tab1" :route="$i18n.path('walkin/tab1')">品牌文化</el-menu-item>
-    <el-menu-item index="/walkin/tab2" :route="$i18n.path('walkin/tab2')">招商计划</el-menu-item>
     <el-menu-item index="/walkin/tab3" :route="$i18n.path('walkin/tab3')">公司介绍</el-menu-item>
-    <el-menu-item index="/walkin/tab4" :route="$i18n.path('walkin/tab4')">品牌咨询</el-menu-item>
+    <el-menu-item index="/walkin/tab1" :route="$i18n.path('walkin/tab1')">品牌文化</el-menu-item>
+    <el-menu-item index="/walkin/tab4" :route="$i18n.path('walkin/tab4')">品牌咨讯</el-menu-item>
+    <el-menu-item index="/walkin/tab2" :route="$i18n.path('walkin/tab2')">招商计划</el-menu-item>
   </el-submenu>
   <el-submenu index="/strength" class="l1Nav">
     <template slot="title">{{$t('strength')}}</template>
@@ -72,31 +72,36 @@
                     {{ $t('zh') }}
                 </NuxtLink> -->
                 <img src="~assets/image/line.png" alt="" class="line" >
-                <div class="sear" @mouseenter="showSearchBox=true" @mouseleave="outBtn">
-                     <img src="~assets/image/search.png" alt="" class="search" >
+                <div class="sear" @click="showSearchBox=false">
+                     <img src="~assets/image/search.png" alt="" class="search">
                 </div>
            </div>
-           
-        </div>
-       <div class="searchBox" :class="showSearchBox?'searchBox active':''" @mousemove="enter=true" @mouseleave="enter=false,showSearchBox=false">
-            <div class="input_box">
-                    <el-input v-model="input" placeholder="请输入搜索内容"></el-input>
-                    <div class="search"><img src="~assets/image/search2.png" alt=""></div>
+             <div class="input_box" :style="{transform:showSearchBox?'scale(0)':'scale(1)'}">
+                    <el-input v-model="input" placeholder="请输入搜索内容" > <i
+    class="el-icon-search el-input__icon"
+    style="cursor:pointer"
+    slot="suffix"
+    @click="handleIconClick">
+  </i></el-input>
+                    <div class="search" @click="showSearchBox=true"><img src="~assets/image/close.png" alt=""></div>
                 </div>
-       </div>
+            </div>
+          
+        </div>
+     
     </div>
 </template>
 <script>
+
 import {mapState} from 'vuex'
 export default {
     
     data(){
         return{
             input:'',
-            showSearchBox:false,
+            showSearchBox:true,
             enter:false,
-            mode:'horizontal',
-            showMenu:false
+           
         }
     },
     watch:{
@@ -111,11 +116,16 @@ export default {
         ...mapState(['path','productList'])
     },
     created(){
-       this.getProductTitleList()
+      //  this.getProductTitleList()
     },
     methods: {
         toIndex(){
              this.$router.push('/')
+             
+        },
+        handleIconClick(){
+             this.$router.push('/service/search/'+this.input)
+             this.showSearchBox=true
         },
        outBtn(){
            setTimeout(()=>{
@@ -127,10 +137,10 @@ export default {
            },100)
        },
       
-        async getProductTitleList(){
-            let res=await this.$axios.get(this.$store.state.api.getProductTitleList)
-             this.$store.commit('setProductList',res)
-        },
+        // async getProductTitleList(){
+        //     let res=await this.$axios.get(this.$store.state.api.getProductTitleList)
+        //      this.$store.commit('setProductTitleList',res)
+        // },
          handleSelect(key, keyPath) {
         console.log(key, keyPath);
       }
@@ -152,8 +162,15 @@ export default {
   align-items: center;
    transition: all .3s;
    overflow: hidden;
-   .input_box{
+  
+ 
+}
+  .input_box{
         display: flex;
+        position: absolute;
+        right: 0;
+        top: 10px;
+         transition: all .3s;
         /deep/ .el-input__inner{
             
 color: #505050;
@@ -181,7 +198,6 @@ img{
 }
         }
     }
-}
 .searchBox.active{
   height:200px;
   transition: all .3s;
@@ -196,11 +212,12 @@ img{
 }
 
 .container {
-  width: 75%;
-  margin: 0 auto;
+  
+  min-width: 992px;
+//   margin: 0 auto;
   display: flex;
   z-index: 999;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 10px;
   .Header__Logo{
@@ -213,9 +230,13 @@ img{
           height: 100%;
       }
   }
+  // .nav.hide{
+  //   transform: scale(0);
+  // }
   .nav{
       display: flex;
-     
+      // transform: scale(1);
+      transition: all 0.3s;
       align-items: center;
 //       .Header__Link{
           
@@ -243,6 +264,7 @@ margin-right: 20px;
           display: flex;
           justify-content: center;
           align-items: center;
+           cursor: pointer;
            .search{
               width: 28px;
              height: 28px;
