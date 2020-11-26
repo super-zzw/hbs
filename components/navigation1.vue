@@ -210,7 +210,7 @@ img{
       width: 130px;
       img{
           width: 100%;
-        
+          display: block;
           height: auto;
       }
   }
