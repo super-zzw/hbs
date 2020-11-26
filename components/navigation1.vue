@@ -117,6 +117,7 @@ export default {
     },
     methods: {
        handleIconClick(){
+           if(!this.input) return
              this.$router.push('/service/search/'+this.input)
              this.showSearchBox=true
         },

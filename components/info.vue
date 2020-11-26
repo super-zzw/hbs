@@ -91,6 +91,7 @@ export default {
     },
     methods:{
         toSearch(){
+            if(!this.input) return
              this.$router.push('/service/search/'+this.input)
              this.input=''
         },
