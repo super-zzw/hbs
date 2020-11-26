@@ -74,7 +74,7 @@
                     <div class="search"><img src="~assets/image/search2.png" alt=""></div>
                 </div>
             </div>
-            <div class="tip">BRI呼博士品牌隶属于厦门蒙发利科技（集团）股份有限公司 Copyright 2020 MRI.ALL Rights Reserved. <span @click="toPage">闽ICP备20003087号-2</span></div>
+            <div class="tip">BRI呼博士品牌隶属于厦门蒙发利健康科技有限公司 Copyright 2020 MRI.ALL Rights Reserved. <span @click="toPage">闽ICP备20003087号-2</span></div>
         </div>
     </div>
 </template>
