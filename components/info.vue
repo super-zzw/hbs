@@ -71,10 +71,10 @@
             <div class="imgBox">
                 <div class="input_box">
                     <el-input v-model="input" placeholder="请输入搜索内容"></el-input>
-                    <div class="search"><img src="~assets/image/search2.png" alt=""></div>
+                    <div class="search" @click="toSearch"><img src="~assets/image/search2.png" alt=""></div>
                 </div>
             </div>
-            <div class="tip">BRI呼博士品牌隶属于厦门蒙发利科技（集团）股份有限公司 Copyright 2020 MRI.ALL Rights Reserved. 闽ICP备20003087号-2</div>
+            <div class="tip">BRI呼博士品牌隶属于厦门蒙发利健康科技（集团）股份有限公司 Copyright 2020 MRI.ALL Rights Reserved. 闽ICP备20003087号-2</div>
         </div>
     </div>
 </template>
@@ -89,6 +89,12 @@ export default {
     computed:{
         ...mapState(['path','productList'])
     },
+    methods:{
+        toSearch(){
+             this.$router.push('/service/search/'+this.input)
+             this.input=''
+        }
+    }
 }
 </script>
 <style lang="less" scoped>

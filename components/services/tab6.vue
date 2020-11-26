@@ -277,7 +277,7 @@
 export default {
   data() {
     return {
-      active: [true, true,true,true, true,true,true, true,true,true, true,true],
+   active:[false,false,false,false,false,false,false,false,false,false,false,false]
     };
   },
   methods: {

@@ -271,6 +271,18 @@ BRI呼博士杀毒新风机被评定为室内环境污染防治、消杀、净�
         //自动轮播
         
         on:{
+          click:()=>{
+            console.log(this.$refs.mySwiper.$swiper)
+            this.$refs.mySwiper.$swiper.slideTo(this.$refs.mySwiper.$swiper.clickedIndex)
+            // this.$refs.mySwiper.$swiper.realIndex=4
+        //      this.$nextTick(()=>{
+        //  this.activeCon=this.list[this.$refs.mySwiper.$swiper.clickedIndex-7]
+
+            
+        //     })
+           
+              // console.log(this.$refs.mySwiper.$swiper.clickedIndex-7)
+          },
             slidePrevTransitionEnd:()=>{
                this.$nextTick(()=>{
           this.activeCon=this.list[this.$refs.mySwiper.$swiper.realIndex]
