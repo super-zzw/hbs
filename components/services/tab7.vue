@@ -8,7 +8,23 @@
           :scroll-wheel-zoom="true"
           style="height: 520px;width: 50%"
         >
-          <bm-info-window :position="center" title="厦门蒙发利健康科技有限公司" :show="true"></bm-info-window>
+          <!-- <bm-circle
+              :center="center"
+              :radius="150"
+              stroke-color="#b6469b"
+              fillColor="#e7d9e4"
+              :stroke-opacity="0.8"
+              :stroke-weight="2"
+          ></bm-circle> -->
+          <bm-marker
+            :position="center"
+            :dragging="true"
+            :zIndex="999999999"
+            :icon="{ url: require('~/assets/image/location.png'), size: { width: 34, height: 34 } }"
+          >
+            <bm-info-window class="sw21" :position="center" title="厦门蒙发利健康科技有限公司" :show="true"></bm-info-window>
+          </bm-marker>
+          
         </baidu-map>
     <div class="cont1">
       <p class="name">厦门蒙发利健康科技有限公司</p>
@@ -33,6 +49,27 @@ export default {
 };
 </script>
 <style lang="less" scoped>
+/deep/ .BMap_top,
+/deep/ .BMap_bottom{
+  display: none;
+}
+/deep/ .BMap_pop > img:nth-of-type(1),
+/deep/ .BMap_pop > div:nth-child(1),
+/deep/ .BMap_pop > div:nth-child(5),
+/deep/ .BMap_pop > div:nth-child(7),
+/deep/ .BMap_pop > div:nth-child(3){
+  display: none;
+}
+/deep/ .BMap_pop > div:nth-child(4){
+  top: 49px!important;
+  border: none;
+}
+/deep/ .BMap_pop > div:nth-child(9){
+  top: 55px!important;
+}
+/deep/ .BMap_pop > img:nth-of-type(1){
+  display: none;
+}
 .container {
   width: 100%;
   position: relative;

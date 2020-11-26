@@ -32,7 +32,7 @@
   </el-submenu>
    <el-submenu index="/product" class="l1Nav">
     <template slot="title">{{$t('product')}}</template>
-    <el-menu-item  :index="item.id" :route="$i18n.path('product/'+item.id)" v-for="(item,i) in productList" :key="i">{{item.categoryTitle}}</el-menu-item>
+    <el-menu-item  :index="String(item.id)" :route="$i18n.path('product/'+item.id)" v-for="(item,i) in productList" :key="i">{{item.categoryTitle}}</el-menu-item>
     <!-- <el-menu-item index="/product/tab2" :route="$i18n.path('product/tab2')">吊顶机</el-menu-item>
     <el-menu-item index="/product/tab3" :route="$i18n.path('product/tab3')">立柜机</el-menu-item> -->
   
