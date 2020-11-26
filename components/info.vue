@@ -168,16 +168,18 @@ export default {
   computed: {
     ...mapState(["path", "productList"]),
   },
-  methods: {
-    toSearch() {
-      this.$router.push("/service/search/" + this.input);
-      this.input = "";
+  methods:{
+    toSearch(){
+        if(!this.input) return
+            this.$router.push('/service/search/'+this.input)
+            this.input=''
     },
-    toPage() {
-      window.open("https://beian.miit.gov.cn", "_blank");
-    },
-  },
-};
+    toPage(){
+        window.open("https://beian.miit.gov.cn","_blank")
+    }
+}
+    
+}
 </script>
 <style lang="less" scoped>
 .header {

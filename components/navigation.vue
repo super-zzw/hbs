@@ -223,11 +223,11 @@ img{
   .Header__Logo{
        cursor: pointer;
       width: 130px;
-      height: 45px;
+      // height: 45px;
       img{
           width: 100%;
         
-          height: 100%;
+          height: auto;
       }
   }
   // .nav.hide{
