@@ -29,7 +29,7 @@
         </div>
       </div>
     </div>
-    <div class="sec2">
+    <div class="sec2w">
       <h2 class="title">五大模式任意切换</h2>
       <p class="line"></p>
       <div class="box2">
@@ -142,9 +142,10 @@ export default {
     }
   }
 }
-.sec2 {
-  background: #f2f2f2;
+.sec2w {
+  background: #EDEDED;
   padding: 70px 0;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;

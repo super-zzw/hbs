@@ -208,11 +208,10 @@ img{
   .Header__Logo{
       cursor: pointer;
       width: 130px;
-      height: 45px;
       img{
           width: 100%;
-        
-          height: 100%;
+          display: block;
+          height: auto;
       }
   }
   .nav{
