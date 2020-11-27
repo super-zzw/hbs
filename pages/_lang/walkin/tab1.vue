@@ -21,7 +21,7 @@
          <p class="con">{{$t("walkin1-6")}}</p>
          <p class="con">{{$t("walkin1-7")}}</p>
          </div>
-        
+         
      </div>
      <div class="sec2 wow fadeInUp">
         <img src="~assets/image/img2-2.png" alt="" class="banner">

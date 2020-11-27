@@ -14,6 +14,7 @@
       <div class="section1 wow fadeInUp">
         <div class="container1">
           <h2 class="title">{{ $t("index1") }}</h2>
+          <div class="line"></div>
           <div class="box">
             <div
               class="con"
@@ -205,7 +206,7 @@ export default {
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-top: 60px;
+      // margin-top: 60px;
       z-index: 10;
       .con {
         flex: 1;
@@ -254,11 +255,13 @@ export default {
           padding: 5px;
         }
         .more {
+           background: rgba(255, 2555, 2555, 0.3);
+            padding: 5px;
           z-index: 10;
           margin-top: 20px;
-          padding: 3px 20px;
+          // padding: 3px 20px;
           font-size: 16px;
-          opacity: 0.3;
+         
           font-weight: normal;
           color: #ffffff;
           // line-height: 68px;

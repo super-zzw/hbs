@@ -142,16 +142,16 @@ export default {
 html,
 body,
 .wrap {
-  min-height: 100vh;
+  // min-height: 100vh;
   min-width: 1280px;
 }
 .wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
 }
 .content {
-  flex: 1;
+  // flex: 1;
 }
 .banner {
   width: 100%;
