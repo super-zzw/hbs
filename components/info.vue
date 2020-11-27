@@ -91,9 +91,16 @@ export default {
     },
     methods:{
         toSearch(){
-            if(!this.input) return
-             this.$router.push('/service/search/'+this.input)
+            console.log(1)
+            if(!this.input){
+             return 
+            } else{
+  this.$router.push('/service/search/'+this.input)
              this.input=''
+            }
+        //    if(!this.input) return
+        //    this.$router.push('/service/search/'+this.input)
+        //      this.input=''
         },
         toPage(){
             window.open("https://beian.miit.gov.cn","_blank")

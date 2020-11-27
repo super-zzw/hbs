@@ -228,6 +228,7 @@ img{
           width: 100%;
         
           height: auto;
+         
       }
   }
   // .nav.hide{
@@ -283,6 +284,7 @@ margin-right: 20px;
 }
 .el-menu.el-menu--horizontal{
     border: none;
+    
 }
 /deep/ .nav .el-submenu__title i{
     color: #fff;
@@ -337,7 +339,7 @@ line-height: 60px;
 height: auto;
 margin: 0 20px;
  border-bottom: 1px solid #DEDEDE;
- 
+// width: 160px !important;
 }
 .el-menu--horizontal .el-menu .el-menu-item:last-child{
     border-bottom: none;
@@ -377,5 +379,8 @@ font-weight: 600;
 
 /deep/ .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
     border-bottom-color: #fff;
+}
+ .el-menu--horizontal > .el-menu--popup-bottom-start{
+  
 }
 </style>

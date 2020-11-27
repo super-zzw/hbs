@@ -282,7 +282,7 @@ font-family: Noto Sans S Chinese;
 font-weight: 400;
 color:#505050;
 line-height: 68px;
-
+// width: 160px !important;
 }
 .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover {
   color:#505050 !important;

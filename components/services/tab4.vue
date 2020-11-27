@@ -42,15 +42,15 @@
           <p class="name">手动模式</p>
         </div>
         <div class="modeItem">
-          <img src="~assets/image/icon6.5-1.png" alt="" />
+          <img src="~assets/image/icon6.5-7.png" alt="" />
           <p class="name">净化模式</p>
         </div>
         <div class="modeItem">
-          <img src="~assets/image/icon6.5-7.png" alt="" />
+          <img src="~assets/image/icon6.5-8.png" alt="" />
           <p class="name">排污模式</p>
         </div>
         <div class="modeItem">
-          <img src="~assets/image/icon6.5-8.png" alt="" />
+          <img src="~assets/image/icon6.5-10.png" alt="" />
           <p class="name">静音模式</p>
         </div>
       </div>
@@ -155,21 +155,24 @@ export default {
     line-height: 75px;
   }
   .box2 {
-    margin-top: 40px;
+    // margin-top: 30px;
     margin-bottom: 100px;
     display: flex;
     .modeItem {
       margin-right: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       img {
-        // width: 86px;
-        height: 70px;
+        width: 110px;
+        height: 110px;
       }
       .name {
         font-size: 24px;
         font-family: Adobe Heiti Std;
         font-weight: normal;
         color: #505050;
-        line-height: 70px;
+        // line-height: 70px;
       }
     }
     .modeItem:last-child {
