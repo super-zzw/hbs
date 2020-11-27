@@ -52,7 +52,9 @@
     <!-- <el-menu-item index="/strength/tab1" :route="$i18n.path('strength/tab1')">软实力</el-menu-item> -->
    <el-menu-item index="/service" :route="$i18n.path('service')">总览</el-menu-item>
      <el-submenu index="6-1">
-      <template slot="title">服务项目</template>
+      <template slot="title">
+        <div class="dfghjk" style="width:120px">服务项目</div>
+      </template>
       <el-menu-item index="/service/0" :route="$i18n.path('service/0')">安装服务</el-menu-item>
       <el-menu-item index="/service/1" :route="$i18n.path('service/1')">售后政策</el-menu-item>
       <el-menu-item index="/service/2" :route="$i18n.path('service/2')">售后申请</el-menu-item>
@@ -228,6 +230,7 @@ img{
           width: 100%;
           display: block;
           height: auto;
+         
       }
   }
   // .nav.hide{
@@ -283,6 +286,7 @@ margin-right: 20px;
 }
 .el-menu.el-menu--horizontal{
     border: none;
+    
 }
 /deep/ .nav .el-submenu__title i{
     color: #fff;
@@ -337,7 +341,7 @@ line-height: 60px;
 height: auto;
 margin: 0 20px;
  border-bottom: 1px solid #DEDEDE;
- 
+// width: 160px !important;
 }
 .el-menu--horizontal .el-menu .el-menu-item:last-child{
     border-bottom: none;
@@ -377,5 +381,8 @@ font-weight: 600;
 
 /deep/ .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
     border-bottom-color: #fff;
+}
+ .el-menu--horizontal > .el-menu--popup-bottom-start{
+  
 }
 </style>

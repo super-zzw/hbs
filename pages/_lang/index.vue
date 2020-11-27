@@ -38,6 +38,7 @@
         </div>
         <div class="container mt">
           <h2 class="title">{{ $t("index8") }}</h2>
+           <div class="line"></div>
           <span class="desc">{{ $t("index9") }}</span>
           <div
             class="article"
@@ -63,6 +64,7 @@
 
       <div class="section2 wow fadeInUp">
         <h2 class="title">{{ $t("index16") }}</h2>
+        <div class="line"></div>
         <span class="desc">{{ $t("index17") }}</span>
         <div class="imgList">
           <div class="row">
@@ -404,31 +406,28 @@ export default {
 }
 .title {
   font-size: 40px;
-
+line-height: 40px;
   color: #505050;
   position: relative;
 }
-
+.line{
+  width: 51px;
+      height: 2px;
+    
+      margin-top: 40px;
+      margin-bottom: 40px;
+      background-color: #808080;
+}
 .desc {
-  margin-top: 45px;
+  // margin-top: 45px;
 
   font-size: 20px;
   font-family: SourceHanSansCN;
   font-weight: 400;
   color: #909090;
-  line-height: 36px;
+  line-height: 20px;
 }
-.title::after {
-  position: absolute;
-  width: 51px;
-  height: 2px;
 
-  content: "";
-  left: 50%;
-  top: 80px;
-  background: #808080;
-  transform: translateX(-50%);
-}
 /deep/ .el-carousel__button {
   width: 10px;
   height: 10px;

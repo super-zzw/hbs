@@ -19,10 +19,10 @@
       <div class="sec22 wow fadeInUp">
           
          <div class="container" ref="article">
-           <div class="dateBox">
+           <!-- <div class="dateBox">
               <p class="date" v-if="article.createTime">{{article.createTime|formatTime}} </p>
               <p class="line"></p>
-          </div>
+          </div> -->
           <div class="contentBox" v-html="article.description">
         
           </div>

@@ -125,17 +125,20 @@ export default {
             .i4a{
                 font-size: 56px;
                 font-family: 'NotoSansCJK-Bold'!important;
-                margin-bottom: 20px;
+                margin-bottom: 40px;
+                line-height: 56px;
             }
             .i4b{
                 font-size: 22px;
+                line-height: 22px;
                 color: #C2C2C2;
             }
             .i4c{
                 width: 437px;
                 font-size: 20px;
+                line-height: 20px;
                 line-height: 28px;
-                margin-top: 50px;
+                margin-top: 20px;
             }
         }
     }

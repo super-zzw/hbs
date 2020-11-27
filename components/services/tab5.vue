@@ -3,22 +3,22 @@
       <div class="cont1">
           <img src="~assets/image/img6.6-1.png" alt="">
            <p class="name">EH-Z-7B200F-说明书</p> 
-           <a class="download" href="http://shiju.dev.gzcyou.com/static/EH-Z-7B200F-说明书.pdf" download> 立即下载</a>
+           <a class="download" href="http://www.bri.com.cn/static/EH-Z-7B200F-说明书.pdf" download> 立即下载</a>
       </div>
       <div class="cont1">
           <img src="~assets/image/img6.6-2.png" alt="">
            <p class="name">XS-D350A-说明书</p> 
-           <a class="download" href="http://shiju.dev.gzcyou.com/static/XS-D350A 说明书.pdf" download>立即下载</a>
+           <a class="download" href="http://www.bri.com.cn/static/XS-D350A 说明书.pdf" download>立即下载</a>
       </div>
       <div class="cont1">
           <img src="~assets/image/img6.6-3.png" alt="">
            <p class="name">EH-Z-7G750-说明书</p> 
-           <a class="download" href="http://shiju.dev.gzcyou.com/static/EH-Z-7G750-说明书.pdf" download>立即下载</a>
+           <a class="download" href="http://www.bri.com.cn/static/EH-Z-7G750-说明书.pdf" download>立即下载</a>
       </div>
       <div class="cont1">
           <img src="~assets/image/img6.6-4.png" alt="">
            <p class="name">EH-Z-7G400-说明书</p> 
-           <a class="download" href="http://shiju.dev.gzcyou.com/static/EH-Z-7G400说明书.pdf" download>立即下载</a>
+           <a class="download" href="http://www.bri.com.cn/static/EH-Z-7G400说明书.pdf" download>立即下载</a>
       </div>
     </div>
 </template>

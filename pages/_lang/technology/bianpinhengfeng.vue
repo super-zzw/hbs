@@ -107,6 +107,7 @@ export default {
     }
     .t3Title2{
         font-size: 44px;
+        // line-height:56px;
     }
     .t3Cont{
         height: 100%;
@@ -205,14 +206,14 @@ export default {
             // margin-top: 20px;
         }
         .i4b{
-            margin-top: 45px;
+            margin-top: 25px;
             font-size: 23px;
             color: #fff;
         }
         .i4c{
             color: #C2C2C2;
             font-size: 20px;
-            margin-top: 20px;
+            margin-top: 5px;
             width: 520px;
         }
         .i4d{
