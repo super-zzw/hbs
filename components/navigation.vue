@@ -52,7 +52,9 @@
     <!-- <el-menu-item index="/strength/tab1" :route="$i18n.path('strength/tab1')">软实力</el-menu-item> -->
    <el-menu-item index="/service" :route="$i18n.path('service')">总览</el-menu-item>
      <el-submenu index="6-1">
-      <template slot="title">服务项目</template>
+      <template slot="title">
+        <div class="dfghjk" style="width:120px">服务项目</div>
+      </template>
       <el-menu-item index="/service/0" :route="$i18n.path('service/0')">安装服务</el-menu-item>
       <el-menu-item index="/service/1" :route="$i18n.path('service/1')">售后政策</el-menu-item>
       <el-menu-item index="/service/2" :route="$i18n.path('service/2')">售后申请</el-menu-item>

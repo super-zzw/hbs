@@ -168,15 +168,8 @@ export default {
   computed: {
     ...mapState(["path", "productList"]),
   },
-  methods:{
-    toSearch(){
-        if(!this.input) return
-            this.$router.push('/service/search/'+this.input)
-            this.input=''
-    },
-    computed:{
-        ...mapState(['path','productList'])
-    },
+ 
+   
     methods:{
         toSearch(){
             console.log(1)
@@ -191,7 +184,7 @@ export default {
             window.open("https://beian.miit.gov.cn","_blank")
         }
     }
-}
+
     
 }
 </script>

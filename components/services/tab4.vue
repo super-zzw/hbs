@@ -75,7 +75,7 @@
         </div>
       </div>
     </div>
-    <el-dialog :visible.sync="show" width="30%" :before-close="handleClose">
+    <el-dialog :visible.sync="show" width="30%" >
       <img src="@/assets/image/ios.png" alt="" />
     </el-dialog>
   </div>
