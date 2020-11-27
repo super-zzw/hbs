@@ -233,6 +233,7 @@ export default {
   }
   .input_box {
     display: flex;
+    z-index: 99;
     /deep/ .el-input__inner {
       color: #505050;
       font-size: 16px;
